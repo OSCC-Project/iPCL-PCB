@@ -1,0 +1,414 @@
+* Netlist: 小智AI语音对话开发板 - C3
+* Extracted from PCB layout data
+* Generated: 2026-08-11 11:30:11
+* Components: 82, Nets: 65
+*
+
+$COMPONENTS
+  ANT1  {114122dcd07c475ebe40200aac76a093}
+  BAT1  {836278af07de4edf9717d25b6ec65016}
+  BOOT1  {b3649e5cefb54f17903855245019f32a}
+  C1  {05a7991f1fa1490d8ece4ac6b500d086}
+  C10  {0ec62e40828d4649aa19c65134dcb0f5}
+  C11  {05a7991f1fa1490d8ece4ac6b500d086}
+  C12  {0ec62e40828d4649aa19c65134dcb0f5}
+  C13  {05a7991f1fa1490d8ece4ac6b500d086}
+  C14  {0ec62e40828d4649aa19c65134dcb0f5}
+  C15  {0ec62e40828d4649aa19c65134dcb0f5}
+  C16  {0ec62e40828d4649aa19c65134dcb0f5}
+  C17  {0ec62e40828d4649aa19c65134dcb0f5}
+  C18  {0ec62e40828d4649aa19c65134dcb0f5}
+  C19  {0ec62e40828d4649aa19c65134dcb0f5}
+  C2  {0ec62e40828d4649aa19c65134dcb0f5}
+  C21  {05a7991f1fa1490d8ece4ac6b500d086}
+  C22  {0ec62e40828d4649aa19c65134dcb0f5}
+  C23  {05a7991f1fa1490d8ece4ac6b500d086}
+  C24  {0ec62e40828d4649aa19c65134dcb0f5}
+  C25  {0ec62e40828d4649aa19c65134dcb0f5}
+  C26  {05a7991f1fa1490d8ece4ac6b500d086}
+  C27  {0ec62e40828d4649aa19c65134dcb0f5}
+  C28  {0ec62e40828d4649aa19c65134dcb0f5}
+  C29  {0ec62e40828d4649aa19c65134dcb0f5}
+  C3  {0ec62e40828d4649aa19c65134dcb0f5}
+  C30  {0ec62e40828d4649aa19c65134dcb0f5}
+  C31  NC  {0ec62e40828d4649aa19c65134dcb0f5}
+  C32  NC  {0ec62e40828d4649aa19c65134dcb0f5}
+  C33  {0ec62e40828d4649aa19c65134dcb0f5}
+  C34  {05a7991f1fa1490d8ece4ac6b500d086}
+  C4  {0ec62e40828d4649aa19c65134dcb0f5}
+  C5  {0ec62e40828d4649aa19c65134dcb0f5}
+  C6  {0ec62e40828d4649aa19c65134dcb0f5}
+  C7  {0ec62e40828d4649aa19c65134dcb0f5}
+  C8  {0ec62e40828d4649aa19c65134dcb0f5}
+  C9  {0ec62e40828d4649aa19c65134dcb0f5}
+  CHG1  {3863a6ce95bc411989e1282ae348fc22}
+  D1  {f8ff3a072edc41319181636897a8a1f5}
+  D2  {b8e8c18369e049b7b784d5f799b39940}
+  L1  {03394a9e29844b04822005f3f100cdb5}
+  L3  {74fb0f8e922542549bbf8588ec507ccb}
+  MIC1  {8ee6189173c347bc8e70b77e870f6d5d}
+  OLED1  {a6edf34580c248ed80574da6edd8c325}
+  Q1  {fe135372421846129297c4735aa2fbbf}
+  Q2  {98a6dc606e334f6aaebd60298df2d4b0}
+  Q3  {98a6dc606e334f6aaebd60298df2d4b0}
+  R10  {625c84422b324783a92dfa608e7f2de8}
+  R11  {625c84422b324783a92dfa608e7f2de8}
+  R13  {625c84422b324783a92dfa608e7f2de8}
+  R14  {625c84422b324783a92dfa608e7f2de8}
+  R15  {625c84422b324783a92dfa608e7f2de8}
+  R16  {625c84422b324783a92dfa608e7f2de8}
+  R17  {625c84422b324783a92dfa608e7f2de8}
+  R18  {625c84422b324783a92dfa608e7f2de8}
+  R19  {625c84422b324783a92dfa608e7f2de8}
+  R2  {625c84422b324783a92dfa608e7f2de8}
+  R20  {625c84422b324783a92dfa608e7f2de8}
+  R21  {625c84422b324783a92dfa608e7f2de8}
+  R22  {625c84422b324783a92dfa608e7f2de8}
+  R23  {625c84422b324783a92dfa608e7f2de8}
+  R24  {625c84422b324783a92dfa608e7f2de8}
+  R3  {625c84422b324783a92dfa608e7f2de8}
+  R4  {625c84422b324783a92dfa608e7f2de8}
+  R5  {625c84422b324783a92dfa608e7f2de8}
+  R6  {625c84422b324783a92dfa608e7f2de8}
+  R7  {625c84422b324783a92dfa608e7f2de8}
+  R8  {625c84422b324783a92dfa608e7f2de8}
+  R9  {625c84422b324783a92dfa608e7f2de8}
+  RGB1  {f454c511d7fe482db86f9c1289e79ec1}
+  SCREW1
+  SCREW4
+  SPK1  {836278af07de4edf9717d25b6ec65016}
+  SW1  {ef9e1cfde34a434b98abd3df30ee1c51}
+  U1  {2e9ba12a0f1941e2b7ac0ab997b73013}
+  U2  {b9ed25adae7247a4a615f87e0d6ab6b0}
+  U3  {be9e5f7a6f904d7186a41fd7c1ac8e81}
+  U4  {db83f0b44aab47c98d8228258cb0e0b4}
+  U5  {94ebbbc58b5d4ce1b5e713e5698fcb59}
+  U6  {d56c3286f2a54943b777986e50464eac}
+  UART1  {4f676e4b75344455a55b32ce6fd398dd}
+  USB1  {16bae89f927a4bc4a42fc9950053189a}
+  X1  {1ae716d6e94945b49937000d937cc2f3}
+$END_COMPONENTS
+
+$NETS
+  $1N19600
+    CHG1.1
+    R3.1
+  $1N19641
+    R3.2
+    U1.7
+  $1N2096
+    ANT1.1
+    C31.1
+    R13.1
+  $1N2098
+    C32.1
+    R13.2
+    U5.1
+  $1N2123
+    C28.1
+    L1.2
+    U5.2
+    U5.3
+  $1N2158
+    C21.1
+    U5.29
+    X1.3
+  $1N2350
+    R14.1
+    U6.3
+  $1N2553
+    R15.1
+    U6.7
+  $1N26968
+    C2.1
+    MIC1.1
+  $1N27561
+    C15.1
+    SPK1.2
+    U4.5
+  $1N29918
+    C14.1
+    SPK1.1
+    U4.8
+  $1N30665
+    R20.1
+    U1.2
+  $1N42663
+    L3.2
+    U5.30
+  $1N42668
+    C23.1
+    L3.1
+    X1.1
+  $1N47594
+    D2.1
+    Q1.1
+    Q2.3
+    Q3.1
+    R21.2
+  $1N47654
+    Q1.3
+    Q2.1
+    R22.1
+  $1N52868
+    C1.2
+    R23.2
+  $1N55724
+    R24.1
+    RGB1.4
+  $1N5759
+    C8.2
+    U2.12
+  $1N5760
+    C7.2
+    U2.13
+  $1N5772
+    C6.2
+    U2.14
+  $1N5774
+    C4.2
+    U2.16
+  $1N5775
+    C3.2
+    U2.17
+  $1N5776
+    C2.2
+    U2.18
+  $1N629
+    R2.1
+    USB1.10
+  $1N642
+    R4.1
+    USB1.4
+  $1N6630
+    R8.1
+    U4.3
+  $1N6631
+    R9.1
+    U4.4
+  $1N6634
+    C19.2
+    U4.2
+  $1N6639
+    C16.2
+    R8.2
+  $1N6640
+    C17.2
+    R9.2
+  $1N6885
+    R19.1
+    UART1.4
+  3V3
+    C11.1
+    C24.1
+    C25.1
+    C26.2
+    C27.1
+    C29.1
+    C30.1
+    C33.1
+    L1.1
+    OLED1.2
+    R11.1
+    R14.2
+    R15.2
+    R16.2
+    R17.2
+    R18.1
+    R6.2
+    U3.5
+    U5.11
+    U5.17
+    U5.31
+    U5.32
+    U6.8
+    UART1.1
+  AU_3V3
+    C10.2
+    C12.2
+    C9.2
+    R6.1
+    U2.11
+    U2.3
+    U2.4
+  AU_GND
+    C10.1
+    C12.1
+    C3.1
+    C4.1
+    C5.1
+    C6.1
+    C9.1
+    MIC1.2
+    MIC1.3
+    R5.1
+    U2.10
+    U2.20
+    U2.21
+    U2.5
+  BAT+
+    BAT1.1
+    Q3.3
+    U1.5
+  BOOT
+    BOOT1.4
+    U5.15
+  CHIP_EN
+    C22.1
+    R11.2
+    U5.7
+  GND
+    BAT1.2
+    BOOT1.3
+    C1.1
+    C11.2
+    C13.1
+    C21.2
+    C22.2
+    C23.2
+    C24.2
+    C25.2
+    C26.1
+    C27.2
+    C28.2
+    C29.2
+    C30.2
+    C31.2
+    C32.2
+    C33.2
+    D1.2
+    OLED1.1
+    Q1.2
+    R10.2
+    R2.2
+    R20.2
+    R21.1
+    R4.2
+    R5.2
+    RGB1.3
+    U1.3
+    U1.9
+    U3.2
+    U5.33
+    U5.e114
+    U5.e115
+    U5.e116
+    U5.e117
+    U6.4
+    UART1.2
+    UART1.5
+    USB1.1
+    USB1.12
+    USB1.13
+    USB1.14
+    X1.2
+    X1.4
+  I2C_SCL
+    OLED1.3
+    R17.1
+    U2.1
+    U5.9
+  I2C_SDA
+    OLED1.4
+    R16.1
+    U2.19
+    U5.8
+  I2S_BCK
+    R18.2
+    U2.6
+    U5.14
+  I2S_DI
+    U2.7
+    U5.13
+  I2S_DO
+    U2.9
+    U5.10
+  I2S_MCK
+    U2.2
+    U5.16
+  I2S_WS
+    U2.8
+    U5.12
+  PA_EN
+    R7.1
+    U4.1
+    U5.18
+  PA_GND
+    C14.2
+    C15.2
+    C18.1
+    C19.1
+    C34.1
+    R10.1
+    R7.2
+    U4.7
+  PA_IN+
+    C16.1
+    C8.1
+  PA_IN-
+    C17.1
+    C7.1
+  SPI_CLK
+    U5.22
+    U6.6
+  SPI_CS0
+    U5.21
+    U6.1
+  SPI_ID
+    U5.23
+    U6.5
+  SPI_IQ
+    U5.24
+    U6.2
+  U1RXD
+    U5.19
+    UART1.3
+  U1TXD
+    R19.2
+    U5.20
+  USB_DN
+    D1.3
+    U5.25
+  USB_DN_IN
+    D1.4
+    USB1.5
+    USB1.7
+  USB_DP
+    D1.1
+    U5.26
+  USB_DP_IN
+    D1.6
+    USB1.6
+    USB1.8
+  VBUS
+    CHG1.2
+    D1.5
+    D2.2
+    R23.1
+    U1.4
+    U1.8
+    USB1.11
+    USB1.2
+  VMIC
+    C5.2
+    MIC1.4
+    U2.15
+  VOUT
+    Q2.2
+    Q3.2
+    R22.2
+    SW1.2
+  VSYS
+    C13.2
+    C18.2
+    C34.2
+    RGB1.2
+    SW1.3
+    U3.1
+    U3.3
+    U4.6
+    UART1.6
+  WS2812
+    R24.2
+    U5.6
+$END_NETS

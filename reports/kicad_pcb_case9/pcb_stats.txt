@@ -1,0 +1,13 @@
+project: 便携式示波器-主体部分
+design_index: 5
+board: Board1
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/05_便携式示波器-主体部分/便携式示波器-主体部分.epro2
+source_epcb: PCB1.epcb
+components: 424
+nets: 403
+tracks: 10475
+vias: 705
+zones: 10
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 1661732

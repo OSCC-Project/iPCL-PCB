@@ -1,0 +1,95 @@
+{
+  "index": 18,
+  "name": "基于STM32G4的FOC电机驱动学习板",
+  "url": "https://oshwhub.com/lylssy/foc_driver",
+  "category": "工业电子",
+  "subcategory": "电机驱动",
+  "scale": "400元件规模",
+  "note": null,
+  "username": "lylssy",
+  "path": "foc_driver",
+  "uuid": "7ad6681607c347d2b4dcc17d107ba3ae",
+  "api_detail": {
+    "uuid": "7ad6681607c347d2b4dcc17d107ba3ae",
+    "path": "lylssy/foc_driver",
+    "name": "基于STM32G4的FOC电机驱动学习板",
+    "content": "## 1. AxDrive-L 简介\n\n![微信图片_20250710115518_1400.jpg](https://image.lceda.cn/oshwhub/pullImage/258def8adddf45efbd420aa2a658a0bf.jpg)\n\n![微信图片_20250710115526_1402.jpg](https://image.lceda.cn/oshwhub/pullImage/3f2dd83908a0476b8f89480d94fc874b.jpg)\n![AxDrive-L_3D.png](//image.lceda.cn/pullimage/yTJzQxJYrSX8nmu2mrF4zMjrsu35WDzjiO14mW6G.png)\n\nAxDrive-L FOC电机驱动学习板是一个专为电子爱好者、学生和初学者设计的硬件项目，旨在提供一个友好、学习性强的平台，以帮助用户深入了解并掌握Field-Oriented Control（FOC）电机控制技术。该板具备防反接和缓启动等多重防护，并且具有简单易用的特性，使得初学者能够轻松入门并理解FOC算法的原理。\n\n## 2. 学习应用场景\n\n- 电子工程学习课程\n- 自学嵌入式系统和电机控制\n- 电机控制实验室\n\n## 3. 原理图设计\n\n![SCH_schematic1_1-P1_2023-11-07.png](//image.lceda.cn/pullimage/1KYns99jj9fc1jAiu4SsD37KsyJuqPeWZvb4ryfR.png)\n\n## 4. 3D-PCB渲染图\n\n![image-20231107133729296.png](//image.lceda.cn/pullimage/o5t3QwAy5JZnMb0a1onZDWm5af29DLSerlDtz4P9.png)\n\n## 5. 电路设计\n\n- [x] 原理图设计\n- [x] PCB图设计\n- [x] PCB打样\n- [x] 焊接功能测试\n- [x] 程序测试\n- [x] 程序架构编写\n\n详细电路原理请移步硬件设计报告，建议科学上网\n\n## 6. 演示视频\nhttps://www.bilibili.com/video/BV1c9x9zTEFy/?vd_source=8482d95fe0873c36af69fd64ae582056\n\n## 7. 技术笔记\n这里是我学习电机控制时编写整理的技术笔记，难免有所疏漏，大家查看的时候，如有错误，希望可以帮我指出。\n因为网站托管在GitHub上，所以如果是国内网的话可能会有点慢，建议科学上网。\n已经迁移在github上\n部分笔记和部分目录架构如下所述：\n![image.png](//image.lceda.cn/pullimage/7p78up4SuVWzlfjUbuGP9Rb4kqUheM0aH2THbI12.png)\n## 8. 用户手册\n这里是AxDr-L驱动板的用户手册，目前还有一些参数没有进行详细更新，回头我会加上的。\n已经迁移在github上\n部分手册和部分目录架构如下所述：\n![image.png](//image.lceda.cn/pullimage/dSjJvkQPdzxS2O0pym4AD7X2YkxOgYVxNjsmBhD8.png)\n## 9. 硬件设计报告\n放置硬件设计报告在github上。\n这里是AxDr-L驱动板的硬件设计报告，跟现在的原理图只有一些电阻电容编号的出入，其他都大体是一样的，回头我会抽时间修改。\n部分手册和部分目录架构如下所述：\n![image.png](//image.lceda.cn/pullimage/uWPk1GcKVdL3kkCwcdveqhIEqJHtXWsWAWjlGi3n.png)\n## 10. 软件设计报告\n软件设计报告还在咕咕中···\n## 11. 外设测试和开源代码\n[代码链接: (https://github.com/disnox/AxDr_L)](https://github.com/disnox/AxDr_L)\n![image.png](//image.lceda.cn/pullimage/Dj1v7wcN9AW73Kd6c413MG8QJhrGIuZiuwFLj8iP.png)\n## 12. 注意事项\n\n商用禁止\n\n因为CAN口和BooT0 IO口是复用在一起的，所以原理图设计上并没有把boot0 下拉到GND 需要通过STM32CubeProgrammer进行软件boot下拉的设置：\n![image.png](//image.lceda.cn/pullimage/OxH5wSCP3ezhpL6xWf7DO4Fv4OhNry6JhIZfVTCJ.png)\n\n## 13.项目日志\n(2023年11月7日18点45分)新建了开源\n(2023年11月9日10点39分)增加用户手册和硬件设计报告\n(2023年12月21日15点17分)增加外设测试代码\n(2024年1月1日11点22分)修改按键为贴片按键，背面增加更多电容\n(2024年1月9日22点36分)更新SPI编码器接口，适配矛盾聚合体大佬的编码器接口\n(2024年1月29日14点34分)更新BOOT0注意事项以及矛盾大佬画的编码器板子\n\n### 更新V1.3版本硬件(2025年3月23日19点37分)：\n+ 增加w25q16 flash芯片\n+ 增加CAN电阻数字开关\n+ 增加HALL 5V上拉跳线帽选择，同步支持开关霍尔和线性霍尔\n+ 增加USB 5V可选跳线电阻或保险丝\n+ 修改NTC2采样电路变为中性点电压采样com\n+ 修改端电压采样截止频率\n+ 修改母线电压和端电压分压倍数\n+ 修改电流采样电阻为1mΩ\n+ 修改HALL滤波参数\n+ 为了添加spi flash芯片，修改LCD的DC和RES接口到PC14 PC15\n+ 焊接式LCD改为插接式LCD，同步修改了LCD背光电路，参考中景圆电子原理图\n+ CAN电阻开关由PC13控制，原本3个LED不再做单纯LED使用\n\n### 14.AxDr 技术交流群\n1015609389",
+    "grade": 1,
+    "public": true,
+    "license": "GPL 3.0",
+    "creator": {
+      "uuid": "272931a6e62f4fd9bb5bd918f6455f06",
+      "username": "lylssy",
+      "nickname": "苏行零一",
+      "avatar": "//image.lceda.cn/avatars/2023/10/9dIewNxdyZ3IgNoqFB8mtGpC5pvyJjWZ7Nyg7CA0.png"
+    },
+    "text_editor_type": "markdown",
+    "owner": {
+      "uuid": "272931a6e62f4fd9bb5bd918f6455f06",
+      "username": "lylssy",
+      "nickname": "苏行零一",
+      "avatar": "//image.lceda.cn/avatars/2023/10/9dIewNxdyZ3IgNoqFB8mtGpC5pvyJjWZ7Nyg7CA0.png",
+      "team": false
+    },
+    "count": {
+      "views": 77160,
+      "star": 976,
+      "fork": 0,
+      "watch": 0,
+      "like": 438
+    },
+    "members": [
+      {
+        "uuid": "272931a6e62f4fd9bb5bd918f6455f06",
+        "username": "lylssy",
+        "nickname": "苏行零一",
+        "avatar": "//image.lceda.cn/avatars/2023/10/9dIewNxdyZ3IgNoqFB8mtGpC5pvyJjWZ7Nyg7CA0.png",
+        "role": 1
+      }
+    ],
+    "attachments": [],
+    "no": 0,
+    "origin": "pro",
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "https://image.lceda.cn/oshwhub/pullImage/26428abdd135413d84afbd9befdc6b9a.jpg",
+    "updated_at": "2026-03-23T09:34:35.107Z",
+    "created_at": "2023-11-03T06:22:52.000Z",
+    "allow_reprint": true,
+    "introduction": "AxDrive-L学习板是一个专为电子爱好者、学生和初学者设计的硬件项目，旨在提供一个友好、学习性强的平台，以帮助用户深入了解FOC电机控制。该板具备防反接和缓启动等防护，并且具有简单易用的特性。",
+    "is_draft": false,
+    "project_tags": [
+      "4c92885dd69947be93cc68f560459fb3",
+      "c2e7a00699a2440ca5880a96466ee387",
+      "90637fd096424071a21927e5cdc436de"
+    ],
+    "publish": true,
+    "oshwhub_publish_at": "2026-03-23T09:44:29.000Z",
+    "reproduction_cost": {},
+    "sync_jlc": 1,
+    "tags": [],
+    "store": false,
+    "is_hide": false,
+    "updated_time": "2026-08-10T10:47:28.208Z",
+    "sync_jlc_3d": 0,
+    "fork_from": null,
+    "sale_info": null,
+    "competition": null,
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 195,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

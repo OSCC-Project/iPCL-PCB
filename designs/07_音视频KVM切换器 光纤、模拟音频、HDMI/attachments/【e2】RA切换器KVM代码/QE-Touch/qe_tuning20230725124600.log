@@ -1,0 +1,446 @@
+***** 2023/07/25 12:46:00 *****
+QE Version                                        :3.1.0.v20220401-0732
+Project Path                                      :C:\Users\Administrator\e2_studio\workspace\RA
+Configuration File                                :RASWITCHTOUCH
+IDE                                               :e2 studio with Emulator
+Emulator                                          :
+MCU                                               :RA2E1 R7FA2E1A72DFL
+<< METHOD 0 >>
+[Button(self) 0]
+TS                                                : TS31,
+[Button(self) 1]
+TS                                                : TS30,
+[Button(self) 2]
+TS                                                : TS23,
+[Button(self) 3]
+TS                                                : TS22,
+[Button(self) 4]
+TS                                                : TS21,
+[Button(self) 5]
+TS                                                : TS05,
+[Button(self) 6]
+TS                                                : TS04,
+[Button(self) 7]
+TS                                                : TS08,
+[Button(self) 8]
+TS                                                : TS09,
+[Button(self) 9]
+TS                                                : TS12,
+[Button(self) 10]
+TS                                                : TS14,
+[Button(self) 11]
+TS                                                : TS15,
+[Button(self) 12]
+TS                                                : TS16,
+[Button(self) 13]
+TS                                                : TS26,
+[Button(self) 14]
+TS                                                : TS28,
+
+<<<< Tuning Type : Normal >>>>
+System Clock Frequency (MHz)                      :48.000
+PCLKB Frequency (MHz)                             :24.000
+CTSU Operating Frequency (MHz)                    :24.000
+Operating Voltage (V)                             :3.300
+
+---------- Phase1 ----------
+<< METHOD 0 >>
+[TS04]
+Count Value                                       : 6047
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 41.993057
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS05]
+Count Value                                       : 5970
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 41.458332
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS08]
+Count Value                                       : 6010
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 41.73611
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS09]
+Count Value                                       : 6369
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 44.229168
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS12]
+Count Value                                       : 5920
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 41.11111
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS14]
+Count Value                                       : 5890
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 40.90278
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS15]
+Count Value                                       : 5989
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 41.59028
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS16]
+Count Value                                       : 6254
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 43.430557
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS21]
+Count Value                                       : 6108
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 42.416668
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS22]
+Count Value                                       : 6179
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 42.90972
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS23]
+Count Value                                       : 5696
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 39.555557
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS26]
+Count Value                                       : 6308
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 43.805557
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS28]
+Count Value                                       : 6153
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 42.729168
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS30]
+Count Value                                       : 6050
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 42.01389
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS31]
+Count Value                                       : 6168
+Resistance Value (ohm)                            : 470
+Parasitic Capacitance (pF)                        : 42.833332
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+
+---------- Phase2 ----------
+<< METHOD 0 >>
+[TS04]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 288
+
+[TS05]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 283
+
+[TS08]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 294
+
+[TS09]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 307
+
+[TS12]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 277
+
+[TS14]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 276
+
+[TS15]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 283
+
+[TS16]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 305
+
+[TS21]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 299
+
+[TS22]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 294
+
+[TS23]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 275
+
+[TS26]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 306
+
+[TS28]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 290
+
+[TS30]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 290
+
+[TS31]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 15
+CTSUSDPA                                          : 15
+CTSUSO                                            : 299
+
+
+---------- Phase3 ----------
+<< METHOD 0 >>
+[Button(self) 0]
+  << TS31 >>
+  Count Value (Off)                               : 15588
+  Count Value (On)                                : 16472
+  Threshold                                       : 530
+  Hysteresis                                      : 26
+
+[Button(self) 1]
+  << TS30 >>
+  Count Value (Off)                               : 15106
+  Count Value (On)                                : 16432
+  Threshold                                       : 795
+  Hysteresis                                      : 39
+
+[Button(self) 2]
+  << TS23 >>
+  Count Value (Off)                               : 15418
+  Count Value (On)                                : 16616
+  Threshold                                       : 718
+  Hysteresis                                      : 35
+
+[Button(self) 3]
+  << TS22 >>
+  Count Value (Off)                               : 15078
+  Count Value (On)                                : 16532
+  Threshold                                       : 872
+  Hysteresis                                      : 43
+
+[Button(self) 4]
+  << TS21 >>
+  Count Value (Off)                               : 15136
+  Count Value (On)                                : 16908
+  Threshold                                       : 1063
+  Hysteresis                                      : 53
+
+[Button(self) 5]
+  << TS05 >>
+  Count Value (Off)                               : 15292
+  Count Value (On)                                : 16458
+  Threshold                                       : 699
+  Hysteresis                                      : 34
+
+[Button(self) 6]
+  << TS04 >>
+  Count Value (Off)                               : 15406
+  Count Value (On)                                : 16728
+  Threshold                                       : 793
+  Hysteresis                                      : 39
+
+[Button(self) 7]
+  << TS08 >>
+  Count Value (Off)                               : 15454
+  Count Value (On)                                : 16658
+  Threshold                                       : 722
+  Hysteresis                                      : 36
+
+[Button(self) 8]
+  << TS09 >>
+  Count Value (Off)                               : 15534
+  Count Value (On)                                : 16452
+  Threshold                                       : 550
+  Hysteresis                                      : 27
+
+[Button(self) 9]
+  << TS12 >>
+  Count Value (Off)                               : 15420
+  Count Value (On)                                : 16952
+  Threshold                                       : 919
+  Hysteresis                                      : 45
+
+[Button(self) 10]
+  << TS14 >>
+  Count Value (Off)                               : 15484
+  Count Value (On)                                : 16252
+  Threshold                                       : 460
+  Hysteresis                                      : 23
+
+[Button(self) 11]
+  << TS15 >>
+  Count Value (Off)                               : 15320
+  Count Value (On)                                : 16886
+  Threshold                                       : 939
+  Hysteresis                                      : 46
+
+[Button(self) 12]
+  << TS16 >>
+  Count Value (Off)                               : 15506
+  Count Value (On)                                : 16524
+  Threshold                                       : 610
+  Hysteresis                                      : 30
+
+[Button(self) 13]
+  << TS26 >>
+  Count Value (Off)                               : 15570
+  Count Value (On)                                : 16576
+  Threshold                                       : 603
+  Hysteresis                                      : 30
+
+[Button(self) 14]
+  << TS28 >>
+  Count Value (Off)                               : 15440
+  Count Value (On)                                : 16878
+  Threshold                                       : 862
+  Hysteresis                                      : 43
+
+
+---------- Phase3 ----------
+<< METHOD 0 >>
+[Button(self) 0]
+  << TS31 >>
+  Count Value (Off)                               : 15112
+  Count Value (On)                                : 16858
+  Threshold                                       : 1047
+  Hysteresis                                      : 52
+
+[Button(self) 1]
+  << TS30 >>
+  Count Value (Off)                               : 15088
+  Count Value (On)                                : 16416
+  Threshold                                       : 796
+  Hysteresis                                      : 39
+
+[Button(self) 2]
+  << TS23 >>
+  Count Value (Off)                               : 15178
+  Count Value (On)                                : 16756
+  Threshold                                       : 946
+  Hysteresis                                      : 47
+
+[Button(self) 3]
+  << TS22 >>
+  Count Value (Off)                               : 15174
+  Count Value (On)                                : 16758
+  Threshold                                       : 950
+  Hysteresis                                      : 47
+
+[Button(self) 4]
+  << TS21 >>
+  Count Value (Off)                               : 15020
+  Count Value (On)                                : 16740
+  Threshold                                       : 1032
+  Hysteresis                                      : 51
+
+[Button(self) 5]
+  << TS05 >>
+  Count Value (Off)                               : 15268
+  Count Value (On)                                : 16498
+  Threshold                                       : 738
+  Hysteresis                                      : 36
+
+[Button(self) 6]
+  << TS04 >>
+  Count Value (Off)                               : 15430
+  Count Value (On)                                : 16754
+  Threshold                                       : 794
+  Hysteresis                                      : 39
+
+[Button(self) 7]
+  << TS08 >>
+  Count Value (Off)                               : 15352
+  Count Value (On)                                : 16546
+  Threshold                                       : 716
+  Hysteresis                                      : 35
+
+[Button(self) 8]
+  << TS09 >>
+  Count Value (Off)                               : 15386
+  Count Value (On)                                : 16512
+  Threshold                                       : 675
+  Hysteresis                                      : 33
+
+[Button(self) 9]
+  << TS12 >>
+  Count Value (Off)                               : 15438
+  Count Value (On)                                : 16826
+  Threshold                                       : 832
+  Hysteresis                                      : 41
+
+[Button(self) 10]
+  << TS14 >>
+  Count Value (Off)                               : 15284
+  Count Value (On)                                : 16794
+  Threshold                                       : 906
+  Hysteresis                                      : 45
+
+[Button(self) 11]
+  << TS15 >>
+  Count Value (Off)                               : 15066
+  Count Value (On)                                : 16428
+  Threshold                                       : 817
+  Hysteresis                                      : 40
+
+[Button(self) 12]
+  << TS16 >>
+  Count Value (Off)                               : 15380
+  Count Value (On)                                : 16752
+  Threshold                                       : 823
+  Hysteresis                                      : 41
+
+[Button(self) 13]
+  << TS26 >>
+  Count Value (Off)                               : 15458
+  Count Value (On)                                : 16688
+  Threshold                                       : 738
+  Hysteresis                                      : 36
+
+[Button(self) 14]
+  << TS28 >>
+  Count Value (Off)                               : 15566
+  Count Value (On)                                : 16882
+  Threshold                                       : 789
+  Hysteresis                                      : 39
+

@@ -1,0 +1,13 @@
+project: 4G物联定位控制魔盒(硬件+服务端+APP)
+design_index: 2
+board: CGS
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/02_4G物联定位控制魔盒(硬件+服务端+APP)/4G物联定位控制魔盒(硬件+服务端+APP).epro2
+source_epcb: PCB_4.epcb
+components: 140
+nets: 95
+tracks: 2586
+vias: 296
+zones: 4
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 441453

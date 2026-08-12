@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robot Control Panel</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;        
+      margin-top: 30px;
+    }
+    .panel {
+      padding: 20px;
+      text-align: center;
+    }
+
+    #joystick {
+      width: 200px; height: 200px;
+      background-color: #ccc;
+      position: relative;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    #joystick-knob {
+      width: 50px; height: 50px;
+      background-color: #888;
+      position: absolute;
+      border-radius: 50%;
+      cursor: pointer;
+      left: 75px; top: 75px;
+    }
+
+    #roll-joystick {
+      width: 60px; height: 200px;
+      background-color: #ccc;
+      position: relative;
+      border-radius: 30px;
+      margin: auto;
+    }
+    #roll-knob {
+      width: 40px; height: 40px;
+      background-color: #888;
+      position: absolute;
+      border-radius: 50%;
+      cursor: pointer;
+      left: 10px; top: 80px;
+    }
+
+    #xz-joystick {
+      width: 200px; height: 200px;
+      background-color: #ccc;
+      position: relative;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    #xz-knob {
+      width: 50px; height: 50px;
+      background-color: #888;
+      position: absolute;
+      border-radius: 50%;
+      cursor: pointer;
+      left: 75px; top: 75px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Robot Control Panel</h1>
+  <div class="container">
+
+    <div class="panel" id="main-joystick-panel">
+      <h2>XY Control</h2>
+      <div id="joystick"><div id="joystick-knob"></div></div>
+    </div>
+
+    <div class="panel" id="roll-joystick-panel">
+      <h2>Z Control</h2>
+      <div id="roll-joystick"><div id="roll-knob"></div></div>
+    </div>
+   
+    <div class="panel" id="xz-joystick-panel">
+      <h2>XZ Control</h2>
+      <div id="xz-joystick"><div id="xz-knob"></div></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let mainX = 0, mainY = 0, rollValue = 0;
+      let xzDragging = false, xzTouchId = null;
+      let mainDragging = false, rollDragging = false, mainTouchId = null, rollTouchId = null;
+
+      function sendMoveCommand() {
+        const xVal = Math.round(mainX * 100);
+        const yVal = Math.round(mainY * 100);
+        const zVal = Math.round(rollValue * 100);
+        const buffer = new ArrayBuffer(6);
+        const view = new DataView(buffer);
+        view.setUint8(0, 0xFF);
+        view.setUint8(1, 0xFF);
+        view.setInt8(2, xVal);
+        view.setInt8(3, yVal);
+        view.setInt8(4, zVal);
+        view.setInt8(5, 0xFE);
+        fetch('/send_command', {
+          method: 'POST',
+          body: buffer,
+          headers: {'Content-Type':'application/octet-stream'}
+        }).then(r=>r.text()).then(t=>console.log(t));
+      }
+
+      // === 主 XY 摇杆 ===
+      const joystick = document.getElementById('joystick');
+      const knob = document.getElementById('joystick-knob');
+      function moveJoystick(e) {
+        const r = joystick.getBoundingClientRect();
+        const cx = r.left + r.width/2, cy = r.top + r.height/2;
+        let dx, dy;
+        if (e.type==='touchmove') {
+          const t = Array.from(e.touches).find(t=>t.identifier===mainTouchId);
+          if (!t) return stopJoystickDrag();
+          dx = t.clientX - cx; dy = t.clientY - cy;
+        } else { dx = e.clientX - cx; dy = e.clientY - cy; }
+        const dist = Math.hypot(dx,dy), maxD = r.width/2;
+        if (dist>maxD) { dx=dx/dist*maxD; dy=dy/dist*maxD; }
+        knob.style.left  = (maxD + dx - knob.offsetWidth/2) + 'px';
+        knob.style.top   = (maxD + dy - knob.offsetHeight/2) + 'px';
+        mainX = dx/maxD; mainY = -dy/maxD;
+        sendMoveCommand();
+      }
+      function startJoystickDrag(e) {
+        if (e.type==='touchstart') mainTouchId = e.touches[0].identifier;
+        mainDragging = true;
+        moveJoystick(e);
+        document.addEventListener('mousemove', moveJoystick);
+        document.addEventListener('touchmove', moveJoystick);
+        e.preventDefault();
+      }
+      function stopJoystickDrag() {
+        if (!mainDragging) return;
+        mainDragging = false; mainTouchId = null;
+        document.removeEventListener('mousemove', moveJoystick);
+        document.removeEventListener('touchmove', moveJoystick);
+        knob.style.left='75px'; knob.style.top='75px';
+        mainX=0; mainY=0; sendMoveCommand();
+      }
+      joystick.addEventListener('mousedown', startJoystickDrag);
+      joystick.addEventListener('touchstart', startJoystickDrag);
+      document.addEventListener('mouseup', stopJoystickDrag);
+      document.addEventListener('touchend', stopJoystickDrag);
+
+      
+      const rollJoystick = document.getElementById('roll-joystick');
+      const rollKnob = document.getElementById('roll-knob');
+      function moveRollJoystick(e) {
+        const r = rollJoystick.getBoundingClientRect();
+        const cy = r.top + r.height/2;
+        let dy;
+        if (e.type==='touchmove') {
+          const t = Array.from(e.touches).find(t=>t.identifier===rollTouchId);
+          if (!t) return stopRollDrag();
+          dy = t.clientY - cy;
+        } else dy = e.clientY - cy;
+        const maxD = r.height/2;
+        if (Math.abs(dy)>maxD) dy = dy>0 ? maxD : -maxD;
+        rollKnob.style.top = (maxD + dy - rollKnob.offsetHeight/2) + 'px';
+        rollValue = -dy/maxD;
+        sendMoveCommand();
+      }
+      function startRollDrag(e) {
+        if (e.type==='touchstart') rollTouchId = e.touches[0].identifier;
+        rollDragging = true;
+        moveRollJoystick(e);
+        document.addEventListener('mousemove', moveRollJoystick);
+        document.addEventListener('touchmove', moveRollJoystick);
+        e.preventDefault();
+      }
+      function stopRollDrag() {
+        if (!rollDragging) return;
+        rollDragging = false; rollTouchId=null;
+        document.removeEventListener('mousemove', moveRollJoystick);
+        document.removeEventListener('touchmove', moveRollJoystick);
+        rollKnob.style.top='80px';
+        rollValue=0; sendMoveCommand();
+      }
+      rollJoystick.addEventListener('mousedown', startRollDrag);
+      rollJoystick.addEventListener('touchstart', startRollDrag);
+      document.addEventListener('mouseup', stopRollDrag);
+      document.addEventListener('touchend', stopRollDrag);
+
+      
+      const xzJoystick = document.getElementById('xz-joystick');
+      const xzKnob    = document.getElementById('xz-knob');
+      function moveXZJoystick(e) {
+        const r = xzJoystick.getBoundingClientRect();
+        const cx = r.left + r.width/2, cy = r.top + r.height/2;
+        let dx, dy;
+        if (e.type==='touchmove') {
+          const t = Array.from(e.touches).find(t=>t.identifier===xzTouchId);
+          if (!t) return stopXZDrag();
+          dx = t.clientX - cx; dy = t.clientY - cy;
+        } else { dx = e.clientX - cx; dy = e.clientY - cy; }
+        const dist = Math.hypot(dx,dy), maxD = r.width/2;
+        if (dist>maxD) { dx=dx/dist*maxD; dy=dy/dist*maxD; }
+        xzKnob.style.left = (maxD + dx - xzKnob.offsetWidth/2) + 'px';
+        xzKnob.style.top  = (maxD + dy - xzKnob.offsetHeight/2) + 'px';
+        
+        mainX = 0;
+        mainY = -dy/maxD;
+        rollValue = -dx/maxD;
+        sendMoveCommand();
+      }
+      function startXZDrag(e) {
+        if (e.type==='touchstart') xzTouchId = e.touches[0].identifier;
+        xzDragging = true;
+        moveXZJoystick(e);
+        document.addEventListener('mousemove', moveXZJoystick);
+        document.addEventListener('touchmove', moveXZJoystick);
+        e.preventDefault();
+      }
+      function stopXZDrag() {
+        if (!xzDragging) return;
+        xzDragging = false; xzTouchId = null;
+        document.removeEventListener('mousemove', moveXZJoystick);
+        document.removeEventListener('touchmove', moveXZJoystick);
+        xzKnob.style.left='75px'; xzKnob.style.top='75px';
+        mainX=0; rollValue=0; sendMoveCommand();
+      }
+      xzJoystick.addEventListener('mousedown', startXZDrag);
+      xzJoystick.addEventListener('touchstart', startXZDrag);
+      document.addEventListener('mouseup', stopXZDrag);
+      document.addEventListener('touchend', stopXZDrag);
+
+     
+      let pressedKeys = {};
+      document.addEventListener('keydown', e => {
+        pressedKeys[e.key] = true;
+        const step = 0.05;
+        if (pressedKeys['w']) mainY = Math.min(mainY+step,1);
+        if (pressedKeys['s']) mainY = Math.max(mainY-step,-1);
+        if (pressedKeys['a']) mainX = Math.max(mainX-step,-1);
+        if (pressedKeys['d']) mainX = Math.min(mainX+step,1);
+        if (pressedKeys['ArrowUp'])    rollValue = Math.min(rollValue+step,1);
+        if (pressedKeys['ArrowDown'])  rollValue = Math.max(rollValue-step,-1);
+        sendMoveCommand();
+      });
+      document.addEventListener('keyup', e => {
+        delete pressedKeys[e.key];
+        if (!pressedKeys['w'] && !pressedKeys['s']) mainY=0;
+        if (!pressedKeys['a'] && !pressedKeys['d']) mainX=0;
+        if (!pressedKeys['ArrowUp'] && !pressedKeys['ArrowDown']) rollValue=0;
+        sendMoveCommand();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+{
+  "index": 1,
+  "name": "数字恒流源-星火计划",
+  "url": "https://oshwhub.com/wyh200159/current-adjustable-constant-current-source",
+  "category": "汽车电子",
+  "subcategory": "汽车配件与控制",
+  "scale": "400元件规模",
+  "note": null,
+  "username": "wyh200159",
+  "path": "current-adjustable-constant-current-source",
+  "uuid": "506780d18b13462194f120418f23a9d8",
+  "api_detail": {
+    "uuid": "506780d18b13462194f120418f23a9d8",
+    "path": "wyh200159/current-adjustable-constant-current-source",
+    "name": "数字恒流源-星火计划",
+    "content": "<h1 style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/8f0306297ca04147b16e1754e416b03d.jpg\" alt=\"\" width=\"1291\" height=\"730\" /></h1>\n<h1 style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/af4b0d69dc2d483bb08fcce030eb115b.jpg\" alt=\"\" width=\"1291\" height=\"564\" /></h1>\n<h1 style=\"line-height:1.5\"><strong><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/215291f1583d4fdfb3a43c71c3cafd7f.jpg\" width=\"1305\" height=\"724\" /></span></strong></h1>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:14pt\">应该算是开源平台的第一款车规设计了吧</span></strong></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:18pt\"><strong>声明：</strong></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt;color:#000000\">本作品经过作者的认真构思与撰写，但由于知识与经验的局限时间不充足，可能存在不足之处。若您在阅读中发现任何错误或有待改进的地方，恳请指出。您的反馈对我们至关重要，我们将积极采纳并修正，以提高作品质量。感谢您的理解、支持与宝贵意见。</span></p>\n<p style=\"line-height:1\"><span style=\"font-size:14pt;color:#000000\">误差=（输出电流-设定电流）/设定电流，视频中计算错了。再此更正已发现的错误。</span></p>\n<h1 style=\"line-height:1.5\">项目</h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt;color:#000000\">本项目是一款高性能的汽车级可调恒流源系统，专为优化汽车大灯配光设计。采用外部DAC搭配差分放大电路控制FB电压和多通讯接口，实现电流的精确控制与灵活调节。核心MCU选用雅特力AT32A403AVGT7，确保系统稳定可靠。四路独立输出设计，每路电流可调范围200mA至1500mA，内置短路与过热保护，保障设备安全，电流设置不受FB反馈电阻限制。</span></p>\n<h1 style=\"line-height:1.5\">前言</h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><span style=\"font-family:宋体\"><span style=\"font-family:arial, helvetica, sans-serif\">从5月份报名星火计划至今已耗时5个月了，总算差不多做完了。由于个人从事汽车相关行业，硬件最简单的工作应该也就是点灯了。在汽车大灯配光过程中，控制LED灯珠的电流至恰当水平是关键。电流过大不仅会导致灯板或驱动器过热，还会影响配光效果，使照度（LUX）不达标，从而难以达到A级或B级的配光标准。传统LED驱动芯片通常设定固定的输出电流，这就需要频繁调整反馈电阻以适应不同的配光需求，不仅操作繁琐，尤其在铝基板驱动板上调整更是困难重重。为了简化这一过程并提高配光成功率，作者提出了一种通过控制恒流芯片输出来优化电流的方法。在前期也考虑过用恒流恒压方案，恒流恒压方案也是可以的，但是需要同时设置输出电压和输出电流两个参数，个人觉得这样也比较麻烦。这种方法允许在不更换硬件的情况下，通过调整恒流芯片的参数来适配不同的配光需求，大大减少了调整反馈电阻的繁琐步骤。通过精确控制恒流芯片的输出，可以确保LED灯珠工作在最佳电流范围内，从而提高配光的通过率并简化生产流程。</span></span></span></p>\n<h1 style=\"line-height:1.5\">项目说明</h1>\n<p style=\"line-height:1.5\"><span style=\"color:#000000;font-size:14pt;font-family:arial, helvetica, sans-serif\">可调恒流源系统是解决LED配光时难以精确控制电流大小和获取负载流过的电流大小解决方案，旨在通过精确控制LED灯珠的电流大小和采用PWM技术，实现对亮度的精细调节。项目的核心在于开发一款高性能的可调电流源，它不仅能够实时采样并控制电流，确保精度在正负2%以内，还能在PWM控制模式下动态调整输出电压有效值，为LED照明提供更灵活的调光方案。此外，系统配备了触摸串口屏和支持LIIN、CANFD、485、232，USB等多种通讯接口，增强了用户交互体验和系统的兼容性。项目的创新之处在于能够在保证高精度控制的同时，提供更丰富的调光选项和通讯能力，适用于汽车车灯配光，汽车照明，室内外照明、舞台灯光控制、广告牌照明以及智能建筑照明系统等多个领域，为照明市场带来高效、节能、智能化的新选择。</span></p>\n<h1 style=\"line-height:1.5\">开源协议</h1>\n<p><span style=\"font-size:14pt;color:#000000\"><span style=\"font-family:arial, helvetica, sans-serif\"><span style=\"background-color:#ffffff\">本项目使用</span><span style=\"background-color:#ffffff\">CC BY-NC-SA 4.0</span><span style=\"background-color:#ffffff\">开源协议，即</span><span style=\"background-color:#ffffff\">知识共享许可协议-署名-非商业使用-相同方式共享。</span></span></span></p>\n<p><span style=\"font-size:14pt;color:#000000\"><span style=\"font-family:arial, helvetica, sans-serif;background-color:#ffffff\">CC：知识共享许可协议</span></span></p>\n<p><span style=\"font-size:14pt;color:#000000\"><span style=\"font-family:arial, helvetica, sans-serif;background-color:#ffffff\">BY：署名，您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。</span></span></p>\n<p><span style=\"font-size:14pt;color:#000000\"><span style=\"font-family:arial, helvetica, sans-serif\">SA：您可以自由复制，展示及演出本作品;您不得改变、转变或更改本作品。</span></span></p>\n<p><span style=\"font-size:14pt;color:#000000\"><span style=\"font-family:arial, helvetica, sans-serif\">NC：非商业使用，您不得将本作品用于商业目的。</span></span></p>\n<h1 style=\"line-height:1.5\">开源许可</h1>\n<p style=\"line-height:1.5\"><span style=\"color:#ba372a;font-size:14pt;font-family:arial, helvetica, sans-serif\">可以理解为我方许可您自由复制，复刻，转载时应标明出处，本作品禁止商业使用（包括小批量）侵权必究！！！</span></p>\n<h1 style=\"line-height:1.5\">项目相关功能</h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt;color:#000000;background-color:#ffffff;font-family:arial, helvetica, sans-serif\">本项目推出的四路可调恒流源，以其卓越的性能和灵活性，满足多样化的电流控制需求。这款设备设计精巧，具备四路独立输出，每路输出电流可在200mA至1500mA之间精确调节，同时实时显示输出电流大小，确保用户对设备状态一目了然。内置的短路保护和过热保护机制，为设备提供了额外的安全保障。核心采用DCDC恒流芯片，支持PWM模式和全电流输出，通过EN引脚直接控制，结合先进的PID算法，实现电流精度控制在正负1%以内。此外，设备支持高达60V的工作电压，配备了RS232、RS485、CAN FD、LIN以及通用串口等多种通讯接口，并集成了USB接口，满足不同通讯需求。特别值得一提的是，设备还配备了淘晶驰触摸串口屏，提供了直观友好的用户交互体验。</span></p>\n<h1 style=\"line-height:1.5\"><span style=\"font-family:arial, helvetica, sans-serif\">项目属性</span></h1>\n<p style=\"line-height:1.5\"><span style=\"color:#000000;font-family:arial, helvetica, sans-serif;font-size:14pt\">本项目为首次公开，为本人原创项目。项目未曾在别的比赛中获奖。</span></p>\n<h1 style=\"line-height:1.5\">汽车电子</h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><span style=\"color:#000000;font-family:arial, helvetica, sans-serif\">汽车电子是应用于汽车中的电子技术和设备集合，涵盖电子控制装置和车载电子系统。它包括发动机管理、底盘控制、车身电子以及信息娱乐等，旨在提高汽车性能、安全性、舒适性，并实现智能化、网络化。随着技术进步，汽车电子在新能源汽车和智能驾驶中扮演着核心角色，推动着汽车产业的创新与发展。</span></span></p>\n<h1 style=\"line-height:1.5\">AEC-Q认证</h1>\n<p style=\"line-height:1.5\"><span style=\"color:#000000;font-family:arial, helvetica, sans-serif;font-size:14pt\">AECQ是汽车电子委员会（Automotive Electronics Council）制定的一系列车规验证标准，主要用于确保汽车电子零部件的可靠性和质量。这些标准包括AEC-Q100（集成电路IC）、AEC-Q101（分立器件）、AEC-Q102（光电器件）、AEC-Q103（MEMS传感器）、AEC-Q104（多芯片模块MCM）和AEC-Q200（被动器件，如电阻、电容、电感）等。AECQ标准涵盖了从环境测试、机械测试、电气测试到寿命测试等多个方面，以确保汽车电子器件在极端环境条件下的稳定性和可靠性。通过AECQ认证的产品被认为符合汽车行业的严苛要求，能够保证在汽车应用中的长期稳定运行。</span></p>\n<h1 style=\"line-height:1.5\">硬件组成部分</h1>\n<p style=\"line-height:1.5\"><span style=\"color:#000000;font-size:14pt;font-family:arial, helvetica, sans-serif\">输入EMC采用π形滤波器。VCC转12V采用TPS54360，由于车规的DCDC在立创商场不是很好采购，于是采用非车规IC代替。12V转5V采用南芯SC81440。5V转3.3V采用ZLDO1117QG33TA。主控MCU采用雅特力AT32A403AVGT7。运放采用润石RS722PXK-Q1。DAC转换芯片GP8403-TC50-EW。恒流芯片采用领芯LN33061Q1-1。CAN芯片采用芯力特SIT1044QT/3，485采用SIT3485ESA，232采用SIT3232EESE，LIN电平转换采用MOS管，USB转串口采用常规340。</span></p>\n<h1 style=\"line-height:1.5\">硬件各模块说明：</h1>\n<p style=\"font-size:20px\"><span style=\"font-family:arial, helvetica, sans-serif;font-size:14pt\">输入EMC滤波器：</span></p>\n<p style=\"font-size:20px\"><span style=\"font-size:14pt;font-family:arial, helvetica, sans-serif\">π型滤波器，是一种用于抑制电磁干扰（EMI）的电子滤波器。这种滤波器由电感、电容元件组成。π型滤波器通过电感对高频噪声的高阻抗特性来阻止高频信号的传输，同时利用电容将噪声引导至地线，实现低通滤波效果，允许低频信号通过而抑制高频噪声。此外，π型滤波器有助于满足电磁兼容性（EMC）标准，减少设备对外的辐射干扰，保护电源免受瞬态电压尖峰的影响，从而提高系统的稳定性和可靠性。设计π型滤波器时，需要根据具体的应用场景和所需的抑制频率范围进行精确设计，以实现最佳的滤波效果。</span></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><span style=\"font-size:14pt\"><strong><img src=\"//image.lceda.cn/oshwhub/bf1d6b331f0048aa8546b85b66a1fb71.png\" /></strong></span></h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">输入端采用2个车规SS310AQ肖特基二极管作为防反功能，防反接电路必不可少，不能省去，经过防反电路，采用一个56V的TVS作为浪涌保护，其次在是π型滤波器。</span></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><span style=\"font-family:arial, helvetica, sans-serif;font-size:18pt\">BUCK转换：VCC-12V</span></h1>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/3c85b751a72746eb831626f00ba2d00c.png\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">BUCK芯片采用TI的非车规代替，其他车规的在立创商城没货，于是采用了一颗非车规的代替，耐压60V，输出电流3A以上，输出电压设置为12V，满足功能需求，电感采用台庆PSPMAA1050H-220M-ANP，Acxxx电容为国巨，CLxxx为三星，电解电容采用永铭的直插电容，续流二极管品牌杨杰。</span></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><span style=\"font-family:arial, helvetica, sans-serif;font-size:14pt\">12V-5V</span></h1>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/3237912a86f9405a85565c4a64a6fa58.png\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">12V转5V芯片采用南芯SC81440Q，开关频率通过RT电阻设置，电路工作频率设置为400KHZ，工作温度范围-40度-125度，FB反馈电压1V，因此计算输出电压比较方便，通过计算极点与零点可以把前馈补偿计算出来。</span><img src=\"//image.lceda.cn/oshwhub/b843ac2b065444f28551aa5bba573410.png\" /><span style=\"font-size:14pt\">输出电容选用4个22UF，1210封装电容，以得到更低的纹波， 经测试输出效率93%-95%，纹波10mV范围，测试工具为高精度数字电源与高精度负载仪，芯片四周都有GND焊盘，因此环路面积可以做的很小。</span></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/c5ea6440f5364c36998d6d5973d9f556.png\" /></span></strong></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">以下是SC81440Q的环路波特图。</span></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/d02877cb13f542a6b803ab9f7954cf91.png\" /></span></strong></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><strong><span style=\"font-family:arial, helvetica, sans-serif;font-size:18pt\">5V-3.3V</span></strong></h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">经典的LDO方案，采用美台的1117Q，最大1A输出。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/35e612267a464fbfa57e7e5be67db08a.png\" /></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><span style=\"font-family:arial, helvetica, sans-serif;font-size:18pt\">MCU</span></h1>\n<p style=\"line-height:1.5\"><span style=\"font-family:arial, helvetica, sans-serif;font-size:14pt\">MCU采用雅特力的AT32A403AVGT7，AT32A403AVGT7是雅特力科技推出的一款车规级微控制器，基于高性能的32位ARM® Cortex®-M4F内核，主频可达200MHz，并配备了单精度浮点运算单元和数字信号处理器。它具备256KB的零等待闪存和224KB的SRAM，支持丰富的外设接口，包括3组I²C、4组SPI/I²S、3组USART和4组UART、2组SDIO、1个USB2.0全速接口、2组CAN 2.0B以及1个10/100M以太网MAC。此外，它还集成了3组2M采样速率的12位A/D转换器和2通道的12位D/A转换器，以及多种定时器和电源管理功能。AT32A403AVGT7采用QFN48封装，能够在-40~105°C的工业级温度范围内稳定工作，非常适合用于车联网、车载影音系统以及USB设备等应用场景。这款微控制器通过了AEC-Q100车规级可靠性认证，符合车用电子的高可靠性和稳定性要求，适用于车身控制、ADAS辅助驾驶、新能源车用BMS等多种车载应用。<br /></span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/d19c9ed34e56428db53d1c745ae6fa78.png\" width=\"269\" height=\"266\" /><img src=\"//image.lceda.cn/oshwhub/c6ddb10729094e8a8e684b4611257cd2.png\" width=\"254\" height=\"262\" /></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><span style=\"font-family:arial, helvetica, sans-serif;font-size:18pt\">晶振</span></h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">AA0802LCSC-AHV2G是一款高性能汽车级晶体振荡器，具有宽温工作范围（-40°C至+150°C）和AEC-Q200认证。提供7.2至48 MHz频率，±10 ppm频率容差，以及低老化率。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/1b34597025f4463599b5ac17bd9e1805.png\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">32.768KHZ晶振型号为AH03270006，此晶振价格不便宜。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/824edfd860ca4811b038cd81eea8a4bf.png\" width=\"351\" height=\"245\" /></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><span style=\"font-family:arial, helvetica, sans-serif;font-size:18pt\">DAC模块</span></h1>\n<p><span style=\"font-size:14pt\">后期考虑到控制方式可以为模拟调光，PWM调光。CH1 CH2通道为MCU DAC控制FB 引脚电压的方式控制，将模拟量分为0.8mV每格可以进行高精度控制，或者减小放大倍数也可以高精度控制，输出电流不受到FB采样电阻值影响,CH4为PWM控制方式，CH3为DAC芯片的FB控制方式。</span></p>\n<p><span style=\"font-size:14pt\">DAC模块选用了润石科技的RS722PXK-Q1，这款CMOS运算放大器具备13MHz的高增益带宽和轨到轨输入输出特性，输入偏置电压典型值为±0.5mV，能够在-40°C至+125°C的宽温度范围内稳定工作，支持2.7V至5.5V的单电源或±1.35V至±2.75V的双电源供电。RS722PXK-Q1满足汽车应用的AEC-Q100 Grade 1标准，非常适合用于传感器信号放大、光电二极管放大、有源滤波器、测试设备及驱动模数转换器等多种应用场景。采用SOIC-8(SOP8)封装的RS722PXK-Q1，不仅速度和功耗比出色，还特别适合汽车电子和精密信号处理领域。在设计中，DAC模块的原理是将负载的电流输入到运放的正向端，利用MCU的DAC输出一个比正端低10mV的信号，然后通过运放将10mV的差值放大20倍，从而输出200mV的电压。这是因为FB引脚的参考电压设为200mV，通过调节运放的参考电压，可以使LED DRV芯片以满电流输出，同时避免进入PWM和模拟调光模式。然而，考虑到信号波动也可能被放大20倍，进而影响输出电压的稳定性，设计中在运放的输出端接入了一个4.7μF到10μF的电容，以使输出电压更加平滑。此外，DAC输出端需要配置一个电压跟随器，因为减法器的输入阻抗较小，如果直接由MCU驱动运放进行信号放大，可能会遇到负载能力不足的问题。电压跟随器的使用可以有效地提高带负载能力，确保信号稳定传输。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/cbbad4ecd02749498d41dcf573419d9e.png\" width=\"883\" height=\"301\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">由于AT32A403A只有2路DAC输出，于是采用了一个DAC转换芯片（GP8403-TC50-EW），通过IIC协议控制，将数字信号转换为模拟信号，将LED DRV的DIM引脚接到DAC上可以进行PWM调光，由于手里只有LN33061Q1-1的芯片，PWM电压需要很高，而且此芯片不方便控制，不建议大家用这颗芯片。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/690b833e20cb4bdd81e2924fd19e4b83.png\" width=\"646\" height=\"297\" /></p>\n<h1 style=\"font-size:20px;line-height:1.5\">恒流驱动IC</h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">驱动芯片采用瓴芯电子LN33X61Q1，LN33X61Q1是瓴芯电子科技（无锡）有限公司推出的一款符合汽车级AEC-Q100 Grade 1标准的同步降压型LED驱动电源芯片，具备3.5V至60V的宽输入电压范围和全温度范围内±4%的电流精度。它集成了上、下功率MOS管，能提供0.6A到1.5A的输出电流，并支持400kHz至2.1MHz的开关频率。LN33X61Q1提供PWM调光功能，能在接近100%占空比下工作，以实现超低的输入输出压差，并具备精确的峰值电流钳制和内部控制环路补偿。此外，它还包含过温保护、欠压锁定保护，并在LED开路或短路情况下通过FAULTB管脚提供标志输出。LN33X61Q1芯片采用散热增强型SOIC-EP8封装，设计用于汽车车灯驱动和LED驱动电源等应用，工作温度范围为-40°C至125°C。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/79431e50e58c4ff98f63b4e0033ebd09.png\" width=\"710\" height=\"167\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">利用外部控制FB引脚时，就不需要200mV/RFB，这样就不会被受到RFB的阻值影响。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">输入电容计算方式为下图所示。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/7bd0d2f1658c4d00894851050dc3afd7.png\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">输出电感计算公式为下图所示。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/64d78f72a650466e991b605d0b9af390.png\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">输出电容计算公式如下图所示。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/0820ab46882144f2bf8d4b490dd256f9.png\" width=\"595\" height=\"111\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">当采用固定FB控制时，输出电流=200mV/RFB。如下图所示</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/7e74acfde3614796b97bf9084ecb6376.png\" width=\"542\" height=\"231\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">接插件采用捷仕泰A2001AWR系列。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/1c21aee8549e4565af2fe1587cfcb8ee.png\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:18pt\"><strong>CAN通讯</strong></span></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:14pt\">      </span></strong><span style=\"font-size:14pt\">  CAN FD（CAN Flexible Data-Rate）是传统CAN总线协议的增强版本，它通过引入灵活的数据速率和更大的数据负载能力，显著提升了数据传输的效率。CAN FD支持在仲裁阶段使用标准比特率以保证与传统CAN设备的兼容性，而在数据阶段则可以采用更高的比特率，最高可达8Mbps，同时将每个数据帧的有效载荷扩展到64字节。此外，CAN FD还增强了时间戳的精度和信号的抗干扰能力，使得网络中的事件可以更准确地同步。尽管CAN FD设备可以与传统CAN设备在同一网络上通信，但后者无法利用CAN FD的高数据速率和大负载优势。CAN FD的这些改进使其非常适合汽车网络、工业自动化和多媒体传输等需要高带宽的应用场景。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">       SIT1044QT/3是芯力特中一款高性能的CAN FD总线收发器，采用5V供电，特别适用于汽车和工业控制领域，支持5Mbps的数据传输速率。这款芯片与3.3V的MCU兼容，通过了AEC-Q100汽车级认证，确保了其在汽车电子应用中的可靠性。它具备内置的过温保护功能，能够在环境温度过高时自动保护芯片，防止损坏。此外，SIT1044QT/3还具备耐压能力，可以承受±40V的总线电压，以及低功耗待机模式，适合需要低功耗运行的应用。其I/O电压范围广泛，支持3.3V和5V MCU，且在VCC和VIO电源引脚上都具备欠压保护功能。这款芯片还具有高速CAN FD支持能力，能够实现灵活的数据速率传输，具备高抗电磁干扰能力，确保信号稳定，且TXD至RXD的典型环路延时小于100ns，保证了通信的实时性。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/056703d28dfe49b1ac4e0293d0a4d24f.png\" width=\"889\" height=\"479\" /></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:18pt\">485通讯</span></strong></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">SIT3485是一款高性能的3.3V供电RS485/RS422半双工收发器，支持高达12Mbps的数据传输速率，适用于高速通信网络。它设计有独特的1/8单位负载，允许在同一总线上连接多达256个节点，非常适合大规模设备网络。此芯片具备多种保护功能，包括驱动器短路输出保护和过温保护，确保在极端条件下的可靠性。此外，SIT3485还具备低功耗关断功能，适合电池供电或对能耗有严格要求的应用场合。独立的驱动器和接收器使能控制增加了设计的灵活性，而出色的抗噪声能力和集成的瞬变电压抵制功能使其非常适合在有电噪声的环境中使用。SIT3485的工作电压范围为3.0至3.6V，可以适应-40至85摄氏度的温度范围。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/707469d3ce9c429a9af17020dd8b2016.png\" /><img /></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:18pt\">232通讯</span></strong></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">SIT3232EESE是由芯力特公司生产的3.3V双通道RS-232收发器，支持3V至5.5V的供电范围，符合TIA/EIA-232标准，专为需要高ESD保护的应用设计。这款芯片能够在120kbps的数据传输速率下实现无误差通信，并且具备超过15kV的HBM ESD保护和超过8kV的IEC-4100-4-2接触放电保护功能。它采用双电荷泵设计，仅需四个1μF外部电容，实现高效的电源转换和数据传输。工作温度范围为-40℃至85℃，适用于对静电敏感的通信环境，确保信号的稳定和设备的安全。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/96f922079cec451aa61f7e51c68e0c45.png\" /></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:18pt\">LIN通讯</span></strong></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">LIN（Local Interconnect Network）是一种适用于汽车和工业环境的低成本串行通信协议，主要用于电子控制单元（ECUs）之间的通信。它以低速传输（1Kbps到20Kbps）、简单的主从架构、小规模网络和单线通信为特点，非常适合成本敏感且不需要高速数据传输的应用。LIN协议的低成本体现在它不需要昂贵的硬件支持，并且协议本身简单，易于在各种微控制器上实现。此外，LIN协议支持诊断通信，允许主节点查询从设备的状态和诊断信息，因而被广泛应用于汽车行业中，如车窗控制、座椅调节和灯光控制等。由LIN联盟管理的LIN协议确保了不同供应商之间的兼容性和标准化。由于AT32可以直接解析LIN，所以只需要将电平进行转换就可以正常接收或者发射。由于LIN电压范围超过了3.3V，因此采用MOS双向电平转换，将LIN电平转为3.3V电平，或者将3.3V转换为LIN对应的电平电压。</span></p>\n<p style=\"line-height:1.5\"><img /><img src=\"//image.lceda.cn/oshwhub/0c8df0f290574e7eb28962d2338d1022.png\" /></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:18pt\"><strong>USB通讯</strong></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">CH340N是一款USB转串口芯片，支持全速USB2.0接口，内置时钟，无需外部晶振。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/8f5cabf483c74e9caacfc313a7454cc1.png\" width=\"825\" height=\"345\" /></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:18pt\">串口显示屏</span></strong></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">触摸显示屏采用淘晶驰X5版，尺寸大方便操作。由于个人没时间，也不会PS，因此UI界面很拉垮。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/c66ccc529d364ad5b323a693ee6166d0.jpg\" width=\"578\" height=\"578\" /></span></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><strong><span style=\"font-size:18pt\">外壳</span></strong></h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">外壳翻车了，由于自带的3D模型与实际尺寸不符，没核对器件的尺寸图导致高度有冲突。</span></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/e774e1b8626c43c9888297183bc1e6b4.png\" width=\"596\" height=\"328\" /></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/8b810d7c414a468d9ad8dc8bd551b6dc.png\" width=\"669\" height=\"172\" /></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/117f87f6bf5f4f6482c728b8495ab476.png\" /></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/8b32b832969b47fbacb846e594ccf433.png\" width=\"791\" height=\"220\" /></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><strong><span style=\"font-size:18pt\">软件说明</span></strong></h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">软件采用keil5进行编写，由于部分代码涉及秘密，因此除主函数以外的库进行了封装。附件名称为xinhuo_20241007_2050的压缩包为代码源工程。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">串口工具的使用方法，需要将USB数据线接入主机。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><strong><img src=\"//image.lceda.cn/oshwhub/6676f9a31016413080ab384e806a2c83.png\" /></strong></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">将配置文件放在串口工具同一个目录下</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/e31b92e58d1d4c8fa9a357eb94e08629.png\" /></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">双击打开工具，可见界面是没有任何参数的。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/6cfe7d33e6144d178d5b7987e25cfbca.png\" width=\"847\" height=\"453\" /></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">点击下方的扩展</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/2e8bbee6b23a498792a5fe71854f8b01.png\" width=\"826\" height=\"655\" /></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">点击扩展后，设置的参数下图所示</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/4c77f6c2845c4848933493a10a2c2b15.png\" width=\"836\" height=\"374\" /></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">4001代表是地址，2001是将参数放大了10倍，还原后为200.1。设置参数我们保留了一位小数，在设置的时候为包含小数部分，在设置时默认将设置的参数扩大10倍，达到设置小数部分的效果，方便通讯简单明。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/d3c31e29c90c438ebb8a0ada5cbf8ea7.png\" /></span></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:18pt\">Modbus Poll</span></strong></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">将USB数据线接入从机，将数据读出来。可以在界面中看到设置的参数。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><strong><img src=\"//image.lceda.cn/oshwhub/9832560ac4ba486599edc81efd20756f.png\" /></strong></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">打开modbus软件后，打开下图所示的配置文件。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/152d709b8f9641978f4f843de70170d0.png\" /></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">点击Quick connect (F5)</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><img src=\"//image.lceda.cn/oshwhub/f85f6514fba540a78937d9ade467cd6f.png\" /></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">运行后，屏幕中的数据就会上传至modbus软件中。</span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><strong><img src=\"//image.lceda.cn/oshwhub/1a2802f3fe504f9fb751721f82f349b9.png\" /></strong></span></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><strong><span style=\"font-size:18pt\">实物展示</span></strong></h1>\n<p style=\"line-height:1.5\"><strong><img src=\"//image.lceda.cn/oshwhub/8b7b5046c5864aea99863ff3e92ead50.png\" width=\"585\" height=\"424\" /></strong></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">本通讯测试方法采用两块相同的板子进行，一块设定为主机，另一块设定为从机。主机负责发送CAN、RS-485、RS-232、LIN、TTL信号至从机，从机则负责接收并解析这些信号。在CAN、RS-485、RS-232、LIN、TTL信号同时发送的情况下，从机将根据信号的优先级进行响应。例如，如果从机首次接收到的信号指示输出200mA，那么输出电流即为200mA；若随后CAN信号指示输出300mA，则输出电流将调整为300mA。从机的屏幕将显示当前控制信号的类型，如CAN控制时，屏幕将显示“CAN控制”。即使多个信号同时控制，它们之间也不会相互干扰。</span></p>\n<p style=\"line-height:1.5\"><span style=\"color:#ced4d9\"><img src=\"//image.lceda.cn/oshwhub/d7cad2a851ef4086beec584ae71ee9a3.png\" width=\"607\" height=\"339\" /></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><span style=\"color:#000000\">在使用LIN接收时将短接帽接到PA3,PA3为接收端口，PA2为发送端，因此从机要选择为PA3，主机为PA2。</span></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><strong><span style=\"color:#000000\"><img src=\"//image.lceda.cn/oshwhub/673d6682002540c8966e941d76cc62e4.png\" /></span></strong></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:18pt\"><strong>负载</strong></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">测试的负载为KW CELNM1.TG-Z6N6-ebvFfcbB46-15B3-A-S灯珠构成的灯板，KW CELNM1.TG是由ams-OSRAM公司生产的一款用于汽车前大灯和动态前大灯的LED灯珠，具有陶瓷封装和UX:3芯片技术，提供120°的典型发光角度和CIE 1931标准下Cx=0.32、Cy=0.33的白色光。这款灯珠拥有3A的防腐蚀等级，通过了AEC-Q102认证，并具有8kV的ESD保护。它的工作温度范围为-40°C至125°C，正向电流介于50mA至1500mA之间，能够承受5000mA的浪涌电流及200mA的反向电流。在1000mA的正向电流下，其正向电压介于2.75V至3.40V之间，实际热阻为4.6K/W至5.6K/W，电热阻为3.3K/W至4.0K/W。<strong><br /></strong></span></p>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\"><strong><img src=\"//image.lceda.cn/oshwhub/b67a3a186eba46229902b8e0aabf426f.png\" /> </strong></span></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><span style=\"font-size:18pt\"><strong>汽车电子设计注意事项</strong></span></h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">在设计汽车电子时，必须严格遵循行业标准，包括耐高温、耐振动、防尘防潮和抗电磁干扰等特性，以确保系统的可靠性和稳定性。设计应考虑功率和地线布局，以保障电流传输的稳定性和可靠性，并遵循汽车电气系统的安全标准，防止电路引发火灾等危险。同时，电路板的可维护性也非常重要，便于维修和更换。电磁兼容性同样关键，以避免电磁干扰影响其他系统。此外，应使用符合汽车环境要求的材料，如抗高温和防尘防潮材料，合理布局电路，减少线路长度，降低信号传输时延，并规划有效的散热结构，确保电子元器件不会过热。通过最坏情况分析和典型情况分析，以及遵循国际标准如ISO 7637-2，可以确保电路在各种情况下的可靠性。进行详细的计算和测试，验证电路的最大消耗电流、输出电压范围和最低输入电压，以确保设计满足所有要求。最后，设计还应考虑汽车可能遇到的各种环境条件，以确保其环境适应性。</span></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><strong><span style=\"font-size:18pt\">其他</span></strong></h1>\n<p style=\"line-height:1.5\"><span style=\"font-size:14pt\">LN33061Q1-1，SC81440Q，AT32A403AVGT7数据手册，3D外壳，软件相关资料已上传到附件中.</span></p>\n<h1 style=\"font-size:20px;line-height:1.5\"><strong><span style=\"font-size:18pt\">视频讲解</span></strong></h1>\n<p style=\"line-height:1.5\">https://www.bilibili.com/video/BV1gh12YMEWn/?vd_source=ef56adc416b7137cf117f4a833b1cec7 </p>\n<p style=\"line-height:1.5\"><a href=\"https://www.bilibili.com/video/BV1gh12YMEWn/?vd_source=ef56adc416b7137cf117f4a833b1cec7\">嘉立创星火计划-恒流源_哔哩哔哩_bilibili</a></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:18pt\">致谢：</span></strong></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:18pt\">           感谢嘉立创星火计划的慷慨赞助，您的支持对我们至关重要，激励我不断前进。期待未来与您携手共创更多辉煌成就。</span></strong></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:18pt\">           此致</span></strong></p>\n<p style=\"line-height:1.5\"><strong><span style=\"font-size:18pt\">敬礼</span></strong></p>\n<p style=\"line-height:1.5\"><img src=\"//image.lceda.cn/oshwhub/a33471241aab475db636a092eec692e0.png\" /></p>\n<p style=\"line-height:1.5\"> </p>",
+    "introduction": "本项目旨在开发一款适用于汽车照明配光的可调恒流源，90%以上采用车规级材料，确保与汽车电子的兼容性。对于难以获取的车规器件，将采用工业级器件替代。此设计专为汽车电子需求而优化，但并非完全符合车规标准。",
+    "grade": 3,
+    "public": true,
+    "license": "CC BY-NC-SA 4.0",
+    "text_editor_type": "richText",
+    "creator": {
+      "uuid": "80c34b40a422480a99d48ac772b39626",
+      "username": "wyh200159",
+      "nickname": "芯佬科技",
+      "avatar": "//image.lceda.cn/avatars/2024/9/bVTnLIj1Jlmm7580pFY4byOtzPOKq4vgFORaUkrK.webp"
+    },
+    "owner": {
+      "uuid": "80c34b40a422480a99d48ac772b39626",
+      "username": "wyh200159",
+      "nickname": "芯佬科技",
+      "avatar": "//image.lceda.cn/avatars/2024/9/bVTnLIj1Jlmm7580pFY4byOtzPOKq4vgFORaUkrK.webp",
+      "team": false
+    },
+    "origin": "pro",
+    "is_draft": false,
+    "publish": true,
+    "count": {
+      "views": 15377,
+      "star": 189,
+      "fork": 0,
+      "watch": 0,
+      "like": 84
+    },
+    "members": [
+      {
+        "uuid": "80c34b40a422480a99d48ac772b39626",
+        "username": "wyh200159",
+        "nickname": "芯佬科技",
+        "avatar": "//image.lceda.cn/avatars/2024/9/bVTnLIj1Jlmm7580pFY4byOtzPOKq4vgFORaUkrK.webp",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "size": 3397398,
+        "name": "LN33X61Q1_DS_CN_v0.7-车规.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "uuid": "598269e0790f48f195f7e37727ee5027",
+        "md5": "7e168fd7318e0cf977e6513b9f5aa57d",
+        "src": "/oshwhub/project/attachments/02d924a16e2b4214b10640584d2ae1f3.pdf",
+        "download_count": 213
+      },
+      {
+        "size": 3433143,
+        "name": "SC81440Q.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "uuid": "a8999712031846d29ec3076c28726cb6",
+        "md5": "b16db52d83ff618334d93d0bed7dc96b",
+        "src": "/oshwhub/project/attachments/243fd7ed62de41e98825389e008096b5.pdf",
+        "download_count": 88
+      },
+      {
+        "size": 3446187,
+        "name": "AT32A403A.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "uuid": "48610c1a8d134ffbac8ecb1d37a1ef31",
+        "md5": "683afb168fa8c571634dac86a7b2017c",
+        "src": "/oshwhub/project/attachments/2e68d1fd0ec040be9a6befd865eab35c.pdf",
+        "download_count": 81
+      },
+      {
+        "size": 43686779,
+        "name": "装配体.SLDASM",
+        "mime": "application/octet-stream",
+        "ext": "sldasm",
+        "uuid": "1e31af9ef66b411b92ba967bd0c5af86",
+        "md5": "530397a54ae9bf7fe0bdd9de7a29b96c",
+        "src": "/oshwhub/project/attachments/eb3f7e0c0a85487cb3de0e17475f2d8b.sldasm",
+        "download_count": 120
+      },
+      {
+        "size": 98288,
+        "name": "盖子.SLDPRT",
+        "mime": "application/octet-stream",
+        "ext": "sldprt",
+        "uuid": "345e8c9f53b7419b80f6a01a9e9ee920",
+        "md5": "725a3c2833afcbe20e9e79a40f3e2002",
+        "src": "/oshwhub/project/attachments/24baf792f72c4a49aacc3121db8e6000.sldprt",
+        "download_count": 59
+      },
+      {
+        "size": 518304,
+        "name": "3D打印底壳.SLDPRT",
+        "mime": "application/octet-stream",
+        "ext": "sldprt",
+        "uuid": "cbfff8665c6a4b62861fb7186633c4ef",
+        "md5": "f30b3cfeff7f2f7f371ca0c8eb331dc2",
+        "src": "/oshwhub/project/attachments/d7a48b2b136d4242873b474f3b1060ff.sldprt",
+        "download_count": 61
+      },
+      {
+        "size": 418962,
+        "name": "星火串口助手配置.rar",
+        "mime": "application/octet-stream",
+        "ext": "rar",
+        "uuid": "b5f8e7c6cbf64a869dfbe4d7726dfbcc",
+        "md5": "3ff8db357ba18c194178c059da2c3a92",
+        "src": "/oshwhub/project/attachments/afa0c6b2e717477699c7b3961e217ffa.rar",
+        "download_count": 86
+      },
+      {
+        "size": 9108,
+        "name": "Mbpoll1.mbp",
+        "mime": "application/octet-stream",
+        "ext": "mbp",
+        "uuid": "b25abb9968ff4df6bdd6f506460891db",
+        "md5": "dec5ebff8499aae2bf20e872233519a9",
+        "src": "/oshwhub/project/attachments/541e251fc41749b5aaf3075a1d5416bb.mbp",
+        "download_count": 88
+      },
+      {
+        "size": 7597734,
+        "name": "xinhuo_20241007_2050.rar",
+        "mime": "application/octet-stream",
+        "ext": "rar",
+        "uuid": "6857ea8dea034101a95b6f8826b10421",
+        "md5": "15374d9c3313a544410e8a484e63bef0",
+        "src": "/oshwhub/project/attachments/22419779f17e4517ae6e762da710e565.rar",
+        "download_count": 267
+      }
+    ],
+    "no": 0,
+    "archive": false,
+    "allow_comment": true,
+    "allow_reprint": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/oshwhub/2241d1c6f59841688b4eee15602c684b.png",
+    "from": "userCenter",
+    "competition_record_uuid": "d8cf9757563b49ceae0aa9b5ccde281b",
+    "updated_at": "2024-10-09T03:20:30.721Z",
+    "created_at": "2024-05-23T11:26:14.000Z",
+    "project_tags": [
+      "c2e7a00699a2440ca5880a96466ee387",
+      "cc45e77e32764600a9edd9c6bec9a932",
+      "5f4e56750b0445a7a024b01cc8fa7122"
+    ],
+    "reproduction_cost": {},
+    "tags": [],
+    "is_hide": false,
+    "oshwhub_publish_at": "2024-10-09T03:33:41.000Z",
+    "high_quality": true,
+    "store": false,
+    "updated_time": "2026-08-10T10:18:37.741Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "848df799086a48d8bf82e78e3af5acbb",
+      "name": "星火计划2024",
+      "path": "spark2024",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 27,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

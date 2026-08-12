@@ -1,0 +1,295 @@
+* Netlist: [已验证] PN532RFID/NFC调试器
+* Extracted from PCB layout data
+* Generated: 2026-08-11 11:30:11
+* Components: 64, Nets: 42
+*
+
+$COMPONENTS
+  3.3V
+  5V
+  A1  {7a9f0954cb3d4d10918b51f45fdb83fd}
+  C1  22uF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C10  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C11  10uF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C12  10uF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C13  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C14  20pF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C15  20pF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C16  22uF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C17  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C18  22uF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C19  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C2  22uF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C20  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C21  1nF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C22  212pF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C23  212pF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C24  24.9pF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C25  24.9pF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C26  124.5pF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C27  124.5pF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C28  TBD  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C29  TBD  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C3  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C30  TBD  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C31  TBD  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C4  22uF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C5  22uF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C6  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C7  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C8  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  C9  22uF  {8f7a3719ddcd4fd8b3f45622f7cba8cd}
+  F1  {f3e1269709494694a1d8bce25b8ee1e8}
+  H1  {03f4122eac2b40b49db6fc08b820e069}
+  L1  0/2.2nH  {720e450fbc4b486db1884a2c420b49c0}
+  L2  0/2.2nH  {720e450fbc4b486db1884a2c420b49c0}
+  L3  560nH  {720e450fbc4b486db1884a2c420b49c0}
+  L4  560uH  {720e450fbc4b486db1884a2c420b49c0}
+  R1  5K1  {0198c72b9ff6426ea0ee71ada792c43b}
+  R10  {0198c72b9ff6426ea0ee71ada792c43b}
+  R11  100K  {0198c72b9ff6426ea0ee71ada792c43b}
+  R12  {0198c72b9ff6426ea0ee71ada792c43b}
+  R13  0  {1064866dc1bf4bbd83bcacf9a79b5dbc}
+  R14  1K  {0198c72b9ff6426ea0ee71ada792c43b}
+  R15  2K7  {0198c72b9ff6426ea0ee71ada792c43b}
+  R16  6.45  {0198c72b9ff6426ea0ee71ada792c43b}
+  R17  6.45  {0198c72b9ff6426ea0ee71ada792c43b}
+  R2  5K1  {0198c72b9ff6426ea0ee71ada792c43b}
+  R3  0  {1064866dc1bf4bbd83bcacf9a79b5dbc}
+  R4  0  {1064866dc1bf4bbd83bcacf9a79b5dbc}
+  R5  {0198c72b9ff6426ea0ee71ada792c43b}
+  R6  {0198c72b9ff6426ea0ee71ada792c43b}
+  R7  1K  {0198c72b9ff6426ea0ee71ada792c43b}
+  R8  1K  {0198c72b9ff6426ea0ee71ada792c43b}
+  R9  {0198c72b9ff6426ea0ee71ada792c43b}
+  RXD
+  TXD
+  U1  {15638c3e09104a739cadb23dd1c3f9aa}
+  U2  {b1a0bcdb47574bcab0503576b89ba266}
+  U3  {60e3120b69094052863bedef18c525dc}
+  USB1  {c94ffee73b93482cada48766b6ee1610}
+  X1  {0f1cdad729404e7a8c291a360b05ecb5}
+$END_COMPONENTS
+
+$NETS
+  $1N1931
+    R7.1
+    RXD.2
+  $1N1933
+    R8.1
+    TXD.2
+  $1N1935
+    3.3V.2
+    R6.1
+  $1N1938
+    5V.2
+    R5.1
+  $1N2593
+    C11.1
+    U1.37
+  $1N2815
+    R13.2
+    U1.18
+  $1N3520
+    C21.1
+    R15.2
+  $1N3576
+    L4.2
+    U1.6
+  $1N3579
+    L3.2
+    U1.4
+  $1N3784
+    C22.2
+    C24.2
+    C28.2
+    L3.1
+  $1N4004
+    C24.1
+    C26.2
+    C28.1
+    C30.2
+    R16.2
+  $1N4012
+    C25.1
+    C27.1
+    C29.1
+    C31.1
+    R17.2
+  $1N415
+    R1.1
+    USB1.B5
+  $1N465
+    R2.1
+    USB1.A5
+  3.3V
+    C10.2
+    C4.2
+    C5.2
+    C6.2
+    C8.1
+    C9.2
+    H1.1
+    R12.2
+    R6.2
+    R7.2
+    R8.2
+    U1.40
+    U2.8
+    U3.5
+  532_RXD
+    H1.3
+    R4.2
+    RXD.1
+    U1.27
+  532_TXD
+    H1.2
+    R3.2
+    TXD.1
+    U1.28
+  5V
+    C1.2
+    C2.2
+    C3.2
+    C7.2
+    F1.2
+    R5.2
+    U2.5
+    U3.1
+    U3.3
+  ANT_TX1
+    A1.1
+    R16.1
+  ANT_TX2
+    A1.3
+    R17.1
+  AUX1
+    U1.12
+  AUX2
+    U1.13
+  AVDD
+    C19.2
+    L2.2
+    U1.8
+  CH340_RXD
+    R3.1
+    U2.7
+  CH340_TXD
+    R4.1
+    U2.6
+  DEBUG_RX
+    U1.24
+  DEBUG_TX
+    U1.31
+  GND
+    3.3V.1
+    5V.1
+    A1.2
+    C1.1
+    C10.1
+    C11.2
+    C12.1
+    C13.1
+    C14.2
+    C15.1
+    C16.1
+    C17.1
+    C18.1
+    C19.1
+    C2.1
+    C20.1
+    C22.1
+    C23.2
+    C26.1
+    C27.2
+    C3.1
+    C30.1
+    C31.2
+    C4.1
+    C5.1
+    C6.1
+    C7.1
+    C8.2
+    C9.1
+    H1.4
+    R1.2
+    R10.1
+    R11.1
+    R13.1
+    R2.2
+    R9.1
+    U1.1
+    U1.11
+    U1.3
+    U1.41
+    U1.7
+    U2.3
+    U3.2
+    USB1.13
+    USB1.14
+    USB1.15
+    USB1.16
+    USB1.A1B12
+    USB1.B1A12
+    X1.2
+    X1.4
+  OSCIN
+    C15.2
+    U1.14
+    X1.1
+  OSCOUT
+    C14.1
+    U1.15
+    X1.3
+  RES&OFF
+    R11.2
+    R12.1
+    U1.38
+  RST_OUT
+    U1.26
+  RX
+    C21.2
+    R14.2
+    U1.10
+  RXIN
+    C23.1
+    C25.2
+    C29.2
+    L4.1
+    R15.1
+  SET0
+    R9.2
+    U1.16
+  SET1
+    R10.2
+    U1.17
+  TVDD
+    C17.2
+    L1.2
+    U1.5
+  USB_N
+    U2.2
+    USB1.A7
+    USB1.B7
+  USB_P
+    U2.1
+    USB1.A6
+    USB1.B6
+  VBUS
+    F1.1
+    USB1.A4B9
+    USB1.B4A9
+  VMID
+    C20.2
+    R14.1
+    U1.9
+  VREF
+    C12.2
+    C13.2
+    C16.2
+    C18.2
+    L1.1
+    L2.1
+    U1.23
+    U1.39
+$END_NETS

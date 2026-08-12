@@ -1,0 +1,219 @@
+* Netlist: 四轮独立转向小车
+* Extracted from PCB layout data
+* Generated: 2026-08-11 11:30:11
+* Components: 37, Nets: 26
+*
+
+$COMPONENTS
+  BT1  {d876c9e8abfa46a4bbed8f59aa63afaf}
+  C1  {16cbe5f9e76c4855a78e246f52ac3570}
+  C10  {741784fa20ad4beab9dd8b8cbce97607}
+  C11  {741784fa20ad4beab9dd8b8cbce97607}
+  C12  {741784fa20ad4beab9dd8b8cbce97607}
+  C13  {16cbe5f9e76c4855a78e246f52ac3570}
+  C14  {16cbe5f9e76c4855a78e246f52ac3570}
+  C15  {16cbe5f9e76c4855a78e246f52ac3570}
+  C16  {16cbe5f9e76c4855a78e246f52ac3570}
+  C17  {16cbe5f9e76c4855a78e246f52ac3570}
+  C18  {16cbe5f9e76c4855a78e246f52ac3570}
+  C2  {16cbe5f9e76c4855a78e246f52ac3570}
+  C3  {16cbe5f9e76c4855a78e246f52ac3570}
+  C4  {16cbe5f9e76c4855a78e246f52ac3570}
+  C5  {16cbe5f9e76c4855a78e246f52ac3570}
+  C6  {16cbe5f9e76c4855a78e246f52ac3570}
+  C7  {741784fa20ad4beab9dd8b8cbce97607}
+  C8  {741784fa20ad4beab9dd8b8cbce97607}
+  C9  {741784fa20ad4beab9dd8b8cbce97607}
+  H1  {18a79955d83244dfaf45ce8ee3e04863}
+  H2  {648849d55ce94beca6d893b0b88daeda}
+  KEY1  {a10471bacaf64bc086e7f3f1ee381836}
+  KEY2  {a10471bacaf64bc086e7f3f1ee381836}
+  KEY3  {a10471bacaf64bc086e7f3f1ee381836}
+  KEY4  {a10471bacaf64bc086e7f3f1ee381836}
+  R1  {1996b2fb973e40a184d52a2e5e193df3}
+  R2  {1996b2fb973e40a184d52a2e5e193df3}
+  R3  {1996b2fb973e40a184d52a2e5e193df3}
+  R4  {1996b2fb973e40a184d52a2e5e193df3}
+  R5  {1996b2fb973e40a184d52a2e5e193df3}
+  R6  {1996b2fb973e40a184d52a2e5e193df3}
+  R7  {1996b2fb973e40a184d52a2e5e193df3}
+  SW1  {c8c8571dd8cf4ff49b1d53a434a5e7e1}
+  SW2  {c8c8571dd8cf4ff49b1d53a434a5e7e1}
+  U1  {396507a046414973906a8dc2eef0e817}
+  U2  {1c877eef906c458a8606b5978f0aeb3b}
+  U3  {91d99640c4a348eb8a20141652c3be94}
+$END_COMPONENTS
+
+$NETS
+  3V3
+    C1.2
+    C12.2
+    C3.2
+    C4.2
+    C5.2
+    C6.2
+    H1.2
+    H2.1
+    H2.3
+    R1.2
+    R2.2
+    R3.2
+    R4.2
+    R5.2
+    R6.2
+    R7.2
+    SW1.1
+    SW1.6
+    SW2.1
+    SW2.6
+    U1.4
+    U2.5
+    U3.1
+  BAT
+    BT1.2
+    C11.2
+    U2.1
+    U2.3
+  CE
+    U1.18
+    U3.2
+  CSN
+    U1.17
+    U3.3
+  GND
+    BT1.1
+    C1.1
+    C10.1
+    C11.1
+    C12.1
+    C13.1
+    C14.1
+    C15.1
+    C16.1
+    C17.1
+    C18.1
+    C2.1
+    C3.1
+    C4.1
+    C5.1
+    C6.1
+    C7.1
+    C8.1
+    C9.1
+    H1.1
+    H2.5
+    H2.7
+    KEY1.1
+    KEY1.2
+    KEY2.1
+    KEY2.2
+    KEY3.1
+    KEY3.2
+    KEY4.1
+    KEY4.2
+    SW1.10
+    SW1.3
+    SW1.4
+    SW1.7
+    SW1.8
+    SW1.9
+    SW1.c
+    SW1.d
+    SW2.10
+    SW2.3
+    SW2.4
+    SW2.7
+    SW2.8
+    SW2.9
+    SW2.c
+    SW2.d
+    U1.5
+    U2.2
+    U3.8
+  I2C_SCL
+    H1.3
+    U1.30
+  I2C_SDA
+    H1.4
+    U1.1
+  IRQ
+    U1.16
+    U3.7
+  KEY1
+    C15.2
+    KEY1.3
+    KEY1.4
+    R4.1
+    U1.2
+  KEY2
+    C16.2
+    KEY4.3
+    KEY4.4
+    R6.1
+    U1.3
+  KEY3
+    C18.2
+    KEY3.3
+    KEY3.4
+    R7.1
+    U1.27
+  KEY4
+    C17.2
+    KEY2.3
+    KEY2.4
+    R5.1
+    U1.26
+  NRST
+    C2.2
+    R1.1
+    U1.6
+  SPI_MISO
+    U1.13
+    U3.6
+  SPI_MOSI
+    U1.14
+    U3.5
+  SPI_SCK
+    U1.12
+    U3.4
+  SW1_X
+    C7.2
+    SW1.5
+    U1.7
+  SW1_Y
+    C9.2
+    SW1.2
+    U1.8
+  SW1_Z
+    C13.2
+    R2.1
+    SW1.a
+    SW1.b
+    U1.32
+  SW2_X
+    C8.2
+    SW2.5
+    U1.9
+  SW2_Y
+    C10.2
+    SW2.2
+    U1.10
+  SW2_Z
+    C14.2
+    R3.1
+    SW2.a
+    SW2.b
+    U1.11
+  SWCLK
+    H2.8
+    U1.25
+  SWDIO
+    H2.6
+    U1.24
+  USART1_RX
+    H2.4
+    U1.21
+  USART1_TX
+    H2.2
+    U1.19
+$END_NETS

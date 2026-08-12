@@ -1,0 +1,387 @@
+* Netlist: 基于LoRa的无线通信装置
+* Extracted from PCB layout data
+* Generated: 2026-08-11 11:30:11
+* Components: 82, Nets: 56
+*
+
+$COMPONENTS
+  BT1  {729b0538b1a341618bd7cb661a22037e}
+  C1  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C10  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C11  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C12  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C13  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C14  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C15  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C16  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C17  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C18  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C19  {0ef207b2ddc3414e83e7b054e1746563}
+  C2  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C26  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C27  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C28  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C31  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C32  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C5  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C6  {728c3cd86cf04df8a22e1e4cc7999c51}
+  C8  {0ef207b2ddc3414e83e7b054e1746563}
+  C9  {0ef207b2ddc3414e83e7b054e1746563}
+  D4  {676d0447cd86424a896932ccff1bae7a}
+  D5  {676d0447cd86424a896932ccff1bae7a}
+  D6  {e0c8ee3166774c618a11b20e8e222c92}
+  J1  {80dfbe45b68b481aa7105046715aaf00}
+  J2  {80dfbe45b68b481aa7105046715aaf00}
+  J3  {80dfbe45b68b481aa7105046715aaf00}
+  J4  {80dfbe45b68b481aa7105046715aaf00}
+  L2  {2034167f0bf242a3a26a8dc3db1fc2e8}
+  LED1  {200a45bc1c5b4ae49fe0ed9de30a2fd3}
+  LED2  {200a45bc1c5b4ae49fe0ed9de30a2fd3}
+  LED3  {200a45bc1c5b4ae49fe0ed9de30a2fd3}
+  P1  {05bcee1ffdeb4818b657f380baff9792}
+  Q1  {f84bb50dc16b4eebbbc153a766d294ee}
+  Q2  {f84bb50dc16b4eebbbc153a766d294ee}
+  Q4  {8c2e8aa9d77e42d396f854abff3bb53c}
+  R1  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R12  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R16  {ac70bb08b9af453f8ca21aea1f141e78}
+  R2  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R22  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R23  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R24  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R25  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R26  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R27  {ec4374d47b594b4c8e782ae569b52ae8}
+  R28  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R29  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R3  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R30  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R31  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R32  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R4  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R40  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R41  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R42  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R43  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R44  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R45  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R46  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R47  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R48  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R49  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R50  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R51  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R6  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R7  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  R8  {4b5d1da49d5f414f8d7e734fdc2c3d13}
+  SW3  {1dd01330da1848cb9c2ffa2976ee0adc}
+  SW4  {1dd01330da1848cb9c2ffa2976ee0adc}
+  SW6  {2632c4b855ec4d98b8311925230dc043}
+  U1  {3935d73832a2416f9a5aebe5287f6542}
+  U2  {dcc06a9b73524a81aeee7ab2401cb1f6}
+  U22  {66bfa27d5e4b46d190c30951e9c722a1}
+  U23  {66bfa27d5e4b46d190c30951e9c722a1}
+  U24  {7085ec3b2db1445183ca8687b667aaa9}
+  U25  {8a03bc13c8ea47d9bc086eef6bfe8dc9}
+  U3  {2284c91879ba47bc9110a7e60bbaa546}
+  U4  {c66c3a85e90e401798b81a6f34df2c7d}
+  USB1  {7392720445d54efebcca1ce4cbc0a62f}
+  X1  {2ae6ab825c05453b879688213872a07e}
+$END_COMPONENTS
+
+$NETS
+  $1N2249
+    R1.1
+    USB1.B5
+  $1N2250
+    R2.1
+    USB1.A5
+  $1N2251
+    Q4.1
+    R3.2
+  $1N2259
+    R22.2
+    R24.1
+    U3.3
+  $1N2262
+    D5.2
+    L2.1
+    U3.1
+  $1N2264
+    R23.2
+    U3.4
+  $1N2265
+    LED3.2
+    R25.1
+  $1N2268
+    R6.2
+    U1.2
+  $1N2271
+    R8.1
+    U1.7
+  $1N2272
+    LED2.1
+    R7.2
+  $1N2273
+    C10.1
+    LED1.2
+    LED2.2
+    R26.1
+    R27.2
+    U1.4
+    U1.8
+  $1N2276
+    R7.1
+    U1.6
+  $1N2279
+    LED1.1
+    R8.2
+  $1N2281
+    C2.2
+    R12.1
+    R16.1
+    R26.2
+    U1.1
+  $1N2285
+    C11.2
+    R28.2
+    U4.6
+  $1N2300
+    D4.1
+    Q4.2
+    SW6.6
+  $1N2967
+    Q2.1
+    R32.2
+  $1N2968
+    Q1.1
+    R31.2
+  $1N2976
+    C6.2
+    U24.4
+  $1N2979
+    R29.2
+    U24.3
+  $1N2980
+    R30.2
+    U24.2
+  $1N2982
+    Q1.2
+    R32.1
+    U24.13
+  $1N2983
+    Q2.2
+    R31.1
+    U24.14
+  $1N4180
+    R41.2
+    U25.8
+  $1N4212
+    R42.2
+    U25.9
+  $1N4668
+    C17.1
+    R43.2
+    SW4.3
+    SW4.4
+  $1N4760
+    R47.1
+    U25.27
+  $1N4913
+    R46.1
+    U25.24
+  $1N7932
+    R50.1
+    U2.3
+  $1N7936
+    R51.1
+    U2.4
+  +3.3V
+    C14.2
+    C15.2
+    C18.2
+    C19.1
+    P1.1
+    R44.1
+    R45.1
+    R47.2
+    R48.2
+    R49.2
+    U22.5
+    U23.5
+    U25.2
+  +5V
+    C13.2
+    C16.2
+    C31.2
+    C32.2
+    C5.1
+    C9.1
+    D5.1
+    R24.2
+    U2.6
+    U22.1
+    U22.3
+    U23.1
+    U23.3
+    U24.16
+  32K_NP
+    C27.2
+    R40.1
+    R42.1
+    X1.1
+  32K_XP
+    C26.2
+    R40.2
+    R41.1
+    X1.2
+  433RXD
+    R49.1
+    R50.2
+    U25.37
+  433TXD
+    R48.1
+    R51.2
+    U25.36
+  4G_RXD
+    U25.31
+  4G_TXD
+    U25.30
+  AUX
+    U2.5
+    U25.6
+  CH340RXD
+    R29.1
+    U25.35
+  CH340TXD
+    R30.1
+    U25.34
+  EN
+    C28.2
+    P1.10
+    Q2.3
+    R43.1
+    R44.2
+    U25.3
+  GND
+    C1.2
+    C10.2
+    C12.1
+    C13.1
+    C14.1
+    C15.1
+    C16.1
+    C17.2
+    C18.1
+    C19.2
+    C2.1
+    C26.1
+    C27.1
+    C28.1
+    C31.1
+    C32.1
+    C5.2
+    C6.1
+    C8.2
+    C9.2
+    D6.1
+    LED3.1
+    P1.3
+    P1.5
+    P1.9
+    R1.2
+    R12.2
+    R16.2
+    R2.2
+    R22.1
+    R4.1
+    R46.2
+    R6.1
+    SW3.1
+    SW3.2
+    SW4.1
+    SW4.2
+    U1.3
+    U1.9
+    U2.7
+    U22.2
+    U23.2
+    U24.1
+    U25.1
+    U25.15
+    U25.38
+    U25.39
+    U3.2
+    U4.2
+    U4.3
+    U4.4
+    USB1.1
+    USB1.2
+    USB1.3
+    USB1.4
+    USB1.A1B12
+    USB1.B1A12
+  IO0
+    Q1.3
+    R45.2
+    SW3.3
+    SW3.4
+    U25.25
+  IO12_TDI
+    P1.8
+    U25.14
+  IO13_TCK
+    P1.4
+    U25.16
+  IO14_TMS
+    P1.2
+    U25.13
+  IO15_TDO
+    P1.6
+    U25.23
+  M0
+    U2.1
+    U25.10
+  M1
+    U2.2
+    U25.11
+  USBD+
+    D6.2
+    U24.5
+    USB1.A6
+    USB1.B6
+  USBD-
+    D6.3
+    U24.6
+    USB1.A7
+    USB1.B7
+  VBAT+
+    BT1.2
+    C1.1
+    Q4.3
+    R28.1
+    U1.5
+  VBAT-
+    BT1.1
+    C11.1
+    C12.2
+    U4.5
+    U4.7
+    U4.8
+    U4.9
+  VIN
+    C8.1
+    L2.2
+    R23.1
+    R25.2
+    SW6.5
+    U3.5
+  VUSB
+    D4.2
+    D6.4
+    R27.1
+    R3.1
+    R4.2
+    USB1.A4B9
+    USB1.B4A9
+$END_NETS

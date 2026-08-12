@@ -1,0 +1,131 @@
+{
+  "index": 10,
+  "name": "All in one服务器三合一扩展卡",
+  "url": "https://oshwhub.com/wesd/allinone-server-3-in--1-expansio",
+  "category": "消费电子",
+  "subcategory": "办公设备",
+  "scale": "200元件规模",
+  "note": null,
+  "username": "wesd",
+  "path": "allinone-server-3-in--1-expansio",
+  "uuid": "0d089e376a424a2ea8838cb8793a5a8e",
+  "api_detail": {
+    "uuid": "0d089e376a424a2ea8838cb8793a5a8e",
+    "name": "All in one服务器三合一扩展卡",
+    "content": "<p><span style=\"font-size:24pt\">简介：</span></p>\n<p><span style=\"font-size:14pt\">PEX8724+JMB585 PCIe x4转OCP+2*M.2+10*SATA扩展卡</span></p>\n<p><span style=\"font-size:14pt\">用于AIO服务器，无需主板支持拆分，仅占用PCIe X4单槽即可扩扩展出</span></p>\n<ul>\n<li><span style=\"font-size:14pt\">1个OCP2.0网卡接口(PCIe3.0 x4)</span></li>\n<li><span style=\"font-size:14pt\">2个M.2插槽(PCIe3.0 x4)</span></li>\n<li><span style=\"font-size:14pt\">10个SATA接口</span></li>\n</ul>\n<p> </p>\n<p><span style=\"font-size:14pt\">正面图：</span></p>\n<p><img src=\"https://image.lceda.cn/oshwhub/pullImage/ebe811b491bd4ba38045c9940e0eca9f.jpg\" alt=\"\" width=\"1607\" height=\"1302\" /></p>\n<p><span style=\"font-size:14pt\">背面图：</span></p>\n<p><span style=\"font-size:14pt\"><img src=\"https://image.lceda.cn/oshwhub/pullImage/8eb31326b2d249b78a73e4fd504af10b.jpg\" alt=\"\" width=\"4146\" height=\"3067\" /></span></p>\n<p><span style=\"font-size:14pt\">PVE系统下设备列表，可以识别到CX341网卡，两个M.2 SSD，两个JMB585 SATA控制器，可直通给虚拟机</span></p>\n<p><img src=\"https://image.lceda.cn/oshwhub/pullImage/59c21f2171d24e40a4e60dbd13e45081.png\" /></p>\n<p><span style=\"font-size:24pt\">注意事项：</span></p>\n<ol>\n<li><span style=\"font-size:14pt\">BOM除JMB585和4个固定OCP网卡的螺柱外均已经匹配立创商城料号，螺柱可参考附件辅料清单</span></li>\n<li><span style=\"font-size:14pt\">散热风扇，挡板，螺柱及螺丝链接再附件辅料清单中</span></li>\n<li><span style=\"font-size:14pt\">MCU用于解决搭配部分M.2 SSD时仅能运行在PCIe1.0 X4的兼容性问题，若不需要可不上件U2，若需要还要烧录附件的bin档，可通过任意SWD协议的烧录器接在H1上烧录</span></li>\n</ol>",
+    "grade": 4,
+    "origin": "pro",
+    "is_draft": false,
+    "thumb": "https://image.lceda.cn/oshwhub/pullImage/9505dd2d1a464a33a250b8f9f186fa3d.jpg",
+    "public": true,
+    "publish": true,
+    "owner": {
+      "uuid": "b3f7b33189a14088aa30416e034eca7f",
+      "username": "wesd",
+      "nickname": "wesd",
+      "avatar": "//image.lceda.cn/avatars/2023/1/GJiRmqw5cIN5vOtP7cR9YQc4x2GDy65zg5tNALGl.png",
+      "team": false
+    },
+    "creator": {
+      "uuid": "b3f7b33189a14088aa30416e034eca7f",
+      "username": "wesd",
+      "nickname": "wesd",
+      "avatar": "//image.lceda.cn/avatars/2023/1/GJiRmqw5cIN5vOtP7cR9YQc4x2GDy65zg5tNALGl.png"
+    },
+    "members": [
+      {
+        "uuid": "b3f7b33189a14088aa30416e034eca7f",
+        "nickname": "wesd",
+        "username": "wesd",
+        "avatar": "//image.lceda.cn/avatars/2023/1/GJiRmqw5cIN5vOtP7cR9YQc4x2GDy65zg5tNALGl.png",
+        "role": 1
+      }
+    ],
+    "path": "wesd/allinone-server-3-in--1-expansio",
+    "created_at": "2025-03-19T14:39:43.212Z",
+    "updated_at": "2026-05-30T03:01:10.000Z",
+    "tags": [],
+    "count": {
+      "views": 8948,
+      "star": 97,
+      "fork": 0,
+      "watch": 0,
+      "like": 44
+    },
+    "version": "",
+    "attachments": [
+      {
+        "size": 17928,
+        "name": "MCU烧录固件.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "1bc484b94a4f4d9888c6df0f0e99b566",
+        "md5": "3ddc20d1e12bd4fd038ce9f5f3bee4c3",
+        "src": "/oshwhub/project/attachments/f595ee26f731465fb75dfe1b3906fba9.zip",
+        "download_count": 82
+      },
+      {
+        "size": 16670,
+        "name": "辅料清单.xlsx",
+        "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "ext": "xlsx",
+        "uuid": "5005386ed86147fd981bef8f9f6e08a4",
+        "md5": "b81d73f07d17e57815a2f61be94afb58",
+        "src": "/oshwhub/project/attachments/a288c24199b94ff9b82a3374f6a82610.xlsx",
+        "download_count": 69
+      },
+      {
+        "size": 28448414,
+        "name": "演示视频.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "c5b04d7556db4344b158685e9fc80ba3",
+        "md5": "eca30f2fad5f68fc85ee5b490c90863e",
+        "src": "/oshwhub/project/attachments/1e6f6c7fc8a0456b8229c2102383687a.mp4",
+        "download_count": 24
+      }
+    ],
+    "license": "CC BY 3.0",
+    "project_tags": [
+      "e5831c441f25423d88a7311a9b276871",
+      "6d863290e5d9486895177ac976d21a51",
+      "9d75d82c34d74d8eb385281a6ebc7fe9"
+    ],
+    "introduction": "通过PEX8724 PCIe SWITCH和JMB585 PCIe转SATA 桥接芯片实现的PCIe x4转OCP+2*M.2+10*SATA扩展卡",
+    "text_editor_type": "richText",
+    "allow_comment": true,
+    "allow_reprint": true,
+    "from": "oshwhub",
+    "competition_record_uuid": "fc2de3ee39db4de7941a5d44fb077efe",
+    "no": 0,
+    "archive": false,
+    "reproduction_cost": {
+      "total_cost": 400
+    },
+    "is_hide": false,
+    "oshwhub_publish_at": "2025-10-31T01:04:37.000Z",
+    "high_quality": true,
+    "store": false,
+    "updated_time": "2026-08-10T10:25:38.335Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "15a6e5eff6724458ab5266d059578767",
+      "name": "星火计划2025",
+      "path": "spark2025",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 16,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

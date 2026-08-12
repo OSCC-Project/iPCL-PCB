@@ -1,0 +1,125 @@
+{
+  "index": 16,
+  "name": "STM32F4工业控制板 高精度采集 全隔离通信 ESP32",
+  "url": "https://oshwhub.com/m_zc/stm32f407_plc_20260104-kai-yuan-2",
+  "category": "工业电子",
+  "subcategory": "控制板",
+  "scale": "400元件规模",
+  "note": null,
+  "username": "m_zc",
+  "path": "stm32f407_plc_20260104-kai-yuan-2",
+  "uuid": "2eb7b75fa6494d25aad48b7b11a39f38",
+  "api_detail": {
+    "uuid": "2eb7b75fa6494d25aad48b7b11a39f38",
+    "path": "m_zc/stm32f407_plc_20260104-kai-yuan-2",
+    "name": "STM32F4工业控制板 高精度采集 全隔离通信  ESP32 ",
+    "content": "## 项目简介\n本板卡以STM32F407ZGT6为主控，基于 Cortex-M4 内核打造高性能工业采集控制方案，集成多通道隔离数字量 / 模拟量采集、隔离式工业通信、继电器输出、外扩 SRAM、ESP32 无线拓展等功能，全接口做抗干扰 / 过压保护，适配工业自动化、高精度数据采集、物联网联动等场景，硬件设计兼顾稳定性与拓展性，支持二次开发与现场部署。\n\n![pic(3).jpg](https://image.lceda.cn/oshwhub/pullImage/a5081ae121d44a8f97a29cff0ed1f44b.jpg)\n\n![企业微信截图_17727023799937.png](https://image.lceda.cn/oshwhub/pullImage/7d462e70cb8a4211a9edb6ccb35165cf.png)\n## 项目功能\n一、数字量输入输出功能\n（一）数字量输入\n输入通道：8 路光耦隔离数字量输入（MCU_DI1-MCU_DI8），对应 X5-X8 输入端子；\n隔离设计：采用 TLP291-4 四通道光耦做电气隔离，彻底隔离工业现场干扰，提升信号稳定性；\n信号规格：支持 24V 输入信号，串接 2K 限流电阻 + 4.7K 上拉电阻，保护光耦与主控；\n状态指示：每路输入搭配 LED 指示灯，直观显示输入电平状态；\n引脚映射：输入信号对应 PD2、PD3、PG9-PG14 等主控 IO 口，可直接采集电平状态。\n（二）开关量输出\n输出通道：8 路继电器输出（MCU_OUT1-MCU_OUT8），驱动工业执行器；\n继电器选型：采用 G5Q-14 DC24V 继电器，触点容量大，支持大功率负载，每路提供 NC/COM/NO 端子，接线灵活；\n驱动保护：由 ULN2803 达林顿管阵列驱动，搭配 20K 限流电阻，驱动稳定，保护主控 IO 口；\n状态指示：每路继电器配备 LED 指示灯，实时显示吸合 / 断开状态；\n引脚映射：输出信号对应 PE2-PE6、PB7-PB9 等主控 IO 口，主控直接控制继电器通断。\n\n二、高精度模拟量采集与输出\n（一）模拟量采集\n双路通用采集：2 路基础模拟量采集口，支持0-10V 电压、4-20mA 电流信号采集，经调理电路转换为 0-3V 适配主控 ADC，搭配 TVS 管、滤波电容做抗干扰 / 过压保护；\n8 路高精度采集：搭载 AD7606 8 通道 16 位同步采样 ADC，采样精度高、速率快，支持多通道同步数据采集，满足高精度工业检测需求；\n热电阻采集：集成 MAX31865ATP+T 热电阻采集芯片，支持 PT100/PT1000 等热电阻测温，适配工业温度采集场景，通过 SPI 与主控通信（PT_SPI1）；\n主控原生采集：主控 PA6/PA7 为 ADC 引脚（MCU_ADC1/ADC2），支持原生模拟量采集，灵活适配不同采集需求。\n（二）模拟量输出\n输出通道：2 路模拟量输出，由主控 DAC 引脚（MCU_DAC1/PA4、MCU_DAC2/PA5）输出基础电压；\n信号转换：经 LM358 运放搭建调理电路，实现0-3.3V 转 4-20mA 电流、0-3.3V 转 0-10V 电压，输出信号线性度好、纹波小；\n工业适配：输出为工业标准模拟量信号，可直接驱动变频器、调节阀等工业执行器。\n\n三、全隔离工业通信功能\n板卡所有通信接口均采用电源 + 信号双重隔离设计，搭配 TVS 管、自恢复保险丝、终端电阻，抗干扰、防浪涌、防短路，适配工业恶劣现场。\n485 隔离通信：搭载 TD541S485H 隔离 485 收发器，3.3V/5V 电平兼容，由 MCU_485_TX1/PA9、MCU_485_RX1/PA10 通信，MCU_485_DIR/PA8 控制收发切换，总线端配 120Ω 终端电阻、SMBJ8.5CA TVS 管；\n232 隔离通信：搭载 TDH541S232H 隔离 232 收发器，实现 3.3V 与 232 电平转换，由 MCU_232_TX2/PA2、MCU_232_RX2/PA3 通信，配 SMBJ18CA TVS 管做过压保护；\nCAN 隔离通信：搭载 TDH541SCANFD 隔离 CAN 收发器，支持 CAN2.0A/B 及 CANFD 协议，由 MCU_CAN1_TX/PA12、MCU_CAN1_RX/PA11 通信，总线端配 120Ω 终端电阻、SMBJ30CA TVS 管；\n以太网隔离通信：搭载 W5500 硬件 TCP/IP 芯片，内置全硬件协议栈，无需主控参与协议解析，通过 SPI2 与主控通信（PB12-PB15），搭配 HR911105A 网口座，网络变压器实现信号隔离，带 LINK/ACT 网络状态指示灯；\n无线拓展通信：集成 ESP32-S3-WROOM-1U-N16R8 无线模块，支持 WiFi / 蓝牙通信，与主控通过串口互联（ESP32_TX6/PC6、ESP32_RX6/PC7），实现板卡无线数据上传、远程控制，适配物联网场景。\n\n## 板卡核心特性\n高性能主控：STM32F417ZGT6+Cortex-M4 内核，带 FPU 运算，满足高速采集、复杂算法处理需求；\n全隔离设计：数字量输入、485/232/CAN 通信均做电源 + 信号双重隔离，抗工业现场强干扰；\n高精度采集：集成 AD7606 16 位 ADC、MAX31865 热电阻采集，兼顾多通道、高精度、宽量程采集；\n多通信融合：支持有线（485/232/CAN/ 以太网）+ 无线（ESP32 WiFi / 蓝牙）通信，适配工业现场多种组网需求；\n高稳定性：全板配 TVS 管、自恢复保险丝、滤波电容、续流二极管，防过压、防短路、防浪涌，电源纹波小；\n强拓展性：外扩 SRAM、预留 SPI / 串口拓展口、ESP32 无线模块，支持个性化二次开发；\n工业级适配：5.08 间距工业端子、M3 固定孔、24V 工业供电，适配工业现场安装与部署。\n\n## 应用场景\n本板卡可广泛应用于工业自动化控制、高精度数据采集、工业温度监测、智能设备联动、物联网终端网关、工厂产线监控等场景，既可作为独立采集控制单元，也可作为物联网边缘节点实现现场设备与上位机、云平台的通信联动。\n此处可填写项目的设计原理，将设计的原理拆分解析，示例：\n\n",
+    "grade": 2,
+    "public": true,
+    "license": "GPL 3.0",
+    "creator": {
+      "uuid": "80d8ea5303a0496daed9075cb2137ecc",
+      "username": "m_zc",
+      "nickname": "m_zc",
+      "avatar": "/image/avatar-default.png"
+    },
+    "text_editor_type": "markdown",
+    "owner": {
+      "uuid": "80d8ea5303a0496daed9075cb2137ecc",
+      "username": "m_zc",
+      "nickname": "m_zc",
+      "avatar": "/image/avatar-default.png",
+      "team": false
+    },
+    "introduction": "STM32F410ZGT6 工业级采集控制板，8 路隔离数字输入 + 8 路 24V 继电器输出，集成 AD7606/MAX31865 高精度采集，485/232/CAN/ 网口全隔离通信。",
+    "updated_time": "2026-08-10T10:46:32.459Z",
+    "count": {
+      "views": 12325,
+      "star": 241,
+      "fork": 0,
+      "watch": 0,
+      "like": 73
+    },
+    "members": [
+      {
+        "uuid": "80d8ea5303a0496daed9075cb2137ecc",
+        "username": "m_zc",
+        "nickname": "m_zc",
+        "avatar": "/image/avatar-default.png",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "size": 16456747,
+        "name": "STM32F407_PLC_20260104 -开源.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "8914725020114397a944c720ecb044aa",
+        "md5": "4c3ccbbd9c84b1b65b6e26edee0005bf",
+        "src": "/oshwhub/project/attachments/c28ec8a0e9cd427f80fd2828c7be4316.zip",
+        "download_count": 881
+      }
+    ],
+    "no": 0,
+    "origin": "pro",
+    "archive": false,
+    "store": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "https://image.lceda.cn/oshwhub/pullImage/8d556f1277b04b3c817d51d0daa33b5d.jpg",
+    "updated_at": "2026-03-10T07:57:38.000Z",
+    "created_at": "2026-03-05T08:59:36.000Z",
+    "attachments_3d": [
+      {
+        "size": 46445871,
+        "name": "STM32F407_PLC_20260104.step",
+        "mime": "application/octet-stream",
+        "ext": "step",
+        "uuid": "6cfb7f929e9247118c830e770f54f829",
+        "md5": "4d3b4b83e01d52e59b99e30a29be4b7d",
+        "src": "/oshwhub/project/attachments/d61eebe1daa540bebf604a41c9224d7b.step",
+        "download_count": 360
+      }
+    ],
+    "allow_reprint": false,
+    "is_draft": false,
+    "project_tags": [
+      "4c92885dd69947be93cc68f560459fb3",
+      "f2beb30a80134f3e9595b51148f55cf8",
+      "ba95313da8b24bbfbcf00182447f6063"
+    ],
+    "publish": true,
+    "reproduction_cost": {
+      "fa": {},
+      "pcb": {},
+      "component": {},
+      "three_d_shell": {},
+      "smt": {},
+      "panel": {},
+      "cnc": {},
+      "total_cost": 570
+    },
+    "oshwhub_publish_at": "2026-03-05T09:59:52.000Z",
+    "sync_jlc_3d": 0,
+    "high_quality": true,
+    "fork_from": null,
+    "sale_info": null,
+    "competition": null,
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 62,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": true,
+    "vote_count": 1
+  }
+}

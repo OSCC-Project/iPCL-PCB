@@ -1,0 +1,13 @@
+project: 按键发声玩具
+design_index: 24
+board: V0.4
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/24_按键发声玩具/按键发声玩具.epro2
+source_epcb: PCB4.epcb
+components: 22
+nets: 16
+tracks: 96
+vias: 0
+zones: 7
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 38534

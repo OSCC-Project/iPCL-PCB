@@ -1,0 +1,13 @@
+project: 小智AI语音对话开发板 - C3
+design_index: 8
+board: c3_8311_3636_v3
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/08_小智AI语音对话开发板 - C3/小智AI语音对话开发板 - C3.epro2
+source_epcb: PCB_3636_v3.epcb
+components: 82
+nets: 59
+tracks: 550
+vias: 127
+zones: 260
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 338404

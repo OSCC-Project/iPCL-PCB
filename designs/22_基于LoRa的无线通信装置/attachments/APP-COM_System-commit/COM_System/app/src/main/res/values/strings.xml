@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ESP32_Chat_System</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="send_message">发送</string>
+</resources>

@@ -1,5 +1,11 @@
 .DS_Store
 *.swp
 *.tmp
+__pycache__/
+*.pyc
 .vscode/
 .idea/
+third-party/
+designs/**/.git/
+designs/**/XM_Power_Kit_V7/
+designs/**/miniprogram-17/

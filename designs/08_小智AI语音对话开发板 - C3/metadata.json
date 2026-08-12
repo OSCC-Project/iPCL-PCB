@@ -1,0 +1,119 @@
+{
+  "index": 8,
+  "name": "小智AI语音对话开发板 - C3",
+  "url": "https://oshwhub.com/tenclass01/xmini_c3",
+  "category": "家用电子",
+  "subcategory": "智能控制与接入",
+  "scale": "200元件规模",
+  "note": "只看C3板子",
+  "username": "tenclass01",
+  "path": "xmini_c3",
+  "uuid": "41c60fd937f24098ac46eacba78803c4",
+  "api_detail": {
+    "uuid": "41c60fd937f24098ac46eacba78803c4",
+    "path": "tenclass01/xmini_c3",
+    "name": "小智AI语音对话开发板 - C3",
+    "content": "<h3><span style=\"color:#e03e2d;font-size:18pt\">2025 年 7 月 17 日版本更新说明</span></h3>\n<p><span style=\"color:#e03e2d;font-size:18pt\"><span style=\"font-size:12pt;color:#000000\">4G 版本链接：<a style=\"color:#000000\" title=\"XMINI C3 4G 版本点这里查看\" href=\"https://oshwhub.com/tenclass01/xmini_c3_4g\" target=\"_blank\" rel=\"noopener\">https://oshwhub.com/tenclass01/xmini_c3_4g</a></span></span></p>\n<h3>Wi-Fi 版 V3.2</h3>\n<p>1. 使用 VBAT 修正 CHRG 默认电位<br />2. LED 电阻改为 10K 欧姆<br />3. 加入简单电源切换电路<br />4. 增加 C3 散热孔与电磁屏蔽过孔</p>\n<h3>Wi-Fi 版 V3.0</h3>\n<p>1. 增加 100nF 电容修复 MIC 噪音 bug，MIC 移动到中间附近<br />2. 去掉 codec 的 GND 隔离（只有一个 LDO，GND 隔离作用不大）<br />3. 去掉电源切换电路，修复 3.7V 以下就不能用的 bug<br />4. RGB LED 移动到中间<br />5. 更换静态电流、噪声更小的 LDO<br />6. 增加电池反接保护，增加电量检测<br />7. 调整天线净空区域，请使用 1mm 厚度</p>\n<h3> </h3>\n<h3>PCB 尺寸</h3>\n<p>36x36mm</p>\n<h3><br />基本参数</h3>\n<ul>\n<li>ESP32-C3</li>\n<li>16MB NOR FLASH</li>\n<li>ES8311</li>\n<li>NS4150B</li>\n<li>ZTS6216 MEMS 麦克风</li>\n<li>1.25 喇叭和电池插座</li>\n</ul>\n<h3> </h3>\n<h3>选项</h3>\n<p>支持 0.96寸 12864 OLED 液晶屏 （SSD1306驱动）</p>\n<p>推荐搭配 1435 8欧 喇叭 和 300mAh 锂电池使用。</p>\n<p>提供两个GPIO口，可用于外接唤醒模块，4G模块或触摸板（需要开发对应能力）。</p>\n<p> </p>\n<h3>固件代码</h3>\n<p><a href=\"https://github.com/78/xiaozhi-esp32/\">https://github.com/78/xiaozhi-esp32/</a></p>\n<p>首次烧录需要按住 Boot 再上电。烧录教程：<a href=\"https://rcnv1t9vps13.feishu.cn/wiki/Jf7RwvQfQiFNT7k1eIbc00Runlc\">https://rcnv1t9vps13.feishu.cn/wiki/Jf7RwvQfQiFNT7k1eIbc00Runlc</a></p>\n<p><strong><span style=\"color:#e03e2d\">注意 ⚠️： 不同版本之间的固件不兼容。V3 版本不可以烧录旧版本的固件，请认准固件名字：xmini-c3-v3，否则可能会导致 VDD_SPI 引脚无法为 Flash 供电。</span></strong></p>\n<p> </p>\n<h3>了解更多</h3>\n<p>交流 QQ 群：632069471</p>\n<p>小智 AI 百科全书：<a href=\"https://ccnphfhqs21z.feishu.cn/wiki/F5krwD16viZoF0kKkvDcrZNYnhb\">https://ccnphfhqs21z.feishu.cn/wiki/F5krwD16viZoF0kKkvDcrZNYnhb</a></p>",
+    "grade": 1,
+    "public": true,
+    "license": "CC BY 4.0",
+    "creator": {
+      "uuid": "369dca40b75a4259881cf595bc07afc6",
+      "username": "tenclass",
+      "nickname": "tenclass",
+      "avatar": "/image/avatar-default.png"
+    },
+    "text_editor_type": "richText",
+    "owner": {
+      "uuid": "4c3cbb48110e48c79fffd8d48f367137",
+      "username": "tenclass01",
+      "nickname": "小智AI团队",
+      "avatar": "//image.lceda.cn/pullimage/3G4Gzb7qiGNe2a7YlWmvfrmiR2s7LqMg0GBYdXVB.png",
+      "team": true
+    },
+    "count": {
+      "views": 165590,
+      "star": 671,
+      "fork": 0,
+      "watch": 0,
+      "like": 236
+    },
+    "members": [
+      {
+        "uuid": "369dca40b75a4259881cf595bc07afc6",
+        "username": "tenclass",
+        "nickname": "tenclass",
+        "avatar": "/image/avatar-default.png",
+        "role": 1
+      },
+      {
+        "uuid": "2c1446ff3bac4f6da10c1e96ca41a197",
+        "nickname": "terrencefm",
+        "username": "terrencefm",
+        "avatar": "/image/avatar-default.png",
+        "role": 2,
+        "custom_role": ""
+      }
+    ],
+    "attachments": [
+      {
+        "size": 7126926,
+        "name": "1834.MP4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "43da5e89e9824feea379a52a1ea243f7",
+        "md5": "32cecfd1b64bf738ce5c6102eda2091c",
+        "src": "/oshwhub/project/attachments/e60ef32526054a0785d6bc24a2fb5b33.mp4",
+        "download_count": 1996
+      }
+    ],
+    "no": 0,
+    "origin": "pro",
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "https://image.lceda.cn/oshwhub/pullImage/4bcfbaa1433d464cbea4e7bcc46ee945.jpg",
+    "updated_at": "2026-06-08T15:06:54.000Z",
+    "created_at": "2025-01-07T15:52:30.000Z",
+    "allow_reprint": false,
+    "introduction": "这是虾哥发布的第一块开源 PCB，使用 ESP32-C3 芯片，支持小智AI语音对话，体积小巧，低功耗，可以用于开发小型 AI 对话设备。",
+    "is_draft": false,
+    "project_tags": [
+      "6f6eefa0fcb54ab4b75469c64646d9e9",
+      "f2beb30a80134f3e9595b51148f55cf8",
+      "e5831c441f25423d88a7311a9b276871"
+    ],
+    "publish": true,
+    "reproduction_cost": {
+      "fa": {},
+      "pcb": {},
+      "component": {},
+      "three_d_shell": {},
+      "smt": {},
+      "panel": {},
+      "cnc": {},
+      "total_cost": 50
+    },
+    "oshwhub_publish_at": "2025-07-17T03:10:40.000Z",
+    "store": false,
+    "updated_time": "2026-08-10T10:02:12.407Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": null,
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 235,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "index": 6,
+  "name": "星火计划-桌面HiFi功放",
+  "url": "https://oshwhub.com/gongchengshi110/xing-huo-ji-hua-zhuo-mian-hifi-gong-fang",
+  "category": "家用电子",
+  "subcategory": "影音娱乐",
+  "scale": "400元件规模",
+  "note": null,
+  "username": "gongchengshi110",
+  "path": "xing-huo-ji-hua-zhuo-mian-hifi-gong-fang",
+  "uuid": "bfdfcdeeed08457abd83956d6326e32b",
+  "api_detail": {
+    "uuid": "bfdfcdeeed08457abd83956d6326e32b",
+    "path": "gongchengshi110/xing-huo-ji-hua-zhuo-mian-hifi-gong-fang",
+    "name": "星火计划-桌面HiFi功放",
+    "content": "## 视频链接：\n[B站视频--功能演示及介绍](https://www.bilibili.com/video/BV1BwzHYbErj/?vd_source=d3ecc918dead8f5a2b087081b1d0fe41)\n\n## 项目简介\n\n![456.3.png](//image.lceda.cn/oshwhub/c36d5e2a120d4c08b5dd8065a7566a69.png)\n本项目是基于TAP3255+AB5301A制作的一款非常小巧的桌面蓝牙功放，输出功率最大可以达到2*300W，带有高低音调节功能，超低失真，音质出众。\n\n## 项目功能\n1.输入接口：蓝牙/RCA音频输入；\n2.输出接口：3.5mm前置输出，音响输出；\n3.高音和低音部分可以独立调节；\n4.音量旋钮带有按键功能，双击可以断开当前蓝牙连接；\n5.输入接口能够自动切换；\n\n## 原理解析（硬件说明）\n项目主要由前置音频信号处理，蓝牙，功率放大，电源等4部分组成。\n![image.png](//image.lceda.cn/oshwhub/8ebc8422641445de92acebfb75e26489.png)\n\n1.音频信号处理\n信号源输入接口和切换电路：\n![image.png](//image.lceda.cn/oshwhub/2a8f75638a774e4fb93d049cba2e5e98.png)\n\n\n主音量调节电路：\n![image.png](//image.lceda.cn/oshwhub/5efe88a8492d4e5581f12def9a9f72ed.png)\n\n\n第一级信号放大电路：\n![image.png](//image.lceda.cn/oshwhub/37d3efca352343448150b487a4f4b862.png)\n\n\n高低音调节电路：\n![image.png](//image.lceda.cn/oshwhub/44e7feeace034e239bc8113741d6b6e0.png)\n\n\n单通道信号转换为差分信号：\n![image.png](//image.lceda.cn/oshwhub/2941db1422994d19a89685f75357440b.png)\n\n\n2.蓝牙\n蓝牙部分相对简单，主要负责接收蓝牙音频信号和输入信号通道的切换控制\n![image.png](//image.lceda.cn/oshwhub/c00105159b68491fbd347060cba89ec4.png)\n\n\n3.功率放大\n由一颗TPA3255DDVR完成，直接参考官方应用手册即可\n![image.png](//image.lceda.cn/oshwhub/05178d61b55a4a50b83caf66e463325b.png)\n\n\n4.电源\n电源部分做了过流保护，防反接保护，通过LM5164DDAR生成12V，供给NE5532和TPA3255DDVR，通过LDO生成3.3V给蓝牙芯片供电。\n![image.png](//image.lceda.cn/oshwhub/3a0d2e4df82f43a68f192cf8da21583b.png)\n\n## 软件代码\n软件部分主要处理蓝牙音频信号，详情见附件。\n\n## 注意事项\n1.外壳直接在网上采购回来，再按照设计图找个加工门店处理一下就可以了(选择前后面板都不要开孔的)。\n![image.png](//image.lceda.cn/oshwhub/8a75c40492984070a12ca76d5871e85d.png)\n\n2.面板丝印可以直接使用激光雕刻机处理一下\n![image.png](//image.lceda.cn/oshwhub/bc1ef728206c4ee994b1a8724656e986.png)\n\n3.大家点赞关注一下，后面有空了给大家整理下制作过程。\n\n## 实物图\n\n![IMG_1861.JPG](//image.lceda.cn/oshwhub/29dcab4bde684dccb8b4472df89d4d92.jpg)\n\n![IMG_1862.JPG](//image.lceda.cn/oshwhub/f6046d4f421e4444ab722bf28774efed.jpg)\n\n![IMG_1855.JPG](//image.lceda.cn/oshwhub/153de22e7ffd4384b7cb0d3818eeb19c.jpg)\n\n![IMG_1859.JPG](//image.lceda.cn/oshwhub/6ab0bf7fffc240b39be9ee9090459810.jpg)\n\n![IMG_1857.JPG](//image.lceda.cn/oshwhub/4699f3a43b16439185b51db2ea2fcd54.jpg)\n\n![IMG_1858.JPG](//image.lceda.cn/oshwhub/4e8b30a2d8e94f6cab8ccdeca21841a5.jpg)\n\n![image.png](//image.lceda.cn/oshwhub/030a995e318a47cca3e4118ef800c6af.png)",
+    "grade": 3,
+    "public": true,
+    "license": "CC BY 3.0",
+    "creator": {
+      "uuid": "b3eb1f9a6d0f428cbff1b2e330be1000",
+      "username": "gongchengshi110",
+      "nickname": "圳里小方",
+      "avatar": "//image.lceda.cn/avatars/2023/2/n0boBiH5vxW9ryHxsLl7jG1JKEpS31IGEZcv9iDe.png"
+    },
+    "text_editor_type": "markdown",
+    "owner": {
+      "uuid": "b3eb1f9a6d0f428cbff1b2e330be1000",
+      "username": "gongchengshi110",
+      "nickname": "圳里小方",
+      "avatar": "//image.lceda.cn/avatars/2023/2/n0boBiH5vxW9ryHxsLl7jG1JKEpS31IGEZcv9iDe.png",
+      "team": false
+    },
+    "count": {
+      "views": 20227,
+      "star": 252,
+      "fork": 0,
+      "watch": 0,
+      "like": 92
+    },
+    "members": [
+      {
+        "uuid": "b3eb1f9a6d0f428cbff1b2e330be1000",
+        "username": "gongchengshi110",
+        "nickname": "圳里小方",
+        "avatar": "//image.lceda.cn/avatars/2023/2/n0boBiH5vxW9ryHxsLl7jG1JKEpS31IGEZcv9iDe.png",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "size": 1234192,
+        "name": "面板丝印.rar",
+        "mime": "application/x-compressed",
+        "ext": "rar",
+        "uuid": "af8609d7348a448dbcd54303a2635256",
+        "md5": "2cc7d030322db1ccc4b8443f1d264eb9",
+        "src": "/oshwhub/project/attachments/21bc1a2cff264844961e2e59536716af.rar",
+        "download_count": 234
+      },
+      {
+        "size": 5215507,
+        "name": "3D文件.rar",
+        "mime": "application/x-compressed",
+        "ext": "rar",
+        "uuid": "0e815276a1924351896876b8e82bdcf8",
+        "md5": "e2a3470e4ac24882fa2b361c6c137d09",
+        "src": "/oshwhub/project/attachments/2fd61d11ca484b6bb0980b200a85bfe8.rar",
+        "download_count": 247
+      },
+      {
+        "size": 3867435,
+        "name": "源码.rar",
+        "mime": "application/x-compressed",
+        "ext": "rar",
+        "uuid": "255c100de3ff43dcb65b145646b9fb13",
+        "md5": "272c8c9871f501deb83ba9573b7d1574",
+        "src": "/oshwhub/project/attachments/e4c53b321f68410a84d02755ff631852.rar",
+        "download_count": 457
+      },
+      {
+        "size": 15995192,
+        "name": "效果图.rar",
+        "mime": "application/x-compressed",
+        "ext": "rar",
+        "uuid": "2516910a59ef46289ef47d0d7097534a",
+        "md5": "40eb618f2cecf073662b4c78588715de",
+        "src": "/oshwhub/project/attachments/cbea0cca249d465890684d7cfc1abe81.rar",
+        "download_count": 315
+      }
+    ],
+    "no": 0,
+    "origin": "pro",
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/oshwhub/27bb05bfed474a1a84dbad903103f5c0.jpg",
+    "updated_at": "2026-05-30T03:01:45.000Z",
+    "created_at": "2024-11-30T03:24:33.000Z",
+    "allow_reprint": false,
+    "introduction": "体积非常小巧的一款桌面蓝牙功放，采用性能非常出色的TPA3255，单声道输出功率最大可以达到300W，高低音可以自由调节",
+    "is_draft": false,
+    "project_tags": [
+      "d3cacd30fc1a4dbea35aba2f00c755e3",
+      "7bee905a7730453c803339f2a1dc77cf",
+      "5f4e56750b0445a7a024b01cc8fa7122"
+    ],
+    "publish": true,
+    "reproduction_cost": {
+      "fa": {},
+      "pcb": {},
+      "component": {},
+      "three_d_shell": {},
+      "smt": {},
+      "panel": {},
+      "cnc": {},
+      "total_cost": 300
+    },
+    "oshwhub_publish_at": "2024-12-02T02:07:37.000Z",
+    "sync_jlc": 1,
+    "competition_record_uuid": "f54a2e26d9504b358ecf7270931f9633",
+    "is_hide": false,
+    "high_quality": true,
+    "store": false,
+    "award_uuid": "ccbd9d8bfa7c4579b974a34a88c22654",
+    "updated_time": "2026-08-10T10:04:47.947Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "848df799086a48d8bf82e78e3af5acbb",
+      "name": "星火计划2024",
+      "path": "spark2024",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 88,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0,
+    "award_info": {
+      "name": "星火2024高阶鼓励奖",
+      "image": "https://image.lceda.cn/easyedaResource/images/70856a22656a4ca0980c216cff62fb82.png",
+      "links": "https://oshwhub.com/recommend/activities%20III",
+      "uuid": "ccbd9d8bfa7c4579b974a34a88c22654"
+    }
+  }
+}

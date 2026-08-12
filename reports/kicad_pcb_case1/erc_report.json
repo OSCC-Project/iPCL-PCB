@@ -1,0 +1,953 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-11T12:26:23",
+    "ignored_checks": [
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.99.0",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2e45d1d2-c73f-46e5-98d6-3a9dc360bff5",
+            "violations": [
+                {
+                    "description": "The current configuration does not include the footprint library 'TerminalBlock_Altech'",
+                    "items": [
+                        {
+                            "description": "Symbol P1 [CONN_2]",
+                            "pos": {
+                                "x": 0.254,
+                                "y": 1.7145
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4fe7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Connector_Dsub'",
+                    "items": [
+                        {
+                            "description": "Symbol J1 [DB9]",
+                            "pos": {
+                                "x": 0.3175,
+                                "y": 0.9144
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4c93"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Diode_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D1 [D]",
+                            "pos": {
+                                "x": 0.4191,
+                                "y": 1.6891
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a500b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Capacitor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol C2 [CP]",
+                            "pos": {
+                                "x": 0.4953,
+                                "y": 1.7526
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a501d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_TO_SOT_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [7805]",
+                            "pos": {
+                                "x": 0.6858,
+                                "y": 1.7018
+                            },
+                            "uuid": "00000000-0000-0000-0000-00005a238df8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R2 [R]",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": 0.508
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4cfb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R1 [R]",
+                            "pos": {
+                                "x": 0.7874,
+                                "y": 0.4318
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4cf4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R4 [R]",
+                            "pos": {
+                                "x": 0.8128,
+                                "y": 0.8763
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d5b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R6 [R]",
+                            "pos": {
+                                "x": 0.8128,
+                                "y": 1.3716
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d63"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Capacitor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol C1 [CP]",
+                            "pos": {
+                                "x": 0.8128,
+                                "y": 1.7526
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a5056"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Diode_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D2 [D_Schottky]",
+                            "pos": {
+                                "x": 0.8763,
+                                "y": 0.3683
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d1b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Diode_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D3 [D_Schottky]",
+                            "pos": {
+                                "x": 0.8763,
+                                "y": 0.508
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d25"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R3 [R]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 0.8001
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d5a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R5 [R]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 1.2954
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d62"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Diode_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D4 [D_Schottky]",
+                            "pos": {
+                                "x": 0.9779,
+                                "y": 0.7366
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d5c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Diode_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D5 [D_Schottky]",
+                            "pos": {
+                                "x": 0.9779,
+                                "y": 0.8763
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d5d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Diode_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D6 [D_Schottky]",
+                            "pos": {
+                                "x": 0.9779,
+                                "y": 1.2319
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d64"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Diode_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D7 [D_Schottky]",
+                            "pos": {
+                                "x": 0.9779,
+                                "y": 1.3716
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d65"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R14 [R]",
+                            "pos": {
+                                "x": 0.9779,
+                                "y": 1.6891
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a5083"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_DIP'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [74LS125]",
+                            "pos": {
+                                "x": 1.0033,
+                                "y": 0.4318
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4cc8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'LED_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D9 [LED]",
+                            "pos": {
+                                "x": 1.0541,
+                                "y": 1.7653
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a5084"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_DIP'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [74LS125]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 0.8001
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d59"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_DIP'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [74LS125]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 1.0668
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d6b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_DIP'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [74LS125]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 1.2954
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d61"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R8 [R]",
+                            "pos": {
+                                "x": 1.1938,
+                                "y": 0.4318
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d92"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R12 [R]",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 0.8001
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d85"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R13 [R]",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 1.2954
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4d8d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Capacitor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol C9 [C]",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 0.254
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000464ad280"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R11 [R]",
+                            "pos": {
+                                "x": 1.4605,
+                                "y": 0.3556
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4f23"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R7 [R]",
+                            "pos": {
+                                "x": 1.5494,
+                                "y": 0.254
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4f2a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'MountingHole'",
+                    "items": [
+                        {
+                            "description": "Symbol P101 [MOUNTING_HOLE]",
+                            "pos": {
+                                "x": 1.6256,
+                                "y": 1.7272
+                            },
+                            "uuid": "00000000-0000-0000-0000-000054020bea"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'MountingHole'",
+                    "items": [
+                        {
+                            "description": "Symbol P102 [MOUNTING_HOLE]",
+                            "pos": {
+                                "x": 1.6256,
+                                "y": 1.7653
+                            },
+                            "uuid": "00000000-0000-0000-0000-000054020da9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'MountingHole'",
+                    "items": [
+                        {
+                            "description": "Symbol P103 [MOUNTING_HOLE]",
+                            "pos": {
+                                "x": 1.6256,
+                                "y": 1.8034
+                            },
+                            "uuid": "00000000-0000-0000-0000-000054020dc2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'MountingHole'",
+                    "items": [
+                        {
+                            "description": "Symbol P104 [MOUNTING_HOLE]",
+                            "pos": {
+                                "x": 1.6256,
+                                "y": 1.8415
+                            },
+                            "uuid": "00000000-0000-0000-0000-000054020de3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'MountingHole'",
+                    "items": [
+                        {
+                            "description": "Symbol P105 [MOUNTING_HOLE]",
+                            "pos": {
+                                "x": 1.6256,
+                                "y": 1.8796
+                            },
+                            "uuid": "00000000-0000-0000-0000-000054020e5d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'MountingHole'",
+                    "items": [
+                        {
+                            "description": "Symbol P106 [MOUNTING_HOLE]",
+                            "pos": {
+                                "x": 1.6256,
+                                "y": 1.9177
+                            },
+                            "uuid": "00000000-0000-0000-0000-000054020e76"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R9 [R]",
+                            "pos": {
+                                "x": 1.6637,
+                                "y": 0.4826
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4f52"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'LED_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D8 [LED]",
+                            "pos": {
+                                "x": 1.6637,
+                                "y": 0.6096
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a4f5d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R17 [R]",
+                            "pos": {
+                                "x": 1.7907,
+                                "y": 0.508
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a50bf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Diode_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D11 [D_Schottky]",
+                            "pos": {
+                                "x": 1.8161,
+                                "y": 0.7366
+                            },
+                            "uuid": "00000000-0000-0000-0000-00004639ba28"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R18 [R]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.4064
+                            },
+                            "uuid": "00000000-0000-0000-0000-000044369638"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R20 [R]",
+                            "pos": {
+                                "x": 1.9431,
+                                "y": 0.6731
+                            },
+                            "uuid": "00000000-0000-0000-0000-00004639b9b3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R19 [R]",
+                            "pos": {
+                                "x": 1.9431,
+                                "y": 0.7366
+                            },
+                            "uuid": "00000000-0000-0000-0000-00004639b9b0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'LED_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D12 [LED]",
+                            "pos": {
+                                "x": 1.9431,
+                                "y": 0.889
+                            },
+                            "uuid": "00000000-0000-0000-0000-00004639b9ea"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_DIP'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [LT1373]",
+                            "pos": {
+                                "x": 1.9685,
+                                "y": 1.3716
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a5e20"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R21 [R]",
+                            "pos": {
+                                "x": 2.0066,
+                                "y": 0.8128
+                            },
+                            "uuid": "00000000-0000-0000-0000-00004639b9e9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R10 [R]",
+                            "pos": {
+                                "x": 2.1209,
+                                "y": 1.5494
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a5f83"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Jumper'",
+                    "items": [
+                        {
+                            "description": "Symbol JP1 [JUMPER]",
+                            "pos": {
+                                "x": 2.1971,
+                                "y": 0.7239
+                            },
+                            "uuid": "00000000-0000-0000-0000-00004639baf8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Capacitor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol C4 [C]",
+                            "pos": {
+                                "x": 2.2479,
+                                "y": 1.6002
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a5f61"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Capacitor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol C5 [C]",
+                            "pos": {
+                                "x": 2.286,
+                                "y": 1.524
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a58b1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Inductor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol L1 [INDUCTOR]",
+                            "pos": {
+                                "x": 2.3114,
+                                "y": 1.3081
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a57be"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Diode_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol D10 [D_Schottky]",
+                            "pos": {
+                                "x": 2.3876,
+                                "y": 1.3716
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a6026"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R16 [R]",
+                            "pos": {
+                                "x": 2.54,
+                                "y": 1.4351
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a58dc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Resistor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol R15 [R]",
+                            "pos": {
+                                "x": 2.54,
+                                "y": 1.5621
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a58d7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Capacitor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol C3 [CP]",
+                            "pos": {
+                                "x": 2.6797,
+                                "y": 1.3716
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a584c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Capacitor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol C6 [C]",
+                            "pos": {
+                                "x": 0.6096,
+                                "y": 1.7145
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442aa12b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Capacitor_THT'",
+                    "items": [
+                        {
+                            "description": "Symbol C7 [C]",
+                            "pos": {
+                                "x": 0.8382,
+                                "y": 1.7145
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442aa145"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_DIP'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [24C16]",
+                            "pos": {
+                                "x": 0.9398,
+                                "y": 0.3302
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a87f7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_DIP'",
+                    "items": [
+                        {
+                            "description": "Symbol U6 [PIC12C508A]",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.7366
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a81a5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_DIP'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [PIC16F54]",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 1.1684
+                            },
+                            "uuid": "00000000-0000-0000-0000-0000442a81a7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library 'Package_DIP'",
+                    "items": [
+                        {
+                            "description": "Symbol P2 [SUPP28]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 0.6477
+                            },
+                            "uuid": "00000000-0000-0000-0000-00004436967e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                }
+            ]
+        },
+        {
+            "path": "/pic_sockets/",
+            "uuid_path": "/2e45d1d2-c73f-46e5-98d6-3a9dc360bff5/00000000-0000-0000-0000-00004804a5e2",
+            "violations": []
+        }
+    ],
+    "source": "pic_programmer.kicad_sch"
+}

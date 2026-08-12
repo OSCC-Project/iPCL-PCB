@@ -1,0 +1,134 @@
+{
+  "index": 13,
+  "name": "琛光E1 Mini ESP32无人机 开源版",
+  "url": "https://oshwhub.com/songge8/project_qqqyfdkm",
+  "category": "教育培训",
+  "subcategory": "无人机",
+  "scale": "200元件规模",
+  "note": null,
+  "username": "songge8",
+  "path": "project_qqqyfdkm",
+  "uuid": "05f7ecdc689445648d7267c7c936f432",
+  "api_detail": {
+    "uuid": "05f7ecdc689445648d7267c7c936f432",
+    "name": "琛光E1 Mini ESP32无人机 开源版",
+    "content": "## 一、项目简介\n\n\n![未标题-1_01.jpg](https://image.lceda.cn/oshwhub/pullImage/a4c97144ae7d4be7b0601c8cd759c9f6.jpg)\n基于ESP32开发板的迷你四轴无人机，主控使用ESP32开发板，仅使用一块陀螺仪传感器，自带WEB遥控器。极简的硬件和软件设计更容易上手，只需简单的焊接和固件刷写，无需复杂配置即可起飞。\n\n**飞机自带网页遥控器，手机访问即可控制**，不需要额外安装APP或实体遥控。当然也支持APP和实体遥控。\n\n**简约而不简单，每处细节都经过仔细打磨**！\n\n**QQ交流群 748767634（1群）、550386989（2群）** 欢迎加群讨论，有问题可以群里反馈或评论区评论\n\n## 二、视频链接：\n[[B站视频--详细介绍+组装教程](https://www.bilibili.com/video/BV1PTXLBEEGR/)]\n[[B站视频--试飞1](https://www.bilibili.com/video/BV1PTXLBEEGR/)]\n[[B站视频--试飞2](https://www.bilibili.com/video/BV12VSZBYEng/)]\n[[B站视频--网页遥控操控手动定高](https://www.bilibili.com/video/BV1Y7XaB1EXd/)]\n\n## 三、项目复刻\n\n**照着做，肯定能飞**！复刻仅需三步：\n* 硬件组装\n* 软件刷写\n* 简单调试\n\n### 第一步 硬件组装\n1、下载 **本页面附件中的【物料清单表格】**，对照物料清单准备材料或[**购买物料包**](https://item.taobao.com/item.htm?ft=t&id=1039398315259)，并在嘉立创制作PCB。\n\n![全散件含PCB.jpg](https://image.lceda.cn/oshwhub/pullImage/3c0f56ee59fb4645b80cf76fc2269049.jpg)\n\n**单套实际使用物料成本约45元。但是考虑到运费、起购量和市场价格调整，物料实际购买成本会高于实际用料成本**。\n\n**嘉立创下单PCB时请忽略掉网表错误**，实际没有问题。\n\nPCB板厚度尽量使用嘉立创**默认的1.6mm厚度**，底座和支架的插接尺寸是按1.6mm设计的。\n\n**主要部件尽量购买质量好一些的**，配件质量参差不齐，会直接影响制作效果。\n\n开发板为**ESP32 30PIN**，没接触过开发板的朋友需要注意ESP开发板有较多版本C3/S3/CAM等，需要的是ESP32没有后缀的版本，针脚30针。\n\n电池为**1S航模/无人机电池，电压3.7-4.2V**，不要买普通锂电池，需要较高的放电倍率。\n\n**全部物料清单在本页面底部附件中的【物料清单表格】，有型号、封装和详细说明**。BOM表仅含电路元件，且直接下单可能会匹配错误，仅供参考。\n\n2、拆解PCB。\n前后左右为电机座和支架部分，中间为主控板部分，新的PCB加了对应分割的丝印。由于拼版不能使用免费券，所以PCB没有分割。组装前要把主控板部分和电机座、挂架分开。拆解的时候可以借助工具，用水口钳可以很容易的剪开。\n\n![1.jpg](https://image.lceda.cn/oshwhub/pullImage/026da7c39feb47dfab630810e7337f58.jpg)\n\n3、焊接元件。\n如果是用电烙铁焊接，建议先焊接最小的贴片元件，再焊接较大的贴片元件，最后焊接插接元件和排针、针座等。\n\n![2.jpg](https://image.lceda.cn/oshwhub/pullImage/f7ee17e4d2c34bb5ba76650e000e975b.jpg)\n\n主控板上有两个较大的470uf电容，是为了缓解电池压力，如果买的电池品质比较好，可以不用这两个电容。LED灯也是非必要部件，可以不装。\n\n陀螺仪模块可以贴着主控板焊接，不用排针，可以减小安装偏差。如果焊接不熟练建议使用排针焊接。\n\n![20260329_230946.jpg](https://image.lceda.cn/oshwhub/pullImage/e7bac0f016994ca5a3c8dd846949c808.jpg)\n\n陀螺仪模块可以只焊接VCC / GND / SCL / SDA / AD0 / NCS这几个引脚\n\n![20260418_171238.jpg](https://image.lceda.cn/oshwhub/pullImage/170b93fd5c05486a8dd4929cad88a138.jpg)\n\n**建议焊接完成后先用万用表简单测试电路是否有虚焊、短路，确认没有问题再通电**。30年老焊工电烙铁焊接0603元件也不能保证一次成功。\n\n4、焊接电机底座和支架。\n电机座能在飞机失控时很好的保护无人机，也当做整个飞机的支撑使用。建议安装。\n支架可以用来放电池，支架高度12mm，厚度小于12mm的电池都可以放得下，可以再用个皮筋固定一下电池。\n支架附近都留有焊盘，用焊锡加固。\n焊好的样子\n![IMG_2026-1.jpg](https://image.lceda.cn/oshwhub/pullImage/200383f578c042ce8df66b68c7f91dc7.jpg)\n背面\n![IMG_2029.jpg](https://image.lceda.cn/oshwhub/pullImage/e45c2afddbee44a9ad823d51bd57b7fd.jpg)\n5、安装电机。\n**电机转动方向必须按指定方向，PCB板有转向对应丝印，且对角的两个电机方向一致**。\n建议使用2个黑白线和2个红蓝线电机，区分颜色安装更直观，PCB板丝印标明了线颜色和正负；也可以使用4只相同颜色线的电机。\n电机由胶圈固定到支架上，或者直接用热熔胶固定。\n电机转动方向参考：\n![c8766ad3b08d4debabcf14898cebf512.png](https://image.lceda.cn/oshwhub/pullImage/13080e4349c04e07834c6f44583025c7.png)\n\n6、安装桨叶\n**桨叶也必须按照指定方向安装**！电机按标识方向转动时桨叶高的一侧在前面，向下吹风。且对角的桨叶方向一致。可以参考下图的安装方向。\n**最稳妥的办法是调试完成后，解锁电机，确认4个桨叶都是向下吹风**。\n电机和桨叶的机械强度有限，安装时不要太过用力，安紧即可。\n\n![IMG_1973.jpg](https://image.lceda.cn/oshwhub/pullImage/0bd8ead432bc40f29286b802686a61c3.jpg)\n\n桨叶保护罩是3D打印件，模型文件在附件，可以下载打印。装上比较安全，建议安装。\n\n### 第二步 软件刷写\n\n1、下载 **本页面附件中** 编译好的BIN固件文件。\n\n2、使用USB数据线连接ESP32开发板和电脑。（如果电脑没有自动安装串口驱动则需要手动安装，可在电脑设备管理器中查看。）\n\n3、使用乐鑫官方工具刷写。\n刷写工具下载地址：https://docs.espressif.com/projects/esp-test-tools/zh_CN/latest/esp32/production_stage/tools/flash_download_tool.html\n\n刷写设置：\n![Snipaste_2026-05-07_22-11-50.png](https://image.lceda.cn/oshwhub/pullImage/af4a916ca68443808ef93ee8c6c30920.png)\n![Snipaste_2026-07-15_23-59-31.png](https://image.lceda.cn/oshwhub/pullImage/fa275a0fc05f4e47b0830d42cd84a93c.png)\n串口号如果不知道是哪一个，可以插拔开发板，看哪个串口号变动就选哪一个\n\n### 第三步 调试、起飞\n1、给无人机接好电池，手机连接无人机WIFI：Drone_WIFI，密码：12345678。**部分手机有自动网络优化功能，会自动切换无线和流量，需要关闭**；或者更直接的办法：关闭手机流量。\n\n2、打开手机浏览器，输入地址：**http://192.168.4.1** 确认后打开遥控器界面。\n\n![IMG_2032.jpg](https://image.lceda.cn/oshwhub/pullImage/3251e474013c482bb5a5ee0011bcee7e.jpg)\n\n3、调试。\n在网页遥控器中点击“调试”按钮，在弹出的调试界面中可以输入调试命令。建议调试前先摘掉桨叶。\n\n**- 校准IMU（必做）**。输入调试命令“ca”，按照提示摆放无人机。参考这段提示：\n```js\n1/6 水平放置：机头朝前（正常飞行方向），底部朝下水平放置在平坦表面，确保完全水平无倾斜。保持不动，8秒后开始校准；\n水平校准完成。请继续。\n2/6 机头朝上：保持机头朝前,将机头指向天空，尾部朝下并接触支撑面，与地面垂直。保持不动，8秒后开始校准；\n机头向上校准完成。请继续。\n3/6 机头朝下：保持机头朝前,将机头指向地面并接触支撑面，尾部朝上，与地面垂直。保持不动，8秒后开始校准；\n机头向下校准完成。请继续。\n4/6 右侧朝下：保持机头朝前,将飞行器右侧朝下并接触支撑面，左侧机臂朝上，与地面垂直。保持不动，8秒后开始校准；\n右侧向下校准完成。请继续。\n5/6 左侧朝下：保持机头朝前,将飞行器左侧朝下并接触支撑面，右侧机臂朝上，与地面垂直。保持不动，8秒后开始校准；\n左侧向下校准完成。请继续。\n6/6 倒置放置：保持机头朝前,将飞行器完全翻转，顶部朝下、底部朝上，整体呈水平倒置状态。保持不动，8秒后开始校准；\n✓全部校准完成！将机身放正，执行ps命令查看校准结果。\n```\n校准完成后，将无人机放正（顶部朝上），输入命令“ps”查看校准结果。会看到类似：\n```js\nroll: 0.521120 pitch: -0.062948 yaw: 82.711197\n```\n**roll/pitch接近于0即校准成功**，**正常范围$\\pm 0.5^\\circ$以内，合格范围2以内，超过5需要重新校准**。**yaw可忽略，mpu6500没有磁力计，yaw轴为虚拟计算数值**。\nIMU校准只需要完成一次，以后如果没有大的偏差、硬件更换、固件重写就不需要再做。\n\n**- 测试电机（选做）**，**先去掉电机上的桨叶**！以免伤人！分别输入命令“mfl/mfr/mrl/mrr”对应左前、右前、左后、右后4个电机，观察4个电机是否正常转动。\n\n如果手机屏幕过小，调试不方便，也可以使用arduino或GQC调试。参考深入研究章节中的内容。\n\n4、起飞。点击解锁按钮，推油门，起飞！\n\n![20260405_174937.mp4_20260407_113851.090.jpg](https://image.lceda.cn/oshwhub/pullImage/13019311a5154185af528d8925a5945f.jpg)\n\n## 四、深入研究\n如果只是简单复刻，以下部分可忽略。\n\n本项目遵循CC BY-NC-SA开源协议，未经授权禁止商用。\n\n### 相关资源\n\n软硬件文档、常见问题：http://docs.cherglowtech.com/\n\n配套地面站(开发中)：https://gc.cherglowtech.com/\n\n开源飞控源码：https://github.com/songge8/CF-Drone\n飞控软件使用arduino开发，可以使用arduino进行开发、编译，arduino IDE自带的控制台，也可用于飞机调试。\n飞机也可以使用任意开发语言编写的飞控程序，只要能匹配硬件ESP32、MPU6500即可。\n\n### 预留接口\n主板预留4组数据接口，默认为I2C、SPI、遥控接收机、备用。可用于连接传感器、遥控等外部设备或给外部设备供电。\n琛光传感器扩展板完美适配预留接口，包含气压计、磁力计、激光测距仪、光流传感器。飞控会自动识别相应传感器是否存在，自动开启定高、定点飞行模式。\n\n预留一套无刷电调接口，可无损改装无刷电机。\n\n### 支持实体遥控、手机APP遥控和MAVLINK协议的遥控\n\n#### 实体遥控\n主板预留的遥控接收机接口，支持主流的ELRS/CRSF/SBUS遥控协议。SBUS已实现软件反向，无需硬件反向器；ELRS/CRSF支持单向控制输入，只需接 GND、5V、TX→RX_PIN 三根线。\n\n实体遥控设置方法：\n* 确保遥控和接收机连接正常，接收机协议设置正确；\n* 连接无人机和接收机；\n* 通过控制台命令设置接收机接口机协议和相应的波特率：RC_PROTOCOL,遥控协议，0=SBUS，1=CRSF/ELRS（默认）；RC_BAUD，遥控串口波特率（bps），SBUS=100000，CRSF=420000（默认）；\n* 校准遥控，控制台使用CR命令按提示操作；\n* 左摇杆右下打满为解锁，左下为上锁\n\n#### QGC手机APP\nAPP可在QGC官网https://qgroundcontrol.com/ 下载。\n除了可以用于控制飞机，APP-Analyze Tools-Mavlink控制台也可以用于飞控调试。\n\n#### MAVLINK\n固件支持MAVLINK协议。\n\n### 图传\n可以参考评论区或视频教程评论中网友的实现方案。\n\n## 五、更新日志\n### V1.3\n* 预留数据接口扩展为4组，默认为I2C、SPI、ELRS/CRSF/SBUS、备用；\n* 重新计算尺寸、位置数据，更高的机械精度；\n* 重新布线，保留完整地平面且进行分区\n\n## 六、致敬\n本项目大量致敬了各位大神的开源项目\n乐鑫esp-drone、okalachev/flix、malagis",
+    "grade": 0,
+    "origin": "pro",
+    "is_draft": false,
+    "thumb": "https://image.lceda.cn/oshwhub/pullImage/b329802a5183451f9df06c86f11fd0a1.jpg",
+    "public": true,
+    "publish": true,
+    "owner": {
+      "uuid": "0196b1bc3697475d89d294e9a0ba8804",
+      "username": "songge8",
+      "nickname": "songge8",
+      "avatar": "/image/avatar-default.png",
+      "team": false
+    },
+    "creator": {
+      "uuid": "0196b1bc3697475d89d294e9a0ba8804",
+      "username": "songge8",
+      "nickname": "songge8",
+      "avatar": "/image/avatar-default.png"
+    },
+    "members": [
+      {
+        "uuid": "0196b1bc3697475d89d294e9a0ba8804",
+        "nickname": "songge8",
+        "username": "songge8",
+        "avatar": "/image/avatar-default.png",
+        "role": 1
+      }
+    ],
+    "path": "songge8/project_qqqyfdkm",
+    "created_at": "2026-03-25T04:14:09.648Z",
+    "updated_at": "2026-07-20T06:32:39.672Z",
+    "tags": [],
+    "count": {
+      "views": 65965,
+      "star": 606,
+      "fork": 0,
+      "watch": 0,
+      "like": 229
+    },
+    "version": "",
+    "attachments": [
+      {
+        "size": 281084,
+        "name": "无人机保护罩2026032902.stl",
+        "mime": "application/octet-stream",
+        "ext": "stl",
+        "uuid": "eded047fad7a43d986c6fc0c1ecd3347",
+        "md5": "c13264589609d35a23b72dda1df8351b",
+        "src": "/oshwhub/project/attachments/f5f0ac3072284478b788cbc18ad87937.stl",
+        "download_count": 1891
+      },
+      {
+        "size": 11872,
+        "name": "琛光E1_Mini物料清单.xlsx",
+        "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "ext": "xlsx",
+        "uuid": "ebf76800fc7242ad892262de14589172",
+        "md5": "2e8b53586254aa80bb82eff8c03a2d64",
+        "src": "/oshwhub/project/attachments/473811b329654839963f91512312f00d.xlsx",
+        "download_count": 405
+      },
+      {
+        "size": 4194304,
+        "name": "琛光E1_MINI固件20260618.bin",
+        "mime": "application/octet-stream",
+        "ext": "bin",
+        "uuid": "3fb674f7b9c84ca6985f74d94699bef9",
+        "md5": "0e3b1408b9c633ad805de4666b26b2d6",
+        "src": "/oshwhub/project/attachments/40b71769bd334ba2a80ab5d6fe0577f6.bin",
+        "download_count": 390
+      }
+    ],
+    "license": "CC BY-NC-SA 4.0",
+    "project_tags": [
+      "6f6eefa0fcb54ab4b75469c64646d9e9",
+      "fc8a8c1bee2a4933afc3b2d309c30888"
+    ],
+    "introduction": "基于ESP32开发板的迷你四轴无人机，主控使用ESP32开发板，仅使用一块陀螺仪传感器，自带WEB遥控器。极简的硬件和软件设计更容易上手，只需简单的焊接，无需复杂配置，手机连接即可起飞。简约而不简单！",
+    "text_editor_type": "markdown",
+    "allow_comment": true,
+    "allow_reprint": true,
+    "from": "oshwhub",
+    "competition_record_uuid": "8bf526b809b640e7bd5a47af7dcd9f00",
+    "no": 0,
+    "archive": false,
+    "store": false,
+    "reproduction_cost": {
+      "total_cost": 45
+    },
+    "attachments_3d": [],
+    "updated_time": "2026-08-10T10:43:06.606Z",
+    "sync_jlc": 1,
+    "is_hide": false,
+    "oshwhub_publish_at": "2026-07-20T06:33:10.302Z",
+    "sync_jlc_3d": 0,
+    "high_quality": true,
+    "remark": "",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "bfa1a897f27b4dadbd0ae39bc869c25c",
+      "name": "星火计划2026",
+      "path": "spark2026",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 153,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": true,
+    "vote_count": 18
+  }
+}

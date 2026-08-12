@@ -1,0 +1,13 @@
+project: 基于STM32G4的FOC电机驱动学习板
+design_index: 18
+board: foc_driver
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/18_基于STM32G4的FOC电机驱动学习板/基于STM32G4的FOC电机驱动学习板.epro2
+source_epcb: axdr_v1.3.epcb
+components: 334
+nets: 160
+tracks: 1901
+vias: 1736
+zones: 1314
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 1563450

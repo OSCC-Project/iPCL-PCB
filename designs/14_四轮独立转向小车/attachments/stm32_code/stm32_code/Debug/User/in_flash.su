@@ -1,0 +1,3 @@
+../User/in_flash.c:19:6:STMFLASH_Write_NoCheck	32	static
+../User/in_flash.c:62:6:STMFLASH_Write	552	static
+../User/in_flash.c:105:6:STMFLASH_Read	48	static

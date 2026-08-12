@@ -1,0 +1,3 @@
+../User/servo.c:29:6:Servo_Init	8	static
+../User/servo.c:52:6:Servo_SetAngle	32	static
+../User/servo.c:78:6:Servo_SetAngles	24	static

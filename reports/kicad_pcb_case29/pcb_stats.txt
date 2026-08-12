@@ -1,0 +1,13 @@
+project: [已验证] PN532RFID/NFC调试器
+design_index: 23
+board: Board1
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/23_[已验证] PN532RFID_NFC调试器/[已验证] PN532RFID_NFC调试器.epro2
+source_epcb: PCB1.epcb
+components: 64
+nets: 42
+tracks: 599
+vias: 217
+zones: 214
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 326679

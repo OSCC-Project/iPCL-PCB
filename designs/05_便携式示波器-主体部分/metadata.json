@@ -1,0 +1,139 @@
+{
+  "index": 5,
+  "name": "便携式示波器-主体部分",
+  "url": "https://oshwhub.com/Alpha-go/a5IITjkVGF1cA9kyTV2V9sIHra7GcIg2",
+  "category": "测量仪表",
+  "subcategory": "精密测量",
+  "scale": "400元件规模",
+  "note": null,
+  "username": "Alpha-go",
+  "path": "a5IITjkVGF1cA9kyTV2V9sIHra7GcIg2",
+  "uuid": "fd2d7a770aa441af9e61ee2ff1f23209",
+  "api_detail": {
+    "uuid": "fd2d7a770aa441af9e61ee2ff1f23209",
+    "path": "Alpha-go/a5IITjkVGF1cA9kyTV2V9sIHra7GcIg2",
+    "name": "便携式示波器-主体部分",
+    "content": "<h3 align=\"justify\">1 相关链接</h3>\n<p align=\"justify\">b站简易测试视频链接：<a href=\"https://www.bilibili.com/video/BV16a411v7ak?spm_id_from=333.337.search-card.all.click\">毕设-基于FPGA的便携式示波器（简单演示）_哔哩哔哩_bilibili</a><br />b站测试视频（同学帮忙剪辑）：<a href=\"https://www.bilibili.com/video/BV1er4y1H7iP?spm_id_from=333.337.search-card.all.click\">基于FPGA的便携式示波器-波形发生功能展示_哔哩哔哩_bilibili</a><br />便携式示波器-显示模块：<a href=\"/Alpha-go/OSC-panel\">OSC_panel - 立创EDA开源硬件平台 (oshwhub.com)</a><br />便携式示波器-扩展数据采集模块：<a href=\"/Alpha-go/4a912e6ba2c7460593bec167dd44022e\">DSO_module - 立创EDA开源硬件平台 (oshwhub.com)</a></p>\n<p align=\"justify\">参考资料链接： <a href=\"https://pan.baidu.com/s/1yL8x0anwPYvNF2imFU6t_g?pwd=p6pa\">https://pan.baidu.com/s/1yL8x0anwPYvNF2imFU6t_g?pwd=p6pa </a></p>\n<p align=\"justify\">提取码: p6pa</p>\n<p align=\"justify\">rtl代码链接： <a href=\"https://pan.baidu.com/s/1mmWb2291aS75lud4RXpGvA?pwd=78sc\">https://pan.baidu.com/s/1mmWb2291aS75lud4RXpGvA?pwd=78sc </a></p>\n<p align=\"justify\">提取码: 78sc </p>\n<p align=\"justify\">原理图、PCB直接点击右上角编辑器打开~~~</p>\n<p align=\"justify\">欢迎点赞、投币🤣🤣</p>\n<h4> </h4>\n<h3>2 性能指标</h3>\n<p>示波器部分使用两片AD9288（双8位100M采样率ADC），采用交替采样的方式使示波器能够达到单通道最高400Msps、双通道200Msps的采样率。</p>\n<p>波形发生器部分使用的是3PD5651，125M转换速率，10bit的数据位宽，最高20MHz的正弦波输出。波形发生器输出能够通过双头BNC线直接接入示波器部分，供示波器测试使用。</p>\n<p> </p>\n<h3>3 模块划分</h3>\n<p align=\"justify\"><span style=\"font-size:16px;\"><span style=\"font-family:'宋体';\">该系统硬件部分由FPGA核心板、便携式示波器底板、便携式示波器显示板、扩展数据采集模块组成。</span></span></p>\n<p align=\"justify\"> </p>\n<p align=\"justify\"><span style=\"font-size:16px;\"><span style=\"font-family:'宋体';\">FPGA核心板：逻辑功能实现（Altera FPGA Cyclone IV EP4CE30）；<br />便携式示波器底板：对波形预处理、任意信号生成；<br />便携式示波器显示板：功能与方向按键组合实现不同操作，LCD显示信息；</span></span></p>\n<p align=\"justify\"><span style=\"font-size:16px;\"><span style=\"font-family:'宋体';\">扩展数据采集模块：扩展一路AD9288_ADC模块，模拟前端电路同底板相同。</span></span></p>\n<p align=\"justify\"> </p>\n<p align=\"justify\"><span style=\"font-family:'宋体';\"><img src=\"//image.lceda.cn/pullimage/g8n3eRNPHgw7TpCEZjCshCw7DL796jqA8N9q6Jzb.png\" alt=\"g8n3eRNPHgw7TpCEZjCshCw7DL796jqA8N9q6Jzb.png\" /></span></p>\n<p style=\"text-align:center;\"><span style=\"font-family:'宋体';\">图</span>1 <span style=\"font-family:'宋体';\">系统总体方案框</span><span style=\"font-family:'宋体';\">图</span></p>\n<p style=\"text-align:center;\"> </p>\n<p style=\"text-align:center;\"> </p>\n<h3 style=\"text-align:left;\">4 项目图片</h3>\n<p> </p>\n<p style=\"text-align:center;\"><img src=\"//image.lceda.cn/pullimage/98RvOPl2o3n5deqydKh33cQTKsiCZl4VBLDTWQl0.png\" alt=\"\" width=\"937\" height=\"565\" /></p>\n<p style=\"text-align:center;\"><span style=\"font-size:14px;\"><span style=\"font-family:'宋体';\">图2</span> 3D预览图</span></p>\n<p style=\"text-align:center;\"> </p>\n<p style=\"text-align:center;\"><img src=\"//image.lceda.cn/pullimage/m1MJGrJz4AnQMzlSNSLtNLDGfdOaeOelttFakO0v.jpeg\" alt=\"\" width=\"928\" height=\"1200\" /></p>\n<p style=\"text-align:center;\"><span style=\"font-size:14px;\"><span style=\"font-family:'宋体';\">图3</span> 未焊接PCB实物图</span></p>\n<p style=\"text-align:center;\"> </p>\n<p style=\"text-align:center;\"><span style=\"font-size:14px;\"><img src=\"//image.lceda.cn/pullimage/sO0KZReAgEcztmrci0ikyKWxxMgNStVuN2PZvmoH.jpeg\" alt=\"\" width=\"915\" height=\"915\" /></span></p>\n<p style=\"text-align:center;\"><span style=\"font-size:14px;\"><span style=\"font-family:'宋体';\">图4</span> PCB实物图</span></p>\n<p style=\"text-align:center;\"> </p>\n<p style=\"text-align:center;\"><span style=\"font-size:14px;\"><img src=\"//image.lceda.cn/pullimage/AfCQUrz3f8X2uVCd7JHv4tIa3HsxoMaOYkcoAqLk.jpeg\" alt=\"\" width=\"910\" height=\"682\" /></span></p>\n<p style=\"text-align:center;\"><span style=\"font-size:14px;\"><span style=\"font-family:'宋体';\">图5</span> 作品实物图</span></p>",
+    "grade": 4,
+    "public": true,
+    "license": "LGPL",
+    "creator": {
+      "uuid": "b868d59dc0c9409bbe500f41d58c6e49",
+      "username": "Alpha-go",
+      "nickname": "Alpha-go",
+      "avatar": "//image.lceda.cn/avatars/2022/4/VxW21xvGpH6s6dwuJo4uRzUP8RFaNhh3wSL1ubQJ.png"
+    },
+    "text_editor_type": "richText",
+    "owner": {
+      "uuid": "b868d59dc0c9409bbe500f41d58c6e49",
+      "username": "Alpha-go",
+      "nickname": "Alpha-go",
+      "avatar": "//image.lceda.cn/avatars/2022/4/VxW21xvGpH6s6dwuJo4uRzUP8RFaNhh3wSL1ubQJ.png",
+      "team": false
+    },
+    "count": {
+      "views": 75910,
+      "star": 777,
+      "fork": 0,
+      "watch": 0,
+      "like": 447
+    },
+    "members": [
+      {
+        "uuid": "b868d59dc0c9409bbe500f41d58c6e49",
+        "username": "Alpha-go",
+        "nickname": "Alpha-go",
+        "avatar": "//image.lceda.cn/avatars/2022/4/VxW21xvGpH6s6dwuJo4uRzUP8RFaNhh3wSL1ubQJ.png",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "id": 1,
+        "uuid": "4f63561ab8824853abe664cc191a4296",
+        "name": "rtl_demo.zip",
+        "src": "/attachments/2022/4/DPe4ndlPK26K5UQOtt79lccCxorhvIlknYmIyIPq.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "size": 122718,
+        "md5": "0b07f498e3e51dc58cdb903193976400",
+        "download_count": 1598
+      },
+      {
+        "id": 1,
+        "uuid": "4163876527a94860b028d7747e6d5150",
+        "name": "项目图片.zip",
+        "src": "/attachments/2022/4/PgEYKoOMnUhC5yE7lzn0kQgUgILzYrHZe36ACSib.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "size": 11537156,
+        "md5": "ea4ec0ca27ad66e63769369fd2156449",
+        "download_count": 2870
+      },
+      {
+        "id": 1,
+        "uuid": "d291c78039764d76abd871b6f5b33f17",
+        "name": "SCH_OSC.pdf",
+        "src": "/attachments/2022/4/VnAbpAo4sPvRIoAjPQEaGawO7QkIPT6agQY0sH2U.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 3735209,
+        "md5": "01cf935e08dded14aa24567f34358e25",
+        "download_count": 2179
+      },
+      {
+        "id": 1,
+        "uuid": "ac42cf035a5a477692097cb4e0f164fa",
+        "name": "BOM_OSC.xlsx",
+        "src": "/attachments/2022/4/Lk6Gye5GE1GXC187LWQAve7CNBNt1RV8rJ2Kpn42.bin",
+        "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "ext": "bin",
+        "size": 14980,
+        "md5": "3ccb7c10ba481ff2d4acd5ee234a6288",
+        "download_count": 933
+      }
+    ],
+    "no": 0,
+    "origin": "pro",
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/pullimage/L2CQzw4Sks9btUxeCAXPDi39VWrCjBgUcuoVn581.jpeg",
+    "updated_at": "2026-05-30T03:01:45.000Z",
+    "created_at": "2022-02-21T04:47:59.000Z",
+    "introduction": "基于FPGA的便携式多功能仪器（示波器、信号发生器等）",
+    "is_draft": false,
+    "project_tags": [
+      "7711ced2a349485d85a6cae11c91cc5d",
+      "3c31dae7077a4424b395e8ffe4399b18"
+    ],
+    "publish": true,
+    "publish_time": {
+      "date": "2022-04-21 14:55:10.333004",
+      "timezone_type": 3,
+      "timezone": "PRC"
+    },
+    "high_quality": true,
+    "oshwhub_publish_at": "2022-11-21T02:52:49.000Z",
+    "store": false,
+    "updated_time": "2026-08-10T09:23:20.233Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": null,
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 150,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

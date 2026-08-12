@@ -1,0 +1,153 @@
+{
+  "index": 2,
+  "name": "4G物联定位控制魔盒(硬件+服务端+APP)",
+  "url": "https://oshwhub.com/eda_xdnnfnff/iot-type-gps-multi-function-controller",
+  "category": "汽车电子",
+  "subcategory": "汽车传感与通信",
+  "scale": "200元件规模",
+  "note": null,
+  "username": "eda_xdnnfnff",
+  "path": "iot-type-gps-multi-function-controller",
+  "uuid": "34776e527c984124b0596dc93247523f",
+  "api_detail": {
+    "uuid": "34776e527c984124b0596dc93247523f",
+    "path": "eda_xdnnfnff/iot-type-gps-multi-function-controller",
+    "name": "4G物联定位控制魔盒(硬件+服务端+APP)",
+    "content": "<h2><span style=\"color:#e67e23\">文字越少越有料。。。。。全套车载物联设备解决方案。</span></h2>\n<p> </p>\n<h2><strong><span style=\"color:#e03e2d\">点赞不迷路，祝您天天BF</span></strong></h2>\n<p> </p>\n<div>\n<div>\n<h2><span style=\"color:#e03e2d\">产品功能</span></h2>\n<ol>\n<li><span style=\"color:#e03e2d\"><strong>带远程控制的的物联定位模组，该方案同样适用于各类485_modbus  MQTT, TCP ,UDP 等通讯协议。</strong></span></li>\n<li><span style=\"color:#e03e2d\"><strong>带震动感知，静止自动休眠，震动自动唤醒。</strong></span></li>\n<li><span style=\"color:#e03e2d\"><strong>电源电压低于10V 将自动关闭4G通讯和GPS 供电，同时负载也将关闭，保护车载蓄电池，电压恢复自动联网并发送位置。</strong></span></li>\n<li><span style=\"color:#e03e2d\"><strong>带GPS信号丢失检测，云端数据反馈。</strong></span></li>\n<li><strong><span style=\"color:#e03e2d\">车辆控制(远程启动，远程解锁，远程断油，断电等。。。)</span></strong></li>\n<li><strong><span style=\"color:#e03e2d\">负载可控制灯光多模式(爆闪，呼吸，领航，示宽单闪，双闪等)</span></strong></li>\n<li><span style=\"text-decoration:line-through\"><strong><span style=\"color:#e03e2d;text-decoration:line-through\">可扩展CAN 协议，远程控制车辆高级功能(需协议需求分析)</span></strong></span></li>\n<li><strong><span style=\"color:#e03e2d\">相关资料整理中...... </span></strong></li>\n</ol>\n<div><span style=\"color:#e67e23;font-size:18px\">485单模块请移步至  →→   <span style=\"text-decoration:underline\"><a title=\"工业级4G远程485协议转换器\" href=\"/18511895537/gong-ye-ji-4G-485xie-yi-zhuai-hu\" target=\"_blank\" rel=\"noopener\">工业级4G远程485协议转换器</a></span></span></div>\n</div>\n<div> </div>\n<div>\n<h2><span style=\"color:#e67e23\">项目声明</span></h2>\n<div><span style=\"color:#e67e23\">本项目为首次公开，为本人原创项目。项目未曾在别的比赛中获奖。</span></div>\n</div>\n<div> </div>\n<div> </div>\n</div>\n<h2><span style=\"font-size:24px;color:#b96ad9\">项目参数</span></h2>\n<ul>\n<li><span style=\"font-size:14px;color:#b96ad9\"><strong>PCB：4层 板厚1.2</strong></span></li>\n<li><span style=\"font-size:14px;color:#b96ad9\"><strong>尺寸：47.54mm x 59.9mm</strong></span></li>\n<li><span style=\"font-size:14px;color:#b96ad9\"><strong>外壳:  3D(工程内部)</strong></span></li>\n<li><span style=\"font-size:14px;color:#b96ad9\"><strong>交互方式：Windows UI + APP</strong></span></li>\n<li><span style=\"font-size:14px;color:#b96ad9\"><strong>电源输入接口：6V-30V</strong></span></li>\n<li><span style=\"font-size:14px;color:#b96ad9\"><strong>负载输出：4路低负载回路</strong></span></li>\n<li><span style=\"font-size:14px;color:#b96ad9\"><strong>通讯方式：4G LTE </strong></span></li>\n<li><span style=\"font-size:14px;color:#b96ad9\"><strong>模块亏电电流：15ma</strong></span></li>\n<li><span style=\"color:#b96ad9\"><span style=\"font-size:14px\"><strong>模块正常电流：最大80ma</strong></span></span></li>\n<li><span style=\"color:#b96ad9\"><span style=\"font-size:14px\"><strong>负载总电流：最大3.2A</strong></span></span></li>\n</ul>\n<div> </div>\n<h2><span style=\"text-decoration:underline;color:#3598db;background-color:#ffffff\">开源协议</span></h2>\n<div><span style=\"text-decoration:underline;color:#3598db;background-color:#ffffff\">本工程依据“CC-BY-NC-SA 4.0”知识共享许可协议，请勿用于商用，转载时请标明出处。</span></div>\n<div> </div>\n<div> </div>\n<div>\n<div> </div>\n</div>\n<h2><span style=\"color:#169179\">项目组成(硬件)  </span></h2>\n<ul>\n<li><span style=\"color:#169179;font-size:18px\">硬件图示</span></li>\n</ul>\n<p><img src=\"//image.lceda.cn/pullimage/OIxS7YAW5jHkDtJ8ZMIzYSoF2zEsDL9VfMh46Fld.jpeg\" alt=\"\" width=\"583\" height=\"720\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/2L2noWZW5mjB2qGYdf5ZOzLhYSF8CeNrCp5cI7HD.jpeg\" alt=\"\" width=\"600\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/fYDgZF0V3H0j28a9l1r0hjD85YmhxNyzJiQ4RrW9.jpeg\" alt=\"\" width=\"600\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/ZJZbX65kcjL24gH9qj50S0FvlXhgJfY6NWKBHhvk.jpeg\" alt=\"\" width=\"617\" height=\"657\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/3ce15nnDmhxsvZByEZZ07prSm8KEiGlQfqPoqEOI.jpeg\" alt=\"\" width=\"616\" height=\"606\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/PPGRfvILS94JnzBUOyIq3MbWOC0FjsPzEQrCNwZ8.jpeg\" alt=\"\" width=\"618\" height=\"650\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/BDzYyxetZZLXgcQPnBaZ83O2wOpVZTErSFS8g2Wu.jpeg\" alt=\"\" width=\"612\" height=\"545\" /></p>\n<p> </p>\n<ul>\n<li><span style=\"font-size:18px;color:#e03e2d\">硬件固件烧录</span></li>\n</ul>\n<p> </p>\n<p><span style=\"font-size:16px;color:#e03e2d\">通用ESP主控下载方式，flash_download_tool</span></p>\n<p><img src=\"//image.lceda.cn/pullimage/D3S7NIyvtlS8OsIzMv1TekibwKcsSYHbF2YIajVx.jpeg\" alt=\"\" width=\"235\" height=\"220\" /><img src=\"//image.lceda.cn/pullimage/C6MetbaatAhn3Jb1taGfkgnc0tvy8sy9ANX0mFKn.jpeg\" alt=\"\" width=\"300\" height=\"467\" /></p>\n<p> </p>\n<p> </p>\n<p> </p>\n<div>\n<div>\n<h2><span style=\"color:#843fa1\">项目组成(软件) 附件提供本次所需的所有软件</span></h2>\n<p> </p>\n</div>\n</div>\n<ul>\n<li><span style=\"color:#b96ad9\"><strong><span style=\"font-size:18px\">Win服务端（已实现）</span></strong></span></li>\n</ul>\n<p> </p>\n<ol>\n<li><span style=\"color:#b96ad9\"><strong><span style=\"font-size:18px\"><span style=\"font-size:16px\">基础指令下发_OK</span></span></strong></span></li>\n<li><span style=\"color:#b96ad9\"><strong><span style=\"font-size:18px\"><span style=\"font-size:16px\">管理指令下发_OK</span></span></strong></span></li>\n<li><span style=\"color:#b96ad9\"><strong><span style=\"font-size:18px\"><span style=\"font-size:16px\">开机启动_OK</span></span></strong></span></li>\n<li><span style=\"color:#b96ad9\"><strong><span style=\"font-size:18px\"><span style=\"font-size:16px\">数据转发_OK</span></span></strong></span></li>\n<li><span style=\"color:#b96ad9\"><strong><span style=\"font-size:18px\"><span style=\"font-size:16px\">数据存档本地数据库_OK</span></span></strong></span></li>\n<li><span style=\"color:#b96ad9\"><strong><span style=\"font-size:18px\"><span style=\"font-size:16px\">功能重启记忆_OK</span></span></strong></span></li>\n</ol>\n<p><img src=\"//image.lceda.cn/pullimage/8ax6gk7PZehF8RRvBeIP9SdgpDV1Rxf5pgW1sb3t.jpeg\" alt=\"\" width=\"600\" height=\"497\" /></p>\n<div>\n<div> </div>\n</div>\n<div>\n<ul>\n<li><span style=\"color:#ba372a;font-size:18px\">移动端APP</span></li>\n</ul>\n<p> </p>\n<ol>\n<li><span style=\"color:#ba372a\">基础指令下发_OK</span></li>\n<li><span style=\"color:#ba372a\">管理指令下发_OK</span></li>\n<li><span style=\"color:#ba372a\">通讯提示音_OK</span></li>\n<li><span style=\"color:#236fa1;font-size:18px\"><span style=\"color:#ba372a\">服务器重连_OK</span></span></li>\n<li><span style=\"color:#ba372a\"><span style=\"font-size:18px\">退出确认，2次返回_OK</span></span></li>\n<li><span style=\"color:#ba372a\"><span style=\"font-size:18px\">系统设置接口调用_OK</span></span></li>\n<li><span style=\"text-decoration:line-through\"><span style=\"color:#ba372a;text-decoration:line-through\"><span style=\"font-size:18px\">蓝牙短距通讯</span></span></span></li>\n</ol>\n<p><img src=\"//image.lceda.cn/pullimage/1DQr7XyDovsL5JYxZNGaQVeseL1rScahz7ij9TaF.jpeg\" alt=\"\" width=\"800\" height=\"550\" /></p>\n</div>\n<div>\n<ul>\n<li>4G模块配置  资料整理中...</li>\n</ul>\n<p> </p>\n<p><img src=\"//image.lceda.cn/pullimage/9cQNsyzW27jp5CPk7lCT8qtNAItMDLUhKbylVTPZ.jpeg\" alt=\"\" width=\"551\" height=\"370\" /></p>\n<p> </p>\n<ul>\n<li>GPS模块配置  资料整理中...</li>\n</ul>\n</div>\n<div> </div>\n<div><img src=\"//image.lceda.cn/pullimage/8Y3KrL0rRKmFKBergtvCtaiuh2e7BWPeVh4EClgp.jpeg\" alt=\"\" width=\"552\" height=\"406\" /></div>\n<div>\n<h1><span style=\"font-size:24px\">企鹅群：754881030</span></h1>\n<p> </p>\n</div>\n<div>\n<h2><span style=\"color:#843fa1\">测试视频</span></h2>\n</div>",
+    "introduction": "一款工业级物联网通用的4G 三网+GPS+远程控制的多功能魔盒。任何一部分都可单独分离拼凑出其他产品。\n产品从软到硬，不用第三方云平台，从本地到云端，移动端到云端， 各环节配套一条龙全部原创开发。",
+    "grade": 3,
+    "public": true,
+    "license": "CC BY-NC-SA 4.0",
+    "text_editor_type": "richText",
+    "creator": {
+      "uuid": "a689612f62e14feb9fe232ddbbfb4637",
+      "username": "eda_xdnnfnff",
+      "nickname": "Origin_",
+      "avatar": "//image.lceda.cn/avatars/2022/8/hYEKbKpY0tjVvqNp3UTskrESaXdQCibv0plThg5i.png"
+    },
+    "owner": {
+      "uuid": "a689612f62e14feb9fe232ddbbfb4637",
+      "username": "eda_xdnnfnff",
+      "nickname": "Origin_",
+      "avatar": "//image.lceda.cn/avatars/2022/8/hYEKbKpY0tjVvqNp3UTskrESaXdQCibv0plThg5i.png",
+      "team": false
+    },
+    "origin": "pro",
+    "is_draft": false,
+    "publish": true,
+    "count": {
+      "views": 16700,
+      "star": 188,
+      "fork": 0,
+      "watch": 0,
+      "like": 68
+    },
+    "members": [
+      {
+        "uuid": "a689612f62e14feb9fe232ddbbfb4637",
+        "username": "eda_xdnnfnff",
+        "nickname": "Origin_",
+        "avatar": "//image.lceda.cn/avatars/2022/8/hYEKbKpY0tjVvqNp3UTskrESaXdQCibv0plThg5i.png",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "id": 1,
+        "uuid": "c1ec047c8e9242cc96e4645e905de1a9",
+        "name": "3月27日.mp4",
+        "src": "/attachments/2024/3/k00OTK02ZHTOO3qUZRmh6OuNzuelwtU1suLXdxY2.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "size": 36983917,
+        "md5": "18b5ecf38a7e54287af3645002707659",
+        "download_count": 200
+      },
+      {
+        "size": 2192810,
+        "name": "调试版_CGS控制端.apk",
+        "mime": "application/vnd.android.package-archive",
+        "ext": "apk",
+        "uuid": "a56b3b5651df4284b9a81569ce715282",
+        "md5": "e4579328fd1c6109e279d8c12d002c82",
+        "src": "/oshwhub/project/attachments/423c7ecd4033465eb620045d4b8c98e1.apk",
+        "download_count": 65
+      },
+      {
+        "size": 1971895,
+        "name": "CGS服务端(Windows).rar",
+        "mime": "application/x-compressed",
+        "ext": "rar",
+        "uuid": "f599b0ef947c436bae542ef7a201892b",
+        "md5": "58935bb52edf55bebd3c13b9b615c978",
+        "src": "/oshwhub/project/attachments/a9fdc9fcc49c4e76a005e4b0ee72abb8.rar",
+        "download_count": 92
+      },
+      {
+        "size": 187351,
+        "name": "4G物联定位控制魔盒(固件).zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "f024c974fc244de784225f85df6fa9db",
+        "md5": "04fe999b622a7051cf05a5777fa27aca",
+        "src": "/oshwhub/project/attachments/f6c936c0525142439b9eb7f2c317191a.zip",
+        "download_count": 97
+      },
+      {
+        "size": 22198023,
+        "name": "固件烧录工具_tool_3.9.7.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "109f7a611aa04a0a845cb72ad067ee6b",
+        "md5": "6aa921106abe42f11f6e1707439a1ead",
+        "src": "/oshwhub/project/attachments/306e8c94260e45b095a6a74641f5f876.zip",
+        "download_count": 65
+      }
+    ],
+    "no": 0,
+    "archive": false,
+    "allow_comment": true,
+    "allow_reprint": false,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/pullimage/Fk0JAfRrlb72PErFn6yJcO9V4Bv2DFUMwqw7R20y.jpeg",
+    "from": "userCenter",
+    "competition_record_uuid": "340edbb00f164b7e84ba374271d597ef",
+    "updated_at": "2025-02-08T04:55:41.000Z",
+    "created_at": "2024-03-07T10:25:51.000Z",
+    "project_tags": [
+      "3e9823af89424add8e16c8d86dbe6365",
+      "c2e7a00699a2440ca5880a96466ee387",
+      "5f4e56750b0445a7a024b01cc8fa7122"
+    ],
+    "oshwhub_publish_at": "2025-01-03T01:05:03.000Z",
+    "high_quality": true,
+    "is_hide": false,
+    "reproduction_cost": {},
+    "store": false,
+    "updated_time": "2026-08-10T10:32:26.163Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "848df799086a48d8bf82e78e3af5acbb",
+      "name": "星火计划2024",
+      "path": "spark2024",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 6,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

@@ -1,0 +1,13 @@
+project: 蓝桥杯单片机主板IAP15F2K61S2(一键下载版)
+design_index: 15
+board: V2.0
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/15_蓝桥杯单片机主板IAP15F2K61S2(一键下载版)/蓝桥杯单片机主板IAP15F2K61S2(一键下载版).epro2
+source_epcb: PCB蓝桥杯单片机开发板v2.epcb
+components: 167
+nets: 169
+tracks: 1985
+vias: 531
+zones: 1083
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 1516369

@@ -1,0 +1,176 @@
+{
+  "index": 7,
+  "name": "音视频KVM切换器 光纤、模拟音频、HDMI",
+  "url": "https://oshwhub.com/aknice/yin-shi-pi",
+  "category": "家用电子",
+  "subcategory": "影音娱乐",
+  "scale": "400元件规模",
+  "note": null,
+  "username": "aknice",
+  "path": "yin-shi-pi",
+  "uuid": "876449e33dd240788db5e0d584f29737",
+  "api_detail": {
+    "uuid": "876449e33dd240788db5e0d584f29737",
+    "path": "aknice/yin-shi-pi",
+    "name": "#第八届立创电赛#音视频KVM切换器 光纤、模拟音频、HDMI",
+    "content": "<h1 class=\"paragraph text-align-type-left pap-line-1.3 pap-line-rule-auto pap-spacing-before-3pt pap-spacing-after-3pt\" style=\"text-align:center;\">音视频KVM切换器 光纤、模拟音频、HDMI</h1>\n<h4 class=\"paragraph text-align-type-left pap-line-1.3 pap-line-rule-auto pap-spacing-before-3pt pap-spacing-after-3pt\"><span style=\"color:#2dc26b;\"><strong>项目属性：项目首次公开，本人原创设计，未参加其他比赛，非毕业/课程设计。</strong></span></h4>\n<h1>1.简介</h1>\n<p>使用瑞萨芯片进行主控和触摸检测，2个MS9601进行HDMI5切1，MS9331进行HDMI音频解码，继电器进行模拟音频切换，CH444G进行S/PDIF切换的音视频切换器</p>\n<h1><img src=\"//image.lceda.cn/pullimage/Sfu3ZIdAWVTmA07IbhpYoFZD2bKO7sgWzVTFCGhn.png\" alt=\"Sfu3ZIdAWVTmA07IbhpYoFZD2bKO7sgWzVTFCGhn.png\" /></h1>\n<p> </p>\n<h1>2.切换器实际使用情况</h1>\n<p>本人的HDMI设备，音频设备比较多，各种树莓派，香橙派，台式机，笔电，游戏机，碟机，卡带机</p>\n<p>但是显示器和音响只有一个，于是乎有想让这些设备共享这些外设的东西，那么就是切换器</p>\n<p>市面上也有不少买切换器的</p>\n<p>HDMI切换器：</p>\n<p><img src=\"//image.lceda.cn/pullimage/PVNTxfOdqVQKMqSMq5EiEffdptGuF8AsHwoLUrQJ.png\" alt=\"PVNTxfOdqVQKMqSMq5EiEffdptGuF8AsHwoLUrQJ.png\" width=\"422\" height=\"257\" /></p>\n<p>HDMI音频解码器：</p>\n<p><img src=\"//image.lceda.cn/pullimage/IwkKHNi8kInoZUm0IZ5ah9PYBUKm6i0R9HNWU2Y4.png\" alt=\"IwkKHNi8kInoZUm0IZ5ah9PYBUKm6i0R9HNWU2Y4.png\" width=\"454\" height=\"224\" /></p>\n<p>音频切换器：</p>\n<p><img src=\"//image.lceda.cn/pullimage/rxziiYAm6FCAPhqs3qmcdrayX2cCCt6UDcsE8kbZ.png\" alt=\"rxziiYAm6FCAPhqs3qmcdrayX2cCCt6UDcsE8kbZ.png\" width=\"428\" height=\"256\" /></p>\n<p>光纤切换器：</p>\n<p><img src=\"//image.lceda.cn/pullimage/hyC5ZwcxMOH9Jzsq7PL8nag1mqnVNgBfriXllC13.png\" alt=\"hyC5ZwcxMOH9Jzsq7PL8nag1mqnVNgBfriXllC13.png\" width=\"473\" height=\"257\" /></p>\n<p>但是他们价格不菲，而且一个个拆分，接线很麻烦。</p>\n<p>虽然价格不是他们的问题，是我的问题，实力不允许啊</p>\n<p>但是我可以自己做啊：</p>\n<p><img src=\"//image.lceda.cn/pullimage/D5XpToKk7xlBszBzcexRpOkooiPLszVmqzopWA2Z.png\" alt=\"D5XpToKk7xlBszBzcexRpOkooiPLszVmqzopWA2Z.png\" /></p>\n<p>于是，这是本人之前电脑后面的样子，凌乱不堪</p>\n<p>这是集这几个工程的，所以接线非常多：</p>\n<h1><img src=\"//image.lceda.cn/pullimage/6erpo0QH5dfDOUjeumZb5TsYPBrbeTl1AL2CkdHy.jpeg\" alt=\"6erpo0QH5dfDOUjeumZb5TsYPBrbeTl1AL2CkdHy.jpeg\" width=\"938\" height=\"704\" /></h1>\n<p>有了这个整合在一起，可以全部拆下</p>\n<h1><img src=\"//image.lceda.cn/pullimage/lBf1huIJKC4zOAbVk4HADXn84vpTh5DQgK3W9BqX.png\" alt=\"lBf1huIJKC4zOAbVk4HADXn84vpTh5DQgK3W9BqX.png\" /></h1>\n<p>更换后：</p>\n<p>线少了好多，看上去比之前顺眼多了，但是还是乱啊（悲）</p>\n<h1><img src=\"//image.lceda.cn/pullimage/xroqZajt7pSSVVN8G9ktGYzkwhehsCWAMLGvS5y1.png\" alt=\"xroqZajt7pSSVVN8G9ktGYzkwhehsCWAMLGvS5y1.png\" width=\"916\" height=\"684\" /></h1>\n<p>于是本人将切换器放置在显示器下方，切换的时候拿出来即可</p>\n<p><img src=\"//image.lceda.cn/pullimage/Dwvnw9SXmUrdKPCLy6cVBuV9BVL426hzRJuwYwz9.png\" alt=\"Dwvnw9SXmUrdKPCLy6cVBuV9BVL426hzRJuwYwz9.png\" width=\"896\" height=\"669\" /></p>\n<h1>3.框图</h1>\n<p>主要框图如下，注意电源使用，模拟音频、光纤的灯光指示和控制使用的是同一组控制信号</p>\n<p> </p>\n<p><img src=\"//image.lceda.cn/pullimage/v3d4R4Z1rSzgtFxzIBGG3KboPMNPidVD7SH0Qloc.png\" alt=\"v3d4R4Z1rSzgtFxzIBGG3KboPMNPidVD7SH0Qloc.png\" width=\"1025\" height=\"529\" /></p>\n<p>布局基本可以参考框图摆放</p>\n<h1><img src=\"//image.lceda.cn/pullimage/DaxvzXnsotPU7FDLxoSV8AfpLT6NRdWiRgEHYYn9.png\" alt=\"DaxvzXnsotPU7FDLxoSV8AfpLT6NRdWiRgEHYYn9.png\" /></h1>\n<h1>4.电路原理图</h1>\n<h2>4.1控制HDMI信号</h2>\n<p>根据MS9601规格书可知，RX的HPD信号给到对应端口即可让对应HDMI切换到该端口</p>\n<p><img src=\"//image.lceda.cn/pullimage/mJIrSwIfV4hlZMCRPgzfBbEx4GziMWTwtA6yQgUI.png\" alt=\"mJIrSwIfV4hlZMCRPgzfBbEx4GziMWTwtA6yQgUI.png\" /></p>\n<p>因此控制很简单，只需要控制HPD高低电平即可</p>\n<p>很多时候，输入设备检测到HPD后，就会输出差分视频信号。</p>\n<p>首先我们要了解HPD（热插拔）工作原理：</p>\n<p>HDMI分输入和输出端，输入就是显示器，以及我们这里的HDMI3进，输出就是电脑显卡，以及我们这里的1出。</p>\n<p>当输出设备连接到输入设备后，输入设备会通过HPD信号线高速输出设备输入这边已经ready了，输入设备就会开始EDID通讯和传输视频信号</p>\n<p>因此我们控制HPD就能控制输入设备，也就是MS9601是否对输出设备发起EDID通讯。</p>\n<p> </p>\n<p><img src=\"//image.lceda.cn/pullimage/3FsO7I7bSzzX43hdBU1RSHwJxXLmz54iHXRET9Nh.png\" alt=\"3FsO7I7bSzzX43hdBU1RSHwJxXLmz54iHXRET9Nh.png\" /></p>\n<p>HDMIEN_MID为中间信号的中继，控制芯片2输入切换到芯片1输出，在使用HDMI1、HDMI2、HDMI3的时候，HDMIEN_MID需要拉高才能输入切换芯片1</p>\n<h2>4.2HDMI信号流</h2>\n<p>根据框图可知，HDMI信号1、2、3是进MS9601的前一个芯片，这个芯片出来又给一个后极芯片的输入，并且HDMI的4、5也是进入后极芯片。</p>\n<p>这两个芯片之间信号输入输出直连即可</p>\n<p><img src=\"//image.lceda.cn/pullimage/frulFK71eYJ5X0NjuIvEHWFk1xvCaZA6T3ggpdwC.png\" alt=\"frulFK71eYJ5X0NjuIvEHWFk1xvCaZA6T3ggpdwC.png\" /></p>\n<p>后极芯片的输出又给到MS9331，9331检测直接使用5V做HDMIDET</p>\n<p><img src=\"//image.lceda.cn/pullimage/glcinzTfa6fwRfbLlIB8xYE97J4vokASmGo9dwe1.png\" alt=\"glcinzTfa6fwRfbLlIB8xYE97J4vokASmGo9dwe1.png\" /></p>\n<p>HPD输入信号还是保留原来两个3904的方式输入，IIC上拉一个47K</p>\n<p><img src=\"//image.lceda.cn/pullimage/h6hE9zXoiGw42T8RFfsdsAwRpnOt10Lp9DYhXSQ0.png\" alt=\"h6hE9zXoiGw42T8RFfsdsAwRpnOt10Lp9DYhXSQ0.png\" /></p>\n<h2>4.3指示灯</h2>\n<p>由于RA芯片端口资源紧张，因此不可能给4个IO口给OPT和AUX控制，但是两个IO可以出来4中状态，也是可以做切换和指示的，指示只需要加个74LS139逻辑芯片做指示即可</p>\n<p>以OPT为例：</p>\n<p>A:0 B:0 -&gt; OPT1<br />A:1 B:0 -&gt; OPT2<br />A:0 B:1 -&gt; OPT3<br />A:1 B:1 -&gt; OPT4</p>\n<p>AUX同理</p>\n<p><img src=\"//image.lceda.cn/pullimage/pMw5Z0H1KK4EjT4ZwvdQPtKaWgquIQgcuj4oSeU3.png\" alt=\"pMw5Z0H1KK4EjT4ZwvdQPtKaWgquIQgcuj4oSeU3.png\" /></p>\n<h2>4.4AUX</h2>\n<p>模拟音频直接使用继电器切换，纯正物理切换，保证模拟音频原汁原味，不经过数字切换器！</p>\n<p>模拟音频这边做了地线单独出处理，这里的地线不会接到整版GND，因此音质可以说是最纯正出来的原声（太HIFI了）</p>\n<p>因此需要加多一路GND切换的继电器处理</p>\n<h2><img src=\"//image.lceda.cn/pullimage/CFtYxVDKWC8A2iRz2asZLlo5nTNuwdcDwaG3CqCQ.png\" alt=\"CFtYxVDKWC8A2iRz2asZLlo5nTNuwdcDwaG3CqCQ.png\" /></h2>\n<p>AUX这里除了做指示，还要做控制继电器的使能，因此出来EN1234，接到继电器的三极管控制</p>\n<p><img src=\"//image.lceda.cn/pullimage/MvobMoLyOHe4FU1k11sEXj9G51HqgUCBeizVMFaV.png\" alt=\"MvobMoLyOHe4FU1k11sEXj9G51HqgUCBeizVMFaV.png\" /></p>\n<h1>5.LAYOUT</h1>\n<p>本工程中技术含量较高部分在LAYOUT中，由于使用20x10的大PCB板，因此使用<span style=\"color:#e03e2d;\">双面板</span>降低制作成本，但是<span style=\"color:#e03e2d;\">布线难度就会增加</span>，因此提前布局好各种规则是非常必要的。</p>\n<p>本工程走HDMI高速信号，走线要求高，但是交互用的是触摸，触摸信号对走线要求也很高，音频切换的模拟信号，对走线要求也较高。三者叠加使得难度陡增</p>\n<h2>5.1安全间距</h2>\n<p>设置触摸安全间距</p>\n<p><img src=\"//image.lceda.cn/pullimage/eRipqTYUJD3l4EdYn9JMbYhVKwDlGnPH0T6zZSZS.png\" alt=\"eRipqTYUJD3l4EdYn9JMbYhVKwDlGnPH0T6zZSZS.png\" /></p>\n<h2>5.2铺铜间距</h2>\n<p>设置触摸和HDMI的铺铜间距，触摸建议设置更大点</p>\n<p><img src=\"//image.lceda.cn/pullimage/PDiEihCGe5okk7qRv1Mw99IWXEXaR2an8lzaDSGz.png\" alt=\"PDiEihCGe5okk7qRv1Mw99IWXEXaR2an8lzaDSGz.png\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/kULI7OKEBTuHYojXCd0gknNdCgfpkluyB60cZbfL.png\" alt=\"kULI7OKEBTuHYojXCd0gknNdCgfpkluyB60cZbfL.png\" /></p>\n<p>把HDMI和触摸信号网络都设置对应规则</p>\n<p><img src=\"//image.lceda.cn/pullimage/TPiarp4tIueNQGkkekHtxRx3V4OsqgctVOOy6vna.png\" alt=\"TPiarp4tIueNQGkkekHtxRx3V4OsqgctVOOy6vna.png\" /></p>\n<h2>5.3阻抗匹配</h2>\n<p>HDMI走100欧阻抗匹配</p>\n<p><img src=\"//image.lceda.cn/pullimage/n3QdLIxMSDaWomxN5vTdGxAEFVE2BRlY9MopSrY8.png\" alt=\"n3QdLIxMSDaWomxN5vTdGxAEFVE2BRlY9MopSrY8.png\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/krE6OvosUNNdEgGwEcbqmF85wamsiuzFnjzIB6Y7.png\" alt=\"krE6OvosUNNdEgGwEcbqmF85wamsiuzFnjzIB6Y7.png\" /></p>\n<h2>5.4LAYOUT</h2>\n<p>本人工作中经常设计有触摸的产品，因此对触摸LAYOUT有一些经验。如果有错误的地方也欢迎指正。</p>\n<p>整板LAYOUT如下，实际上我个人感觉地是比较烂的，如果上四层板会好很多</p>\n<p><img src=\"//image.lceda.cn/pullimage/6bPc6xl9lQ3wxG22pN8Le6lDgfnB1h5YGQdmkYmV.png\" alt=\"6bPc6xl9lQ3wxG22pN8Le6lDgfnB1h5YGQdmkYmV.png\" width=\"1065\" height=\"620\" /></p>\n<p>本人经常用的这款插件的HDMI，这款焊接的时候很好焊，之前用的贴片的焊接较多虚焊，这种很好，但是有两个信号线在后面，因此走线出来比较绕而且会打交叉</p>\n<p><img src=\"//image.lceda.cn/pullimage/uAtJKQ9UgA6J1AOUR65RbMaKM7aki0cy0CwaJJF9.png\" alt=\"uAtJKQ9UgA6J1AOUR65RbMaKM7aki0cy0CwaJJF9.png\" width=\"470\" height=\"418\" /></p>\n<p>HDMI差分参数设置如下，<em>建议间距设置为3倍线宽，即9.2的三倍，但是此处未设置，使用默认15mil</em>。</p>\n<p><img src=\"//image.lceda.cn/pullimage/RUYEyczVuGJq8avzPn6HIqAVZ151iXfZgOoYHBWW.png\" alt=\"RUYEyczVuGJq8avzPn6HIqAVZ151iXfZgOoYHBWW.png\" /></p>\n<p>差分误差控制5mil以内</p>\n<p><img src=\"//image.lceda.cn/pullimage/yXqEHVgMf6vt78jfEI6znD8WlEHVgDQDeptzECxO.png\" alt=\"yXqEHVgMf6vt78jfEI6znD8WlEHVgDQDeptzECxO.png\" /></p>\n<p>HDMI信号和触摸信号交叉时注意需要垂直错层交叉</p>\n<p>能不交叉尽量不交叉</p>\n<p><img src=\"//image.lceda.cn/pullimage/nTRSlFPijaDUgN6oLMPWmXITy4quFe7CBAbDv8GE.png\" alt=\"nTRSlFPijaDUgN6oLMPWmXITy4quFe7CBAbDv8GE.png\" /></p>\n<p>触摸走线尽量细，不要走很粗，能走多细走多细，双面板目前可以做4mil，<span style=\"color:#2dc26b;\">为了兼顾良品率和最小线宽</span>，我这里走了6mil</p>\n<p><img src=\"//image.lceda.cn/pullimage/pK1oe3f0n64hEjoeRBfvrUWRcefRQHsatRoei2RD.png\" alt=\"pK1oe3f0n64hEjoeRBfvrUWRcefRQHsatRoei2RD.png\" width=\"817\" height=\"725\" /></p>\n<p>触摸过孔尽量走少，控制在1个或0个最佳，过孔孔径尽量做小，双面板最小外径0.5mm，内径0.3mm</p>\n<p>此处有个别触摸线走了2个过孔，受限于布局。</p>\n<p><img src=\"//image.lceda.cn/pullimage/68eNlPOOeslUn11ppPxt9GMadz9N4a3YnwnEboI0.png\" alt=\"68eNlPOOeslUn11ppPxt9GMadz9N4a3YnwnEboI0.png\" /></p>\n<p>触摸信号尽量不做滴泪，但是我懒得一个个删掉了，同时也为了兼顾PCB良品率，因此保留</p>\n<p><img src=\"//image.lceda.cn/pullimage/tN7RPtdXAJDiygS7B33ngFZJCcu8phNurlYweBLT.png\" alt=\"tN7RPtdXAJDiygS7B33ngFZJCcu8phNurlYweBLT.png\" /></p>\n<p>触摸焊盘周围敷铜是增加抗干扰，但是注意间距不要过近，而且周围元器件不建议摆在焊盘周围，此处为了指示灯而妥协放在焊盘旁边</p>\n<p>触摸焊盘能做多大尽量做多大，增加灵敏度和抗干扰</p>\n<p><img src=\"//image.lceda.cn/pullimage/wZFEgpN0a2M8GGsTvLwr5OXGRTkVJE01GXUPlAgf.png\" alt=\"wZFEgpN0a2M8GGsTvLwr5OXGRTkVJE01GXUPlAgf.png\" /></p>\n<p>焊盘背部敷铜不敷铜主要取决面板厚度</p>\n<p>面板较厚不铺铜，较薄需要铺网格铜，网格铜不能铺在焊盘正中间，需要铺在周围（可能有点抽象，以后有案例再演示）</p>\n<p><img src=\"//image.lceda.cn/pullimage/LE0mvHnA5lLPNb4AKMfxmF0Bh32PsZ6xHQMYHshQ.png\" alt=\"LE0mvHnA5lLPNb4AKMfxmF0Bh32PsZ6xHQMYHshQ.png\" /></p>\n<p>注意触摸焊盘是开窗的，不开窗会影响灵敏度</p>\n<p><img src=\"//image.lceda.cn/pullimage/kEZgH7EeydE22I1pmpqp8jrD44sK4CpvjiuYCzCK.png\" alt=\"kEZgH7EeydE22I1pmpqp8jrD44sK4CpvjiuYCzCK.png\" /></p>\n<p>触摸阻容走向注意，先过和后过</p>\n<p><img src=\"//image.lceda.cn/pullimage/01baOU38QmncphreD0kBTzJ3CI3Px6hzK8aRn8yT.png\" alt=\"01baOU38QmncphreD0kBTzJ3CI3Px6hzK8aRn8yT.png\" /></p>\n<p>错误示范：</p>\n<p><img src=\"//image.lceda.cn/pullimage/GcckvQ9rVesmi7cJH0U8eLVUGuVSY0FnVSh61O6E.png\" alt=\"GcckvQ9rVesmi7cJH0U8eLVUGuVSY0FnVSh61O6E.png\" /></p>\n<p>触摸和高速信号尽量不平行走，这里我拉开了点距离，但是不是被迫无奈还是不建议平行走</p>\n<p><img src=\"//image.lceda.cn/pullimage/b6lpXqD4u1q6Jbcv31RdBtox7vvQpAvAJUKdCGw7.png\" alt=\"b6lpXqD4u1q6Jbcv31RdBtox7vvQpAvAJUKdCGw7.png\" /></p>\n<p>触摸不要走到继电器，电感等有磁干扰的元器件下方，能躲多远躲多远</p>\n<p><img src=\"//image.lceda.cn/pullimage/nmpNr6gcQUcJx4mA0t2yUkOx0qMG8qRLk6aNrj4F.png\" alt=\"nmpNr6gcQUcJx4mA0t2yUkOx0qMG8qRLk6aNrj4F.png\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/9JwQd9BdpvR7EJ5DzajGu5LMU0vhyZ8XZ3ezJazs.png\" alt=\"9JwQd9BdpvR7EJ5DzajGu5LMU0vhyZ8XZ3ezJazs.png\" /></p>\n<p>开源平台玩触摸的人还是有不少的，其实触摸也有玄学成分在里面，很多人觉得很难调触摸，其实还好。</p>\n<p>我这里还有很多门道没讲到，我这里就点到为止，有机会再做触摸的工程再更深入的将各种规则把，<span style=\"color:#e03e2d;\">后续整理一份触摸设计指南，给想玩触摸的同学学习一下。</span></p>\n<h1>6.芯片购买</h1>\n<h2>6.1MS9331</h2>\n<p>MS9331是使用IIC控制的，老样子，MS家的芯片是拿不到规格书和寄存器表的，但是和之前的MS芯片一样，马云网上有配套MS8005的IC卖，因此使用现成的即可，不用编程。</p>\n<p><a href=\"https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5f152e8dYHRKFr&amp;id=691533336994&amp;_u=hqavhl8b1f1\" target=\"_blank\" rel=\"noreferrer noopener\">https://item.taobao.com/item.htm?spm=a1z09.2.0.0.5f152e8dYHRKFr&amp;id=691533336994&amp;_u=hqavhl8b1f1</a></p>\n<p><img src=\"https://image.lceda.cn/pullimage/QS4fKn2BieP1NQYButnJo4RWvfzAg7w9v3AG9mss.png\" alt=\"QS4fKn2BieP1NQYButnJo4RWvfzAg7w9v3AG9mss.png\" width=\"935\" /></p>\n<h2>6.2MS9601芯片</h2>\n<p>这家店的芯片供货还可以，不过有最小购买数量，1片的话会让你补邮费，建议购买3片以上。</p>\n<p><img src=\"https://image.lceda.cn/pullimage/WC57sFBwK5WruJwJxgC8fohNjbx9rtygHWwIm4v9.png\" alt=\"WC57sFBwK5WruJwJxgC8fohNjbx9rtygHWwIm4v9.png\" width=\"761\" /></p>\n<p>链接：<a href=\"https://item.taobao.com/item.htm?spm=a230r.1.14.18.44ce4a89OI2g1U&amp;id=664865791026&amp;ns=1&amp;abbucket=1#detail\" target=\"_blank\" rel=\"noreferrer noopener\">https://item.taobao.com/item.htm?spm=a230r.1.14.18.44ce4a89OI2g1U&amp;id=664865791026&amp;ns=1&amp;abbucket=1#detail</a></p>\n<p>规格：24C16烧录</p>\n<h1>7.外壳绘制</h1>\n<p>外壳使用SOLIDWORKS绘制</p>\n<p><img src=\"//image.lceda.cn/pullimage/RI74hPmKAZCsBd1yKjwAnnOLrVfX3ArVx90vPFQk.png\" alt=\"RI74hPmKAZCsBd1yKjwAnnOLrVfX3ArVx90vPFQk.png\" width=\"833\" height=\"451\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/K20Ca5SVtXcgg9pJpNwyd5Rlmjfehf6hFT85ku4e.jpeg\" alt=\"K20Ca5SVtXcgg9pJpNwyd5Rlmjfehf6hFT85ku4e.jpeg\" width=\"827\" height=\"620\" /></p>\n<p> </p>\n<p>螺丝：</p>\n<p><img src=\"//image.lceda.cn/pullimage/WmSmZtLokEnMgH4fHP1s8MxwYt2hN22lVM6bKaXK.jpeg\" alt=\"WmSmZtLokEnMgH4fHP1s8MxwYt2hN22lVM6bKaXK.jpeg\" width=\"697\" height=\"557\" /></p>\n<table style=\"border-collapse:collapse;width:36.6875%;height:200px;\">\n\n<tr>\n<td style=\"width:41.7047%;\">类型</td>\n<td style=\"width:31.2455%;\">参数</td>\n<td style=\"width:23.0851%;\">数量</td>\n</tr>\n<tr>\n<td style=\"width:41.7047%;\">单通六角铜柱</td>\n<td style=\"width:31.2455%;\">M3X6+6</td>\n<td style=\"width:23.0851%;\">4</td>\n</tr>\n<tr>\n<td style=\"width:41.7047%;\">单通六角铜柱</td>\n<td style=\"width:31.2455%;\">M3X14+6</td>\n<td style=\"width:23.0851%;\">4</td>\n</tr>\n<tr>\n<td style=\"width:41.7047%;\">铜六角螺母</td>\n<td style=\"width:31.2455%;\">M3</td>\n<td style=\"width:23.0851%;\">4</td>\n</tr>\n<tr>\n<td style=\"width:41.7047%;\">304十字薄头机丝</td>\n<td style=\"width:31.2455%;\">CM3X6</td>\n<td style=\"width:23.0851%;\">4</td>\n</tr>\n\n</table>\n<h1>8.面板绘制</h1>\n<p>从上一部绘制外壳时顺便绘制好面板外壳，然后导出DXF，然后将DXF导入立创EDA面板绘制即可</p>\n<p><img src=\"//image.lceda.cn/pullimage/lqzzmqZ7ELRQtFGKsqWI9sBGWXH6kyaA3lK9iFPw.png\" alt=\"lqzzmqZ7ELRQtFGKsqWI9sBGWXH6kyaA3lK9iFPw.png\" width=\"991\" height=\"537\" /></p>\n<p>触摸焊盘需要对位才能精确绘制触摸位置</p>\n<p>选择导出顶层锡膏层</p>\n<p><img src=\"//image.lceda.cn/pullimage/Wru8BK4NavmDKrljb8AFhDF5lZwqhiiOputfN44h.png\" alt=\"Wru8BK4NavmDKrljb8AFhDF5lZwqhiiOputfN44h.png\" /></p>\n<p>保留触摸位置，删除其他没用焊盘</p>\n<p><img src=\"//image.lceda.cn/pullimage/34TQ7K7cPYMHYWTvQ7r8v6qI9EqXUpVG8wOaO4Mx.png\" alt=\"34TQ7K7cPYMHYWTvQ7r8v6qI9EqXUpVG8wOaO4Mx.png\" /></p>\n<p>板框和SW绘制导入的对好位置即可绘制</p>\n<p><img src=\"//image.lceda.cn/pullimage/h5R7lhZp1gq8GCAWFJmRRBgogxnDO75WmlyDtLvB.png\" alt=\"h5R7lhZp1gq8GCAWFJmRRBgogxnDO75WmlyDtLvB.png\" /></p>\n<h3>个人建议打<span style=\"color:#e03e2d;\">1mm</span>即可，我试过打2mm，触摸灵敏度会差一点，但是还是可以识别的</h3>\n<p><img src=\"//image.lceda.cn/pullimage/6VRD279sMbGnYEZgaMS46doZbfYxLfJr5F2tIisj.png\" alt=\"6VRD279sMbGnYEZgaMS46doZbfYxLfJr5F2tIisj.png\" /></p>\n<h1>9.装配</h1>\n<p>首先装好导电棉</p>\n<p><img src=\"//image.lceda.cn/pullimage/MLsbjI9ZuMgBj7nMyhU3P9IKfxdoTxknlTtnM18z.png\" alt=\"MLsbjI9ZuMgBj7nMyhU3P9IKfxdoTxknlTtnM18z.png\" /></p>\n<p>然后装好两个铜柱</p>\n<p><img src=\"//image.lceda.cn/pullimage/5BFqbDRzthGfPDCpf6qEA4ueEgKvq1tFMr3hClFO.png\" alt=\"5BFqbDRzthGfPDCpf6qEA4ueEgKvq1tFMr3hClFO.png\" /></p>\n<p>然后面板放置下来后拧上螺母</p>\n<p><img src=\"//image.lceda.cn/pullimage/nUPqZtxToQUhQk5HWxzbFXhYOWdPMRxlGz2RQUXV.png\" alt=\"nUPqZtxToQUhQk5HWxzbFXhYOWdPMRxlGz2RQUXV.png\" /></p>\n<p>安装进外壳，先安装右上角，把拨动开关卡进去后在安装左下角</p>\n<p><img src=\"//image.lceda.cn/pullimage/3gnDkZWfksb7PpLG0c5Lf56jjMUXe4yZj8jNyaWN.png\" alt=\"3gnDkZWfksb7PpLG0c5Lf56jjMUXe4yZj8jNyaWN.png\" /></p>\n<p>接着上背面螺丝</p>\n<p><img src=\"//image.lceda.cn/pullimage/waMUbXsq9fFXW2Mnuf6fCdB2KW76DzYuU8L11S76.png\" alt=\"waMUbXsq9fFXW2Mnuf6fCdB2KW76DzYuU8L11S76.png\" /></p>\n<p>最后上音量旋钮</p>\n<p><img src=\"//image.lceda.cn/pullimage/yTCzOe92NAd1oUlq523hTKlq2ajKCloqAYvXhvxU.png\" alt=\"yTCzOe92NAd1oUlq523hTKlq2ajKCloqAYvXhvxU.png\" /></p>\n<h1>10.瑞萨MCU软件</h1>\n<p>本次使用的是R7FA2E1A72DFL</p>\n<p>MCU资源吃紧，基本榨干IO口</p>\n<h2>10.1IO配置</h2>\n<p>本次工程比较简单，没有使用通讯等功能，基本都是IO控制，因此没有特殊端口</p>\n<p><img src=\"//image.lceda.cn/pullimage/lemBLCBGCXjkW2AzgcoRo6Nt1NGRlmcT8rQmWjAI.png\" alt=\"lemBLCBGCXjkW2AzgcoRo6Nt1NGRlmcT8rQmWjAI.png\" /></p>\n<p>调试口预留，调试触摸使用</p>\n<p><img src=\"//image.lceda.cn/pullimage/mQlZzDVOzyC95fixmZjvdEIbYBi49YSWxPPHE6gR.png\" alt=\"mQlZzDVOzyC95fixmZjvdEIbYBi49YSWxPPHE6gR.png\" /></p>\n<p>UART，实际未使用，后续可以预留后用PC上位机控制</p>\n<p><img src=\"//image.lceda.cn/pullimage/iPPTDtM4z0DlLyQVgtNbVVxPfGHGnsc2HW62jyq5.png\" alt=\"iPPTDtM4z0DlLyQVgtNbVVxPfGHGnsc2HW62jyq5.png\" /></p>\n<p>触摸口，基本都用上了</p>\n<p><img src=\"//image.lceda.cn/pullimage/tClDDfnHekil7ViW09ORGK4Ih4aZQYvXNJ22wMVZ.png\" alt=\"tClDDfnHekil7ViW09ORGK4Ih4aZQYvXNJ22wMVZ.png\" /></p>\n<p>还有一些控制IO做输出，没有做输入的</p>\n<p><img src=\"//image.lceda.cn/pullimage/4Yy9cGARDFdUJY4CwW3K0t6wniYxc3qSaHK8gXhQ.png\" alt=\"4Yy9cGARDFdUJY4CwW3K0t6wniYxc3qSaHK8gXhQ.png\" /></p>\n<h2>10.2触摸逻辑</h2>\n<p>很简单，都是按到什么按键变化对应的IO即可，没有难度</p>\n<p><img src=\"//image.lceda.cn/pullimage/J8bJtk9BorcbzLXi4ego97RSSmLIIaGuSKkjwbpk.png\" alt=\"J8bJtk9BorcbzLXi4ego97RSSmLIIaGuSKkjwbpk.png\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/z5SOkNrPtilFxvADVzWhTAgR6sZNpT3PamjlcxSw.png\" alt=\"z5SOkNrPtilFxvADVzWhTAgR6sZNpT3PamjlcxSw.png\" /></p>\n<p>触摸有一个按下触摸后P407的LED会亮起，松手灭</p>\n<p><img src=\"//image.lceda.cn/pullimage/q5KnD2RdcGv6OXl5mJrOAayM0eyrkPJozYa5Qzvw.png\" alt=\"q5KnD2RdcGv6OXl5mJrOAayM0eyrkPJozYa5Qzvw.png\" /></p>\n<p>最后初始化的时候预设默认的接口切换电平</p>\n<p><img src=\"//image.lceda.cn/pullimage/1B21T5ChCpALDRsSoJu4MqViJ0plbW1VNo5fyVjU.png\" alt=\"1B21T5ChCpALDRsSoJu4MqViJ0plbW1VNo5fyVjU.png\" /></p>\n<h1>11.触摸调试</h1>\n<h3><span style=\"color:#e03e2d;\">注意：触摸灵敏度非常调试受限于装配，首先将面板，外壳打回来装配好所有东西后再进行触摸灵敏度调试！</span></h3>\n<p>建议这一步和前面编写代码时同步进行。</p>\n<p>触摸调试需要导电棉装配到位，我这里使用10x10x15的导电棉</p>\n<h3>注意注意，购买时注意描述或者询问卖家导电棉粘粘的胶是不是导电胶！！这点非常重要，有些胶不会导电</h3>\n<p><img src=\"//image.lceda.cn/pullimage/caKyzOen335HAUvkt80cZdyYz6NgmphbLc0tFnPA.png\" alt=\"caKyzOen335HAUvkt80cZdyYz6NgmphbLc0tFnPA.png\" width=\"651\" height=\"378\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/J9LqeWPD2upe8pki3jZVYmprHQ7kIfESQwAQByqi.jpeg\" alt=\"J9LqeWPD2upe8pki3jZVYmprHQ7kIfESQwAQByqi.jpeg\" width=\"914\" height=\"685\" /></p>\n<p>装好导电棉后，装上绘制外壳中提供的铜柱规格，因为我选择15高的导电棉，因此我使用14高的铜柱，压下去刚刚好，不建议用13的会压不下去</p>\n<p><img src=\"//image.lceda.cn/pullimage/xh2NoCG83jcs9dzehzEmhnPRvK3oOAkfIBKZdSk0.jpeg\" alt=\"xh2NoCG83jcs9dzehzEmhnPRvK3oOAkfIBKZdSk0.jpeg\" width=\"920\" height=\"690\" /></p>\n<p>导电棉刚刚好顶到面板触摸位置</p>\n<p><img src=\"//image.lceda.cn/pullimage/k3WDh3GzG7n3jP9z2nkLJB361beAYyIoklnRpgqR.jpeg\" alt=\"k3WDh3GzG7n3jP9z2nkLJB361beAYyIoklnRpgqR.jpeg\" width=\"929\" height=\"697\" /></p>\n<p>当所有东西装配好后即可进行装配，注意将调试线引出到仿真器</p>\n<h1><img src=\"//image.lceda.cn/pullimage/DaxvzXnsotPU7FDLxoSV8AfpLT6NRdWiRgEHYYn9.png\" alt=\"DaxvzXnsotPU7FDLxoSV8AfpLT6NRdWiRgEHYYn9.png\" /></h1>\n<p>然后使用e2的cap touch 调试即可，按照说明一步步调试</p>\n<p>设置对应触摸键位分配</p>\n<p><img src=\"//image.lceda.cn/pullimage/fTsJn3UGE4uCdQhIs7XivwI85eYi3X38n3cU5psp.png\" alt=\"fTsJn3UGE4uCdQhIs7XivwI85eYi3X38n3cU5psp.png\" width=\"939\" height=\"730\" /></p>\n<p>设置触摸电阻需要和贴片电阻对应上，此处本人未使用默认560欧姆，而是更换470欧姆，程序也是设置470欧姆</p>\n<p>触摸调试如下，当超过阈值一会后，便会触发按键按下，此时即可执行我们想要做的动作</p>\n<p><img src=\"//image.lceda.cn/pullimage/FNVuxm2paP0ajexZhF3G2p1FAxppuzOdjbmuytez.png\" alt=\"FNVuxm2paP0ajexZhF3G2p1FAxppuzOdjbmuytez.png\" width=\"929\" height=\"502\" /></p>\n<h1>12.总结</h1>\n<p>本工程的技术含量主要在触摸的布线和交互上，包括触摸LAYOUT规则，以及触摸与高速信号的相容性。</p>\n<p>本工程调试流程与普通的工程不同，由于有触摸的加入，触摸的灵敏度非常受限于结构装配，因此需要装配完全后才能进行调试。</p>\n<p>本工程亮点还在结构和电子的巧妙技术配合上，触摸焊盘与面板的交互使用的导电棉。</p>\n<p>而在软件层面来说主要是配合触摸装好后的调试。</p>\n<p>是一个几乎能完美使用嘉立创配套产业制作下来的一个工程，包括EDA设计，PCB制造，商城采购，SMT，以及面板设计和三维猴的3D打印。当然还有瑞萨的支持，以及e2软件对于触摸匹配做了专门的优化设计。</p>\n<p> </p>\n<p>本工程主要是解决我切换设备越来越多，频繁拔插HDMI线，以及电脑后面线材越来越多的问题！</p>\n<p>MCU电源选择5V，不要使用3.3V</p>\n<p><img src=\"//image.lceda.cn/pullimage/54ux89sPp21XZ7YouIfuPpZ3WyPsg1mOYevhLQXn.jpeg\" alt=\"54ux89sPp21XZ7YouIfuPpZ3WyPsg1mOYevhLQXn.jpeg\" width=\"912\" height=\"684\" /></p>\n<h4>高速显示设备建议接入到HDMI5和4，且优先接入到HDMI5和4输入，可以不用再经过一个切换芯片，发热量也小</h4>\n<p>建议MS9601和MS9331芯片加散热片，发热较大</p>\n<p><img src=\"//image.lceda.cn/pullimage/ZfNcGchr8syG0E964CAbrV5LioIM0y32MDSt4KR6.jpeg\" alt=\"ZfNcGchr8syG0E964CAbrV5LioIM0y32MDSt4KR6.jpeg\" width=\"907\" height=\"680\" /><img src=\"//image.lceda.cn/pullimage/oMbw022LeAWmv76XsTK4zxQUWe8Sd9fPE5HfNiox.jpeg\" alt=\"oMbw022LeAWmv76XsTK4zxQUWe8Sd9fPE5HfNiox.jpeg\" width=\"910\" height=\"683\" /></p>\n<p>这次KVM没有加入USB切换比较可惜，因为再加板都要上百块了，所以我目前还在用去年做的USB3的切换器将就</p>\n<p><img src=\"//image.lceda.cn/pullimage/lV3QVAfQJxrV3rr6fdbsyb5Y01z5DaoZaj0Ag23c.png\" alt=\"lV3QVAfQJxrV3rr6fdbsyb5Y01z5DaoZaj0Ag23c.png\" /></p>\n<p>今年还会做一个集合各种东西的KVM切换器，而且加入遥控敬请期待（这个还要站起来到电脑后面用手按，我感觉还是挺麻烦）</p>\n<p>本工程主要成本统计，外壳自己打印的因此没有估算，总成本约130左右</p>\n<p> </p>\n<table style=\"border-collapse:collapse;width:36.5003%;height:363px;\">\n\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">物料</td>\n<td style=\"width:48.6628%;height:22px;\">价格</td>\n</tr>\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">PCB板</td>\n<td style=\"width:48.6628%;height:22px;\">60x5片，单片12元</td>\n</tr>\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">MS9601</td>\n<td style=\"width:48.6628%;height:22px;\">10元x2=20元</td>\n</tr>\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">MS9331</td>\n<td style=\"width:48.6628%;height:22px;\">12元x1</td>\n</tr>\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">MCU</td>\n<td style=\"width:48.6628%;height:22px;\">8元x1</td>\n</tr>\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">继电器</td>\n<td style=\"width:48.6628%;height:22px;\">2元x9=18元</td>\n</tr>\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">光纤接收器</td>\n<td style=\"width:48.6628%;height:22px;\">3元x3=9元</td>\n</tr>\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">导电棉</td>\n<td style=\"width:48.6628%;height:22px;\">10元</td>\n</tr>\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">面板</td>\n<td style=\"width:48.6628%;height:22px;\">立创22元不包邮</td>\n</tr>\n<tr style=\"height:22px;\">\n<td style=\"width:48.6628%;height:22px;\">其他外围，阻容等</td>\n<td style=\"width:48.6628%;height:22px;\">约15元</td>\n</tr>\n\n</table>\n<p> </p>\n<h1>13.大赛认证LOGO</h1>\n<p><img src=\"//image.lceda.cn/pullimage/60uISEt5xTygvs8QxHhVRhJiJhnph80Wjj7sBl25.png\" alt=\"60uISEt5xTygvs8QxHhVRhJiJhnph80Wjj7sBl25.png\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/8QJnqs9OiEuJZ71LEU8Z3QaNU3VL7ut55Ba6jKxD.png\" alt=\"8QJnqs9OiEuJZ71LEU8Z3QaNU3VL7ut55Ba6jKxD.png\" /></p>",
+    "grade": 3,
+    "public": true,
+    "license": "GPL 3.0",
+    "creator": {
+      "uuid": "8bcdb6baa24d443db187953b3a736334",
+      "username": "aknice",
+      "nickname": "__Aknice",
+      "avatar": "//image.lceda.cn/avatars/2025/10/X8rstf9NHiCqcXjeir0BPI4rr15vGr7O1BJoQhd5.webp"
+    },
+    "owner": {
+      "uuid": "8bcdb6baa24d443db187953b3a736334",
+      "username": "aknice",
+      "nickname": "__Aknice",
+      "avatar": "//image.lceda.cn/avatars/2025/10/X8rstf9NHiCqcXjeir0BPI4rr15vGr7O1BJoQhd5.webp",
+      "team": false
+    },
+    "text_editor_type": "richText",
+    "count": {
+      "views": 39278,
+      "star": 138,
+      "fork": 0,
+      "watch": 0,
+      "like": 87
+    },
+    "members": [
+      {
+        "uuid": "8bcdb6baa24d443db187953b3a736334",
+        "username": "aknice",
+        "nickname": "__Aknice",
+        "avatar": "//image.lceda.cn/avatars/2025/10/X8rstf9NHiCqcXjeir0BPI4rr15vGr7O1BJoQhd5.webp",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "id": 1,
+        "uuid": "d76e62954f884f18afe098a9ec312aef",
+        "name": "RA切换器外壳3D 面板DXF.7z",
+        "src": "/attachments/2023/7/W0wg9VWpfiXvtDsZff0D0KcQK60IEdFa8LBvIF0F.7z",
+        "mime": "application/octet-stream",
+        "ext": "7z",
+        "size": 37282138,
+        "md5": "e00bb65385eb09ae9787c042ecdec69e",
+        "download_count": 234
+      },
+      {
+        "id": 1,
+        "uuid": "aab9e25fb6c24b6eb229cf5d208e0fb0",
+        "name": "【e2】RA切换器KVM代码.zip",
+        "src": "/attachments/2023/7/IJgLNsVn3j4lsmmsTt1ME5A0FBL1OaFPpEBT3LWd.zip",
+        "mime": "application/zip",
+        "ext": "zip",
+        "size": 1491740,
+        "md5": "7fe4422d81d21d3db20396693a134773",
+        "download_count": 107
+      },
+      {
+        "id": 1,
+        "uuid": "8738cdd589c240028c6d7eeecb58de88",
+        "name": "大赛认证LOGO.mp4",
+        "src": "/attachments/2023/9/lfREINE0BVF7Q4rc22jsAwCHC0XlGgYNhLMBd9rj.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "size": 4383822,
+        "md5": "aedd909fa22ac6e051d8d863ef26102b",
+        "download_count": 22
+      },
+      {
+        "id": 1,
+        "uuid": "eea4f9acd2104ac787cebd825907065f",
+        "name": "触摸测试.mp4",
+        "src": "/attachments/2023/9/dSnQHXZot426Q6jY3BbgU0GcFxwyxIftHlyABX3z.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "size": 8634160,
+        "md5": "25efc44d8096c589aacaa938a6eeead4",
+        "download_count": 26
+      },
+      {
+        "id": 1,
+        "uuid": "1d7fe959f29a4dc4a4d384d2f5c5db9d",
+        "name": "HDMI切换和音频测试.mp4",
+        "src": "/attachments/2023/9/QmesL42fwGUxw0cB428lrc9L2cfst3eyvvKNEOd6.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "size": 43635377,
+        "md5": "f4d5fee24331d2966ea06666ccee0821",
+        "download_count": 96
+      },
+      {
+        "id": 1,
+        "uuid": "e86f3cdf84874e5b94c6bbdf1f078da6",
+        "name": "AUX切换演示.mp4",
+        "src": "/attachments/2023/9/Uf1pjssFY0VYii2gFQiILAFxIti7hvQTJzwbzmOH.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "size": 52154385,
+        "md5": "b21c1e8ff90bd9ffd0b651da8f8e401f",
+        "download_count": 23
+      },
+      {
+        "id": 1,
+        "uuid": "c04bd6410f5f40428c0b0c19c851fcf2",
+        "name": "光纤切换演示.mp4",
+        "src": "/attachments/2023/9/NOduVLtL58bH5hrncntdmTP4Q4XwBNC3eW0e24EB.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "size": 37576648,
+        "md5": "d9dae3cb5e6425489e800b56f7c948b4",
+        "download_count": 25
+      }
+    ],
+    "no": 0,
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/pullimage/42zZ1IFEZWx4a4TQwo9hw3KoxUvI8TNI9zrKPExb.jpeg",
+    "origin": "pro",
+    "competition_record_uuid": "fc63a5bdd5e641c79cd9edd258cfd8a1",
+    "publish": true,
+    "is_draft": false,
+    "updated_at": "2025-01-23T05:08:17.000Z",
+    "created_at": "2023-07-10T00:49:45.000Z",
+    "introduction": "使用瑞萨芯片进行主控和触摸检测，2个MS9601进行HDMI5切1，MS9331进行HDMI音频解码，继电器进行模拟音频切换，CH444G进行S/PDIF切换的音视频切换器",
+    "project_tags": [
+      "4c92885dd69947be93cc68f560459fb3",
+      "c2e7a00699a2440ca5880a96466ee387",
+      "f7eefe9c39ff49dabbea446863af30e3"
+    ],
+    "oshwhub_publish_at": "2023-10-07T08:58:26.000Z",
+    "high_quality": true,
+    "allow_reprint": false,
+    "store": false,
+    "updated_time": "2026-08-10T09:14:35.511Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "55513c7c67e94128b974d2b6c5f11085",
+      "name": "第八届立创电子设计开源大赛",
+      "path": "2023",
+      "external_page": 0,
+      "competition_origin": "diy.szlcsc.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 74,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

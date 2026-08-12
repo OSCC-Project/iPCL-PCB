@@ -1,0 +1,1887 @@
+* Netlist: AD9361+高云FPGA SDR无线通信系统 AD9363
+* Extracted from PCB layout data
+* Generated: 2026-08-11 11:30:11
+* Components: 274, Nets: 384
+*
+
+$COMPONENTS
+  1000M  {81ffb88415c44813ae88209955e7c78c}
+  100M  {81ffb88415c44813ae88209955e7c78c}
+  10M  {81ffb88415c44813ae88209955e7c78c}
+  ACT  {81ffb88415c44813ae88209955e7c78c}
+  ARM  {81ffb88415c44813ae88209955e7c78c}
+  ARM RST  {7dd6720d68c446719365f3a60b06a3d4}
+  C1  {2218026411c24ad7aa8c7eefc9fb0747}
+  C10  {bd62313503d94485b107ad99fc121a58}
+  C100  {2218026411c24ad7aa8c7eefc9fb0747}
+  C101  {2218026411c24ad7aa8c7eefc9fb0747}
+  C106  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C107  {2218026411c24ad7aa8c7eefc9fb0747}
+  C108  {2218026411c24ad7aa8c7eefc9fb0747}
+  C109  {2218026411c24ad7aa8c7eefc9fb0747}
+  C11  {bd62313503d94485b107ad99fc121a58}
+  C110  {2218026411c24ad7aa8c7eefc9fb0747}
+  C111  {2218026411c24ad7aa8c7eefc9fb0747}
+  C112  {2218026411c24ad7aa8c7eefc9fb0747}
+  C113  {2218026411c24ad7aa8c7eefc9fb0747}
+  C114  {2218026411c24ad7aa8c7eefc9fb0747}
+  C115  {2218026411c24ad7aa8c7eefc9fb0747}
+  C116  {2218026411c24ad7aa8c7eefc9fb0747}
+  C117  {2218026411c24ad7aa8c7eefc9fb0747}
+  C119  {2218026411c24ad7aa8c7eefc9fb0747}
+  C120  {2218026411c24ad7aa8c7eefc9fb0747}
+  C121  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C122  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C123  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C124  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C125  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C126  {2218026411c24ad7aa8c7eefc9fb0747}
+  C127  {1f480a04812e476d85878241a76d6dab}
+  C130  {2218026411c24ad7aa8c7eefc9fb0747}
+  C131  {2218026411c24ad7aa8c7eefc9fb0747}
+  C132  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C133  {2218026411c24ad7aa8c7eefc9fb0747}
+  C134  {2218026411c24ad7aa8c7eefc9fb0747}
+  C135  {2218026411c24ad7aa8c7eefc9fb0747}
+  C136  {2218026411c24ad7aa8c7eefc9fb0747}
+  C137  {2218026411c24ad7aa8c7eefc9fb0747}
+  C138  {2218026411c24ad7aa8c7eefc9fb0747}
+  C139  {2218026411c24ad7aa8c7eefc9fb0747}
+  C140  {2218026411c24ad7aa8c7eefc9fb0747}
+  C141  {2218026411c24ad7aa8c7eefc9fb0747}
+  C144  {2218026411c24ad7aa8c7eefc9fb0747}
+  C145  {2218026411c24ad7aa8c7eefc9fb0747}
+  C146  {2218026411c24ad7aa8c7eefc9fb0747}
+  C147  {2218026411c24ad7aa8c7eefc9fb0747}
+  C148  {2218026411c24ad7aa8c7eefc9fb0747}
+  C149  {2218026411c24ad7aa8c7eefc9fb0747}
+  C15  {bd62313503d94485b107ad99fc121a58}
+  C150  {2218026411c24ad7aa8c7eefc9fb0747}
+  C151  {2218026411c24ad7aa8c7eefc9fb0747}
+  C152  {2218026411c24ad7aa8c7eefc9fb0747}
+  C153  {2218026411c24ad7aa8c7eefc9fb0747}
+  C154  {2218026411c24ad7aa8c7eefc9fb0747}
+  C155  {2218026411c24ad7aa8c7eefc9fb0747}
+  C156  {2218026411c24ad7aa8c7eefc9fb0747}
+  C157  {2218026411c24ad7aa8c7eefc9fb0747}
+  C16  {bd62313503d94485b107ad99fc121a58}
+  C17  {bd62313503d94485b107ad99fc121a58}
+  C19  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C2  {2218026411c24ad7aa8c7eefc9fb0747}
+  C20  {2218026411c24ad7aa8c7eefc9fb0747}
+  C21  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C24  {2218026411c24ad7aa8c7eefc9fb0747}
+  C26  {2218026411c24ad7aa8c7eefc9fb0747}
+  C27  {2218026411c24ad7aa8c7eefc9fb0747}
+  C28  {2218026411c24ad7aa8c7eefc9fb0747}
+  C29  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C3  {2218026411c24ad7aa8c7eefc9fb0747}
+  C30  {2218026411c24ad7aa8c7eefc9fb0747}
+  C31  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C34  {2218026411c24ad7aa8c7eefc9fb0747}
+  C36  {2218026411c24ad7aa8c7eefc9fb0747}
+  C37  {2218026411c24ad7aa8c7eefc9fb0747}
+  C38  {2218026411c24ad7aa8c7eefc9fb0747}
+  C39  {2218026411c24ad7aa8c7eefc9fb0747}
+  C4  {2218026411c24ad7aa8c7eefc9fb0747}
+  C40  {2218026411c24ad7aa8c7eefc9fb0747}
+  C5  {2218026411c24ad7aa8c7eefc9fb0747}
+  C55  {2218026411c24ad7aa8c7eefc9fb0747}
+  C56  {2218026411c24ad7aa8c7eefc9fb0747}
+  C57  {2218026411c24ad7aa8c7eefc9fb0747}
+  C58  {2218026411c24ad7aa8c7eefc9fb0747}
+  C59  {2218026411c24ad7aa8c7eefc9fb0747}
+  C6  {2218026411c24ad7aa8c7eefc9fb0747}
+  C61  {2218026411c24ad7aa8c7eefc9fb0747}
+  C62  {2218026411c24ad7aa8c7eefc9fb0747}
+  C63  {2218026411c24ad7aa8c7eefc9fb0747}
+  C65  {2218026411c24ad7aa8c7eefc9fb0747}
+  C66  {2218026411c24ad7aa8c7eefc9fb0747}
+  C67  {2218026411c24ad7aa8c7eefc9fb0747}
+  C68  {2218026411c24ad7aa8c7eefc9fb0747}
+  C69  {2218026411c24ad7aa8c7eefc9fb0747}
+  C70  {2218026411c24ad7aa8c7eefc9fb0747}
+  C71  {2218026411c24ad7aa8c7eefc9fb0747}
+  C72  {2218026411c24ad7aa8c7eefc9fb0747}
+  C73  {2218026411c24ad7aa8c7eefc9fb0747}
+  C74  {2218026411c24ad7aa8c7eefc9fb0747}
+  C75  {2218026411c24ad7aa8c7eefc9fb0747}
+  C76  {2218026411c24ad7aa8c7eefc9fb0747}
+  C79  {2218026411c24ad7aa8c7eefc9fb0747}
+  C8  {2218026411c24ad7aa8c7eefc9fb0747}
+  C81  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C82  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C83  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C84  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C85  {2218026411c24ad7aa8c7eefc9fb0747}
+  C86  {2218026411c24ad7aa8c7eefc9fb0747}
+  C87  {2218026411c24ad7aa8c7eefc9fb0747}
+  C88  {2218026411c24ad7aa8c7eefc9fb0747}
+  C89  {2218026411c24ad7aa8c7eefc9fb0747}
+  C90  {2218026411c24ad7aa8c7eefc9fb0747}
+  C91  {2218026411c24ad7aa8c7eefc9fb0747}
+  C92  {2218026411c24ad7aa8c7eefc9fb0747}
+  C93  {2218026411c24ad7aa8c7eefc9fb0747}
+  C94  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C95  {2218026411c24ad7aa8c7eefc9fb0747}
+  C96  {2218026411c24ad7aa8c7eefc9fb0747}
+  C97  {2218026411c24ad7aa8c7eefc9fb0747}
+  C98  {b6dbb5ff8ac44442903843d0a49ba1b4}
+  C99  {2218026411c24ad7aa8c7eefc9fb0747}
+  CN1  {7fd91c8eb86f4ef493fcae420cc5a236}
+  CN2  {b10a9c17a09f40588c51376b90a8528a}
+  CN3  {b10a9c17a09f40588c51376b90a8528a}
+  D3  {31aeffc65a7040bea0c61d6139a11c18}
+  D4  {b31a530e17ae47c5b04672837fb6799c}
+  D5  {b31a530e17ae47c5b04672837fb6799c}
+  D6  {b31a530e17ae47c5b04672837fb6799c}
+  D7  {b31a530e17ae47c5b04672837fb6799c}
+  D8  {c10007abe38c47a7b87ab16ff611ce54}
+  F1  {e1e246e4058e4f2cb0164869e14091ad}
+  H1  {507350d26ffb4301b926e73910155355}
+  H2  {2a4ef173d7bb4178ba727836363a3722}
+  H3  {2a4ef173d7bb4178ba727836363a3722}
+  H4  {2a4ef173d7bb4178ba727836363a3722}
+  L10  {8e29569e39fd44aa8c43aaaf80cd9083}
+  L11  {63f67b374b2243b18a84cd74cbe2f3f3}
+  L12  {63f67b374b2243b18a84cd74cbe2f3f3}
+  L13  {63f67b374b2243b18a84cd74cbe2f3f3}
+  L14  {179f3791b8784cc680c437a3efdd4b04}
+  L15  {179f3791b8784cc680c437a3efdd4b04}
+  L16  {63f67b374b2243b18a84cd74cbe2f3f3}
+  L17  {179f3791b8784cc680c437a3efdd4b04}
+  L18  {179f3791b8784cc680c437a3efdd4b04}
+  L19  {cbf6cd5da4ff4b4385b17ae7bcff98d5}
+  L20  {8e29569e39fd44aa8c43aaaf80cd9083}
+  L21  {8e29569e39fd44aa8c43aaaf80cd9083}
+  L22  {8e29569e39fd44aa8c43aaaf80cd9083}
+  L23  {d78d442e09c0422188aa45615f3a3d0e}
+  NC  {073582d7bdef4f49a1284c73eea18806}
+  OSC1  {6182a2c878e549158f1d9c038c5ce7a3}
+  PG A  {30f1d73fe7104a6986f78cf331c4975f}
+  PG B  {30f1d73fe7104a6986f78cf331c4975f}
+  Q1  {f9aee2f635684ce29874ae31607c59e5}
+  Q2  {f9aee2f635684ce29874ae31607c59e5}
+  Q3  {f9aee2f635684ce29874ae31607c59e5}
+  Q4  {f9aee2f635684ce29874ae31607c59e5}
+  Q5  {f9aee2f635684ce29874ae31607c59e5}
+  Q6  {f9aee2f635684ce29874ae31607c59e5}
+  Q7  {f5cc4a0a92d24ce5a40aa6a7c1fedc9f}
+  R1  {073582d7bdef4f49a1284c73eea18806}
+  R10  {073582d7bdef4f49a1284c73eea18806}
+  R11  {073582d7bdef4f49a1284c73eea18806}
+  R12  {073582d7bdef4f49a1284c73eea18806}
+  R13  {073582d7bdef4f49a1284c73eea18806}
+  R14  {073582d7bdef4f49a1284c73eea18806}
+  R15  {073582d7bdef4f49a1284c73eea18806}
+  R16  {073582d7bdef4f49a1284c73eea18806}
+  R17  {073582d7bdef4f49a1284c73eea18806}
+  R18  {073582d7bdef4f49a1284c73eea18806}
+  R19  {073582d7bdef4f49a1284c73eea18806}
+  R20  {073582d7bdef4f49a1284c73eea18806}
+  R21  {073582d7bdef4f49a1284c73eea18806}
+  R22  {073582d7bdef4f49a1284c73eea18806}
+  R23  {073582d7bdef4f49a1284c73eea18806}
+  R24  10kΩ  {073582d7bdef4f49a1284c73eea18806}
+  R25  10kΩ  {073582d7bdef4f49a1284c73eea18806}
+  R26  {073582d7bdef4f49a1284c73eea18806}
+  R27  {073582d7bdef4f49a1284c73eea18806}
+  R28  {073582d7bdef4f49a1284c73eea18806}
+  R29  {073582d7bdef4f49a1284c73eea18806}
+  R30  {073582d7bdef4f49a1284c73eea18806}
+  R31  {073582d7bdef4f49a1284c73eea18806}
+  R32  NC  {073582d7bdef4f49a1284c73eea18806}
+  R33  NC  {073582d7bdef4f49a1284c73eea18806}
+  R34  {073582d7bdef4f49a1284c73eea18806}
+  R35  {073582d7bdef4f49a1284c73eea18806}
+  R36  {073582d7bdef4f49a1284c73eea18806}
+  R40  {073582d7bdef4f49a1284c73eea18806}
+  R42  {073582d7bdef4f49a1284c73eea18806}
+  R43  {073582d7bdef4f49a1284c73eea18806}
+  R44  {073582d7bdef4f49a1284c73eea18806}
+  R45  {073582d7bdef4f49a1284c73eea18806}
+  R46  {073582d7bdef4f49a1284c73eea18806}
+  R47  {073582d7bdef4f49a1284c73eea18806}
+  R48  {073582d7bdef4f49a1284c73eea18806}
+  R49  {073582d7bdef4f49a1284c73eea18806}
+  R50  {073582d7bdef4f49a1284c73eea18806}
+  R51  {073582d7bdef4f49a1284c73eea18806}
+  R52  {073582d7bdef4f49a1284c73eea18806}
+  R53  {073582d7bdef4f49a1284c73eea18806}
+  R54  {073582d7bdef4f49a1284c73eea18806}
+  R55  {073582d7bdef4f49a1284c73eea18806}
+  R56  {073582d7bdef4f49a1284c73eea18806}
+  R57  {073582d7bdef4f49a1284c73eea18806}
+  R58  {073582d7bdef4f49a1284c73eea18806}
+  R59  {98cf0348c8144cb19a93da813708cb62}
+  R60  {98cf0348c8144cb19a93da813708cb62}
+  R61  10kΩ  {073582d7bdef4f49a1284c73eea18806}
+  R62  10kΩ  {073582d7bdef4f49a1284c73eea18806}
+  R63  10kΩ  {073582d7bdef4f49a1284c73eea18806}
+  R64  {073582d7bdef4f49a1284c73eea18806}
+  R65  {073582d7bdef4f49a1284c73eea18806}
+  R66  {073582d7bdef4f49a1284c73eea18806}
+  R67  {073582d7bdef4f49a1284c73eea18806}
+  R68  {073582d7bdef4f49a1284c73eea18806}
+  R69  {073582d7bdef4f49a1284c73eea18806}
+  R70  {073582d7bdef4f49a1284c73eea18806}
+  R71  {073582d7bdef4f49a1284c73eea18806}
+  R72  {073582d7bdef4f49a1284c73eea18806}
+  R73  {073582d7bdef4f49a1284c73eea18806}
+  R74  {073582d7bdef4f49a1284c73eea18806}
+  R75  {073582d7bdef4f49a1284c73eea18806}
+  R76  10kΩ  {073582d7bdef4f49a1284c73eea18806}
+  R77  {073582d7bdef4f49a1284c73eea18806}
+  R78  {073582d7bdef4f49a1284c73eea18806}
+  R8  {073582d7bdef4f49a1284c73eea18806}
+  R80  {073582d7bdef4f49a1284c73eea18806}
+  R81  {073582d7bdef4f49a1284c73eea18806}
+  R84  {073582d7bdef4f49a1284c73eea18806}
+  R85  {073582d7bdef4f49a1284c73eea18806}
+  R86  {073582d7bdef4f49a1284c73eea18806}
+  R87  {073582d7bdef4f49a1284c73eea18806}
+  R88  {073582d7bdef4f49a1284c73eea18806}
+  R89  {073582d7bdef4f49a1284c73eea18806}
+  R9  {073582d7bdef4f49a1284c73eea18806}
+  R90  {073582d7bdef4f49a1284c73eea18806}
+  R91  {073582d7bdef4f49a1284c73eea18806}
+  R92  {073582d7bdef4f49a1284c73eea18806}
+  R93  {073582d7bdef4f49a1284c73eea18806}
+  RF1  {aa04b55d95ab4d16b10c242528f5914c}
+  RF2  {f7525c14c0624ba49d44b90f489655c1}
+  RF3  {f7525c14c0624ba49d44b90f489655c1}
+  RF4  {f7525c14c0624ba49d44b90f489655c1}
+  RF5  {f7525c14c0624ba49d44b90f489655c1}
+  RF6  {f7525c14c0624ba49d44b90f489655c1}
+  RF7  {f7525c14c0624ba49d44b90f489655c1}
+  SCREW1
+  SCREW2
+  SCREW3
+  SCREW4
+  U1  {d4d1bbb6b3024aa89e210277779a1524}
+  U10  {1c7bc24088074f01866a2314a22fcef9}
+  U11  {87c69e2cf3154d7c86d08ffd1fcbba79}
+  U12  {fc24ab5a59e648c2b5c9dd79cfa5a276}
+  U13  {fc24ab5a59e648c2b5c9dd79cfa5a276}
+  U14  {b9780a7aece7405fba878a3714394c2b}
+  U15  {3f32b4c241834b3ba524ce5ae7f08632}
+  U16  {68d9d0e5ebdd4a91b9118051fb54c8c4}
+  U17  {091dc6707f3c4b86bc4edc7ea8aebfad}
+  U2  {44c17d15bf524a95900276da06795e90}
+  U3  {c65eff752ba2425191bd24655060057f}
+  U4  {b9df9a449868427a838a73cc143e1fe6}
+  U5  {34d530a420af4d6fbf68b1a8a67ad2c2}
+  U6  {34d530a420af4d6fbf68b1a8a67ad2c2}
+  U7  {fc24ab5a59e648c2b5c9dd79cfa5a276}
+  U9  {6a1d45914ae84bee8d2c010ea94bd60d}
+  USB1  {090befb01a1c47f086e739b53b55ac0a}
+  X1  {baa95a22880b4a62b1cd14ca4a928589}
+  X2  {baa95a22880b4a62b1cd14ca4a928589}
+  X3  {baa95a22880b4a62b1cd14ca4a928589}
+  X4  {baa95a22880b4a62b1cd14ca4a928589}
+$END_COMPONENTS
+
+$NETS
+  $2N1720
+    C37.2
+    R19.1
+  $2N3444
+    C39.2
+    R20.1
+  $2N3451
+    C40.1
+    R20.2
+    U2.G2
+    U2.G3
+  $2N3895
+    R22.1
+    U2.L4
+  $2N4930
+    C55.1
+    L10.1
+    OSC1.4
+  $2N4992
+    C56.2
+    OSC1.3
+  $2N5256
+    C57.1
+    R23.2
+    RF1.5
+  $3N1060
+    R10.1
+    R9.2
+  $3N15876
+    C148.2
+    U3.7
+  $3N1717
+    C20.2
+    U5.7
+  $3N1832
+    R12.1
+    R13.2
+    U5.9
+  $3N21957
+    PG B.1
+    Q2.3
+  $3N22008
+    PG A.1
+    Q3.3
+  $3N3032
+    C30.2
+    U6.7
+  $3N3034
+    R17.1
+    R18.2
+    U6.9
+  $3N6807
+    PG B.2
+    R24.1
+  $3N6848
+    PG A.2
+    R25.1
+  $3N848
+    R15.2
+    U3.6
+  $3N852
+    C27.2
+    U3.3
+    U4.1
+  $3N853
+    C27.1
+    R14.1
+  $3N854
+    R14.2
+    U3.5
+  $3N857
+    C28.1
+    R8.2
+    R9.1
+    U3.8
+  $4N3637
+    ARM.2
+    R84.1
+  $4N6007
+    ARM.1
+    Q1.3
+  $4N6427
+    R91.2
+    U16.5
+  $4N680
+    C1.2
+    U1.22
+  $5N1334
+    C145.2
+    U10.6
+  $5N1646
+    U11.2
+    X2.1
+  $5N1650
+    U11.1
+    X2.3
+  $5N1903
+    C106.1
+    C146.1
+    U11.16
+  $5N375
+    R31.1
+    USB1.4
+  $5N379
+    R30.1
+    USB1.10
+  $6N1077
+    C92.2
+    L13.4
+  $6N1083
+    C93.2
+    L13.6
+  $6N1770
+    C97.2
+    L16.6
+  $6N1788
+    C96.2
+    L16.4
+  $6N1797
+    L16.3
+    RF5.5
+  $6N2135
+    R26.2
+    R27.1
+    RF6.5
+  $6N2141
+    C100.1
+    R27.2
+  $6N2367
+    C101.1
+    R29.2
+  $6N2369
+    R28.2
+    R29.1
+    RF7.5
+  $6N381
+    L11.3
+    RF2.5
+  $6N492
+    C88.1
+    L11.6
+  $6N497
+    C89.1
+    L11.4
+  $6N753
+    L12.3
+    RF3.5
+  $6N755
+    C90.1
+    L12.6
+  $6N758
+    C91.1
+    L12.4
+  $6N915
+    L13.3
+    RF4.5
+  $7N1109
+    NC.1
+    U9.31
+  $7N1265
+    R46.1
+    U9.39
+  $7N3719
+    D4.1
+    L23.1
+    R51.2
+  $7N3729
+    D4.2
+    L23.2
+    R52.2
+  $7N3751
+    D5.1
+    L23.5
+    R53.2
+  $7N3757
+    D5.2
+    L23.6
+    R54.2
+  $7N3761
+    D6.1
+    L23.7
+    R55.2
+  $7N3767
+    D6.2
+    L23.8
+    R56.2
+  $7N3774
+    D7.1
+    L23.11
+    R57.2
+  $7N3784
+    D7.2
+    L23.12
+    R58.2
+  $7N4429
+    C126.2
+    L23.10
+    L23.3
+    L23.4
+    L23.9
+  $7N4503
+    D8.1
+    L23.15
+    L23.16
+    L23.21
+    L23.22
+    R59.2
+  $7N4793
+    C127.2
+    R59.1
+  $7N51860
+    Q4.3
+    R62.2
+  $7N51864
+    Q5.3
+    R63.2
+  $7N51869
+    Q6.3
+    R76.2
+  $7N52042
+    10M.2
+    Q7.3
+  $7N8958
+    10M.1
+    R61.1
+  $7N8975
+    100M.1
+    R62.1
+  $7N8992
+    1000M.1
+    R63.1
+  $7N9856
+    ACT.1
+    R76.1
+  $7N989
+    L19.1
+    U9.30
+  $8N1159
+    R78.1
+    U15.22
+  $8N1371
+    R80.1
+    U15.24
+  $8N1466
+    C134.1
+    R81.1
+    U15.26
+    X3.1
+  $8N1479
+    C133.1
+    R81.2
+    U15.25
+    X3.3
+  $8N749
+    R77.2
+    U15.1
+  $8N854
+    C130.1
+    U15.20
+    U15.23
+  1V3_A
+    C21.2
+    C24.2
+    C26.2
+    C58.2
+    C59.2
+    C61.2
+    C62.2
+    C63.2
+    C65.2
+    R12.2
+    U2.B10
+    U2.B9
+    U2.E2
+    U2.F2
+    U2.J3
+    U2.K3
+    U5.10
+    U5.11
+    U5.12
+    U5.13
+    U5.14
+  1V3_B
+    C31.2
+    C34.2
+    C36.2
+    C66.2
+    C67.2
+    C68.2
+    C69.2
+    C70.2
+    C71.2
+    C72.2
+    C73.2
+    C74.2
+    C75.2
+    C94.2
+    C95.2
+    C98.2
+    C99.2
+    L14.1
+    L15.1
+    L17.1
+    L18.1
+    R17.2
+    U2.A10
+    U2.A9
+    U2.D2
+    U2.D3
+    U2.E3
+    U2.F12
+    U2.K4
+    U2.M10
+    U2.M9
+    U6.10
+    U6.11
+    U6.12
+    U6.13
+    U6.14
+  1V8
+    C15.2
+    C153.2
+    C16.2
+    C17.2
+    C19.2
+    C28.2
+    C29.2
+    C4.2
+    C5.2
+    C6.2
+    C76.2
+    C79.2
+    C81.2
+    CN2.50
+    CN3.50
+    L10.2
+    R1.1
+    R10.2
+    R11.2
+    R16.2
+    R21.2
+    R91.1
+    U1.1
+    U1.24
+    U1.36
+    U1.48
+    U1.9
+    U16.1
+    U17.26
+    U2.H12
+    U4.2
+    U5.1
+    U5.15
+    U5.16
+    U5.2
+    U5.3
+    U5.4
+    U6.1
+    U6.15
+    U6.16
+    U6.2
+    U6.3
+    U6.4
+  3V3
+    C154.1
+    C82.1
+    C85.2
+    C86.2
+    C87.2
+    R86.2
+    R87.2
+    R88.2
+    R89.2
+    R90.2
+    U16.8
+    U2.B8
+    U7.5
+  5V
+    1000M.2
+    100M.2
+    ACT.2
+    C10.2
+    C11.2
+    C122.1
+    C123.2
+    C124.2
+    C141.1
+    C144.1
+    C147.2
+    C83.1
+    C84.2
+    CN2.1
+    CN2.2
+    CN2.3
+    CN2.4
+    CN2.5
+    CN2.6
+    F1.2
+    H1.1
+    Q7.2
+    R15.1
+    R24.2
+    R25.2
+    R78.2
+    R84.2
+    U10.3
+    U10.9
+    U11.15
+    U12.1
+    U12.3
+    U13.1
+    U13.3
+    U3.2
+    U7.1
+    U7.3
+  ARM_COM_D0
+    U1.10
+    U17.62
+  ARM_COM_D1
+    U1.11
+    U17.61
+  ARM_COM_D2
+    U1.12
+    U17.60
+  ARM_COM_D3
+    U1.13
+    U17.57
+  ARM_COM_D4
+    U1.14
+    U17.56
+  ARM_COM_D5
+    U1.15
+    U17.55
+  ARM_COM_D6
+    U1.16
+    U17.54
+  ARM_COM_D7
+    U1.17
+    U17.53
+  ARM_COM_S0
+    U1.29
+    U17.63
+  ARM_COM_S1
+    U1.30
+    U17.64
+  ARM_COM_S2
+    U1.31
+    U17.65
+  ARM_COM_S3
+    U1.32
+    U17.66
+  ARM_COM_S4
+    U1.33
+    U17.67
+  ARM_COM_S5
+    U17.52
+  ARM_LED
+    Q1.1
+    U1.2
+  ARM_NRST
+    ARM RST.2
+    C8.2
+    R1.2
+    U1.7
+  ARM_OSC_IN
+    C3.2
+    U1.5
+    X1.3
+  ARM_OSC_OUT
+    C2.1
+    U1.6
+    X1.1
+  ARM_SPI2_EN
+    R44.2
+    U1.26
+    U2.K6
+  ARM_SPI2_MISO
+    R45.2
+    U1.27
+    U2.L6
+  ARM_SPI2_MOSI
+    R42.2
+    U1.28
+    U2.J4
+  ARM_SPI2_SCK
+    R43.2
+    U1.21
+    U2.J5
+  ARM_SWCLK
+    U1.37
+    U16.2
+  ARM_SWCLK_3V3
+    H1.3
+    U16.6
+  ARM_SWDIO
+    U1.34
+    U16.3
+  ARM_SWDIO_3V3
+    H1.2
+    U16.7
+  ARM_UART_RX
+    U1.39
+    U10.4
+  ARM_UART_TX
+    U1.42
+    U10.5
+  AUX_ADC
+    C155.1
+    H2.1
+    U2.L5
+  AUX_DAC1
+    C156.1
+    H3.1
+    U2.B3
+  AUX_DAC2
+    C157.1
+    H4.1
+    U2.C3
+  BANK12_R13_JTAG_TDI
+    CN1.9
+    R87.1
+    U17.36
+  BANK12_T13_JTAG_TMS
+    CN1.5
+    R90.1
+    U17.39
+  BANK12_U13_JTAG_TDO
+    CN1.3
+    R89.1
+    U17.38
+  BANK12_V12_JTAG_TCK
+    CN1.1
+    R88.1
+    U17.37
+  BANK1_A13_IOT95A
+    CN3.26
+    U2.G9
+  BANK1_A14_IOT95B
+    CN3.27
+    R33.1
+    U2.H9
+  BANK1_A15_IOT99A
+    CN3.32
+    U2.F10
+  BANK1_A16_IOT99B
+    CN3.33
+    R32.1
+    U2.G10
+  BANK1_B13_IOT93B
+    CN3.24
+    U2.E9
+  BANK1_B15_IOT97A
+    CN3.29
+    U2.D10
+  BANK1_B16_IOT97B
+    CN3.30
+    U2.E11
+  BANK1_B17_IOT104A
+    CN3.38
+    U2.D11
+  BANK1_B18_IOT104B
+    CN3.39
+    U2.E12
+  BANK1_C13_IOT93A
+    CN3.23
+    U2.D8
+  BANK1_C14_IOT85A
+    CN3.20
+    U2.E7
+  BANK1_C15_IOT85B
+    CN3.21
+    U2.F8
+  BANK1_C17_IOT106B
+    CN3.36
+    U2.E10
+  BANK1_D14_IOT82A
+    C152.1
+    CN3.68
+  BANK1_D15_IOT82B
+    CN3.67
+  BANK1_D16_IOT87B
+    CN3.64
+  BANK1_D17_IOT106A
+    CN3.35
+    U2.D9
+  BANK1_E13_IOT78A
+    CN3.17
+    U2.D7
+  BANK1_E14_IOT78B
+    CN3.18
+    U2.E8
+  BANK1_E16_IOT87A
+    CN3.65
+  BANK1_E17_IOT89B
+    CN3.61
+  BANK1_F13_IOT80A
+    CN3.72
+    R35.1
+  BANK1_F14_IOT80B
+    CN3.71
+    R36.1
+  BANK1_F15
+    CN3.70
+    R34.1
+  BANK1_F16_IOT89A
+    CN3.62
+  BANK2_A18_IOT113A
+    CN3.41
+    U2.J12
+  BANK2_A19_IOT113B
+    CN3.42
+    U2.K11
+  BANK2_A20_IOT122B
+    CN3.45
+    U2.K10
+  BANK2_A21_IOT135B
+    CN3.48
+    U2.J7
+  BANK2_B20_IOT122A
+    CN3.44
+    U2.J11
+  BANK2_B21_IOT135A
+    CN3.47
+    U2.H8
+  BANK2_B22_IOT133B
+    U17.3
+    U2.G7
+  BANK2_C18_IOT115A
+    CN3.59
+    U2.G11
+  BANK2_C19_IOT115B
+    CN3.58
+    U2.H11
+  BANK2_C20_IOT131B
+    CN3.52
+    U2.K7
+  BANK2_C22_IOT133A
+    U17.4
+    U2.G8
+  BANK2_D19_IOT120B
+    CN3.55
+    R40.1
+  BANK2_D20_IOT131A
+    CN3.53
+    U2.J8
+  BANK2_D21_IOT138B
+    U17.80
+    U2.J9
+  BANK2_D22_IOT140B
+    U17.78
+    U2.K9
+  BANK2_E18_IOT117B
+    R45.1
+    U17.5
+  BANK2_E19_IOT120A
+    CN3.56
+    U2.J6
+  BANK2_E21_IOT138A
+    U17.79
+    U2.K8
+  BANK2_E22_IOT140A
+    U17.77
+    U2.J10
+  BANK2_F18_IOT117A
+    R44.1
+    U17.6
+  BANK2_F19_IOT124A
+    U17.74
+  BANK2_F20_IOT124B
+    U17.75
+  BANK2_F21
+    U17.76
+  BANK2_G21_IOT144A
+    R42.1
+    U17.8
+  BANK2_G22_IOT144B
+    R43.1
+    U17.7
+  BANK2_T16
+    CN2.29
+  BANK3_G11_DONE
+    U17.2
+  BANK3_N12_RECONFIG
+    U17.10
+  BANK3_U10_MODE1
+    CN2.15
+  BANK3_U11_MODE0
+    CN2.14
+  BANK3_U12_READY
+    U17.1
+  BANK3_U8
+    CN2.13
+  BANK3_U9_MODE2
+    CN2.16
+  BANK4_G13_IOR20B
+    CN3.83
+  BANK4_G15_IOR24A
+    CN3.82
+  BANK4_G16_IOR24B
+    CN3.81
+  BANK4_G17_IOR30A
+    U17.12
+  BANK4_G18_IOR30B
+    U17.11
+  BANK4_H13_IOR20A
+    CN3.84
+  BANK4_H14_IOR26B
+    CN3.79
+  BANK4_H15_IOR22B
+    CN3.77
+  BANK4_J14_IOR26A
+    CN3.80
+  BANK4_J15_IOR22A
+    CN3.78
+  BANK5_G20_IOR43B
+    U17.72
+  BANK5_H19_IOR41B
+    U15.31
+    U17.69
+  BANK5_H20_IOR43A
+    U15.2
+    U17.71
+  BANK5_H22_IOR45B
+    R93.2
+    U15.27
+    U17.15
+  BANK5_J16_IOR47A
+    CN3.74
+  BANK5_J17_IOR39B
+    CN3.75
+  BANK5_J19_IOR41A
+    R77.1
+    U17.68
+  BANK5_J20_IOR54A
+    U17.14
+    U2.D6
+  BANK5_J21_IOR54B
+    U17.13
+    U2.E5
+  BANK5_J22_IOR45A
+    U15.29
+    U17.16
+  BANK5_K17_IOR39A
+    CN3.76
+  BANK5_K21_IOR59A
+    U15.10
+    U17.18
+  BANK5_K22_IOR59B
+    U15.13
+    U17.17
+  BANK5_L13_IOR50B
+    CN2.67
+  BANK5_L19_IOR61A
+    U15.3
+    U17.20
+  BANK5_L20_IOR61B
+    U15.9
+    U17.19
+  BANK5_L21_IOR68B
+    U15.4
+    U17.21
+  BANK5_M13_IOR50A
+    CN2.66
+  BANK5_M15_IOR52A
+    CN2.59
+  BANK5_M16_IOR52B
+    CN2.58
+  BANK5_M17
+    CN2.55
+  BANK5_M21_IOR68A
+    U15.5
+    U17.22
+  BANK5_M22_IOR63B
+    U15.6
+    U17.24
+  BANK5_N22_IOR63A
+    U15.7
+    U17.25
+  BANK6_K13_IOB36A
+    CN2.19
+  BANK6_K14_IOB36B
+    CN2.20
+  BANK6_N13_IOB138A
+    CN2.61
+  BANK6_N14_IOB138B
+    CN2.62
+  BANK6_N15
+    CN2.60
+  BANK6_N17_IOB140A
+    CN2.57
+  BANK6_P14_IOB146A
+    CN2.22
+  BANK6_P15_IOB142A
+    CN2.25
+  BANK6_P16_IOB136A
+    U17.50
+  BANK6_P17_IOB140B
+    CN2.56
+  BANK6_R14_IOB146B
+    CN2.23
+  BANK6_R16_IOB142B
+    CN2.26
+  BANK6_R17_IOB136B
+    U17.49
+  BANK6_R18_IOB144A
+    U17.47
+  BANK6_T14
+    CN2.95
+  BANK6_T15
+    CN2.28
+  BANK6_T18_IOB144B
+    U17.46
+  BANK6_U15
+    CN2.75
+  BANK6_U16
+    CN2.30
+  BANK6_V15
+    CN2.73
+  BANK7_AA15
+    CN2.69
+  BANK7_AA16
+    CN2.65
+  BANK7_AA20_IOB102A
+    CN2.44
+  BANK7_AA21_IOB102B
+    CN2.45
+  BANK7_AB16
+    CN2.68
+  BANK7_AB17
+    CN2.64
+  BANK7_P19_IOB113A
+    U17.28
+  BANK7_P20
+    U17.58
+  BANK7_R19_IOB113B
+    U17.29
+  BANK7_T20_IOB111B
+    U17.31
+  BANK7_T21_IOB115A
+    U17.33
+  BANK7_U21_IOB115B
+    U17.34
+  BANK7_U22_IOB117A_PUDC
+    U17.45
+  BANK7_V13
+    CN2.94
+  BANK7_W15
+    CN2.72
+  BANK7_W16
+    CN2.31
+  BANK7_W21_IOB104A
+    CN2.52
+  BANK7_W22_IOB104B
+    CN2.51
+  BANK7_Y16
+    CN2.71
+  BANK7_Y17
+    CN2.63
+  BANK8_AA14
+    CN2.79
+  BANK8_AA18_IOB77A
+    CN2.38
+    Q6.1
+  BANK8_AA19_IOB85A
+    CN2.42
+    U9.18
+  BANK8_AB15
+    CN2.70
+  BANK8_AB18_IOB77B
+    C109.1
+    CN2.39
+    R92.2
+    U9.12
+  BANK8_AB20_IOB85B
+    CN2.43
+    U9.17
+  BANK8_AB21_IOB97A
+    CN2.46
+    U9.16
+  BANK8_AB22_IOB97B
+    CN2.47
+    U9.15
+  BANK8_U17_IOB75A
+    CN2.32
+    R69.1
+    R72.2
+    U9.25
+  BANK8_U18_IOB75B
+    CN2.33
+    R68.1
+    R71.2
+    U9.24
+  BANK8_U20_IOB95A
+    CN2.54
+  BANK8_V14
+    CN2.77
+  BANK8_V17_IOB79A
+    CN2.34
+    R67.1
+    R70.2
+    U9.23
+  BANK8_V18_IOB81A
+    U17.43
+  BANK8_V19_IOB81B
+    U17.42
+  BANK8_V20_IOB95B
+    CN2.53
+  BANK8_W14
+    CN2.74
+  BANK8_W17_IOB79B
+    CN2.35
+    R66.2
+    U9.22
+  BANK8_W19_IOB93A
+    CN2.40
+    U9.20
+  BANK8_W20_IOB93B
+    CN2.41
+    U9.19
+  BANK8_Y18_IOB87A
+    CN2.36
+    R64.1
+    U9.26
+  BANK8_Y19_IOB87B
+    CN2.37
+    R65.1
+    U9.27
+  BANK8_Y21_IOB99A
+    CN2.48
+    R48.1
+    U9.14
+  BANK8_Y22_IOB99B
+    CN2.49
+    R47.1
+    U9.13
+  BANK9_AA10
+    CN2.91
+  BANK9_AA11
+    CN2.89
+  BANK9_AA13
+    CN2.80
+  BANK9_AA9
+    CN2.92
+  BANK9_AB10
+    CN2.90
+  BANK9_AB11
+    CN2.88
+  BANK9_AB12
+    CN2.83
+  BANK9_AB13
+    CN2.81
+  BANK9_V10
+    CN2.84
+  BANK9_W10
+    CN2.87
+  BANK9_W11
+    CN2.85
+  BANK9_W12
+    CN2.93
+  BANK9_Y11
+    CN2.86
+  BANK9_Y12
+    CN2.82
+  BANK9_Y13
+    CN2.78
+  BANK9_Y14
+    CN2.76
+  CRTL_OUT7
+    U2.G4
+  CTRL_IN0
+    U2.C5
+  CTRL_IN1
+    U2.C6
+  CTRL_IN3
+    U2.D5
+  CTRL_OUT0
+    U2.D4
+  CTRL_OUT1
+    U2.E4
+  CTRL_OUT3
+    U2.E6
+  CTRL_OUT4
+    U2.F6
+  CTRL_OUT5
+    U2.F5
+  CTRL_OUT6
+    U2.F4
+  DN
+    D3.1
+    D3.6
+    U11.11
+    USB1.5
+    USB1.7
+  DP
+    D3.3
+    D3.4
+    U11.12
+    USB1.6
+    USB1.8
+  ENABLE
+    R35.2
+    U2.G6
+  EN_AGC
+    R34.2
+    U2.G5
+  ETH0_MDI0_N
+    L23.14
+    U14.2
+  ETH0_MDI0_P
+    L23.13
+    U14.1
+  ETH0_MDI1_N
+    L23.18
+    U14.6
+  ETH0_MDI1_P
+    L23.17
+    U14.3
+  ETH0_MDI2_N
+    L23.20
+    U14.5
+  ETH0_MDI2_P
+    L23.19
+    U14.4
+  ETH0_MDI3_N
+    L23.24
+    U14.8
+  ETH0_MDI3_P
+    L23.23
+    U14.7
+  GND
+    ARM RST.3
+    C1.1
+    C10.1
+    C106.2
+    C107.2
+    C108.2
+    C109.2
+    C11.1
+    C110.1
+    C111.1
+    C112.1
+    C113.1
+    C114.1
+    C115.1
+    C116.1
+    C117.1
+    C119.1
+    C120.1
+    C121.2
+    C122.2
+    C123.1
+    C124.1
+    C125.1
+    C126.1
+    C130.2
+    C131.1
+    C132.1
+    C133.2
+    C134.2
+    C135.1
+    C136.1
+    C137.1
+    C138.1
+    C139.2
+    C140.2
+    C141.2
+    C144.2
+    C145.1
+    C146.2
+    C147.1
+    C148.1
+    C149.1
+    C15.1
+    C150.1
+    C151.1
+    C153.1
+    C154.2
+    C155.2
+    C156.2
+    C157.2
+    C16.1
+    C17.1
+    C19.1
+    C2.2
+    C20.1
+    C21.1
+    C24.1
+    C26.1
+    C29.1
+    C3.1
+    C30.1
+    C31.1
+    C34.1
+    C36.1
+    C37.1
+    C38.2
+    C39.1
+    C4.1
+    C40.2
+    C5.1
+    C55.2
+    C58.1
+    C59.1
+    C6.1
+    C61.1
+    C62.1
+    C63.1
+    C65.1
+    C66.1
+    C67.1
+    C68.1
+    C69.1
+    C70.1
+    C71.1
+    C72.1
+    C73.1
+    C74.1
+    C75.1
+    C76.1
+    C79.1
+    C8.1
+    C81.1
+    C82.2
+    C83.2
+    C84.1
+    C85.1
+    C86.1
+    C87.1
+    C94.1
+    C95.1
+    C98.1
+    C99.1
+    CN1.10
+    CN2.10
+    CN2.100
+    CN2.11
+    CN2.12
+    CN2.18
+    CN2.21
+    CN2.24
+    CN2.27
+    CN2.7
+    CN2.8
+    CN2.9
+    CN3.1
+    CN3.10
+    CN3.100
+    CN3.13
+    CN3.16
+    CN3.19
+    CN3.22
+    CN3.25
+    CN3.28
+    CN3.31
+    CN3.34
+    CN3.37
+    CN3.4
+    CN3.40
+    CN3.43
+    CN3.46
+    CN3.49
+    CN3.51
+    CN3.54
+    CN3.57
+    CN3.60
+    CN3.63
+    CN3.66
+    CN3.69
+    CN3.7
+    CN3.73
+    CN3.85
+    CN3.88
+    CN3.91
+    CN3.94
+    CN3.97
+    D3.2
+    H1.4
+    H2.2
+    H3.2
+    H4.2
+    L11.1
+    L11.2
+    L11.5
+    L12.1
+    L12.2
+    L12.5
+    L13.1
+    L13.2
+    L13.5
+    L16.1
+    L16.2
+    L16.5
+    NC.2
+    OSC1.2
+    Q1.2
+    Q2.2
+    Q3.2
+    Q4.2
+    Q5.2
+    Q6.2
+    R13.1
+    R18.1
+    R22.2
+    R23.1
+    R26.1
+    R28.1
+    R30.2
+    R31.2
+    R32.2
+    R33.2
+    R46.2
+    R60.1
+    R61.2
+    R64.2
+    R65.2
+    R67.2
+    R68.2
+    R69.2
+    R75.2
+    R8.1
+    R80.2
+    RF1.1
+    RF1.2
+    RF1.3
+    RF1.4
+    RF2.1
+    RF2.2
+    RF2.3
+    RF2.4
+    RF3.1
+    RF3.2
+    RF3.3
+    RF3.4
+    RF4.1
+    RF4.2
+    RF4.3
+    RF4.4
+    RF5.1
+    RF5.2
+    RF5.3
+    RF5.4
+    RF6.1
+    RF6.2
+    RF6.3
+    RF6.4
+    RF7.1
+    RF7.2
+    RF7.3
+    RF7.4
+    U1.23
+    U1.35
+    U1.47
+    U1.49
+    U1.8
+    U10.17
+    U10.2
+    U11.17
+    U12.2
+    U13.2
+    U15.33
+    U16.4
+    U17.23
+    U17.27
+    U17.30
+    U17.32
+    U17.35
+    U17.40
+    U17.41
+    U17.44
+    U17.48
+    U17.51
+    U17.59
+    U17.70
+    U17.73
+    U17.9
+    U2.A12
+    U2.A4
+    U2.A6
+    U2.B1
+    U2.B12
+    U2.B2
+    U2.C1
+    U2.C10
+    U2.C11
+    U2.C12
+    U2.C2
+    U2.C4
+    U2.C7
+    U2.C8
+    U2.C9
+    U2.D1
+    U2.D12
+    U2.E1
+    U2.F1
+    U2.F11
+    U2.F3
+    U2.F7
+    U2.F9
+    U2.G1
+    U2.G12
+    U2.H1
+    U2.H10
+    U2.H2
+    U2.H3
+    U2.H5
+    U2.H6
+    U2.H7
+    U2.J1
+    U2.J2
+    U2.K1
+    U2.K12
+    U2.K2
+    U2.L1
+    U2.L10
+    U2.L11
+    U2.L12
+    U2.L2
+    U2.L3
+    U2.L7
+    U2.L8
+    U2.L9
+    U2.M4
+    U2.M6
+    U3.1
+    U3.4
+    U5.17
+    U5.6
+    U6.17
+    U6.6
+    U7.2
+    U9.41
+    USB1.1
+    USB1.12
+    USB1.13
+    USB1.14
+    X1.2
+    X1.4
+    X2.2
+    X2.4
+    X3.2
+    X3.4
+    X4.2
+    X4.4
+  GNDS
+    C127.1
+    D8.2
+    R60.2
+    U14.10
+    U14.9
+  GPO_0
+    U2.B7
+  GPO_1
+    U2.B6
+  GPO_2
+    U2.B5
+  GPO_3
+    U2.B4
+  JTAG_VREF
+    CN1.4
+    R86.1
+  L10_ADCVP
+    CN2.99
+  M9_ADCVN
+    CN2.98
+  N10_ADCTP
+    CN2.97
+  N9_ADCTN
+    CN2.96
+  PG_1V3_A
+    Q3.1
+    R11.1
+    U5.5
+  PG_1V3_B
+    Q2.1
+    R16.1
+    U6.5
+  PHY0_1V8
+    C125.2
+    C135.2
+    C136.2
+    C137.2
+    C140.1
+    L22.1
+    R93.1
+    U10.1
+    U13.5
+    U15.11
+    U15.14
+    U15.28
+    U15.30
+    U15.32
+    U15.8
+  PHY0_3V3
+    C121.1
+    C131.2
+    C132.2
+    L20.1
+    L21.1
+    U12.5
+    U15.21
+  PHY0_AVDD_1V0
+    C115.2
+    C116.2
+    C117.2
+    C149.2
+    C150.2
+    C151.2
+    R50.2
+    U9.3
+    U9.38
+    U9.8
+  PHY0_AVDD_3V3
+    C110.2
+    C111.2
+    L20.2
+    U9.11
+    U9.40
+  PHY0_DVDD_1V0
+    C114.2
+    R49.2
+    U9.21
+  PHY0_DVDD_3V3
+    C112.2
+    C113.2
+    L21.2
+    U9.29
+  PHY0_LED0/CFG_EXT
+    Q7.1
+    R73.2
+    U9.32
+  PHY0_LED1/CFG_LDO0
+    Q4.1
+    R75.1
+    U9.33
+  PHY0_LED2/CFG_LDO1
+    Q5.1
+    R74.2
+    U9.34
+  PHY0_MDI0_N
+    R57.1
+    U9.2
+  PHY0_MDI0_P
+    R58.1
+    U9.1
+  PHY0_MDI1_N
+    R55.1
+    U9.5
+  PHY0_MDI1_P
+    R56.1
+    U9.4
+  PHY0_MDI2_N
+    R53.1
+    U9.7
+  PHY0_MDI2_P
+    R54.1
+    U9.6
+  PHY0_MDI3_N
+    R51.1
+    U9.10
+  PHY0_MDI3_P
+    R52.1
+    U9.9
+  PHY0_REG_1V0
+    C107.1
+    C108.1
+    L19.2
+    R49.1
+    R50.1
+  PHY0_VIO
+    C119.2
+    C120.2
+    L22.2
+    R47.2
+    R48.2
+    R66.1
+    R70.1
+    R71.1
+    R72.1
+    R73.1
+    R74.1
+    R92.1
+    U9.28
+  PHY0_XTAL_IN
+    C139.1
+    R85.1
+    U9.36
+    X4.1
+  PHY0_XTAL_OUT
+    C138.2
+    R85.2
+    U9.37
+    X4.3
+  Q0_LN0_RXM_I
+    CN3.95
+  Q0_LN0_RXP_I
+    CN3.96
+  Q0_LN0_TXM_O
+    CN3.3
+  Q0_LN0_TXP_O
+    CN3.2
+  Q0_LN1_RXM_I
+    CN3.92
+  Q0_LN1_RXP_I
+    CN3.93
+  Q0_LN1_TXM_O
+    CN3.12
+  Q0_LN1_TXP_O
+    CN3.11
+  Q0_LN2_RXM_I
+    CN3.89
+  Q0_LN2_RXP_I
+    CN3.90
+  Q0_LN2_TXM_O
+    CN3.9
+  Q0_LN2_TXP_O
+    CN3.8
+  Q0_LN3_RXM_I
+    CN3.86
+  Q0_LN3_RXP_I
+    CN3.87
+  Q0_LN3_TXM_O
+    CN3.6
+  Q0_LN3_TXP_O
+    CN3.5
+  Q0_REFCLKM_0
+    CN3.98
+  Q0_REFCLKM_1
+    CN3.15
+  Q0_REFCLKP_0
+    CN3.99
+  Q0_REFCLKP_1
+    CN3.14
+  RESETB
+    R21.1
+    R36.2
+    U2.K5
+  RX1A_N
+    C88.2
+    U2.M2
+  RX1A_P
+    C89.2
+    U2.M1
+  RX2A_N
+    C90.2
+    U2.A1
+  RX2A_P
+    C91.2
+    U2.A2
+  TX1A_N
+    C93.1
+    L15.2
+    U2.M8
+  TX1A_P
+    C92.1
+    L14.2
+    U2.M7
+  TX2A_N
+    C97.1
+    L18.2
+    U2.A7
+  TX2A_P
+    C96.1
+    L17.2
+    U2.A8
+  TXNRX
+    R40.2
+    U2.H4
+  TX_MON1
+    C100.2
+    U2.M5
+  TX_MON2
+    C101.2
+    U2.A5
+  TX_VCO_1V1
+    C38.1
+    R19.2
+    U2.A11
+    U2.B11
+  USART_DN
+    U10.8
+    U11.9
+  USART_DP
+    U10.7
+    U11.10
+  USB_DN
+    U11.7
+    U15.19
+  USB_DP
+    U11.8
+    U15.18
+  VBUS
+    D3.5
+    F1.1
+    USB1.11
+    USB1.2
+  VCCIO_138B5
+    CN2.17
+  XTALN
+    C152.2
+    C56.1
+    C57.2
+    U2.M12
+$END_NETS

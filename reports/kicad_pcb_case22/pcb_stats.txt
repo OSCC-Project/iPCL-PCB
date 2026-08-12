@@ -1,0 +1,13 @@
+project: STM32F4工业控制板 高精度采集 全隔离通信 ESP32
+design_index: 16
+board: 串口通信电路
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/16_STM32F4工业控制板 高精度采集 全隔离通信 ESP32/STM32F4工业控制板 高精度采集 全隔离通信 ESP32.epro2
+source_epcb: STM32F407_PLC_20260104.epcb
+components: 323
+nets: 53
+tracks: 9746
+vias: 362
+zones: 3
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 1384600

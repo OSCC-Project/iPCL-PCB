@@ -1,0 +1,13 @@
+project: 大功率2KW不间断电源
+design_index: 19
+board: 主功率板
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/19_大功率2KW不间断电源/大功率2KW不间断电源.epro2
+source_epcb: PCB1.epcb
+components: 350
+nets: 196
+tracks: 2535
+vias: 1906
+zones: 7
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 789305

@@ -1,0 +1,13 @@
+project: 开源AR眼镜
+design_index: 9
+board: OSAR主板
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/09_开源AR眼镜/开源AR眼镜.epro2
+source_epcb: PCB_PCB_HDMI转接_2_2023-12-18.epcb
+components: 2
+nets: 21
+tracks: 283
+vias: 9
+zones: 0
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 38661

@@ -1,0 +1,13 @@
+project: 音视频KVM切换器 光纤、模拟音频、HDMI
+design_index: 7
+board: Board1
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/07_音视频KVM切换器 光纤、模拟音频、HDMI/音视频KVM切换器 光纤、模拟音频、HDMI.epro2
+source_epcb: PCB1.epcb
+components: 398
+nets: 328
+tracks: 5421
+vias: 1496
+zones: 1897
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 2775966

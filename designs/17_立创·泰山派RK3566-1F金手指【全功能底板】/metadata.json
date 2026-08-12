@@ -1,0 +1,135 @@
+{
+  "index": 17,
+  "name": "立创·泰山派RK3566-1F金手指【全功能底板】",
+  "url": "https://oshwhub.com/li-chuang-kai-fa-ban/tai-shan-pai-1f-jin-shou-zhi-quan-gong-neng-di-ban",
+  "category": "工业电子",
+  "subcategory": "开发板",
+  "scale": "800元件规模",
+  "note": null,
+  "username": "li-chuang-kai-fa-ban",
+  "path": "tai-shan-pai-1f-jin-shou-zhi-quan-gong-neng-di-ban",
+  "uuid": "dda4b48b2e0e4d60ad6c6d0ffba203b9",
+  "api_detail": {
+    "uuid": "dda4b48b2e0e4d60ad6c6d0ffba203b9",
+    "path": "li-chuang-kai-fa-ban/tai-shan-pai-1f-jin-shou-zhi-quan-gong-neng-di-ban",
+    "name": "立创·泰山派RK3566-1F金手指【全功能底板】",
+    "content": "\n\n\n<table>\n<thead>\n <tr>\n     <th><img src=\"https://image.lceda.cn/oshwhub/pullImage/017dd5f154244286bc9c81c633fe2e4d.jpg\" width=\"800\" /></th>\n </tr>\n <tr>\n     <th style=\"text-align:center;font-size:15px\">立创·泰山派 1F 金手指核心板的【全功能底板】硬件参考方案</th>\n </tr>  \n</thead>\n</table>\n\n<div style=\"background-color:#f0f8ff;border-radius:12px;padding:20px;margin:15px 0\">\n <span style=\"font-weight:bold;font-size:1.2em;display:block;color:#2c3e50;border-left:4px solid #3498db;undefined:undefined;padding-left:10px\">\n   这是什么\n </span>\n</div>\n  \n 这是专为 **立创·泰山派1F RK3566 金手指核心板** 制作的全功能配套验证底板。通过模块化设计，底板与核心板无缝配合，既可作为独立功能验证平台，也可作为创客项目的硬件开发参考。它旨在为开发者提供完整的**硬件参考方案** 和 **二次开发基础**。\n\n自由，自由还是自由。以自由探索为终极目的。从核心板到底板再到SDK全部开源，没有谁敢这么做，但我们倾力提供一个完全开源的平台，旨在成为各位开发者学习进阶的鲜活参考案例，并注入浓厚的 DIY 创客精神。\n\n<div style=\"background-color:#f0f8ff;border-radius:12px;padding:20px;margin:15px 0\">\n  <span style=\"font-weight:bold;font-size:1.2em;display:block;color:#2c3e50;border-left:4px solid #3498db;undefined:undefined;padding-left:10px\">\n    硬件参数\n  </span>\n</div>\n\n<table>\n<thead>\n  <tr>\n      <th><img src=\"https://image.lceda.cn/oshwhub/pullImage/5e5e7a69198345609c727fa7d54e53dd.png\" width=\"2000\" /></th>\n  </tr>\n  <tr>\n      <th style=\"text-align:center;font-size:15px\">全功能底板尺寸</th>\n  </tr>  \n</thead>\n</table>\n\n**全功能底板参数**\n| 类别 | 规格说明 |\n|------|----------|\n| **供电方式** | DC：12V 输入<br />PH2.0供电端子：12V 输入 |\n| **显示接口** | HDMI屏幕接口：1080P@120Hz、4K@60Hz<br />EDP屏幕接口：2560 X 1600@60Hz<br />MIPI DSI屏幕接口：1080P@60Hz<br />LVDS屏幕接口：1080P@60Hz<br />背光控制接口：PH2.0-6P端子<br />电容触摸屏接口：PH2.0-6P端子 |\n| **摄像头** | 双路 MIPI CSI摄像头接口：30HM 4Lane 摄像头 |\n| **通信接口** | USB2.0端子：Type-A端子 x2、PH2.0端子 x3<br />USB3.0端子：Type-A端子<br />测试接口：Debug串口接口<br />I2C接口：PH2.0-4P端子 x3<br />RS232接口：PH2.0-6P端子<br />RS485接口：PH2.0-4P端子、 1\\*2P排针 x 2 <br />普通串口接口：1\\*4P排针 <br />M.2 连接器接口 |\n| **音频接口** | RK809-5内置耳机接口<br />18W 外部功放<br />麦克风接口：PH2.0-2P端子 |\n| **网络接口** | WIFI&amp;蓝牙模块：频率: 2.4 GHz; 发射功率: 16 dBm; 接收灵敏度: 90 dBm;<br />100/1000以太网口<br />EC20-4G 模块：mini PCIe接口<br />SIM卡接口：4G模块专用 |\n| **其他接口或模块** | TF卡座：支持TF卡启动系统，最高支持512GB<br />6 Pin GPIO：PH2.0-6P端子<br />按键：复位、电源、Recovery、用户按键<br />RGB三色LED灯<br />RTC实时时钟：HYM8563<br />5V风扇接口：PH2.0-2P端子<br />电源输出接口：3.3V \\ 5V \\ 12V PH2.0-6P端子<br />红外接收接口 |\n\n\n<table>\n<thead>\n  <tr>\n      <th><img src=\"https://image.lceda.cn/oshwhub/pullImage/eb8ad2f2bef34cbe8b9097b0af3bffff.png\" width=\"2000\" /></th>\n  </tr>\n  <tr>\n      <th style=\"text-align:center;font-size:15px\">全功能底板正面资源图</th>\n  </tr>  \n</thead>\n</table>\n\n---\n\n<table>\n<thead>\n  <tr>\n      <th><img src=\"https://image.lceda.cn/oshwhub/pullImage/53048db0778f4572b3ed78c9765c298d.png\" width=\"2000\" /></th>\n  </tr>\n  <tr>\n      <th style=\"text-align:center;font-size:15px\">全功能底板反面资源图</th>\n  </tr>  \n</thead>\n</table>\n\n---\n\n<div style=\"background-color:#f0f8ff;border-radius:12px;padding:20px;margin:15px 0\">\n <span style=\"font-weight:bold;font-size:1.2em;display:block;color:#2c3e50;border-left:4px solid #3498db;undefined:undefined;padding-left:10px\">\n   软件适配\n </span>\n</div>\n\n我们基于 立创·泰山派 1F 金手指核心板 + 全功能底板 移植了 Android13 系统，Linux 的 Buildroot、Debian、Ubuntu等系统，并且将全功能底板上的外设资源全部适配。\n\n\n资料在线查看下载：https://wiki.lckfb.com/zh-hans/tspi-1f-rk3566/\n\n\n\n\n<div style=\"background-color:#f0f8ff;border-radius:12px;padding:20px;margin:15px 0\">\n <span style=\"font-weight:bold;font-size:1.2em;display:block;color:#2c3e50;border-left:4px solid #3498db;undefined:undefined;padding-left:10px\">\n   最后的话\n </span>\n</div>\n\n市面上从不缺 “半开源” 的硬件方案，但我们偏要做那个 “全开源” 的笨人：从PCB Layout的每一根走线、BOM表的成本优化，到软件SDK的驱动源码、系统镜像的适配调试，硬件设计与软件生态毫无保留地向所有人敞开。这不是营销噱头，是我们对 “开源” 二字最朴素的信仰：让知识流动起来，比锁在专利里更有价值。\n\n我们定着近乎成本价的售价，只因深知开发者的不易——硬件设计反复打样验证的夜晚、软件调试踩坑的焦灼，我们都亲历过。这个核心板和底板承载的，是远超售价的工程投入：多层沉金 PCB 的信号完整性优化、模块化多硬件方案的验证、软件SDK系统的适配、相关资料的输出……\n\n不靠卖板赚钱，以培养中国工程师为己任。若您用它做出新的作品，欢迎在开源平台分享设计思路；若您发现可优化的细节，盼您在底下提交评论让方案更完善。我们不求靠卖板赚钱，只愿以开发板为媒介，为中国工程师的成长铺一段少踩坑的路\n\n\n\n\n  ",
+    "grade": 4,
+    "public": true,
+    "license": "CC BY-NC-SA 4.0",
+    "creator": {
+      "uuid": "d4ae54b964434e8ea8004476e8c43b64",
+      "username": "int_and_long",
+      "nickname": "老怪鸽",
+      "avatar": "//image.lceda.cn/avatars/2023/1/Dwe9dfxEspcXjkKHk6hbOSfDXvNTzPtbk7gjpNBj.png"
+    },
+    "text_editor_type": "markdown",
+    "owner": {
+      "uuid": "e1627234eeda4945b94a409d59d54978",
+      "username": "li-chuang-kai-fa-ban",
+      "nickname": "立创开发板",
+      "avatar": "//image.lceda.cn/avatar/JFydFRMEeuCyUbLX8sKyOU4WW27FuOkxcbBb9EIW.png",
+      "team": true
+    },
+    "introduction": "适配【立创·泰山派1F】 RK3566 金手指核心板 的全功能底板，全功能接口快速验证，金手指核心板二次开发硬件参考方案。",
+    "count": {
+      "views": 19699,
+      "star": 84,
+      "fork": 0,
+      "watch": 0,
+      "like": 37
+    },
+    "members": [
+      {
+        "uuid": "d4ae54b964434e8ea8004476e8c43b64",
+        "username": "int_and_long",
+        "nickname": "老怪鸽",
+        "avatar": "//image.lceda.cn/avatars/2023/1/Dwe9dfxEspcXjkKHk6hbOSfDXvNTzPtbk7gjpNBj.png",
+        "role": 1
+      },
+      {
+        "uuid": "ebedaae2d6804372bccb6e4eb1c97edb",
+        "nickname": "阿雨",
+        "username": "761418a",
+        "avatar": "//image.lceda.cn/avatars/2020/8/ww6rPFrTIJG3ztY3RpLCfdp0T2kcBXrxKLZzNXP8.png",
+        "role": 4
+      },
+      {
+        "uuid": "c644bf6717124cfe9ae4d22a5ba8d83a",
+        "nickname": "眉毛比头发还多的吴工",
+        "username": "eda_nqhjnjnc",
+        "avatar": "//image.lceda.cn/avatars/2025/2/9TQ8BKxxbVnCyoqrFXCQHIfkUHfaK9TYfW7Sgi3H.webp",
+        "role": 4
+      },
+      {
+        "uuid": "2186a2abc7aa47228e587f84262ff556",
+        "nickname": "喊救命的超人",
+        "username": "asdf321fd",
+        "avatar": "//image.lceda.cn/avatars/2024/9/EvkAxh0CNzCbnPj8wKRDyXexA8ctcv6keyfI6lGl.webp",
+        "role": 4
+      },
+      {
+        "uuid": "7183eb65ea7945f585aa6db37e844030",
+        "nickname": "LeenixP",
+        "username": "eda_xslgrpumw",
+        "avatar": "//image.lceda.cn/avatars/2025/11/tQrO1Vy0ItwJdZseYiScNhZpPQCnPaX7AiD6YmV3.webp",
+        "role": 4
+      },
+      {
+        "uuid": "67820a8a83794de2ad2968e45ad63724",
+        "nickname": "dillon",
+        "username": "dillon",
+        "avatar": "/image/avatar-default.png",
+        "role": 4
+      },
+      {
+        "uuid": "d9ad7ddca0614c2c9ad79b9314c70c49",
+        "nickname": "yuanzihao",
+        "username": "yuanzihao",
+        "avatar": "//image.lceda.cn/avatars/2020/5/oIcmNcse8DVhqAFPjqmCGeG5r81BjKfvpW8H0Dk1.jpeg",
+        "role": 4
+      }
+    ],
+    "attachments": [],
+    "no": 0,
+    "origin": "pro",
+    "archive": false,
+    "store": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "https://image.lceda.cn/oshwhub/pullImage/c4dd103e0afc4d9189201dbd582761c3.jpg",
+    "updated_at": "2026-04-13T02:13:48.037Z",
+    "created_at": "2025-11-24T04:16:20.000Z",
+    "allow_reprint": false,
+    "is_draft": false,
+    "project_tags": [
+      "a970fe2004094a908bccfcd3a19d8119",
+      "26b12f4862cc4aa8a7a6ff653d9de9ed",
+      "f2beb30a80134f3e9595b51148f55cf8"
+    ],
+    "publish": true,
+    "reproduction_cost": {},
+    "high_quality": true,
+    "oshwhub_publish_at": "2026-04-13T02:24:35.869Z",
+    "sync_jlc_3d": 0,
+    "updated_time": "2026-08-10T10:57:07.178Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": null,
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 26,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

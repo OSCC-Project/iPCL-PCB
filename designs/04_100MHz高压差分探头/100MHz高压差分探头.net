@@ -1,0 +1,729 @@
+* Netlist: 100MHz高压差分探头
+* Extracted from PCB layout data
+* Generated: 2026-08-11 11:30:11
+* Components: 185, Nets: 91
+*
+
+$COMPONENTS
+  BZ1  {3f1529bbaa4c4125a10b70c2df94fc11}
+  C1  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C10  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C11  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C12  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C13  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C14  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C15  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C16  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C17  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C18  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C19  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C2  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C20  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C21  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C22  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C23  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C24  {50b6f6c4261345bcae1f204b32f03376}
+  C25  {50b6f6c4261345bcae1f204b32f03376}
+  C26  {50b6f6c4261345bcae1f204b32f03376}
+  C27  {50b6f6c4261345bcae1f204b32f03376}
+  C28  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C29  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C3  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C30  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C31  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C32  {0bbfdf4e88d143f6bbe0c44ba3fab90c}
+  C33  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C34  {b083607f37af4680b9e4592262e65319}
+  C35  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C36  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C37  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C38  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C39  {0bbfdf4e88d143f6bbe0c44ba3fab90c}
+  C4  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C40  {50b6f6c4261345bcae1f204b32f03376}
+  C41  {50b6f6c4261345bcae1f204b32f03376}
+  C42  {50b6f6c4261345bcae1f204b32f03376}
+  C43  {50b6f6c4261345bcae1f204b32f03376}
+  C44  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C45  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C46  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C47  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C48  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C49  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C5  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C50  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C51  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C52  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C53  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C54  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C55  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C56  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C57  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C59  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C60  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C61  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C62  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C63  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C64  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C65  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C66  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C67  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C68  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C69  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C7  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C70  {b083607f37af4680b9e4592262e65319}
+  C8  {01a79b0e39434d2ea8de62503f4b7cf0}
+  C9  {01a79b0e39434d2ea8de62503f4b7cf0}
+  D1  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  D10  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  D11  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  D2  {2d40e6deeb29450e9d1a4a76727988d5}
+  D3  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  D4  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  D5  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  D6  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  D7  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  D8  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  D9  {2221e8d1e2a34b8f89d77a5d79f2ca10}
+  L1  {f3d986930d2e4bc98811ac8ef379dce3}
+  L2  {f3d986930d2e4bc98811ac8ef379dce3}
+  L3  {a09d160eb8b243d5bb85ea6fb6939f0f}
+  L4  {a09d160eb8b243d5bb85ea6fb6939f0f}
+  L5  {a09d160eb8b243d5bb85ea6fb6939f0f}
+  LED1  {65745c81ed8e4f3d8e50d31c896d1acd}
+  LED2  {897dac56033e486aafb175e0d8b9fbf8}
+  Q1  {f399c43c22204b4fb713e57500bec75f}
+  Q2  {f399c43c22204b4fb713e57500bec75f}
+  Q3  {f399c43c22204b4fb713e57500bec75f}
+  Q4  {2af9f62ae7c849819938fc866dd93b51}
+  Q5  {f399c43c22204b4fb713e57500bec75f}
+  Q6  {f399c43c22204b4fb713e57500bec75f}
+  R1  {345df099f6c344ecb03f6331ff1faf22}
+  R10  {345df099f6c344ecb03f6331ff1faf22}
+  R11  {345df099f6c344ecb03f6331ff1faf22}
+  R12  {345df099f6c344ecb03f6331ff1faf22}
+  R15  {345df099f6c344ecb03f6331ff1faf22}
+  R17  {345df099f6c344ecb03f6331ff1faf22}
+  R18  {345df099f6c344ecb03f6331ff1faf22}
+  R19  {345df099f6c344ecb03f6331ff1faf22}
+  R2  {345df099f6c344ecb03f6331ff1faf22}
+  R20  {345df099f6c344ecb03f6331ff1faf22}
+  R21  {345df099f6c344ecb03f6331ff1faf22}
+  R23  {345df099f6c344ecb03f6331ff1faf22}
+  R24  {345df099f6c344ecb03f6331ff1faf22}
+  R27  {345df099f6c344ecb03f6331ff1faf22}
+  R28  {345df099f6c344ecb03f6331ff1faf22}
+  R3  {345df099f6c344ecb03f6331ff1faf22}
+  R31  {507339a48b6e4fd2b68fda0a46e27918}
+  R33  {345df099f6c344ecb03f6331ff1faf22}
+  R34  {345df099f6c344ecb03f6331ff1faf22}
+  R35  {50b6f6c4261345bcae1f204b32f03376}
+  R36  {50b6f6c4261345bcae1f204b32f03376}
+  R37  {50b6f6c4261345bcae1f204b32f03376}
+  R38  {50b6f6c4261345bcae1f204b32f03376}
+  R39  {345df099f6c344ecb03f6331ff1faf22}
+  R4  {345df099f6c344ecb03f6331ff1faf22}
+  R40  {345df099f6c344ecb03f6331ff1faf22}
+  R41  {345df099f6c344ecb03f6331ff1faf22}
+  R42  {345df099f6c344ecb03f6331ff1faf22}
+  R43  {345df099f6c344ecb03f6331ff1faf22}
+  R44  {345df099f6c344ecb03f6331ff1faf22}
+  R45  {345df099f6c344ecb03f6331ff1faf22}
+  R46  {345df099f6c344ecb03f6331ff1faf22}
+  R47  {345df099f6c344ecb03f6331ff1faf22}
+  R48  {507339a48b6e4fd2b68fda0a46e27918}
+  R49  {345df099f6c344ecb03f6331ff1faf22}
+  R5  {345df099f6c344ecb03f6331ff1faf22}
+  R50  {b083607f37af4680b9e4592262e65319}
+  R52  {345df099f6c344ecb03f6331ff1faf22}
+  R53  {345df099f6c344ecb03f6331ff1faf22}
+  R54  {345df099f6c344ecb03f6331ff1faf22}
+  R55  {345df099f6c344ecb03f6331ff1faf22}
+  R56  {345df099f6c344ecb03f6331ff1faf22}
+  R57  {507339a48b6e4fd2b68fda0a46e27918}
+  R58  {345df099f6c344ecb03f6331ff1faf22}
+  R59  {345df099f6c344ecb03f6331ff1faf22}
+  R6  {345df099f6c344ecb03f6331ff1faf22}
+  R60  {345df099f6c344ecb03f6331ff1faf22}
+  R62  {50b6f6c4261345bcae1f204b32f03376}
+  R63  {50b6f6c4261345bcae1f204b32f03376}
+  R64  {50b6f6c4261345bcae1f204b32f03376}
+  R65  {50b6f6c4261345bcae1f204b32f03376}
+  R67  {345df099f6c344ecb03f6331ff1faf22}
+  R68  {345df099f6c344ecb03f6331ff1faf22}
+  R69  {345df099f6c344ecb03f6331ff1faf22}
+  R70  {345df099f6c344ecb03f6331ff1faf22}
+  R71  {345df099f6c344ecb03f6331ff1faf22}
+  R72  {345df099f6c344ecb03f6331ff1faf22}
+  R73  {345df099f6c344ecb03f6331ff1faf22}
+  R74  {345df099f6c344ecb03f6331ff1faf22}
+  R75  {345df099f6c344ecb03f6331ff1faf22}
+  R76  {345df099f6c344ecb03f6331ff1faf22}
+  R77  {345df099f6c344ecb03f6331ff1faf22}
+  R78  {507339a48b6e4fd2b68fda0a46e27918}
+  R79  {345df099f6c344ecb03f6331ff1faf22}
+  R80  {345df099f6c344ecb03f6331ff1faf22}
+  R81  {345df099f6c344ecb03f6331ff1faf22}
+  RF1  {1ec777233d6c4149af6d04cb8e51bfe0}
+  SW1  {48ba2fcf414c4ed1a85436e39ba2de45}
+  SW2  {48ba2fcf414c4ed1a85436e39ba2de45}
+  U10  {3a5982d0234d420ea4a672c9ef07185e}
+  U11  {a63def889ecb4197ab4f0e3660f255c6}
+  U14  {1ff305d16cc04ffa85117006eafe7e4e}
+  U15  {78df07149524430e9275017333e781e3}
+  U16  {78df07149524430e9275017333e781e3}
+  U17  {78df07149524430e9275017333e781e3}
+  U18  {345df099f6c344ecb03f6331ff1faf22}
+  U19  {345df099f6c344ecb03f6331ff1faf22}
+  U2  {7f88689ddd524e799a2641e85c3efaab}
+  U20  {9a9a9ba2542742fcbc0be96d8fc2a154}
+  U21  {34bb1eb335204bddbf3cbc7fe83f455e}
+  U22  {f399c43c22204b4fb713e57500bec75f}
+  U23  {3b6e914cb86f4d04bf420dafbc51a538}
+  U24  {0ff93004c7c14642a7edf0b7216f2991}
+  U25  {0ff93004c7c14642a7edf0b7216f2991}
+  U26  {34bb1eb335204bddbf3cbc7fe83f455e}
+  U27  {34bb1eb335204bddbf3cbc7fe83f455e}
+  U5  {345df099f6c344ecb03f6331ff1faf22}
+  U6  {7f88689ddd524e799a2641e85c3efaab}
+  U7  {3b6e914cb86f4d04bf420dafbc51a538}
+  U8  {7f88689ddd524e799a2641e85c3efaab}
+  U9  {c412defa74a04dd7acaf0683044d5107}
+  USBC1  {d71d1ea865754169be761115f6d42a03}
+$END_COMPONENTS
+
+$NETS
+  $1N10
+    R11.2
+    USBC1.A5
+  $1N17
+    D6.2
+    D7.2
+    R28.1
+    U11.5
+  $1N18
+    C14.1
+    R21.2
+  $1N19
+    C19.1
+    R28.2
+  $1N29
+    R19.2
+    U7.6
+  $1N31
+    U6.1
+    U7.1
+  $1N32
+    U7.5
+    U8.1
+  $1N34
+    U5.2
+    U6.2
+    U8.2
+  $1N35
+    Q2.2
+    Q3.2
+    R20.1
+  $1N37
+    D3.1
+    D4.1
+    R21.1
+    U11.8
+  $1N38
+    Q1.3
+    U2.1
+  $1N39
+    Q1.1
+    R12.2
+    R6.1
+  $1N42
+    R1.2
+    U2.2
+  $1N44
+    D5.2
+    Q2.1
+    Q3.1
+    R20.2
+    SW1.2
+  $1N50
+    U11.2
+    U23.4
+  $1N51
+    U11.1
+    U23.6
+  $1N70
+    C11.2
+    R15.1
+    U9.5
+  $1N80
+    C16.2
+    R27.1
+    U10.5
+  $1N84
+    R17.1
+    R18.1
+    U9.4
+  $1N85
+    R23.1
+    R24.1
+    U10.4
+  $1N87
+    R5.2
+    SW1.3
+  $1N88
+    Q6.1
+    R4.1
+    SW1.5
+  $1N8838
+    C69.2
+    L1.1
+    L4.4
+  $1N8925
+    C68.2
+    L2.1
+    L5.1
+  $1N9
+    R10.2
+    USBC1.B5
+  $2N10
+    C36.1
+    R49.1
+    R56.2
+    U17.1
+  $2N11
+    C33.1
+    R41.2
+    R46.1
+    U15.1
+  $2N12584
+    Q5.2
+    U20.2
+  $2N127
+    C39.2
+    R55.1
+  $2N13
+    R40.1
+    R46.2
+    U16.3
+  $2N15
+    C35.2
+    R49.2
+    R58.1
+    U16.4
+  $2N25458
+    C29.1
+    R31.2
+    R34.2
+  $2N25616
+    C66.1
+    R78.2
+    R79.2
+  $2N40
+    C32.2
+    R45.2
+  $2N44
+    C24.2
+    R35.1
+    U24.1
+  $2N45
+    C40.2
+    R62.1
+    U25.1
+  $2N46
+    R52.1
+    R59.2
+  $2N47
+    R48.1
+    R52.2
+  $2N48
+    C40.1
+    C41.2
+    R62.2
+    R63.1
+  $2N50
+    C41.1
+    C42.2
+    R63.2
+    R64.1
+  $2N51
+    C42.1
+    C43.2
+    R64.2
+    R65.1
+  $2N55
+    R42.1
+    R48.3
+  $2N56
+    R39.1
+    R42.2
+  $2N57
+    C26.1
+    C27.2
+    R37.2
+    R38.1
+  $2N58
+    C25.1
+    C26.2
+    R36.2
+    R37.1
+  $2N60
+    C24.1
+    C25.2
+    R35.2
+    R36.1
+  $2N70
+    R73.2
+    SW2.6
+  $2N71
+    R70.1
+    SW2.1
+  $2N72
+    R72.1
+    SW2.3
+  $2N74
+    LED1.2
+    R70.2
+  $2N75
+    LED2.2
+    R72.2
+  $2N78
+    C45.1
+    R33.2
+    R74.2
+    U22.1
+  $2N83
+    R69.1
+    R71.2
+    U22.2
+  $2N86
+    R68.1
+    U20.1
+  $2N88
+    Q5.1
+    R71.1
+    R76.2
+  $2N9
+    C35.1
+    C44.2
+    R47.1
+    R58.2
+    U16.1
+  $2N90
+    Q4.1
+    U20.3
+  $2N92
+    BZ1.1
+    U18.1
+    U19.1
+  $2N93
+    BZ1.2
+    Q4.3
+    R67.1
+    U20.4
+  $2N95
+    C31.1
+    R44.2
+  $2N96
+    C37.2
+    R53.1
+  $2N97
+    C30.1
+    R43.2
+  $2N98
+    C38.2
+    R54.1
+  +2.5V
+    C12.2
+    C3.2
+    C46.2
+    C47.2
+    C48.1
+    C49.1
+    C56.1
+    C62.1
+    C64.1
+    C9.1
+    D10.2
+    D8.2
+    R15.2
+    R17.2
+    R80.1
+    SW2.4
+    SW2.5
+    U15.5
+    U16.5
+    U17.5
+    U21.5
+    U26.5
+    U27.5
+  +4.5V
+    C10.2
+    C60.2
+    C61.2
+    L1.2
+    R2.2
+    R68.2
+    R69.2
+    SW2.2
+    U9.1
+    U9.3
+  +5V
+    C20.2
+    C21.2
+    D2.1
+    Q3.3
+    Q6.2
+    R1.1
+    R4.2
+    R6.2
+    R67.2
+    SW1.6
+    U18.2
+    U19.2
+    U23.1
+    U23.5
+  +VCC
+    C1.2
+    C14.2
+    C2.2
+    C4.1
+    D3.2
+    D4.2
+    L4.3
+  -2.5V
+    C17.2
+    C50.1
+    C51.1
+    C52.2
+    C53.2
+    C54.1
+    C55.2
+    C57.1
+    C63.1
+    C65.1
+    D11.1
+    D9.1
+    R23.2
+    R27.2
+    R75.1
+    R81.1
+    U15.2
+    U16.2
+    U17.2
+    U21.2
+    U26.2
+    U27.2
+  -4.5V
+    C15.2
+    C5.2
+    C59.2
+    L2.2
+    LED1.1
+    LED2.1
+    Q5.3
+    R3.2
+    R76.1
+    U10.2
+    U10.3
+  -VCC
+    C18.1
+    C19.2
+    C7.2
+    C8.2
+    D6.1
+    D7.1
+    L5.2
+  500X_BIAS_IN
+    R34.1
+    U27.1
+  50X_BIAS_IN
+    R79.1
+    U27.3
+  BAT+
+    C13.1
+    Q2.3
+    U7.3
+  BAT_CHRG
+    Q6.3
+    U5.1
+    U7.4
+  BIAS_OUT
+    R77.1
+    U27.4
+  EGND
+    C67.1
+    D1.1
+    L3.3
+    R10.1
+    R11.1
+    USBC1.1
+    USBC1.2
+    USBC1.3
+    USBC1.4
+    USBC1.A12
+    USBC1.B12
+  GND
+    C10.1
+    C11.1
+    C12.1
+    C15.1
+    C16.1
+    C17.1
+    C22.2
+    C23.2
+    C29.2
+    C3.1
+    C45.2
+    C46.1
+    C47.1
+    C48.2
+    C49.2
+    C5.1
+    C50.2
+    C51.2
+    C52.1
+    C53.1
+    C54.2
+    C55.1
+    C56.2
+    C57.2
+    C59.1
+    C60.1
+    C61.1
+    C62.2
+    C63.2
+    C64.2
+    C65.2
+    C66.2
+    C68.1
+    C69.1
+    C9.2
+    L4.1
+    L5.4
+    R18.2
+    R2.1
+    R24.2
+    R3.1
+    R33.1
+    R40.2
+    R43.1
+    R44.1
+    R45.1
+    R48.2
+    R53.2
+    R54.2
+    R55.2
+    R60.2
+    RF1.1
+    RF1.2
+    RF1.3
+    RF1.4
+    U10.1
+    U22.3
+    U9.2
+  HV_IN+
+    C37.1
+    C38.1
+    C39.1
+    C43.1
+    D10.1
+    D11.2
+    R59.1
+    R60.1
+    R65.2
+    U15.3
+  HV_IN-
+    C27.1
+    C30.2
+    C31.2
+    C32.1
+    D8.1
+    D9.2
+    R38.2
+    R39.2
+    R77.2
+    U17.3
+  PGND
+    C13.2
+    C20.1
+    C21.1
+    C28.1
+    L3.4
+    Q1.2
+    Q4.2
+    R12.1
+    R19.1
+    R5.1
+    SW1.4
+    U11.4
+    U14.2
+    U23.2
+    U7.2
+  POWER_IN
+    C67.2
+    D1.2
+    L3.2
+    USBC1.A9
+    USBC1.B9
+  SET_EN
+    R73.1
+    R75.2
+    U21.6
+    U26.6
+    U27.6
+  SGND
+    C1.1
+    C18.2
+    C2.1
+    C4.2
+    C7.1
+    C8.1
+    L4.2
+    L5.3
+    U11.6
+    U11.7
+    U14.1
+  SIGNAL_A
+    C33.2
+    R41.1
+    U15.4
+    U21.4
+  SIGNAL_B
+    C34.2
+    C70.2
+    R50.1
+    R57.3
+    U21.3
+  SIGNAL_C
+    C34.1
+    C70.1
+    R50.2
+    R57.1
+    R57.2
+    U26.4
+  SIGNAL_D
+    C36.2
+    R56.1
+    U17.4
+    U26.3
+  SIGNAL_OUT
+    C44.1
+    R47.2
+    R74.1
+    RF1.5
+  VBUS
+    C28.2
+    D2.2
+    D5.1
+    L3.1
+  VCC_BIAS
+    C23.1
+    R31.3
+    R78.3
+    R80.2
+  VSS_BIAS
+    C22.1
+    R31.1
+    R78.1
+    R81.2
+$END_NETS

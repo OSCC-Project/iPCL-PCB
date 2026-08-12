@@ -1,0 +1,208 @@
+{
+  "index": 3,
+  "name": "XM_POWER_KIT 数控电源+示波器+万用表+信号源四合一",
+  "url": "https://oshwhub.com/cyxsnbb666/xm_power_kit_v7",
+  "category": "测量仪表",
+  "subcategory": "仪器仪表",
+  "scale": "400元件规模",
+  "note": null,
+  "username": "cyxsnbb666",
+  "path": "xm_power_kit_v7",
+  "uuid": "61b277ac666345cb9e1b2a45a9bd6f3d",
+  "api_detail": {
+    "uuid": "61b277ac666345cb9e1b2a45a9bd6f3d",
+    "name": "XM_POWER_KIT 数控电源+示波器+万用表+信号源四合一",
+    "content": "由于学业等原因，时间被挤压得过于厉害，故项目不会继续变更，本人也会退出开源社区，感谢各位的支持与反馈！再次表示诚挚的感谢！\n\n有什么好的想法可以提issues和pull-request，我有时间会看的~\n\n\n# 一、项目信息\n本项目也已经开源半个多月了，下面说一些心里话：\n- 不爱（不仔细）看文档的人很多，这是一个**复刻难度高**，同时**成本也比较高**的项目，我希望你们能**耐下性子**好好看看开源文档。文档的内容很多，很详尽，能够为你的复刻/解决问题提供帮助。\n- 请您务必**对自己的实力、工具等等有一个正确的认知**，确认自己确实有能力复刻，**而不是一时兴起**，毕竟沉没成本偏高，我不希望您复刻失败扫兴而归~\n- 请不要 随便 **改动电容电阻的值**、**芯片型号**、**某种设计**，除非您**明确知道它在电路中的作用**，对于元件替换，可以参考附件中的bom文件。\n- 出现问题时，请尝试先**回归文档**，**试着自己思考如何解决**，实在解决不了再去群里咨询；俗话说授人与鱼不如授人与渔，我还是希望您能从本项目中学到一些东西，而不是当一个焊接机器人~\n\n- 有意见/技术疑问可以在群里at我，我很欢迎的，也会耐心解答。但请不要问文档里提到过的东西，你一问我就知道你没看文档🤣\n\n- 对于任何软件上的问题，请**去github项目提issues**，写清楚故障的具体表现，你是做了什么操作出现的，这样我好修复。\n\n**文档更新日志：**\n\n26/5/10：\n- 更新了第五部分——程序刷写，新增swd、蓝牙刷写程序方案。\n- 更新了第十部分——BOM表踩坑注意事项。\n\n## 1.1 项目简介\nXM Power Kit 是本人过往作品“xuemeng V6” 的续作，进行了极大的强化。它基于**STM32F407VET6**，在极小的体积下，实现了**数控电源、示波器、波形发生器、万用表**功能的四合一，简单参数如下：\n\n- 数控电源：基于LM5176，可实现5-32V输入，1V-36V 10A输出，最大300W。\n- 示波器：基于STM32的ADC，可实现8bit、2.4Msps、500K带宽、4K存储深度，带触发。\n- 信号源：基于STM32的DAC，1Msps，最大50Khz，可实现±5V任意偏置输出。\n- 万用表：可实现±36V电压(0.5%)、±3A电流测量(0.5%)、0~30K电阻测量(3%)、二极管档（10%）\n\n下面是设备参数：\n\n- 输入方式：支持 PD 诱骗 + DC 输入，可实现双电源输入。\n- 输出方式：香蕉头 + TypeC，其中 TypeC 也可用作拓展接口。\n- 显示配置：2.8寸 IPS 屏，ST7789，40pin接口。\n- 其它参数：具备丰富的调试/拓展接口，也可以连接上位机进行细节配置。\n\n\n## 1.2 项目背景\n相比于V6来说，做V7的目的就简单多了，那就是**爱好**。除此之外，V6有许多地方还显得相当稚嫩，V7则是来补过这些缺陷，顺便学习并实操一些新知识（比如LVGL和RTOS）。\n\n更要说的话，就是我觉得我要用的工具很多，但**性能要求不高**；宿舍的桌子就那么大点，大功率电源、示波器、万用表....堆得满满的很不方便；此外，每次回家也要带上这一堆工具舒适不方便，所以我就想着造一个**小体积** + **性能够用** + **多功能** 的工具。于是，**XM Power Kit** (V7) 诞生了~\n\n\n除此之外，您也可以前往 [雪萌の小窝](https://xuemeng.work) 进行深度学习，我会在里面更新更详细的技术细节~\n\n或者前往**1082694166 (答案：雪萌)** 进行交流解惑~\n\n## 1.3 核心参数\n\n| 类别 | 型号/参数 | 说明 |\n| --- | --- | --- |\n| **主控MCU** | STM32F407VET6 | Cortex-M4，512K Flash，128+64K RAM，主频 144MHz |\n| 电源控制芯片 | LM5176 | 同步 4 功率管 Buck-Boost 控制器 |\n| 输入/出 检测 | INA226 + TP181 | 输入使用INA226，输出使用电阻分压 + TP181 + ADC |\n| PD诱骗 | CH224A | 支持诱骗PD3.2 的 28V 5A 140W |\n| 显示屏 | 2.8寸IPS（ST7789） | 请使用40pin版本，购买后面我推荐的 |\n| 交互 | SIQ-02FVS3 + 按键 | 使用旋转编码器 + 按键 的组合 |\n| 调试接口 | CDC/SWD/蓝牙 | 支持串口下载调试、SWD 调试、蓝牙通信调试 |\n| PCB规格 | 87mm * 60mm | 绝大部分采用0603封装，少部分0402，方便焊接 |\n\nBOM表可以使用附件里的，我进行了适当的标注，希望能帮到你！\n**注意**：BOM分了多个sheet，记得都看哦，以免漏东西~\n\n## 1.4 开源协议\n本工程依据[CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)知识共享许可协议，请勿用于商用，转载时请标明出处。\n\n开源代码地址：[Github仓库](https://github.com/cyx-china/XM_Power_Kit)\n\n开发软件：CLion + STM32CubeMX\n\n当然，您也可以直接下载附件中的源码~（不建议，附件可能更新不及时）\n\n# 二、目标 &amp; 日志\n- [x] 完成 自校准 功能 (26/4/16)\n- [x] 完成 上位机 功能 (26/4/19)\n- [ ] 完成 数控电源_曲线显示 功能\n---\n\n- 26/4/23 ： 更新了一个示例面板\n- 26/4/14 ： 完成了示波器APP，完成了示波器的校准编写。\n- 26/4/12 ： 更改示波器硬件，缓解运放偏置电流Ib问题。\n- 26/3/14 ： 完成了万用表APP，完成万用表的校准编写。\n\n<details>\n<summary>更多更新日志</summary>\n26/3/5 ：  完成了信号源APP，完成信号源的校准编写。    \n    \n26/3/1 ：  完成数控电源APP，完成数控电源校准的编写。 \n    \n26/2/22 ： 完成硬件基础测试，准备下单立创smt，打板最终硬件版本.....   \n    \n26/2/21 ： 完成数控电源的基础设计，已经可以正常使用......\n</details>\n\n# 三、设计架构\n\n## 3.1 整体简介\nPCB采用6层板设计，阻容95%都是0603，方便焊接。板子正面基本都用于 数控电源 功能，右上角用于 示波器 &amp; 波形发生器 功能，下方则用于转换整板的供电；板子背面则是数字&amp;模拟，负责运算、信号处理 等等功能。\n\n![Screenshot_20260223_143030.jpg](https://image.lceda.cn/oshwhub/pullImage/c4b3a10863304d86b8e8b706e30709b5.jpg)\n\n## 3.2 电源架构\n电源的稳定性非常重要！本项目又涉及“数字”“模拟”“功率”地的供电，因此较为复杂，下一节有详细讲解：\n\n\n![Screenshot_20260223_145457_com.huawei.hinote.png](https://image.lceda.cn/oshwhub/pullImage/3e38fab494f449148cfc0fd1234be730.png)\n\n## 3.3 硬件架构\n硬件的设计更加的复杂，由于空间有限+功能众多，这就意味着香蕉头输出需要复用，下面是架构简图，具体的电路分析会在第四部分进行详细讲解~\n\n\n![草稿_202602231527_00769 1.jpg](https://image.lceda.cn/oshwhub/pullImage/206fb0368df54adda04e45d4547a6951.jpg)\n\n## 3.4 外壳架构\n外壳文件与装配方式见本文档附件~\n\n![petal_20260414_170237 00_00_00-00_00_30.gif](https://image.lceda.cn/oshwhub/pullImage/884260cc3db845b685300dd5b6f296af.gif)\n\n![petal_20260421_193022 00_00_00-00_00_30.gif](https://image.lceda.cn/oshwhub/pullImage/6e0fa7dfb992438f81ddc6ff83609ac3.gif)\n\n在此感谢Q群 **@打工人**，外壳完全由他一人设计，手感非常棒~❤\n\n# 四、模块设计\n\n这一大节用于细分每一个功能模块，包括输入/输出、数控电源、示波器、波形发生器、万用表，以及其他，包含软硬件都在内，希望我的设计思路能帮到你。\n\n<details>\n<summary><b>4.1 输入与电源设计</b></summary>\n\n## 4.1 输入 &amp; 电源\n\n### 4.1.1 输入部分\n\nV7的输入逻辑基本复用了已经较为成熟的V6部分：Type-C PD + DC 输入，C口通过CH224A来实现快充协议诱骗，双输入再使用理想二极管芯片来进行防倒灌保护，顺便也支持双输入以获得更大功率。\n\n#### 4.1.1.1 PD诱骗设计\nXM Power Kit与V6的区别不大，只不过是从CH224K换成了CH224A：\n\n\n![PD诱骗.PNG](https://image.lceda.cn/oshwhub/pullImage/e00f4066541943ffb6fc281cd2d9f1d4.png)\n\n可以看到，跟CH224K相比，CH224A终于抛弃了224K那种神经的取电方式，外围电路大大的简便了：\n\n1. 224K用一个1K电阻做限流，20V诱骗下这个电阻能常态250mw的耗散，最重要的是，他不能直接接3.3V（就是PD没电，VDD上也不能有电）\n2. 此外，224K似乎容易坏，导致只能诱骗5V，我已经焊坏好几个了。\n\n同时，CH224A也支持PD3.2的28V 5A@140W的诱骗，虽说PD3.2的插头现在还不多，但谁叫他跟224K差不多的价格呢，干嘛不用更好的对吧？\n\n再者，CH224A也支持在电阻配置下，通过IIC来控制诱骗的电压，因此我也可以拿这个功能来做一个简单的PD诱骗支持检测功能（~~阉了~~）。\n\n**注意！此处不可以用224K替换224A！需要改电路加两个限流电阻，不然100%挂壁！** 可以参考V6的这部分电路图~\n\n#### 4.1.1.2 双输入保护\n对于双输入保护，我使用了两套mx5050t搭配Nmos管构成的理想二极管组成，说简单点，就是相当于两套电源各通过一个Nmos构成“二极管”再会和，只不过理想二极管方案几乎没有能量损耗。\n\n\n![理想二极管.PNG](https://image.lceda.cn/oshwhub/pullImage/3f8aab607fdf48c8ae49b15f5b9c349e.png)\n\n相比于V6来说，这里改用**mx5050t**，价格会更便宜一些，同时也杜绝了像**MX16171买成MX16171D100**这种情况。（神经厂商，相近的型号名但引脚定义完全不一样，坑爹呢哈哈）\n\n对于双输入，理论上是支持的，前提是两个电源的压差不能太大，大概0.5V吧，否则mx5050t就判定为反向电压自动关闭mos管了。\n\n### 4.1.2 电源部分设计\n对于我这种，模拟+数字+功率 大杂烩的项目，一个稳定、优质的电源供应方案就显得尤为重要。对于V7的电源，我的要求是：\n\n1. 5~32V输入内，无论负载多大，都不能出现掉压重启的情况。\n2. 对于数字供电，纹波在40mv以内，对于模拟供电，需要保证纹波在10mv以内。\n\n\n![供电.PNG](https://image.lceda.cn/oshwhub/pullImage/9f06945ff3354a559eef7bace802df56.png)\n下面我来讲一下设计思路：\n\n1. 输入先降压到4V，确保5~32V输入都能够稳定降压\n2. 随后升压到7V，为后续LDO/DCDC做准备\n3. 根据不同的负载，选择合适的降压方式\n\n先降压再升压，是为了确保在4.7～5V这个节点上，后级也能得到7V的主供电。先降压到4V也是因为能实现100%占空比的便宜dcdc芯片不多，大多数buck芯片在输入低于设定电压的时候，负载能力会下降的很严重；此外，这样既方便隔离数控电源对主电源造成的巨大波动，又方便后级做滤波处理。\n\n整个系统的空载功耗1.5W左右(包括屏幕)，因此不必担心功率不够的问题。为了确保纹波达标，你要做的就是“怂”！像优化dcdc布局、使用ldo隔离负载等都是很有效的方法，但最重要的还是地处理，这跨地供电也是一门学问，你可以参考一下我的处理方式，效果还行。\n\n下面是一些电源的注意事项：\n\n- 降压4V的buck芯片，最好选择最低电压在4.5V及以下的，否则5V输入时很容易掉压。\n- ±5VA的二级滤波电路可以缩减为1级，SE8550这个LDO还是挺厉害的。\n\n</details>    \n    \n<details>\n<summary><b>4.2 数控电源设计</b></summary>\n\n## 4.2 数控电源\nXM Power Kit，一看这名字就知道本项目主打的就是数控电源功能。V7的电源部分相比V6有较大的改动，但本质操控逻辑上没有太大的变化，但性能可谓是强了不止一点，下面我来讲解：\n\n### 4.2.1 硬件讲解\n\n![buck-boost.PNG](https://image.lceda.cn/oshwhub/pullImage/e1623dcbcf5347459bf0c4a6ec822e0d.png)\n#### 4.2.1.1 芯片选型\n这一次换用了一颗挺经典的芯片：TI的LM5176 。这芯片的性能可比南芯的sc8701强多了：\n\n1. 这是一颗同步 4 功率管 Buck-Boost 控制器；\n2. 4.2 - 55V输入，0.8 - 55V输出。 （本项目为了安全只支持1 - 36的输出）。\n3. 以电流模式控制，350Khz频率，以及最大94%的高效率\n\n最重要的是，这颗芯片的驱动能力比8701强得多，这意味着我们能使用更低Rdson的MOS管（这往往意味着更高的输入电容）也不太需要担心驱动不够导致mos半开启而大量发热炸管了；其次，它就不是8701那种qfn封装了，tssop封装要好焊接的多，能大大降低焊接难度。\n\n注意事项：SS、comp引脚的配置跟输入输出电容的容值都有关，做了更改的话记得重新计算参数，TI专门做了各网页用于设计，你可以去看看：[TI电源设计工具](https://webench.ti.com/power-designer/)\n\n#### 4.2.1.2 电压调节功能\n于V6相比，LM5176就没有sc8701那种通过PWM来调节电压电流的方式了。因此V7还是用的V6那种调节方案：通过DAC来控制FB引脚的电阻分压网络，进而调节输出电压，而环路稳定什么的就交给5176自己完成。  大致示意图如下：\n\n\n![Screenshot_20260224_161600_com.huawei.hinote.png](https://image.lceda.cn/oshwhub/pullImage/c647053a730547b28ae270ac05cba8b8.png)\n我们来计算一下，根据基尔霍夫电流定律，我们有：\n- $i_1 = i_2 + i_3$\n- $i_2 = V_{ref} / R_{d1}$\n- $i_3 = (V_{ref} - V_{dac}) / R_{d2}$\n- $i_1 \\cdot R_{up} = V_{out} - V_{ref}$\n\n经过代换得到：\n$$\nV_{out} = V_{ref} \\cdot \\left(1+ \\frac{R_{up}}{R_{d1}}\\right) + (V_{ref} - V_{dac}) \\cdot \\frac{R_{up}}{R_{d2}}\n$$\n\n带入已知值，式子化为：\n$$\nV_{out} = 39.491 - 12 \\cdot V_{dac}\n$$\n\n因此我们就可以知道，当$V_{dac}$ 输出 $0.29\\ \\mathrm{V}$ 时，$V_{out}$ 理论输出 $36\\ \\mathrm{V}$ 左右；$V_{dac}$ 输出 $3.22\\ \\mathrm{V}$ 时，$V_{out}$ 理论输出 $0.8\\ \\mathrm{V}$。当然根据设计，输出范围被限制在 $1\\ \\mathrm{V} \\sim 36\\ \\mathrm{V}$。\n\n于是我们就实现了电压调节的设计。对于一个12bit的ADC来说，有效刻度4096格，理论能做到每一个刻度调节：\n$$\n\\frac{36 - 1}{4096 \\times \\frac{3.22 - 0.29}{3.3}} = 0.0096\\ \\mathrm{V}\n$$\n$10\\ \\mathrm{mV}$的调节步进足够进行较为精细的电压调节了。\n\n当然了，这只是理论上的，它的作用就是告诉我们输出电压与DAC值是**线性关系**，因此在校准中，我们可以很方便地构建实际的关系函数，只需要采集9个点然后进行线性拟合即可，这一部分会在稍后讲到~\n\n#### 4.2.1.3 输出检测\n相比于V6使用INA226来获取电压电流信息，V7进行了很大的改变：使用tp181 + 电阻分压+LMV321的方案，这套方案有如下优点：\n\n- 检测速度更快：226只能做到100次/s的有效数据，新方案1K次/s不是问题。\n- 自由度更高：226最大共模电压是36V，新方案只需要调电阻分压，就能支持更高的电压检测。\n- 成本很低：226大概三四块钱一颗，新方案1块左右能拿下。\n\n能更快的获取有效数据，意味着软件上PID调节的速率和稳定性能大大提高，性能可以看后面的章节。\n\n\n![捕获.PNG](https://image.lceda.cn/oshwhub/pullImage/2d0d1fdbb9324fa996320507384a7d5a.png)\n可以看到，对于电压检查测，通过 $91\\ \\mathrm{k}\\Omega$ + $8.2\\ \\mathrm{k}\\Omega$ 电阻分压后，经过一个电压跟随器送到ADC，电容电阻什么的都是用来滤除微小干扰的， $C_{73}$ 可以滤掉一些抖动。理论上电压检测范围是 $0 \\sim 39.92\\ \\mathrm{V}$，理论 $\\mathrm{LSB} = 0.0097\\ \\mathrm{V}$。\n\n而对于电流检测，就很简单了，TP181将检流电阻 $R_{52}$ 两端的压降放大50倍，滤波后送入ADC，理论检测范围是 $0 \\sim 13.2\\ \\mathrm{A}$，理论精度 $0.0032\\ \\mathrm{A}$。\n\n**注意事项：**\n众所周知，DCDC电源会有输出纹波，~~本项目经过测试大约在 $80\\ \\mathrm{mV}$ 左右，频率 $1\\ \\mathrm{kHz}$ （反正实际测的是 $1\\ \\mathrm{kHz}$）~~ **证实是干扰，已经显著缓解，现在是15mv左右**。对于电压检测，经过电阻分压后纹波只有大约 $8\\ \\mathrm{mV}$，基本不用处理；而对于电流检测，这些波动可以导致 $10\\ \\mathrm{mA}$ 以上的波动，因此需要进行针对处理。硬件上如图， $R_{54}+C_{71}$ 以及 $R_{57}+C_{74}$ 构成一个截至频率16hz滤波器，可以较好的过滤此波动。\n\n#### 4.2.1.4 输出接口\n输出方面，由于跟 万用表 复用的香蕉头接口，以及需要做防倒灌保护，因此跟V6一样，最终输出也选用了一颗MX5050t+ NMOS构成的理想二极管方案，刚好5050t也可以通过高低电平来控制是否开启mos。\n\n此外，由于黑色香蕉头也需要跟 万用表 复用，因此新增了一颗由UCC27517DBVR驱动的Nmos，由此控制黑色香蕉头与功率地的联通。\n\n### 4.2.2 软件讲解\n\n#### 4.2.2.1 任务架构\n\n\n![DPS软件架构.PNG](https://image.lceda.cn/oshwhub/pullImage/c9a4f4fe16f941ca9ddb97974aba5db6.png)\n\n软件部分底层使用了Freertos，不过还用了CMSIS OS V2的封装（自动帮我们判断某些函数是否在中断里之类的）。有了rtos的帮助，我得以很方便的实现高效的调度与软件逻辑。\n下面是图中四个任务的简单信息：\n\n| 任务名 | 优先级 | 简介 |\n| --- | --- | --- |\n|PageSelectTask|osPriorityHigh|负责各个APP程序之间的切换。包括初始化，反初始化等操作|\n|IndevDetectTask|osPriorityNormal4|每10ms扫描一次按键/编码器，若有变化，则将事件源、事件类型添加到消息队列中|\n|DpsCoreTask|osPriorityNormal|负责读取按键事件并分发，同时定期刷新某些界面元素|\n|PIDTask|osPriorityNormal1|子任务，负责每1ms进行一次PID运算与调节，其使能/挂起有DpsCoreTask控制|\n\n下面我们简单讲DpsCoreTask，以及DMA回调函数~\n\n#### 4.2.2.2 DpsCoreTask\n这个是数控电源（DPS）的主函数，负责包括数据采集、UI显示控制、按键事件处理,电源参数管理,以及PID算法控制这些功能。\n\n我们先来看看任务主循环：\n\n```js\nvoid Start_DpsCoreTask(void *argument) {\n    // 初始挂起任务（等待PageSelectTask激活）\n    osThreadSuspend(DpsCoreTaskHandle);\n\n    for (;;) {\n        // 读取按键事件并分发到当前页面的处理函数\n        if (osMessageQueueGet(KeyEventQueueHandle, &amp;Keymsg, NULL, 0) == osOK)\n            page_handlers[current_page](Keymsg);\n\n        // 每100ms更新一次界面数值（15×10ms）\n        // 每1秒更新一次运行时间（100×10ms）\n        // 每s更新一次风扇状态（100×10ms）\n        // 任务延时（10ms）\n        osDelay(10);\n    }\n}\n```\n主函数的作用很简单，就是每10ms扫描一次按键，若有事件就通过 page_handlers[current_page] (Keymsg);对事件进行分发，交给当前页面的响应函数进行处理。此外，每隔固定的时间，就对部分的界面元素进行更新。\n\n下面我们来看看按键事件分发：\n\n```js\n/**\n * @brief APP页面枚举\n * @note  定义DPS系统的所有功能页面\n */\ntypedef enum {\n    PAGE_MAIN = 0,      // 主界面（默认页面）\n    PAGE_VOLT_DIGIT,    // 电压数位编辑页面\n    PAGE_CURR_DIGIT,    // 电流数位编辑页面\n    PAGE_QUICK_MENU,    // 快速设置菜单页面\n    PAGE_NUM            // 页面总数\n} AWG_AppPage_t;\n\n/**\n * @brief 页面处理函数表驱动\n * @note  索引对应AppPage_t枚举，快速映射页面与处理函数\n */\nstatic void (*page_handlers[PAGE_NUM])(KeyEventMsg_t) = {\n    [PAGE_MAIN] = dps_main_page_handler,\n    [PAGE_VOLT_DIGIT] = volt_digit_handler,\n    [PAGE_CURR_DIGIT] = curr_digit_handler,\n    [PAGE_QUICK_MENU] = quick_menu_handler,\n};\n```\n\n可以看到，我们先创建了一个枚举，用于表示当前所处的页面。那么按键分发就可以根据当前所处的页面，让对应的函数来响应这个按键事件。\n\n那么在对应的按键响应函数中，我们就可以根据事件的触发者（是哪一个按键？还是编码器？），事件的类型（单击？长按？等等），来进行对应的响应，比如切换焦点框、更新某些值的显示等等~ 下面举个例子，就拿digit_page_handler这个函数来说吧：\n\n\n```js\n/**\n * @brief  电压/电流数位编辑通用处理函数\n * @param  msg: 按键事件消息\n * @param  ctx: 数位编辑上下文指针（volt_ctx/curr_ctx）\n * @retval 无\n * @note   统一处理电压/电流的数位选择、数值调整、返回主界面等逻辑\n */\nstatic void digit_page_handler(KeyEventMsg_t msg, const DigitEditContext_t *ctx) {\n    // 映射当前/上一次编辑数位（区分电压/电流）\n    DigitPosition_e *pCurrent = (ctx == &amp;volt_ctx) ? &amp;VoltagePosition_Current : &amp;CurrentPosition_Current;\n    DigitPosition_e *pPast = (ctx == &amp;volt_ctx) ? &amp;VoltagePosition_Past : &amp;CurrentPosition_Past;\n\n    // 上移/左按：切换到高位数位\n    if (msg.key == KEY_UP || msg.event == ENCODER_EVENT_PRESS_LEFT) {}\n    // 下移/右按：切换到低位数位\n    else if (msg.key == KEY_DOWN || msg.event == ENCODER_EVENT_PRESS_RIGHT) {}\n    // 右旋转编码器：增加对应数位的数值\n    else if (msg.event == ENCODER_EVENT_RIGHT) {}\n    // 左旋转编码器：减少对应数位的数值\n    else if (msg.event == ENCODER_EVENT_LEFT) {}\n    // 短按SET/编码器：返回主界面\n    else if ((msg.key == KEY_SET || msg.key == KEY_ENCODER) &amp;&amp; msg.event == KEY_EVENT_CLICK){}\n    // 无匹配按键事件：直接返回\n    else return;\n    \n    // 按键有效时蜂鸣提示\n    StartBeezer(0);\n    // 数位选择下划线更新（切换选中数位的指示）\n}\n```\n可以看到，非常的简单粗暴，判断msg结构体的key和event，就能唯一指定一种事件，只需要补充这个事件会进行何种操作就可以了，其他函数也是同理，这里就不多赘述了。\n\n不过有一点需要注意的是，这种方案终究是把事件跟操作糅合在了一起，这并不方便管理（毕竟你得记得某个操作在哪一个事件类型分支里），但不得不说，目前这种方式是逻辑很清楚的，倒是方便学习理解。\n\n#### 4.2.2.3 中断回调函数\n这里说的是ADC+DMA的中断回调函数，更本质的说，是DMA传输完成中断。我们先来看一看ADC以及DMA的**部分**重要配置：\n\n```js\n// ========== ADC部分 ========== //\n    hadc1.Init.Resolution = ADC_RESOLUTION_12B;                         // 12位分辨率（4096级，满足电压/电流采集精度要求）\n    hadc1.Init.ScanConvMode = ENABLE;                                   // 使能扫描模式（支持多通道采集）\n    hadc1.Init.ExternalTrigConv = ADC_EXTERNALTRIGCONV_T8_TRGO;         // 触发源：定时器8 TRGO事件\n    hadc1.Init.DMAContinuousRequests = ENABLE;                          // 使能DMA连续请求（环形模式必需）\n    hadc1.Init.EOCSelection = ADC_EOC_SEQ_CONV;                         // 序列转换完成后触发EOC中断\n    sConfig.SamplingTime = ADC_SAMPLETIME_144CYCLES;                    // 采样时间144周期\n// ========== DMA部分 ========== //\n    hdma_adc1.Init.Mode = DMA_CIRCULAR;                                 // 环形模式（循环采集，无需重复启动）\n    volatile uint16_t dps_adc_raw_buf[128] = {0};                       // ADC原始采样缓冲区（128个值，偶数列-电压，奇数列-电流）\n    HAL_ADC_Start_DMA(&amp;hadc1, (uint32_t *) dps_adc_raw_buf, 128);  // 启动ADC DMA采集（缓冲区长度128，环形模式）\n// ========== TIM8定时器部分 ========== //\n    __HAL_TIM_SET_PRESCALER(&amp;htim8, 149);                           // 设定更新频率64Khz\n    __HAL_TIM_SET_AUTORELOAD(&amp;htim8, 14);\n    sMasterConfig.MasterOutputTrigger = TIM_TRGO_UPDATE;                // 重装载时触发更新事件\n```\n配置的目标很简单，就是让ADC 每1秒对两个通道采集64K次，其中每采集到128个数据（俩通道各64个）就触发一次DMA中断，进行数据处理，随后重新开启采集，覆写数据缓冲区，如此循环。\n\n下面我们看看DMA回调函数都做了什么：\n\n\n```js\nvoid CB_DPS_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {\n    if (hadc-&gt;Instance == ADC1) {\n        AdcTim_OFF();                                                            // 关闭定时器（ADC触发源）\n        uint32_t sum_ch1 = 0, sum_ch2 = 0;\n\n        // 累加64次ADC采样值（偶数列-通道1(电压)，奇数列-通道2(电流)）\n        for (uint16_t i = 0; i &lt; 64; i++) {\n            sum_ch1 += dps_adc_raw_buf[2 * i];\n            sum_ch2 += dps_adc_raw_buf[2 * i + 1];\n        }\n        // 计算均值并叠加校准偏移\n        int32_t temp1 = (int32_t)(sum_ch1 &gt;&gt; 6) + UserParam.DPS_Voltage_Original;\n        int32_t temp2 = (int32_t)(sum_ch2 &gt;&gt; 6) + UserParam.DPS_Current_Original;\n\n        // 转换为实际电压值（3.3V参考，12位ADC，乘以校准系数）\n        float raw_voltage = (float) (temp1 &gt; 4096 ? 0 : temp1) * 3.3f / 4096.0f * UserParam.DPS_Voltage_Factor;\n        // 转换为实际电流值（扣除电压耦合偏移和固定偏移）\n        float raw_current = (float) (temp2 &gt; 4096 ? 0 : temp2) * 3.3f / 4096.0f * UserParam.DPS_Current_Factor;\n\n        // ==========================================\n        //              软件 IIR 低通滤波\n        // ==========================================\n        // 滤波系数 (0.0 ~ 1.0)，越小滤波越强，反应越慢\n        const float filter_display_alpha = 0.02f;       // 显示用小系数，保证平滑\n        const float filter_PID_alpha = 0.2f;           // PID用大系数，保证快速响应\n\n        // 静态变量保存上一次的滤波结果\n        static float filtered_voltage = 0.0f;           // 滤波后的电压值_显示\n        static float filtered_current = 0.0f;           // 滤波后的电流值_显示\n        static float filtered_current_pid = 0.0f;       // 滤波后的电流值_PID\n        static float filtered_voltage_pid = 0.0f;       // 滤波后的电压值_PID\n\n        // 一阶 IIR 滤波公式：Output = alpha * Input + (1 - alpha) * Output_Last\n        filtered_voltage = filter_display_alpha * raw_voltage + (1.0f - filter_display_alpha) * filtered_voltage;\n        filtered_current = filter_display_alpha * raw_current + (1.0f - filter_display_alpha) * filtered_current;\n        filtered_current_pid = filter_PID_alpha * raw_current + (1.0f - filter_PID_alpha) * filtered_current_pid;\n        filtered_voltage_pid = filter_PID_alpha * raw_voltage + (1.0f - filter_PID_alpha) * filtered_voltage_pid;\n\n        // 更新全局变量\n        Voltage = filtered_voltage;\n        filtered_current &lt; 0.01f ? (Current = 0.0f) : (Current = filtered_current); // 如果电流小于0.01A，就归零，避免静止时跑量\n        Current_PID = filtered_current_pid;\n        Voltage_PID = filtered_voltage_pid;\n        // 计算实时功率\n        Power = Voltage * Current;\n    }\n    // 电源开启时累计能量（功率×时间，时间单位：小时）\n    if (IsPowerOn) energy += Power * MS_TO_HOUR;\n\n    AdcTim_ON();                                          // 开启定时器（ADC触发源）\n}\n```\n\n还记得我们前文提到的吗？由于 $80\\ \\mathrm{mV}$ 纹波带来的电压、电流波动，需要对采集数据做滤波处理。\n\n从上面的代码可以看到，我们先对每个通道采集到的 64 个数据做均值处理，再经过校准偏移转换为实际物理量。这一步对抑制 $80\\ \\mathrm{mV}$ 纹波的效果一般，因为干扰频率只有 $1\\ \\mathrm{kHz}$，而系统采样率为 $64\\ \\mathrm{kHz}$，且每次只取 64 个点，只能采样到 $1\\ \\mathrm{kHz}$ 波形的一部分周期。因此，这里的平均操作更多是用来消除尖峰毛刺。\n\n真正起到关键滤波作用的是后面的一阶 IIR 低通滤波，它的原理非常简单：设定一个在 $0 \\sim 1$ 之间的系数 $a$，每次更新时满足：\n $$ \n 新数据 = 本次值 \\times a + 上一次值 \\times (1 - a) \n $$\n\n简单来说：当 $a$ 较大时，当前值对结果影响更大，数据响应更快，但滤波效果较弱；当 $a$ 较小时，历史值权重更高，滤波效果更好，但响应速度会变慢。\n\n这也解释了为什么我在代码中区分了filtered_voltage 与 filtered_voltage_pid的原因：因为刷新显示只有8次/s，要求要尽量的平稳，所以a可以小一些；但PID计算要求快速响应，故使用较大的a来保证实时性\n\n#### 4.2.2.4 数控电源校准\n下面讲一讲要怎么校准数控电源功能，其实也不用讲，我已经做好操作指引了，这里就讲讲注意事项：\n\n- 请务必使用**20V以上的电源校准（或者大功率的电源）**，否则可能校准时死机。\n- 校准过程**不可终止**，进行完所有步骤才会保存数据。\n- 您需要准备：万用表 + 10Ω左右电阻（1W左右）\n\n下面讲讲校准设计的思路：\n\n首先是原点校准，它的作用就是标定0V点。有的设备短接正负极后，ADC还能读到1 - 3个刻度的值，导致显示0.0xxV，我们需要调整原点校准，将这个值抵消掉。\n\n其次是显示校准，看过原理图的就知道，我的方案是91K + 8.2K 电阻分压，将0 - 36V的电压降低到0~3.3V给到ADC。此时的理论降压倍率系数就是 $\\frac{91\\,\\mathrm{k}\\Omega + 8.2\\,\\mathrm{k}\\Omega}{8.2\\,\\mathrm{k}\\Omega} = 12.09$，我们需要拿着这个值才能还原真实电压。实际上电阻是有误差的，我们需要手动校准此倍率系数，让电压显示正确。\n\n最后是输出校准，我们是通过DAC来控制实际电压输出的，前文提到，DAC值跟实际电压值成线性关系，我们要做的就是在DAC范围里均匀取9个点进行线性拟合，得到 $V_{\\mathrm{out}} = A \\cdot V_{\\mathrm{dac}} + B$ 中的未知系数A、B的值。\n\n### 4.2.3 电源性能\n先简单测试一下空载性能，20V输入：\n\n![Figure_1.png](https://image.lceda.cn/oshwhub/pullImage/60288f14934747748cd87b6f6fc36e5d.png)\n可以看到，降压模式下，纹波表现更优；当输出电压接近输入电压（ $\\pm 3\\ \\mathrm{V}$ ）时，LM5176 会启用混合模式，纹波会略有升高；升压模式下，纹波随输出电压升高的增长速度会更快。但无论哪种工况，空载状态下纹波均未超过 $10\\ \\mathrm{mV}$ ，属于非常优秀的水平~\n\n不过需要注意的是：风扇开启时，由于风扇与DAC 共用 $7\\ \\mathrm{V}$ 供电，尽管为DAC 供电的LDO 能很好地滤除 $1\\ \\mathrm{kHz}$ 的低频干扰，但仍会有少量干扰串入DAC 输出链路，此时整体纹波会抬升 $20 \\sim 25\\ \\mathrm{mV}$ ，最终呈现的效果就是 $1\\ \\mathrm{kHz}$ 、 $35 \\sim 40\\ \\mathrm{mV}$ 的纹波。\n\n接下来测试一下24.5V输入，恒定20Ω负载的情况:\n\n\n![20Ω负载纹波.png](https://image.lceda.cn/oshwhub/pullImage/a6b2e5b5c973437c98d25d13752c01c7.png)\n\n显而易见的是，降压模式的纹波表现明显要好于混合模式以及升压模式，因此为了您有较好的带载纹波表现，**请使用电压较高的电源**，让设备工作在**降压模式**~\n\n</details>     \n    \n## 4.3 其他模块设计\n由于篇幅原因，全部写在这里就太长了，所以我打算将剩下的模块讲解移至我的博客[雪萌の小窝](https://xuemeng.work)，你可以点击下面的连接快速跳转。~~由于我比较忙，这部分的更新会慢慢补上的。~~ 博客已经更新完毕，欢迎前往！\n\n网站上也有其他更为细致的教程，欢迎你来访问~\n\n- [示波器解析](https://xuemeng.work/index.php/2026/04/16/xm-power-kit-%e7%a4%ba%e6%b3%a2%e5%99%a8%e6%a8%a1%e5%9d%97-%e8%ae%b2%e8%a7%a3/)\n- [波形发生器解析](https://xuemeng.work/index.php/2026/04/16/xm-power-kit-%e4%bf%a1%e5%8f%b7%e6%ba%90%e6%a8%a1%e5%9d%97-%e8%ae%b2%e8%a7%a3/)\n- [万用表解析](https://xuemeng.work/index.php/2026/04/16/xm-power-kit-%e4%b8%87%e7%94%a8%e8%a1%a8%e6%a8%a1%e5%9d%97-%e8%ae%b2%e8%a7%a3/)\n\n# 五、程序下载与调试\n这部分请**务必仔细阅读**！下面我们先来简单介绍以下：\nXM PPWER KIT的程序分为两个部分：\n- Pre-check.hex ： 前置包，用于创建FATFS、资源拷贝、硬件检查等\n- Main_Rel.xxx.hex ： 主程序包\n\n**程序资源包尽量进群获取！** 立创可能更新不及时！\n\n我们先下载附件中的 **程序资源包.zip**，完整解压后得到如下文件(夹)：\n| 名称 | 类型 | 说明 |\n| --- | --- | --- |\n|images|文件夹|存放着主程序会用到的所有图片资源|\n|font|文件夹|存放在主程序会用到的所有字体资源|\n|Main_Rel.xxxx.hex|文件|主程序|\n|Pre-check.hex|文件|前置程序|\n|DiskGenius.exe|程序|用于创建FATFS系统|\n\n同时你需要准备 两条 **USBA-&gt;C**的线，尽量不要使用cc线，避免连不上板子。\n\n**注意！** 除了蓝牙下载方案，都需要下载安装 **STM32CubeProgrammer** ！\n你可以使用如下的地址进行下载：\n- 1. [官网，需要注册](https://www.st.com.cn/zh/development-tools/stm32cubeprog.html#section-get-software-table) ：选择访客下载，填你的邮箱，其他随意，下载链接会发你邮箱里\n- 2. [曲线救国](https://fubemx.keysking.com/)：先装fubemx，用fubemx下programer，速度快（默认在下载在你的“下载”文件夹）\n\n**曲线救国方案由B站 @keysking 提供，在此表示诚挚的感谢！**\n\n下载好之后，安装，一直同意+下一步 即可，安装路径建议全英文。\n\n下面开始正式刷程序，你可以选取你想要的方案：\n\n\n\n<details>\n<summary><b>1. DFU刷写方案（经反馈不是很稳定）</b></summary>\n\n## Step.1 前置程序下载\n我们打开CubeProgrammer，按下图这样配置好连接模式：\n\n\n![1.PNG](https://image.lceda.cn/oshwhub/pullImage/371801846cf34111aaacd43f34aec2fc.png)\n\n接下来我们将注意力放到板子上，务必按下面的指令来操作：\n- 1. 先按住左侧的BOOT0按键，不要松开\n- 2. 再插入USB线到**板子上部**的USB口，连接电脑\n- 3. 插上两三秒后再松开\n\n\n\n接下来回到电脑上，按下面的步骤操作：\n- 1. 点击刷新图标，正常的话会出现一个USB1的设备 （**没出现就重试上一大步的内容**）\n- 2. 点击Connect进行连接\n- 3. 点击Start Programming 刷入程序\n- 4. **注意：刷写可能会报错！实际上已经刷进去了，不用怕！**(跑到68%然后报错)\n- 5. 断开电源，进行下一步\n\n\n![2.PNG](https://image.lceda.cn/oshwhub/pullImage/2d49651903994eecaf2fa5ed1c70642e.png)\n\n至此，我们前置程序就下载好了，下面请跟随我来操作，完成调试部分，建议您**先整体阅读一遍**再上手实操！\n\n## Step.2 前置程序调试\n现在我们已经下载好了前置程序，在下一步上电之前，先看看整体的流程：\n注意，此时请接入稳定的电源，并使用板子**左侧**而不是上侧的USB口！\n- 1. 上电后，程序首先会**检查FLASH**是否正常，若不正常，则会直接**红屏**。\n- 2. 若FLASH正常，屏幕会开始在“**白**”“**黄**”“**蓝**”之间不断切换，此时正在格式化FLASH，需要30s左右，请勿断电。\n- 3. 格式化完成后，屏幕会变成**绿色**，此时连接板子上侧的usb到电脑，使用工具创建FAT文件系统，模拟U盘。\n- 4. 直接将font和images文件夹拷贝进U盘**根目录**。\n- 5. 断开所有线材，重新上电（板子左侧USB），此时板子会显示所有必须模块的自检情况，若都OK，则可以刷入主程序。\n\n很简单对吧？现在我们仔细讲一讲第三和第四步，请务必按我的操作来：\n\n屏幕变绿之后，将设备连接电脑，打开DiskGenius.exe，加载完成后应当可以看到一个名叫 **XMPowerKit** 的设备如图，我们单击它：\n\n\n![3.PNG](https://image.lceda.cn/oshwhub/pullImage/97185fd91963443b8121f5ac721d7d60.png)\n\n\n- **如果显示容量16T或者其他什么，要么是你FLASH型号不对(只支持Winbond的W25Q32~Q512系列)，要么你FLASH是坏的。**\n    \n接下来，我们右键容量条 -&gt; 建立新分区 -&gt; 文件类型选择**FAT16** -&gt; 确定 -&gt; 左上角保存更改即可\n\n![4.PNG](https://image.lceda.cn/oshwhub/pullImage/9043347e78a94f1da6902f5a8eb63567.png)\n\n- **如果格式化失败(报错),或者格式化成功但一会又回到未格式化状态，检查你的屏幕是否已经变成绿色？如果是，那么就是你FLASH有问题，请换一家店买**    \n    \n等待一段时间后（30s，不要急着关软件），电脑上会多出来一个U盘如图：\n\n\n![6.PNG](https://image.lceda.cn/oshwhub/pullImage/2195c69bdc0c4656b2a2ccf81941cb64.png)\n\n接下来，我们将程序资源包里的**images和font文件夹**直接拖进**U盘根目录**如图，一定要跟图片一样！不然程序读不到资源！！！！\n\n![7.PNG](https://image.lceda.cn/oshwhub/pullImage/35aee36f28424fa5b78fb9c4d26afd44.png)\n\n随后**先**拔出**连接电脑的USB线**，再断开左侧电源。此时重新上电，正常的话就会显示必要组件的初始化状态如图：\n\n![IMG_20260412_205009.jpg](https://image.lceda.cn/oshwhub/pullImage/3280d32600614fd4a3a90922a8af465f.jpg)\n\n如果有哪一项 **FAIL** 了，请你检查一下硬件焊接。\n\n至此，前置程序的刷写与调试就算完成啦！应该还算是简单的。为了方便你们调节硬件，专门做了这个前置程序，希望能简便你们的调试工作~\n    \n\n## Step.3 主程序刷写\n这一部分跟前置程序的刷写一模一样，直接复用 **Step.1** 的步骤就行了，只不过是将刷写的程序换成**Main_Vx.x.elf**罢了。\n\n不过也可能出现 **进度条跑到 90%** 然后报错的情况，直接忽略，程序已经下进去了，断开跟电脑的连接，重新上电应该就能进入主界面啦~\n\n至此，程序下载与调试部分就算做好了~\n</details>\n\n<details>\n<summary><b>2. SWD刷写方案（需要ST-Link 或者其他 xx-Link）</b></summary>\n    \n此处以ST-LINK为例子，其他品牌的LINK请上网查询对应的刷写应用。\n    \n## Step.1 前置程序下载\n我们打开CubeProgrammer，按下图这样配置好连接模式：\n    \n![1.PNG](https://image.lceda.cn/oshwhub/pullImage/d8a9c440ac8a4ec6bb4c12289ff6a4eb.png)\n    \n随后将板子与ST-LINK按照丝印对应连接：\n    \n![IMG_20260511_185554.jpg](https://image.lceda.cn/oshwhub/pullImage/b45d9026eaf7409e95233d8a903c3a8e.jpg)\n    \n接着先刷新，再点击连接，最后点击\"Start Programing\"即可刷入程序\n    \n![3adddbb1-add6-4621-a9a5-972c3cf002da.png](https://image.lceda.cn/oshwhub/pullImage/bf776340b76c4a6b95ab899f5ca452f4.png)\n\nPS:\n- 如果出现什么报错，可以点击右侧的“Firmware Upgrade”按钮进行按键升级：[参考流程](https://docs.baud-dance.com/docs/stm32/FAQ/STLinkUpdate)\n    \n## Step.2 前置程序调试\n现在我们已经下载好了前置程序，在下一步上电之前，先看看整体的流程：\n注意，此时请接入稳定的电源，并使用板子**左侧**而不是上侧的USB口！\n- 1. 上电后，程序首先会**检查FLASH**是否正常，若不正常，则会直接**红屏**。\n- 2. 若FLASH正常，屏幕会开始在“**白**”“**黄**”“**蓝**”之间不断切换，此时正在格式化FLASH，需要30s左右，请勿断电。\n- 3. 格式化完成后，屏幕会变成**绿色**，此时连接板子上侧的usb到电脑，使用工具创建FAT文件系统，模拟U盘。\n- 4. 直接将font和images文件夹拷贝进U盘**根目录**。\n- 5. 断开所有线材，重新上电（板子左侧USB），此时板子会显示所有必须模块的自检情况，若都OK，则可以刷入主程序。\n\n很简单对吧？现在我们仔细讲一讲第三和第四步，请务必按我的操作来：\n\n屏幕变绿之后，将设备连接电脑，打开DiskGenius.exe，加载完成后应当可以看到一个名叫 **XMPowerKit** 的设备如图，我们单击它：\n\n\n![3.PNG](https://image.lceda.cn/oshwhub/pullImage/97185fd91963443b8121f5ac721d7d60.png)\n\n\n- **如果显示容量16T或者其他什么，要么是你FLASH型号不对(只支持Winbond的W25Q32~Q512系列)，要么你FLASH是坏的。**\n    \n接下来，我们右键容量条 -&gt; 建立新分区 -&gt; 文件类型选择**FAT16** -&gt; 确定 -&gt; 左上角保存更改即可\n\n![4.PNG](https://image.lceda.cn/oshwhub/pullImage/9043347e78a94f1da6902f5a8eb63567.png)\n\n- **如果格式化失败(报错),或者格式化成功但一会又回到未格式化状态，检查你的屏幕是否已经变成绿色？如果是，那么就是你FLASH有问题，请换一家店买**    \n    \n等待一段时间后（30s，不要急着关软件），电脑上会多出来一个U盘如图：\n\n\n![6.PNG](https://image.lceda.cn/oshwhub/pullImage/2195c69bdc0c4656b2a2ccf81941cb64.png)\n\n接下来，我们将程序资源包里的**images和font文件夹**直接拖进**U盘根目录**如图，一定要跟图片一样！不然程序读不到资源！！！！\n\n![7.PNG](https://image.lceda.cn/oshwhub/pullImage/35aee36f28424fa5b78fb9c4d26afd44.png)\n\n随后**先**拔出**连接电脑的USB线**，再断开左侧电源。此时重新上电，正常的话就会显示必要组件的初始化状态如图：\n\n![IMG_20260412_205009.jpg](https://image.lceda.cn/oshwhub/pullImage/3280d32600614fd4a3a90922a8af465f.jpg)\n\n如果有哪一项 **FAIL** 了，请你检查一下硬件焊接。\n\n至此，前置程序的刷写与调试就算完成啦！应该还算是简单的。为了方便你们调节硬件，专门做了这个前置程序，希望能简便你们的调试工作~\n    \n    \n## Step.3 主程序刷写\n这一部分跟前置程序的刷写一模一样，直接复用 **Step.1** 的步骤就行了，只不过是将刷写的程序换成**Main_Vx.x.elf**罢了。\n\n至此，程序下载与调试部分就算做好了~    \n    \n</details>\n\n<details>\n<summary><b>3. 蓝牙刷写方案（刷写速度很慢）</b></summary>\n    \n蓝牙方案建议作为备选方案，因为需要你焊接好蓝牙模块。其次它的下载速度很慢，主程序需要大概5分钟才下的完。    \n    \n## Step.1 前置程序下载    \n这里我们使用的软件是“FlyMCU”，我们打开，按下图的方式先配置好：\n    \n![FLYMCU.PNG](https://image.lceda.cn/oshwhub/pullImage/36ce0cdc549e45219fb8505ac8d2e53b.png)\n    \n- 需要注意的是，这里使用.hex后缀的文件。\n    \n接下来，我们连接蓝牙并做配置：\n- 先给板子上电。\n- 一段时间后，电脑蓝牙连接名叫“XLBT”的蓝牙。（不要连XLBLE）\n- 连接上后，在蓝牙连接界面下翻，找到“更多蓝牙设置”单击，选择\"COM端口\"，找到“XLBT”的传出方向对应的端口。\n- 回到FLYMCU,点击搜索串口，一段时间后Port选择刚刚记下来的端口号即可。\n    \n    \n![image.png](https://image.lceda.cn/oshwhub/pullImage/6b56027bbf234d31a0b5aceb068cc56e.png)\n    \n![1234.PNG](https://image.lceda.cn/oshwhub/pullImage/47477bcae7d34ef096b5db8f49566c1d.png)\n    \n    \n**接下来操作很重要，注意看！！**\n\n**我们先按住BOOT0，然后单击一下RESET键。（记住这个操作，后面还要用）    **\n    \n![IMG_20260511_193109_edit_2816778729263419.jpg](https://image.lceda.cn/oshwhub/pullImage/054b6ae2f1594f2e9cb4c8e232d37564.jpg)\n\n回到FLYMCU，按下面的图片操作：\n    \n![12345678987654321.PNG](https://image.lceda.cn/oshwhub/pullImage/816f2b94390c4741992478052bad0fc1.png)\n    \n刷写完成后，单击一下RST键，就进入前置程序了~\n\n## Step.2 前置程序调试\n现在我们已经下载好了前置程序，在下一步上电之前，先看看整体的流程：\n注意，此时请接入稳定的电源，并使用板子**左侧**而不是上侧的USB口！\n- 1. 上电后，程序首先会**检查FLASH**是否正常，若不正常，则会直接**红屏**。\n- 2. 若FLASH正常，屏幕会开始在“**白**”“**黄**”“**蓝**”之间不断切换，此时正在格式化FLASH，需要30s左右，请勿断电。\n- 3. 格式化完成后，屏幕会变成**绿色**，此时连接板子上侧的usb到电脑，使用工具创建FAT文件系统，模拟U盘。\n- 4. 直接将font和images文件夹拷贝进U盘**根目录**。\n- 5. 断开所有线材，重新上电（板子左侧USB），此时板子会显示所有必须模块的自检情况，若都OK，则可以刷入主程序。\n\n很简单对吧？现在我们仔细讲一讲第三和第四步，请务必按我的操作来：\n\n屏幕变绿之后，将设备连接电脑，打开DiskGenius.exe，加载完成后应当可以看到一个名叫 **XMPowerKit** 的设备如图，我们单击它：\n\n\n![3.PNG](https://image.lceda.cn/oshwhub/pullImage/97185fd91963443b8121f5ac721d7d60.png)\n\n\n- **如果显示容量16T或者其他什么，要么是你FLASH型号不对(只支持Winbond的W25Q32~Q512系列)，要么你FLASH是坏的。**\n    \n接下来，我们右键容量条 -&gt; 建立新分区 -&gt; 文件类型选择**FAT16** -&gt; 确定 -&gt; 左上角保存更改即可\n\n![4.PNG](https://image.lceda.cn/oshwhub/pullImage/9043347e78a94f1da6902f5a8eb63567.png)\n\n- **如果格式化失败(报错),或者格式化成功但一会又回到未格式化状态，检查你的屏幕是否已经变成绿色？如果是，那么就是你FLASH有问题，请换一家店买**    \n    \n等待一段时间后（30s，不要急着关软件），电脑上会多出来一个U盘如图：\n\n\n![6.PNG](https://image.lceda.cn/oshwhub/pullImage/2195c69bdc0c4656b2a2ccf81941cb64.png)\n\n接下来，我们将程序资源包里的**images和font文件夹**直接拖进**U盘根目录**如图，一定要跟图片一样！不然程序读不到资源！！！！\n\n![7.PNG](https://image.lceda.cn/oshwhub/pullImage/35aee36f28424fa5b78fb9c4d26afd44.png)\n\n随后**先**拔出**连接电脑的USB线**，再断开左侧电源。此时重新上电，正常的话就会显示必要组件的初始化状态如图：\n\n![IMG_20260412_205009.jpg](https://image.lceda.cn/oshwhub/pullImage/3280d32600614fd4a3a90922a8af465f.jpg)\n\n如果有哪一项 **FAIL** 了，请你检查一下硬件焊接。\n\n至此，前置程序的刷写与调试就算完成啦！应该还算是简单的。为了方便你们调节硬件，专门做了这个前置程序，希望能简便你们的调试工作~\n    \n    \n## Step.3 主程序刷写\n这一部分跟前置程序的刷写一模一样，直接复用 **Step.1** 的步骤就行了，只不过是将刷写的程序换成**Main_Vx.x.elf**罢了。\n\n至此，程序下载与调试部分就算做好了~        \n    \n</details>\n\n\n\n# 六、外壳安装\n\n这部分详见附件的**外壳与组装说明.zip**,里面有配图进行安装说明。\n在此感谢 **@打工人** 大佬，此外壳完全由他进行设计与改良~❤\n\n# 七、各APP的操作映射\n下面对各个APP的按键操作映射进行讲解，让你快速上手本项目！\n\n一些APP的操作很简单，我就不写在这里了，你上手就会的~\n\n## 7.1 数控电源APP\n此界面为手搓，很漂亮对吧？我下了不少心思，希望你喜欢~\n| 按键类型|操作类型|界面| 说明 |\n| --- | --- | --- |---|\n|编码器|长按|主界面|回到APP选择界面|\n|编码器/下键|右转 / (单击/长按）|主界面|选择下一个APP|\n|编码器/上键|左转 / (单击/长按）|主界面|选择上一个APP|\n|编码器/SET键|单击|主界面|进入选中的调节项目|\n|按键|SET键长按|主界面|开启/关闭电源输出|\n|编码器/上键|按下+左转 / (单击/长按）|参数编辑|将光标移动到上一位|\n|编码器/下键|按下+右转 / (单击/长按）|参数编辑|将光标移动到上一位|\n|编码器|右转|参数编辑|增加选中该位数的值|\n|编码器|左转|参数编辑|减少选中该位数的值|\n|编码器/SET键|单击|参数编辑|回到主界面|\n\n## 7.2 示波器APP\n此界面为手搓，也很漂亮对吧？逻辑+界面大概搓了5000多行代码~\n| 按键类型|操作类型|界面| 说明 |\n| --- | --- | --- |---|\n|编码器|长按|主界面|回到APP选择界面|\n|MODE键|单击|主界面|在“左右平移”，“上下平移”，“触发调节”直接切换|\n|编码器/上键|右转 / (单击/长按）|主界面|右移/上移/增加 对应选项值|\n|编码器/下键|左转 / (单击/长按）|主界面|左移/下移/减少 对应选项值|\n|MODE键|长按|主界面|进入参数选择&amp;编辑界面|\n|编码器|右转|参数编辑|光标移动到下一个选项|\n|编码器|左转|参数编辑|光标移动到上一个选项|\n|上键/下键|按下/长按|参数编辑|调节当前选项的值|\n|MODE键|长按|参数编辑|返回主界面|\n\n## 7.3 万用表APP\n此界面为手搓，依旧很漂亮对吧？希望你喜欢~\n| 按键类型|操作类型|界面| 说明 |\n| --- | --- | --- |---|\n|编码器|长按|主界面|回到APP选择界面|\n|编码器|按下+右转|主界面|切换到下一个测量模式|\n|编码器|按下+左转|主界面|切换到上一个测量模式|\n|上键|按下|电阻档|切换到30K挡位|\n|下键|按下|电阻档|切换到2K挡位|\n\n以上就是我认为稍微复杂一些的APP的操作说明，希望能帮助你快速上手！\n\n# 八、打板与焊接\nXM POWER KIT的焊接难度跟V6相比完全不是一个量级的，同时也是尝试使用6层板，所以请务必**认真仔细**！下面是我个人的焊接方法，以及焊接中容易出错的点，希望能帮到你！\n\n## 8.1 打板事项\n- 1. 关于6层免费券：首次领取需要考试、打板后需要焊接并转发朋友圈，才能获得下一次免费资格；\n- 2. 如果打板的时候，显示文件已经享受过优惠，你可以加几个过孔，改改丝印；如果还不行，可以等待两三天；\n- 3. 打板参数：**6层板、1.6板厚、3313层压、±20%**，不用复查什么的，其余全部默认即可；\n\n## 8.2 板子焊接\n为了高质量的焊接本项目，你**必须**有以下的工具，否则近乎**无法完成焊接**！\n|工具|作用|备注|\n|---|---|---|\n|加热台|焊接板子正面（大电感面）|咸鱼上买就行，20~30元|\n|热风枪|焊接板子背面（MCU面）|随便整，能到350℃就行|\n|电烙铁|焊接座子、按键|功率要大一些，否则焊接不上座子|\n|焊锡、锡膏、助焊剂|镊子、水口钳、吸锡带等|这些常用的你得有吧|\n|洗板水|刷洗板子，清爽！|不用我多说，怎么便宜怎么来！|\n\n**本人强烈建议下单钢网！！！**\n\n本人的焊接步骤：\n- 1. 先焊接正面，钢网上锡膏，先贴电阻电容芯片mos，再贴大电容、电感、继电器，最后再贴导流铜条。\n- 2. 使用加热台铁板烧，归为元器件。（**注意**：此时可以往电感旁的过孔上面挤锡膏，灌满过孔！）\n- 3.使用电烙铁+焊油，修正TYPE-C口等容易连锡的元件。\n- 4.使用万用表二极管档，测量如下部分是否短路：\n    - USB输入到地\n    - 3.7V、7V、3.3V、+5V、-5V的输出电容到地\n    - 若没有短路可以typeC上电5V，测一测上面提到的电压是否正确\n- 5.背面钢网上锡膏，贴**除了大按键**外的所有元件。（**特别注意TMP102的方向！**建议**对着数据手册**来！）\n- 6.使用热风枪焊接好背面，随后使用烙铁+焊油修复连锡的地方。\n- 7.万用表二极管档，测量3.3V，5V，-5V到地有没有短路！\n- 8.焊接风扇座子+香蕉头 + 竖插USB + MCX座子。\n- 9.最后用烙铁焊接大按键！\n- 10.没有短路就可以试着上电刷程序了~\n\n##  8.3 焊接注意事项\n1.请不要使用热风枪焊接大按键！否则会吹化按键的。\n2.尽量不要用热风枪吹香蕉头座子/洗板水洗香蕉头座子，否则会融化/掉色\n3.焊接完一面测试一下没问题，就可以用洗板水清洗一面。\n4.测试的时候，**不要让屏幕背面碰到引脚！** 我已经踩过这个坑，24V窜进3.3V给板子一套全带走🤡\n5.载流铜片最好焊上，没有的话也必须堆锡！示意图：\n\n![IMG_20260415_191033.jpg](https://image.lceda.cn/oshwhub/pullImage/fe30738117114d9fb6813214bf03ee22.jpg)\n\n\n# 九、软件校准\n每一个APP都需要校准，为了方便你们，我已经将校准过程简化了很多！你只需要进入校准APP，按照操作指引进行，你就能获得一个非常好用的设备啦！\n\n举个例子，所有APP的校准，都可以在设备上完成，不需要上位机！\n\n![IMG_20260412_230940.jpg](https://image.lceda.cn/oshwhub/pullImage/eb9132ca0c304ddca0bb445bf6dc72de.jpg)\n感谢华为的神经相机算法，给我非常漂亮的屏幕拍成这样....😒\n\n同时呢，我也会抽时间拍一个校准视频出来，发在B站上。\n下面是我建议的校准顺序：（**必须先信号源再示波器！**）\n- **电源校准 -&gt; 信号源校准 -&gt; 示波器校准 -&gt; 万用表校准**\n下面呢是每一个系统的校准所需要准备的工具，都是很容易获得的：\n\n|名称|工具|备注|\n|---|---|---|\n|电源校准|万用表 + 10Ω电阻(1W) + 20V电源|电流校准用到电阻；务必用20V电源（或者大功率电源），否则会重启|\n|信号源校准|万用表|用到万用表200mv档|\n|示波器校准|一字螺丝刀（1.5）+尖头镊子（或者细导线）|螺丝刀来调前级电容；镊子来短接示波器与信号源|\n|万用表-电压|万用表|用万用表2V档最好，精度高|\n|万用表-电流|万用表+电源+阻性负载|不要用负载仪，干扰太大了|\n|万用表-电阻|200Ω+2KΩ（0.1%）|这俩电阻bom表里都有的|\n\n# 十、关于BOM表（极其重要！！！）\n东西比较多也比较杂乱，请使用**附件中的Bom表**，我对bom进行了整理，根据元件类型分了多个sheet：\n- 表1：立创EDA直接导出的BOM，你可以直接导入立创商城下单（你是富哥的话😁）\n- 表2~6：根据元件类型分类的细分表，里面有**大量备注**，请务必**仔细查看**！！\n- （3）：如果你要组装外壳，请前往附件的“外壳与组装说明.zip”，里面有外壳的bom表以及链接。\n\n实话实话，我还是非常建议花些时间在元件购买上的，精打细算下来能省很多钱，不过也要注意不要贪图便宜整到假元件！\n\n下面是一些购买必坑，不定时更新：\n- 1. TLV2374IPWR ---- 淘宝 ----- 深圳市宏隆电子科技商行   （以前可以的，最近买了5个全不能用）\n- 2. 关于大/小屏幕定义，我个人是推荐小屏幕的，连接在附件BOM里；此外，大小屏幕**只跟外壳有关**，都可以买。但是我只建议**使用IPS屏幕**！普通TN/TFT屏的观感很差！\n- 3. 买屏幕的时候，一定要注意**引脚定义**顺序！！！\n\n\n![O1CN01iIPZIo1cG1oxyDLbC_!!2213097523572.png](https://image.lceda.cn/oshwhub/pullImage/6286405dd5c3431ca69dd14f3deac86d.png)\n\n- 4. 经过群友反馈，淘宝等平台的FLASH假货很多！尤其是**W25Q128和W25Q256**，因此建议使用**W25Q64**系列，稳定性会好很多。\n- 5. 经群友反馈，**STM32F407VET6**也存在假货/翻新现象，可能会出现DFU连接不上、boot0失效等问题，请进群咨询群友谢谢！\n\n# 十一、二次开发\n嘛，二次开发还是有点难的哈哈，我会公开如下信息帮助你开发属于你的新功能：\n- 1. 项目源码，见前面github链接或附件\n- 2. GUI-Guider工程，主界面以及设置、关于界面使用LVGL构建\n\n同时呢我也用python配合AI制作了三个小工具，在附件的“小工具.zip”中\n- 1. 字体取模：你可以导入任意字体并生成.bin文件，将其拷贝到U盘，在font.c/h中声明就能使用新字体~\n- 2. 图片取模：同理，将图片转为.bin文件，拷贝到U盘并在image.c/h中声明即可使用~\n- 3. 16进制查看器：做着玩的，方便我调试.bin文件\n\n此外，对于设备输出端的TypeC口，不止可以用来供电(跟数控电源相连)，我也留了ADC+TIM+SPI接口，你可以自行摸索，拓展独属于你的功能~\n\n开发工具用的是CLion +STM32CubeMX\n\n# 十二、一些注意事项\n这里是我的一些提醒，不定期更新：\n- 1. 香蕉头输出口是电源+万用表复用的，你要插表笔的话，**要买公头是突出来的**，而不是被塑料包起来的。\n- 2. 显示屏排线与屏幕的连接处很脆弱，你弯折排线的时候要注意。\n\n# 十三、其他\n1.还请不用私信我，大二太忙了，没有太多精力搞开源设计，所以一般**私信不会回复**，在此表示抱歉！\n有事情可以进群**1082694166**交流！（答案：雪萌）一般群里的消息我才有时间看并回复，谢谢！**\n\n2.关于程序，我应该是会更新的极慢，如果你有好的想法/改进，可以pull-request到我的github仓库！\n\n3.求你了**多多看看我的源码**吧！随然可能写的不咋地，但是绝对有很多你可以学习的东西！我**写了大量的注释**！不懂得话也可以发群里问，我看到了会解答的！\n\n4.嘛，如果**你愿意的话**！可以整点打赏，我好回回本顺便支持我的个人博客网站！\n\n# 十四、演示小动图\n![250W十分钟.gif](https://image.lceda.cn/oshwhub/pullImage/c5fc4a774cbc459dafdcae67030e2360.gif)",
+    "grade": 4,
+    "origin": "pro",
+    "is_draft": false,
+    "thumb": "https://image.lceda.cn/oshwhub/pullImage/693c59d05d644c39aa24c5a818dadc74.jpg",
+    "public": true,
+    "publish": true,
+    "owner": {
+      "uuid": "373f5542615e460baa91aaf2fd6b449f",
+      "username": "cyxsnbb666",
+      "nickname": "雪萌_Xuemeng",
+      "avatar": "//image.lceda.cn/avatars/2025/4/68pE86MNC9CWbrdapOHCdFpMmm189L8fQt5U1sST.webp",
+      "team": false
+    },
+    "creator": {
+      "uuid": "373f5542615e460baa91aaf2fd6b449f",
+      "username": "cyxsnbb666",
+      "nickname": "雪萌_Xuemeng",
+      "avatar": "//image.lceda.cn/avatars/2025/4/68pE86MNC9CWbrdapOHCdFpMmm189L8fQt5U1sST.webp"
+    },
+    "members": [
+      {
+        "uuid": "373f5542615e460baa91aaf2fd6b449f",
+        "nickname": "雪萌_Xuemeng",
+        "username": "cyxsnbb666",
+        "avatar": "//image.lceda.cn/avatars/2025/4/68pE86MNC9CWbrdapOHCdFpMmm189L8fQt5U1sST.webp",
+        "role": 1
+      }
+    ],
+    "path": "cyxsnbb666/xm_power_kit_v7",
+    "created_at": "2026-01-22T09:14:56.857Z",
+    "updated_at": "2026-08-05T14:13:31.000Z",
+    "tags": [],
+    "count": {
+      "views": 69812,
+      "star": 825,
+      "fork": 0,
+      "watch": 0,
+      "like": 358
+    },
+    "version": "",
+    "attachments": [
+      {
+        "size": 75777926,
+        "name": "小工具.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "f0f3b5fd0c14421f81080f53c050afe9",
+        "md5": "4457e735abaf127b874f780e3ca0a251",
+        "src": "/oshwhub/project/attachments/811e62eb38fc4ee2b77b98a481f60566.zip",
+        "download_count": 804
+      },
+      {
+        "size": 20845876,
+        "name": "主程序_源代码.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "181ba41ea08e437592373f1bb08ca553",
+        "md5": "c84cce3d7bb515894784f1a32d15fdaf",
+        "src": "/oshwhub/project/attachments/bc802f4ce8064cb19e844dd21e8d5f56.zip",
+        "download_count": 829
+      },
+      {
+        "size": 38079389,
+        "name": "LVGL工程.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "efe99ee87d524b7eb3e67f684b38ab6f",
+        "md5": "a51a0a3fcd31e8835b5674a47d2c879a",
+        "src": "/oshwhub/project/attachments/a0376b05457347c09fe3e2ac14a396fd.zip",
+        "download_count": 592
+      },
+      {
+        "size": 33228426,
+        "name": "前置包_源代码.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "40a452702eb644bebe87c14af762c6a5",
+        "md5": "127754e5af64b681ad42f7b6b27f5465",
+        "src": "/oshwhub/project/attachments/04375966fcae428599dc0f75c4bdf5a3.zip",
+        "download_count": 578
+      },
+      {
+        "size": 33832,
+        "name": "BOM_XM_POWER_KIT.xlsx",
+        "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "ext": "xlsx",
+        "uuid": "976ebf17e453425ba146cb2f5fc100c2",
+        "md5": "f4c9ff7827cf02ebc14f952f92ea84c8",
+        "src": "/oshwhub/project/attachments/7330011e6e944018b11b39f186e9bfc8.xlsx",
+        "download_count": 632
+      },
+      {
+        "size": 6805429,
+        "name": "外壳与装配说明.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "fa6a42fa3eea47f197947ef1f52ed8a1",
+        "md5": "109c4f64a3a37b1feb814b700ae9388e",
+        "src": "/oshwhub/project/attachments/a89d97b791f74f52979ae1a674c00752.zip",
+        "download_count": 475
+      },
+      {
+        "size": 29258599,
+        "name": "上位机.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "df987c27e56440aaa6fcafb535124fb7",
+        "md5": "480d59ace17598109ec9d7812141c02c",
+        "src": "/oshwhub/project/attachments/e0c35b9338b34bcba7f5544e8381cfa3.zip",
+        "download_count": 493
+      },
+      {
+        "size": 15889441,
+        "name": "程序资源包.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "a9fb6f1821fa4c4d87af6c5ff2f69799",
+        "md5": "68b42e9032359d6c5e9327987321dbe3",
+        "src": "/oshwhub/project/attachments/5d9af6ab97cb4e74943b2e570b89032c.zip",
+        "download_count": 382
+      }
+    ],
+    "license": "CC BY-NC-SA 4.0",
+    "project_tags": [
+      "4c92885dd69947be93cc68f560459fb3",
+      "3c31dae7077a4424b395e8ffe4399b18",
+      "fc8a8c1bee2a4933afc3b2d309c30888"
+    ],
+    "introduction": "一个强大的四合一工具箱，集数控电源、示波器、波形发生器、万用表于一身。可以做到250W输出，500Khz带宽示波器，最大50Khz任意波输出，以及3%精度的万用表。",
+    "text_editor_type": "markdown",
+    "allow_comment": true,
+    "allow_reprint": true,
+    "from": "oshwhub",
+    "competition_record_uuid": "0a7f4e19478249679b03b5d473e55514",
+    "no": 0,
+    "archive": false,
+    "store": false,
+    "reproduction_cost": {
+      "fa": {},
+      "pcb": {
+        "cost": 0,
+        "type": "pcb",
+        "details": []
+      },
+      "component": {
+        "cost": 160,
+        "type": "component",
+        "details": []
+      },
+      "three_d_shell": {
+        "cost": 28,
+        "type": "three_d_shell",
+        "details": []
+      },
+      "smt": {},
+      "panel": {
+        "cost": 10,
+        "type": "panel",
+        "details": []
+      },
+      "cnc": {},
+      "total_cost": 198
+    },
+    "attachments_3d": [],
+    "updated_time": "2026-08-10T10:49:10.215Z",
+    "is_hide": false,
+    "oshwhub_publish_at": "2026-07-21T08:49:20.864Z",
+    "sync_jlc_3d": 0,
+    "sync_jlc": 1,
+    "high_quality": true,
+    "remark": "",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "bfa1a897f27b4dadbd0ae39bc869c25c",
+      "name": "星火计划2026",
+      "path": "spark2026",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 71,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": true,
+    "vote_count": 73
+  }
+}

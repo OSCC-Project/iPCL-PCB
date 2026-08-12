@@ -1,0 +1,191 @@
+{
+  "index": 14,
+  "name": "四轮独立转向小车",
+  "url": "https://oshwhub.com/bliysfyt/smart-inspection-vehicle",
+  "category": "教育培训",
+  "subcategory": "智能车",
+  "scale": "100元件规模",
+  "note": null,
+  "username": "bliysfyt",
+  "path": "smart-inspection-vehicle",
+  "uuid": "7460b7f20578488c8a16fd8e95d66503",
+  "api_detail": {
+    "uuid": "7460b7f20578488c8a16fd8e95d66503",
+    "name": "四轮独立转向小车",
+    "content": "# 项目介绍\n\n使用四轮独立转向底盘实现灵活移动，可以使用wifi遥控器远程控制小车移动，也可远程查看摄像头画面\n\n# 特点\n\n- 灵活的小车底盘构型，一个底盘实现阿克曼+麦克纳姆轮+四轮差速小车功能，可以平移、斜着走、横移、原地转圈、有半径转弯等运动的同时没有动力抵消\n- 使用rdk x5作为上位机，stm32F407作为下位机，性能强劲\n- 可以同wifi在浏览器中控制小车移动，和查看摄像头画面\n\n![演示文稿1_03.png](https://image.lceda.cn/oshwhub/pullImage/15d88e15d6424c888ccc6c050c0e6647.png)\n图：小车运动功能图，更多具体请查看视频\n\n# 总体介绍\n\n\n![演示文稿1_02.png](https://image.lceda.cn/oshwhub/pullImage/03b0a0a0295944cbadcf402e336573a9.png)\n\n图：四轮独立转向示意图\n还应当由RDK x5（或其他linux开发板）、电池组成，未专门设计固定点，使用轧带固定\n\n\n\n\n![b1a8b47e734c858372c62a135cff6f6a.jpg](https://image.lceda.cn/oshwhub/pullImage/2a4f9cd36fc64865b902952c38e26d42.jpg)\n图：底盘结构实拍图\n\n![1bf96e4742e2673024522d6b0d75106d.jpg](https://image.lceda.cn/oshwhub/pullImage/4d8e622f53704a53af8238b7e08cd5f6.jpg)\n\n图：机械结构侧视图\n\n\n![image-20260106182308085.png](https://image.lceda.cn/oshwhub/pullImage/82d98f65f55d418484c039fc0541d87b.png)\n\n图：遥控器web界面，可以鼠标可以触控\n\n\n\n![image-20260106221434438.png](https://image.lceda.cn/oshwhub/pullImage/0eb91bf8e92547eb9c17bc466b463111.png)\n图：浏览器中查看摄像头画面\n\n\n\n\n\n\n\n# 硬件介绍\n\n## PCB\n\n\n![智能车的激光对抗_36.png](https://image.lceda.cn/oshwhub/pullImage/34608cee057642c5b374cba2a44209d6.png)\n图：PCB功能框图\n- 四路电机、舵机、编码器驱动，实现四个轮子独立转向，PID调速。电机使用DRV8870DDAR驱动，为舵机设计了控制信号的电平转换电路。\n- 具有加速度计（LSM6DS3TR-C）和磁力计（LIS2MDLTR）硬件电路（软件未完成）。\n- 主控使用STM32F407VET6。\n- 为使用上海芯龙的XL4016E1 DC-DC为电机提供12V电压，为舵机提供7.5V电压，使用LDO为主控提供3.3V电压。\n- 使用串口和上位机通信。\n\n\n\n1. 12V电源压降和7.5V电源压降\n \n![image-20260106224254777.png](https://image.lceda.cn/oshwhub/pullImage/fde33baf66934fd6b13743add50645e1.png)\n2. 电机驱动\n  \n![image-20260106224320848.png](https://image.lceda.cn/oshwhub/pullImage/0000242717ca47bc868ffbef497254a3.png)\n\n通过改变采样电阻阻值，实现调整堵转过流阈值电流大小\n\n3. 舵机相关的电路\n  \n![image-20260106224427683.png](https://image.lceda.cn/oshwhub/pullImage/5e65e9d6b3794b439bfb68b3437c7a95.png)\n\n将单片机3.3v的控制信号提升至7.5V\n\n4. 3.3V的LDO电源压降\n\n![image-20260106224530985.png](https://image.lceda.cn/oshwhub/pullImage/5df32ed028ff4130b5d56f0645e26db2.png)\n\n5. stm32及周围电路\n  \n![image-20260106224640540.png](https://image.lceda.cn/oshwhub/pullImage/b873d9f8331c442d8e190724ace84b09.png)\n\n6. 加速度计（LSM6DS3TR-C）和磁力计（LIS2MDLTR）\n  \n![image-20260106224707402.png](https://image.lceda.cn/oshwhub/pullImage/2ceb9174890f4da3b73c228303727db9.png)\n   ## 机械部分\n\n   1. 激光切割的亚克力板\n      4mm厚\n\n  \n![地板 v6033.png](https://image.lceda.cn/oshwhub/pullImage/1db7eb5b99ba4c5c902d5e5baa6dd7c6.png)\n   \n![95a51b31e607d8d7a84d8572750e53a6.jpg](https://image.lceda.cn/oshwhub/pullImage/f3cc25c94a024b27ba753252b9ea9558.jpg)\n\n   2. 3d打印的电机与舵机连接件\n\n使用PA12材料，机械性能相对更强\n\n![无标题_零部件1 v14.png](https://image.lceda.cn/oshwhub/pullImage/5e61380aec864d8bbf0c7fe62113fd6e.png)\n\n\n\n![a7442ec04ab6fdd1ccc4f2369d25ccdc.jpg](https://image.lceda.cn/oshwhub/pullImage/be35e08ab380491ba216eda05109e197.jpg)\n\n\n\n![image-20260107121953175.png](https://image.lceda.cn/oshwhub/pullImage/012fb4207c574bd48af88d45455e37c2.png)\n\n3. 组装\n![8a1db322a0b3642585b37a77e7762dac.jpg](https://image.lceda.cn/oshwhub/pullImage/c48030faf24744ceb5a9990c6ab2ca6f.jpg)\n\n# 软件部分\n\n## 下位机\n\n\n![image-20260107001624439.png](https://image.lceda.cn/oshwhub/pullImage/7f4db53ae07749a9a481905a9705a10a.png)\n\n#### 1. servo.c（舵机控制驱动实现文件）\n\n- 基于STM32 HAL库实现**四路舵机PWM精准控制**，是舵机控制的核心逻辑层；\n- 包含舵机初始化、单通道角度设置、四通道批量角度更新等核心函数，实现角度边界校验、脉宽-角度换算、角度缓存优化（仅角度变化时更新寄存器）；\n- 内置硬件机械偏移补偿逻辑。\n\n#### 2. gear_motor.c（直流电机驱动实现文件）\n\n- 基于STM32 HAL库实现**四路直流电机的调速、正反转控制**，是机器人动力输出的核心驱动层；\n- 核心功能：初始化电机驱动相关的PWM定时器（如TIM3/TIM4）、GPIO正反转引脚及驱动芯片使能引脚；通过修改PWM占空比实现0-100%调速，通过GPIO电平切换控制电机转向；内置低占空比保护（避免堵转）、速度边界校验（-100~100）；\n- 关键函数：`GearMotor_Init()`（电机初始化）、`GearMotor_SetSpeed()`（单通道速度/转向设置）、`GearMotor_StopAll()`（全电机停转）；\n- 关联逻辑：接收motion.c解算的轮子转速指令，将抽象速度值转换为PWM占空比和GPIO电平，驱动麦克纳姆轮等执行运动。\n\n#### 3. motion.c（运动学解算模块）\n\n- 实现轮式机器人运动学反解算法，根据机器人期望运动指令（速度、方向），计算四路轮子的目标转向角度；\n- 输出相对角度值，需叠加偏移后传入舵机控制函数，是上层指令与底层舵机动作的衔接核心。\n\n\n\n\n\n\n## 上位机\n\n### 遥控器\n\n\n![image-20260106235124299.png](https://image.lceda.cn/oshwhub/pullImage/f0e6ea26e3704458b9330bf28df0a569.png)\n\n1. **整体架构**：基于Web的远程控制系统，由Python后端（app.py）和前端页面（index.html）组成，通过网页发送二进制指令控制机器人，同时监听串口反馈数据。\n2. **后端功能与技术**：基于Flask搭建Web服务，监听5000端口并返回前端页面；通过pyserial管理串口通信，独立线程持续读取串口数据，异常处理保障稳定性，程序退出自动关闭串口；提供/send_command接口，校验6字节二进制指令格式后转发至机器人。\n3. **前端功能与技术**：可视化多摇杆操控面板，支持鼠标、触屏、键盘三种操控方式；通过JS计算摇杆偏移量并归一化数值，封装为二进制指令，经fetch发送POST请求；采用CSS Flex布局和响应式设计，适配PC/移动端。\n4. **交互流程**：后端启动后初始化串口与Web服务，前端访问对应IP端口，操控指令经二进制封装、接口转发至串口，后端同步监听机器人返回数据。\n\n\n\n### 摄像头查看\n\n\n![image-20260107000233940.png](https://image.lceda.cn/oshwhub/pullImage/ef62200c20a04e23b7dba086988d55d3.png)\n\n1. **功能定位**：基于Python开发，整合hobot_vio硬件库与Flask Web框架，实现摄像头视频流的MJPEG格式网页实时传输，并提供调试信息可视化功能，适配特定硬件的摄像头和编码器调用。\n2. **初始化环节**：实例化摄像头、编码器对象，通过`open_camera`配置摄像头参数（设备号、帧率、1920×1088分辨率等），`setup_encoder`设置MJPEG编码格式；若初始化失败，记录调试信息并终止程序；同时设计`log_debug_info`函数存储调试信息，追踪关键环节状态。\n3. **视频流处理**：`get_encoded_frame`完成图像采集、编码、编码数据获取全流程，任一环节失败则返回None；`generate`生成器循环获取编码帧，按MJPEG流格式封装字节数据，每100ms更新一次，为视频流传输提供持续数据源。\n4. **Web服务配置**：搭建Flask服务，`/video_feed`路由返回多部分替换格式的视频流响应，实现网页端实时查看摄像头画面；`/debug_info`路由将调试信息格式化输出为HTML页面，支持查看初始化、请求等环节的状态记录。\n5. **程序启动**：主程序先校验摄像头和编码器初始化结果，失败则退出；成功则启动Flask服务器，监听0.0.0.0:5001，允许局域网访问，关闭调试模式保障运行稳定性。\n\n\n\n# 其他\n- 3d文件使用fusion360制作\n- logo展示\n\n![bcbd461ae68fe347167cbd575819b3ce.jpg](https://image.lceda.cn/oshwhub/pullImage/83344a6b3b2e4c86a62e3cb6f4bcddee.jpg)",
+    "grade": 3,
+    "origin": "pro",
+    "is_draft": false,
+    "thumb": "https://image.lceda.cn/oshwhub/pullImage/b50c9ae7ab90436ea7a5d8856bfd4acf.png",
+    "public": true,
+    "publish": true,
+    "owner": {
+      "uuid": "b793ec6a75fc49b58d091aa339f94c0c",
+      "username": "bliysfyt",
+      "nickname": "bliysfyt",
+      "avatar": "//image.lceda.cn/avatars/2025/11/kpFmEqVqA2mhNR9p2gAEH05H1CfUxqTKysQNY0SO.webp",
+      "team": false
+    },
+    "creator": {
+      "uuid": "b793ec6a75fc49b58d091aa339f94c0c",
+      "username": "bliysfyt",
+      "nickname": "bliysfyt",
+      "avatar": "//image.lceda.cn/avatars/2025/11/kpFmEqVqA2mhNR9p2gAEH05H1CfUxqTKysQNY0SO.webp"
+    },
+    "members": [
+      {
+        "uuid": "b793ec6a75fc49b58d091aa339f94c0c",
+        "nickname": "bliysfyt",
+        "username": "bliysfyt",
+        "avatar": "//image.lceda.cn/avatars/2025/11/kpFmEqVqA2mhNR9p2gAEH05H1CfUxqTKysQNY0SO.webp",
+        "role": 1
+      }
+    ],
+    "path": "bliysfyt/smart-inspection-vehicle",
+    "created_at": "2025-02-14T03:53:10.996Z",
+    "updated_at": "2026-01-11T09:25:29.427Z",
+    "tags": [],
+    "count": {
+      "views": 10596,
+      "star": 121,
+      "fork": 0,
+      "watch": 0,
+      "like": 48
+    },
+    "version": "",
+    "attachments": [
+      {
+        "size": 50032979,
+        "name": "四轮独立转向测试.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "146987b7cef64c3298828d034b6006f8",
+        "md5": "4616fe6e02deac00c792d9e78f592a81",
+        "src": "/oshwhub/project/attachments/09616fc91e4244acbd7c785a68f157bd.mp4",
+        "download_count": 60
+      },
+      {
+        "size": 10529738,
+        "name": "四轮独立转向快速演示.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "ef85930a751f440787a4824afd23e62c",
+        "md5": "6dd2e1ae384154639545cafc736ebe42",
+        "src": "/oshwhub/project/attachments/61268f58491e40bb8cc1647bef102725.mp4",
+        "download_count": 38
+      },
+      {
+        "size": 54299456,
+        "name": "四轮独立转向演示效果.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "dd06998838be479095ffdf8385681fe1",
+        "md5": "78df070a7ade617e96a18e7531d3a4d9",
+        "src": "/oshwhub/project/attachments/5593eef4ad8e4df09689eb3839d69336.mp4",
+        "download_count": 44
+      },
+      {
+        "size": 50474866,
+        "name": "四轮独立转向完整视频2.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "bfb22a87ef454c24b0a05a0a248acc08",
+        "md5": "dade33fef284267c8785a206dea18181",
+        "src": "/oshwhub/project/attachments/a44666d71928487796e48dea6d409357.mp4",
+        "download_count": 52
+      },
+      {
+        "size": 5470,
+        "name": "rdk_code.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "951ac7f1f9624b8e9aa7b1ecfe522f1a",
+        "md5": "0605443f0193f303559a2e50e3a04c46",
+        "src": "/oshwhub/project/attachments/e2717a976e8b4e10bb5ce50653c480a8.zip",
+        "download_count": 125
+      },
+      {
+        "size": 13301647,
+        "name": "stm32_code.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "37a41a8023764f889f128760b73e09a6",
+        "md5": "05be8c86e609171ee7dd584e235fde81",
+        "src": "/oshwhub/project/attachments/75526e3334a34ffaadd85196f5ec6752.zip",
+        "download_count": 200
+      },
+      {
+        "size": 12035,
+        "name": "BOM_PCB.xlsx",
+        "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "ext": "xlsx",
+        "uuid": "9ff1c30931524b789a83136c92a5c7e8",
+        "md5": "3531872afc07dc06216ccdd9c1218286",
+        "src": "/oshwhub/project/attachments/91ee4675af5a48a9a7c914d457602ed1.xlsx",
+        "download_count": 91
+      }
+    ],
+    "license": "GPL 3.0",
+    "project_tags": [
+      "4c92885dd69947be93cc68f560459fb3",
+      "fc8a8c1bee2a4933afc3b2d309c30888"
+    ],
+    "introduction": "巡检小车\n一个底盘实现阿克曼+麦克纳姆轮+四轮差速小车功能，实现灵活移动\n使用wifi遥控器控制，可远程查看摄像头画面",
+    "text_editor_type": "markdown",
+    "allow_comment": true,
+    "allow_reprint": false,
+    "from": "oshwhub",
+    "competition_record_uuid": "b4c8f0311358458f8f351eb5abe711b4",
+    "no": 0,
+    "archive": false,
+    "reproduction_cost": {},
+    "store": false,
+    "is_hide": false,
+    "attachments_3d": [
+      {
+        "size": 624664,
+        "name": "底盘-激光切割4MM厚亚克力.step",
+        "mime": "application/octet-stream",
+        "ext": "step",
+        "uuid": "712988d9535a4de1afd3858b068c4f4f",
+        "md5": "b65255cbeb47c519419ba7dfc567c532",
+        "src": "/oshwhub/project/attachments/582b766c7c9e41b3a7314957a945082f.step",
+        "download_count": 80
+      },
+      {
+        "size": 123884,
+        "name": "舵机与电机连接件-3d打印PA12.stl",
+        "mime": "application/octet-stream",
+        "ext": "stl",
+        "uuid": "c3ff17a9ecad4780b476e0e7668a70ff",
+        "md5": "61da4994648099a50c92a02e11909ca1",
+        "src": "/oshwhub/project/attachments/7695c097c0fd4f73bc6a2f1fde43810d.stl",
+        "download_count": 84
+      }
+    ],
+    "oshwhub_publish_at": "2026-01-12T01:35:49.000Z",
+    "sync_jlc_3d": 1,
+    "high_quality": true,
+    "updated_time": "2026-08-10T09:10:39.027Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "bfa1a897f27b4dadbd0ae39bc869c25c",
+      "name": "星火计划2026",
+      "path": "spark2026",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 20,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": true,
+    "vote_count": 1
+  }
+}

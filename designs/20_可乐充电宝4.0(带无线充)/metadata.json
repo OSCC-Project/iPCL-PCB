@@ -1,0 +1,168 @@
+{
+  "index": 20,
+  "name": "可乐充电宝4.0(带无线充)",
+  "url": "https://oshwhub.com/big_big_a/ke-le-chong-dian-bao-dai-wu-xian",
+  "category": "电力电子",
+  "subcategory": "储电",
+  "scale": "100元件规模",
+  "note": null,
+  "username": "big_big_a",
+  "path": "ke-le-chong-dian-bao-dai-wu-xian",
+  "uuid": "8dd2397d8e7b4b0d990c6e2fe0e51087",
+  "api_detail": {
+    "uuid": "8dd2397d8e7b4b0d990c6e2fe0e51087",
+    "path": "big_big_a/ke-le-chong-dian-bao-dai-wu-xian",
+    "name": "可乐充电宝4.0(带无线充)",
+    "content": "&lt;center&gt;\n\n# *项目说明* \n&lt;/center&gt;\n\n*最后编辑时间-2023/05/04*\n\n### 写在前面\n* 当前版本的电路图为**IP5568+** 同时支持无线充输入和输出的芯片版本,其与仅支持无线充输出的芯片辅助电路有部分差异。\n* 若复刻不需要无线输入谨慎使用此电路(部分电路配置不同)，不带无线输入版本的IP5568电路正在绘制中，电路中会少很多元器件。\n* 若不需要无线充电功能移步 [可乐充电宝3.0](https://oshwhub.com/big_big_A/ke-le-chong-dian-bao)或[可乐充电宝4.1](https://oshwhub.com/hzj666888/ip5356-shuang-xiang-duo-xie-yi-kuai-chong-yi-dong-dian-yuan)\n\n|版本|主控|无线充RX|无线充TX|双向快充|mini罐|标准罐|量产|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n|[3.0](https://oshwhub.com/big_big_A/ke-le-chong-dian-bao)|[IP5358](https://www.semiee.com/file/Injoinic/Injoinic-IP5358.pdf)|&lt;font color=\"#dd0000\"&gt;不支持&lt;/font&gt;<br /> |&lt;font color=\"#dd0000\"&gt;不支持&lt;/font&gt;<br /> |&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br />|&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br />|&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br />|&lt;font color=\"#dd0000\"&gt;否&lt;/font&gt;<br />|\n|[4.0](https://oshwhub.com/big_big_a/ke-le-chong-dian-bao-dai-wu-xian/edit)|[IP5568](https://www.semiee.com/file/Injoinic/Injoinic-IP5568.pdf)|&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br /> |&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br /> |&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br />|&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br />|&lt;font color=\"#dd0000\"&gt;不支持&lt;/font&gt;<br />|&lt;font color=\"#dd0000\"&gt;否&lt;/font&gt;<br />|\n|[4.1](https://oshwhub.com/hzj666888/ip5356-shuang-xiang-duo-xie-yi-kuai-chong-yi-dong-dian-yuan)|[IP5356](https://www.semiee.com/file/Injoinic/Injoinic-IP5356.pdf)|&lt;font color=\"#dd0000\"&gt;不支持&lt;/font&gt;<br /> |&lt;font color=\"#dd0000\"&gt;不支持&lt;/font&gt;<br /> |&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br />|&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br />|&lt;font color=\"#00dd00\"&gt;支持&lt;/font&gt;<br />|&lt;font color=\"#00dd00\"&gt;是&lt;/font&gt;<br />|\n\n&lt;center&gt;\n\n*[表0].功能支持列表*\n\n&lt;/center&gt;\n\n## 开源说明\n* 可根据原理图自由设计制作\n* 为减少嘉立创的资源被浪费,允许将打样剩余PCB制作进行少量出售“回血”\n* 3D模型禁止未授权出售\n* PCB和3D模型均保留商业化权利\n\n## 项目内容\n* 本项目是与B站UP主[MJhan是个手搓怪](https://space.bilibili.com/94128110)合作开发的[可乐充电宝系列第四代](https://www.bilibili.com/video/BV1yz4y1Y7pV)，up主的交流Q群:162848318\n* 继承自上一代可乐充电宝3.0，与之不同的是采用了mini罐可乐作为外壳，改进了器件选型，新增无线充功能,在拥有小巧便携外形的同时，亦保有双向快充的功能；\n* 在上一代的基础上新增了双向无线充功能，同时更改了部分元件选型，较IP5358版本有较多的提升，拥有更加强劲的性能释放。\n\n\n## 相关功能\n* 外壳采用3D打印制作，整体为圆柱体mini可乐罐外观\n* 外壳可由FDM打印或光固化打印进行制作(两者模型略有差异，打印时务必注意)\n* 基于IP5568的小型充电宝，支持 15W无线充TX 、10W 无线充RX 、SCP 、VOOC、PD3.0 等常见快充协议\n* 主控内置电池保护，PCBA整体大小约为45\\*45\\*15\n* 顶部拥有一个可发光按钮、一个双向快充的Type-C口、四颗电量指示灯、一颗快充指示灯\n* 底部为一个支持双向QI充电的无线充电板。\n\n## 无线充TX\n* IP5568集成5w/7.5w/10w/15W 无线充TX驱动控制部分,其内部集成有两个对称的半桥驱动模块(上管PMOS和下管NMOS的驱动)。\n* IP5568 集成有两路ASK 解调模块，可分别采集线圈电压和电流进行ASK 通讯解调和解码。\n    * 电流解码，直接采样电流值进行数字解调和解码。\n    * 电压解码，无需放大，滤波隔直后可以直接送入芯片，进行数字解调和解码。\n* IP5568可以通过内置的ADC,来检测线圈的电压电流。\n* 当IP5568开机后,无线充就一直工作。\n* IP5568可通过驱动2路LED输出来指示&lt;sup&gt;[表4]&lt;/sup&gt;无线充状态\n\n## 无线充RX\n* IP5568 支持无线充RX 功能，支持5w/10w\n* TX 和RX 共用一个线圈和一个谐振电容，通过按键（长按）切换TX、RX 模式。\n* IP5568 开机后无线充默认是TX 模式。\n* 当处于无线充RX 模式时，无线充的两个LED 指示灯会一起闪烁,用于指示无线充正处于工作在RX 状态。\n* 当使用无线充RX 功能时，按键功能默认为双击关机，无手电筒功能。\n* 无线充RX 输出直接接入VIN 网络，提供电源给系统充电。\n* 系统充电优先选用USB 充电口，当RX 工作时，插入USB-B 或者USB-C，会自动关闭无线充RX 功能，自动切换为USB-B 或者USB-C 给系统充电，同时打开无线充TX 功能。\n* **使用了RX方案，按键模式将固定为单击开机，双击关机，长按切换TX、RX模式**\n## Debug\n* LED电量显示异常,检查LED的方向其应为正反交替;若排除此问题后故障依然存在则可能是主控芯片虚焊,尝试重新焊接主控芯片\n* 首次上电LED会快速闪烁,此时无法放电并非电路问题,充电激活即可\n* 每次给主控断电后均需重新充电激活,否则无法使用\n* 若导线过细可能导致载流不足芯片报错(LED指示灯单个快速闪烁)\n* 有线正常无线充未生效可能是线圈不匹配,尝试更换线圈\n* 若出现未知报错导致无法充放电请按如下步骤尝试\n    1. 可尝试完全断电后重新激活\n    2. 若激活后依然报错可能是电容还有余电,再次断电后短接VSYS-GND为电容放电\n    3. 报错仍未解决可能是如下原因请一一排查\n    &gt; 芯片型号与电路不匹配,搞不清楚型号的跟卖家沟通\n    &gt; 电路中有短路或虚焊,尤其检查主控和C口\n    &gt; 电源线/PCB载流不足,尝试更换线材/堆锡\n \n&lt;center&gt;\n\n# *复刻注意事项*\n&lt;/center&gt;\n\n## 材料准备\n* **BOM上并非所有元器件在立创商城上都对应甚至可能无货，采购器件前请务必仔细检查**\n* PCB打样选择FR4材料，板厚选择1.0mm\n* 外壳可选用FDM 3D打印或光固化3D打印(二者模型不同)\n* 电池与PCB连接处载流高达5A，连接线请注意导线载流能力(至少1.5平方铜线)\n* 可乐皮外观是由喝完的可乐顶部挖孔以及切除底部后嵌套在模型外构成\n\n   &gt; 切割时使用锋利器具务必注意安全\n   &gt; 顶部沿易拉罐自带内凹痕迹进行切割\n   &gt; 底部切割尽量预留一定长度，多余部分可以压进模型内，过短则无法完全嵌套\n\n## 焊接须知\n* 电池采用四节3.7V电压18650电池，PCB默认配置充电电压4.2V，若有差异需更改配置电阻&lt;sup&gt;[表2]&lt;/sup&gt;\n* 项目采用IP5568+,需要注意的是IP5568分为普通版本和plus版本，普通版本仅支持无线输出TX，支持RX的为IP5568+\n* 若采用普通版本的IP5568务必注意电路中的差异(在原理图中有相应备注)\n* 由于体积限制和载流需求，PCB在制作完成后还需对背部开窗部分进行额外的堆锡处理，同时若堆锡部分有距离过近的情况请酌情添加绿油进行绝缘\n* Type-C接口的底部焊盘固定性非常羸弱，焊接时请注意务必为四角的固定孔加足够的锡，否则可能在拔插时损坏\n* 芯片底部的大接地一定要有足量的锡，此处关系到载流以及散热\n\n* **焊接小技巧**\n  1. 先焊接正面再焊接背面\n  2. 先焊接贴片元件，最后再焊接插件\n  3. 较难焊接的元器件请在焊接冷却后立刻进行短路以及虚焊检查(全部完成后有bug基本很难再找到问题原因)\n  4. 采用SMD或QFN封装的器件(C口、主控)可先对焊盘镀锡至全部饱满且不短路，此时没有上元件可以很方便的用烙铁处理连锡或缺锡；有万能钢网亦可先对芯片底部镀锡后再进行焊接\n  5. 实在觉得自己的焊接技术比较抱歉，直接开钢网就好\n  6. 对于不想手焊的创友，预留有四个Mark识别点可使用OpenPNP自行装贴；立创的SMT虽然有点贵但是真的很香！\n\n## 组装说明\n\n### 线圈屏蔽层切割\n1. 把提供的\"线圈轮廓.DXF\"工程图，用打印机1：1打印出来。\n2. 再把打印的轮廓纸，贴到购买的抗干扰磁贴背面。\n3. 用剪刀或者小刀沿着轮廓裁切下环状的抗干扰磁贴。\n4. 最后把环状抗干扰磁贴，贴上A11无线发射线圈(拆除原本的抗磁层)\n*--MJhan是个手挫怪*\n### 可乐切割\n* UP使用的是得力的电磨切割\n* 用的是金刚砂小锯片，然后精细打磨用的是火石仔砂轮。\n![切割引导.jpg](//image.lceda.cn/pullimage/FFPXnHSh6kgingaULN9Ohv7okrJoaaTkoCXPEWk6.jpeg)\n*--MJhan是个手挫怪*\n\n`其它说明有空再写`\n\n&lt;center&gt;\n\n# 使用说明\n&lt;/center&gt;\n\n`待施工`\n\n&lt;center&gt;\n\n# 附录\n&lt;/center&gt;\n\n## 1.配置电阻\n\n&lt;style&gt;\n.center \n{\n  width: auto;\n  display: table;\n  margin-left: auto;\n  margin-right: auto;\n}\n&lt;/style&gt;\n\n### FCAP-电池容量设置\n<div class=\"center\">\n\n| R8 | 25K | 40K | 50K | 60K | 100K | 125K |\n| :---: | :---: | :---: | :---: | :---: | :---: | :---: |\n|\\*mAH| 5000 | 8000 | 10000 | 12000 | 20000 | 25000 |\n\n</div>\n&lt;center&gt;\n\n**[表1].FCAP-电池容量的配置电阻**\n&lt;/center&gt;\n\n* *IP5568外部PIN设定电芯初始容量公式:电池容量=R8\\*0.2(mAH)最大支持25000mAH*\n* *特殊的:FCAP保留一个特殊功能,如果R8电阻=1K,电芯容量默认为10000mAH，DPA2 PIN被用作串口打印口输出*\n* *当芯片的模式为RX/TX(即双向无线充开启)时FCAP引脚留作驱动引脚,此时不接配置电阻,电芯容量默认为10000mAH*\n* *芯片内部自带电芯容量矫正的计算功能,只要进行一次完整的充电周期(从完全没有电充到完全满电)后就能矫正电池容量,因此不必担心容量的配置出现错误,但务必注意在完全断电重新激活芯片后容量会重置*\n\n### VSET-充电电压配置\n<div class=\"center\">\n\n| R7 | 115K | 82K | 51K | 20K |\n| --- | --- | --- | --- | --- |\n|电压| 4.20V | 4.30V | 4.35V | 4.40V |\n</div>\n&lt;center&gt;\n\n**[表2].电池充电电压的配置电阻**\n&lt;/center&gt;\n\n* *VSET PIN在LED电量显示时,才用来设定电池充满电压;在数码管应用时,VSET被用来作为数码管驱动PIN,默认电池充满电压为4.2v,本设计未使用数码管应用此配置保留*\n* *小科普:锂电池充电时首先以恒流模式对电池供电,此时电流恒定,充电电压随着电池电量的上升(体现为电池电压上升)而上升；当充电电压到达门限值(电池的峰值电压)时开始改以恒压模式进行充电,此时电压恒定,电流随着电池电量的上升(电池与电源的压差减少)而减小，直至逐渐趋近于0最终充电结束*\n\n### KEY-按键模式配置\n<div class=\"center\">\n\n| R6 | 开机 | 关机 | 照明 | 灯显 |\n| --- | --- | --- | --- | --- |\n| 20K | 短按 | 双击 | 长按2S | LED |\n| 51K | 短按 | N/A | 长按2S | LED |\n| 82K | 短按 | N/A | 双击 | LED |\n| 115K | 短按 | 长按 | 双击 | LED |\n</div>\n&lt;center&gt;\n\n**[表3].按键模式的配置电阻**\n&lt;/center&gt;\n\n* *在数码管方案中，KEY_MODE 被用作数码管驱动管脚，无按键模式选择。按键模式默认为：短按开机、连续两次短按关机、长按2s 开关手电筒。*\n* *在无线充TX/RX 方案中，按键模式默认为：短按开机，连续两次短按关机、长按2s 在无线充和RX 之间切换，无手电筒应用。*\n\n## 2. 灯显说明\n### 双路LED无线指示\n<div class=\"center\">\n\n| 状态 | LED_R | LED_G |\n| :---: | :---: | :---: |\n| 无线充异常(有异物等) | 亮 | 灭 |\n| 充电完成 | 亮 | 亮 |\n| 充电中 | 灭 | 1Hz闪烁 |\n| 待机 | 灭 | 亮 |\n</div>\n&lt;center&gt;\n\n**[表4].无线指示灯**\n&lt;/center&gt;\n\n### 快充指示灯\n* 本设计中将快充指示灯集成到按钮中央，按键兼顾快充指示的功能\n* 若不需要快充指示更换普通轻触按钮即可\n* HLED 可以指示当前快充模式，无论充电还是放电，当进入快充模式处于非5V 状态时，指示灯会自动亮起。\n\n## 3.实物展示\n&lt;center&gt;\n\n![PCBA俯视图](//image.lceda.cn/pullimage/GzAdaIZ9mXdWNcs9G3xZ6ALK6hrOLJxwX6pMKz28.jpeg)\n**[图1].PCBA全貌**\n![PCB+充电板](//image.lceda.cn/pullimage/YemHtNEBw40M81gqew4Io0LaSTlFxI1RZH9UszxF.jpeg)\n**[图2].PCBA+充电板**\n![三维模型](//image.lceda.cn/pullimage/AFzZCs4OLvOk3BCs2xa0tgRta4jAmYjEudBrw4q4.png)\n**[图3].模型预览**\n![成品](//image.lceda.cn/pullimage/GK2Vul9tYj58UskZuQQ9jYa3EkVB4YtqqWD50YSC.jpeg)\n**[图4].成品全貌**\n&lt;/center&gt;\n\n## 4.视频展示",
+    "introduction": "基于IP5568的小型充电宝，支持 15W无线充TX 、10W 无线充RX 、SCP 、VOOC、PD3.0等常见快充协议",
+    "grade": 4,
+    "public": true,
+    "license": "CC BY-NC-SA 3.0",
+    "text_editor_type": "markdown",
+    "creator": {
+      "uuid": "30cacb58d7f64f9fa0b21a7170c6881d",
+      "username": "big_big_a",
+      "nickname": "AutoType",
+      "avatar": "//image.lceda.cn/avatars/2022/10/98bOWxzmNU6DRXPBst6weIsQfZrgLH6FbgJVTjwf.png"
+    },
+    "owner": {
+      "uuid": "30cacb58d7f64f9fa0b21a7170c6881d",
+      "username": "big_big_a",
+      "nickname": "AutoType",
+      "avatar": "//image.lceda.cn/avatars/2022/10/98bOWxzmNU6DRXPBst6weIsQfZrgLH6FbgJVTjwf.png",
+      "team": false
+    },
+    "origin": "pro",
+    "is_draft": false,
+    "publish": true,
+    "count": {
+      "views": 35493,
+      "star": 240,
+      "fork": 0,
+      "watch": 0,
+      "like": 128
+    },
+    "members": [
+      {
+        "uuid": "30cacb58d7f64f9fa0b21a7170c6881d",
+        "username": "big_big_a",
+        "nickname": "AutoType",
+        "avatar": "//image.lceda.cn/avatars/2022/10/98bOWxzmNU6DRXPBst6weIsQfZrgLH6FbgJVTjwf.png",
+        "role": 1
+      },
+      {
+        "uuid": "d5fa069648e44771a06c8362ecbee0c4",
+        "nickname": "m.jhan",
+        "username": "m.jhan",
+        "avatar": "https://u.lceda.cn/images/avatar-default.png?id=f119c61e3d5ce714b4b8",
+        "role": 2
+      }
+    ],
+    "attachments": [
+      {
+        "id": 1,
+        "uuid": "4957e059c7624cd99c006ac96b86aea1",
+        "name": "无线充电测试.mp4",
+        "src": "/attachments/2023/4/gSwpcxCgzDvoocBpKZhKDrKCeaiUuxco4fe0gvTY.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "size": 3636264,
+        "md5": "f22835647d01e190831e354d3e6721ad",
+        "download_count": 246
+      },
+      {
+        "id": 1,
+        "uuid": "dc51a4d93de7463b8801837d12c58056",
+        "name": "Injoinic-IP5568.pdf",
+        "src": "/attachments/2023/4/qBJnEB78NCgQIPki8cFbuljdmjfR8JaeXcm2wSQh.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 2552202,
+        "md5": "052ff092342963586319e52f1a7f0a0e",
+        "download_count": 439
+      },
+      {
+        "id": 1,
+        "uuid": "089710760f724d4b9335a092e2a8e2b9",
+        "name": "3D模型(无线充).zip",
+        "src": "/attachments/2023/5/1iy4nNzd11sQw3QyAMKKV5zpafMEQ5E5s3wE4zKK.zip",
+        "mime": "application/zip",
+        "ext": "zip",
+        "size": 5849981,
+        "md5": "f89f989aeaf7a0fb35de084ee40a7e2f",
+        "download_count": 466
+      },
+      {
+        "id": 1,
+        "uuid": "ef5bedb799254a25a7be9afb7c8e850c",
+        "name": "线圈轮廓.DXF",
+        "src": "/attachments/2023/5/dTxDkXCT56VT60GfmJWoySJt8M8K6zseBmoLjQPM.txt",
+        "mime": "application/octet-stream",
+        "ext": "txt",
+        "size": 19801,
+        "md5": "fcc86d764be9bf74b8121e1de6ad9181",
+        "download_count": 214
+      },
+      {
+        "id": 1,
+        "uuid": "094ac86d189d4f0eb465e7d177a20020",
+        "name": "23-05-02-可乐充电宝4.0（mini）.zip",
+        "src": "/attachments/2023/5/s1UPIBUaJi3dmMRoyskCg95oaknOrvOmIFUAbykI.zip",
+        "mime": "application/zip",
+        "ext": "zip",
+        "size": 31950443,
+        "md5": "6eeaa30270ea06713767e5a7c84dc8ca",
+        "download_count": 1848
+      }
+    ],
+    "no": 0,
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/pullimage/M50VbMnxbH0seeCTO2axMDgW19MXTLtl3vkPiPnm.jpeg",
+    "from": "userCenter",
+    "updated_at": "2025-10-27T07:11:28.000Z",
+    "created_at": "2023-03-14T12:43:31.000Z",
+    "project_tags": [
+      "a08b61928be54154bb1a346f7630e4ba",
+      "15637284a6f545128f80a11443cdf1a0"
+    ],
+    "competition_record_uuid": "8575042c45084a37b030c092f3a58ea9",
+    "oshwhub_publish_at": "2023-06-02T08:05:01.000Z",
+    "high_quality": true,
+    "is_hide": false,
+    "store": false,
+    "award_uuid": "1c2814c5676941fd9cebd835738de826",
+    "updated_time": "2026-08-10T10:49:25.789Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "e6bb6d3e0c6946288c9abe26d5db1c6a",
+      "name": "星火计划2023",
+      "path": "spark2023",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 42,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0,
+    "award_info": {
+      "name": "星火2023自由三等奖",
+      "image": "https://image.lceda.cn/easyedaResource/images/4c3e439df9f74a44b3842b5595e82bf6.png",
+      "links": "https://oshwhub.com/recommend/activities%20II",
+      "uuid": "1c2814c5676941fd9cebd835738de826"
+    }
+  }
+}

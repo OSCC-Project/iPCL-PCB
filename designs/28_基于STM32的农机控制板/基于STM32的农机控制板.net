@@ -1,0 +1,585 @@
+* Netlist: 基于STM32的农机控制板
+* Extracted from PCB layout data
+* Generated: 2026-08-11 11:30:11
+* Components: 100, Nets: 86
+*
+
+$COMPONENTS
+  BUZZER1  {464c4dce844247d18719437b8310555a}
+  C1  {0c16f4a18b624ec6ad5c4b4ebdadeac9}
+  C10  {b8087739b65b41a39c4b70a2ade1fb2d}
+  C11  {ef19442836614103aaa11dd3a6058310}
+  C12  {d1294e825b034407a7618e8cb02f26ac}
+  C13  {d1294e825b034407a7618e8cb02f26ac}
+  C14  {d1294e825b034407a7618e8cb02f26ac}
+  C15  {8dbbd62e89dd4857bd2c8a916a26eb3a}
+  C16  {8dbbd62e89dd4857bd2c8a916a26eb3a}
+  C17  {ac015259511f4c1faf58d7c0fbc23c62}
+  C18  {2671caef84854808837f8e9e724b7714}
+  C19  {9379e007658f44f1aeaef5794d559bbd}
+  C2  {00205af001b34837acc7006ae5206352}
+  C20  {2671caef84854808837f8e9e724b7714}
+  C21  {b8087739b65b41a39c4b70a2ade1fb2d}
+  C22  {0c16f4a18b624ec6ad5c4b4ebdadeac9}
+  C23  {b8087739b65b41a39c4b70a2ade1fb2d}
+  C24  {0c16f4a18b624ec6ad5c4b4ebdadeac9}
+  C25  {b8087739b65b41a39c4b70a2ade1fb2d}
+  C26  {b8087739b65b41a39c4b70a2ade1fb2d}
+  C3  {0c16f4a18b624ec6ad5c4b4ebdadeac9}
+  C4  {0c16f4a18b624ec6ad5c4b4ebdadeac9}
+  C5  {0c16f4a18b624ec6ad5c4b4ebdadeac9}
+  C6  {0c16f4a18b624ec6ad5c4b4ebdadeac9}
+  C7  {b8087739b65b41a39c4b70a2ade1fb2d}
+  C8  {b8087739b65b41a39c4b70a2ade1fb2d}
+  C9  {b8087739b65b41a39c4b70a2ade1fb2d}
+  CN1  {04f4d0e54e124a45bd57010dd71f337a}
+  CN2  {39b12956a8ce4d19b860900b97822c33}
+  D1
+  D2  {73e417fb12e84293838066bc94ba4dbb}
+  D3  {05370deca2694be29f37f29f412d6ef4}
+  D4  {0385374e685241d987d1baf186092feb}
+  F1  {922853577189421e9fc14ee25ac08492}
+  H5
+  L1
+  L2  {2e3d4adf0a674c908d596ddc5b8665ec}
+  LED1
+  LED2  {3b880e60d77d4e459dc8b6810aee4a60}
+  LED3  {3b880e60d77d4e459dc8b6810aee4a60}
+  PA0  {b47e728e5567417dba6a17738a662b48}
+  PA1  {b47e728e5567417dba6a17738a662b48}
+  PA8  {b47e728e5567417dba6a17738a662b48}
+  PB0  {b47e728e5567417dba6a17738a662b48}
+  PB1  {b47e728e5567417dba6a17738a662b48}
+  PB4  {b47e728e5567417dba6a17738a662b48}
+  PC8  {b47e728e5567417dba6a17738a662b48}
+  PC9  {b47e728e5567417dba6a17738a662b48}
+  Q1
+  Q2  {494df58db00f4b12b482f0496ab078aa}
+  R1  {9494905a32d84cd69e7fd0f69b5df682}
+  R10  {fdc1f4c29d1c4751948d21cd7d655113}
+  R11  {8542083f1baa452d8197a5e5ae6adec7}
+  R12  {8542083f1baa452d8197a5e5ae6adec7}
+  R13  {4c8f821d2d9a456b947e2f5d2d34473c}
+  R14
+  R15  {4c8f821d2d9a456b947e2f5d2d34473c}
+  R16  {4c8f821d2d9a456b947e2f5d2d34473c}
+  R17  {4c8f821d2d9a456b947e2f5d2d34473c}
+  R18  {4c8f821d2d9a456b947e2f5d2d34473c}
+  R19  {4c8f821d2d9a456b947e2f5d2d34473c}
+  R2
+  R20  {4c8f821d2d9a456b947e2f5d2d34473c}
+  R21  {973e7044c5354bff8a9f0304d2ccfc2c}
+  R22  {973e7044c5354bff8a9f0304d2ccfc2c}
+  R23  {973e7044c5354bff8a9f0304d2ccfc2c}
+  R24  {973e7044c5354bff8a9f0304d2ccfc2c}
+  R3  {fdc1f4c29d1c4751948d21cd7d655113}
+  R4  {a05d898134fc4e8f8315f69291692ef4}
+  R5  {fdc1f4c29d1c4751948d21cd7d655113}
+  R6  {9494905a32d84cd69e7fd0f69b5df682}
+  R7  {9494905a32d84cd69e7fd0f69b5df682}
+  R8  {9494905a32d84cd69e7fd0f69b5df682}
+  R9  {a05d898134fc4e8f8315f69291692ef4}
+  SW1  {3a15eda7b0194560b9683aae01ebd8ce}
+  SW2  {6f224b5d746747beb2039bb679b105b1}
+  SW3  {f3019ace368143fda1fa4a9f015548d9}
+  SW4  {f3019ace368143fda1fa4a9f015548d9}
+  U1  {9999fb1410bb4e27917db515f48f1ac0}
+  U10
+  U11  {25e034551c444a3b95a2b42a1096333b}
+  U12  {e89b23afd4274c04b79f4633e6213b11}
+  U13  {e89b23afd4274c04b79f4633e6213b11}
+  U14  {1e8caf621f964f18ae40de2278f18aec}
+  U15  {e89b23afd4274c04b79f4633e6213b11}
+  U16  {1e8caf621f964f18ae40de2278f18aec}
+  U17  {25a7f24e2527464f8d9fe3a0aa2ae052}
+  U18  {912273d401a44240baca1c52db15dd7e}
+  U19  {25a7f24e2527464f8d9fe3a0aa2ae052}
+  U2
+  U20  {912273d401a44240baca1c52db15dd7e}
+  U3  {6768774be1b04573a65d1a4a48405c70}
+  U4  {8e933f0cec204a8ea7630d825d1bf1af}
+  U5
+  U6
+  U7
+  U8
+  U9  {5de931de3ead4dce8fe71c8b43952670}
+  USBC1  {486889ddd5154e4ba5d956eb05b6e7e1}
+  X1  {3c55132545d842419634946cfd267451}
+$END_COMPONENTS
+
+$NETS
+  +5V
+    BUZZER1.1
+    C12.2
+    C13.2
+    C14.2
+    C21.1
+    C24.1
+    CN1.2
+    D1.1
+    D3.1
+    H5.2
+    L2.2
+    PA0.2
+    PA1.2
+    PA8.2
+    PB0.2
+    PB1.2
+    PB4.2
+    PC8.2
+    PC9.2
+    R15.1
+    R6.1
+    U10.1
+    U10.3
+    U12.4
+    U13.4
+    U14.4
+    U15.4
+    U16.4
+  3V3
+    C10.1
+    C18.2
+    C22.2
+    C23.1
+    C26.1
+    C3.1
+    C4.1
+    C7.1
+    C8.1
+    C9.1
+    R13.2
+    R3.1
+    U1.3
+    U10.5
+    U11.13
+    U11.8
+    U2.1
+    U2.13
+    U2.19
+    U2.32
+    U2.48
+    U2.64
+    U3.3
+    U4.5
+  ADC_OLED
+    U2.8
+  BEEP
+    R21.2
+    U2.16
+  C14_1
+    C14.1
+    R15.2
+    R17.2
+    U9.5
+  C19_2
+    C19.2
+    U9.1
+  C20_1
+    C20.1
+    R19.2
+  C25_2
+    C25.2
+    U11.10
+  CAN1_H
+    R5.2
+    U1.7
+    U17.1
+    U18.1
+  CAN1_L
+    R5.1
+    U1.6
+    U17.2
+    U18.2
+  CAN1_N
+    U1.4
+    U2.61
+  CAN1_P
+    U1.1
+    U2.62
+  CAN2_H
+    R10.2
+    U19.1
+    U20.1
+    U3.7
+  CAN2_L
+    R10.1
+    U19.2
+    U20.2
+    U3.6
+  CAN2_N
+    U2.57
+    U3.4
+  CAN2_P
+    U2.58
+    U3.1
+  D2_1
+    C19.1
+    D2.1
+    L2.1
+    U9.8
+  D4_2
+    CN2.2
+    D4.2
+  DBUS
+    H5.1
+    R14.1
+  DBUS_RX
+    Q1.3
+    R13.1
+    U2.17
+  DCBUS
+    C15.1
+    C16.1
+    C17.1
+    D4.1
+    R1.1
+    R16.1
+    U9.2
+  D_N
+    U4.2
+    USBC1.A7
+  D_P
+    U4.1
+    USBC1.A6
+  F1_2
+    CN2.1
+    CN2.3
+    CN2.4
+    F1.2
+  GND
+    C1.2
+    C10.2
+    C11.1
+    C18.1
+    C21.2
+    C22.1
+    C23.2
+    C24.2
+    C25.1
+    C26.2
+    C3.2
+    C4.2
+    C5.2
+    C6.1
+    C7.2
+    C8.2
+    C9.2
+    CN1.1
+    CN1.5
+    CN1.6
+    H5.3
+    L1.1
+    LED1.2
+    LED2.2
+    LED3.2
+    PA0.1
+    PA1.1
+    PA8.1
+    PB0.1
+    PB1.1
+    PB4.1
+    PC8.1
+    PC9.1
+    Q1.1
+    Q2.1
+    R22.1
+    R4.2
+    R9.1
+    SW1.2
+    SW3.2
+    SW3.3
+    SW3.4
+    SW4.2
+    SW4.3
+    SW4.4
+    U1.2
+    U1.8
+    U10.2
+    U11.11
+    U11.18
+    U11.20
+    U12.3
+    U12.5
+    U12.6
+    U13.3
+    U13.5
+    U13.6
+    U14.3
+    U14.5
+    U14.6
+    U15.3
+    U15.5
+    U15.6
+    U16.3
+    U16.5
+    U16.6
+    U17.3
+    U17.4
+    U18.3
+    U18.4
+    U19.3
+    U19.4
+    U2.12
+    U2.18
+    U2.63
+    U20.3
+    U20.4
+    U3.2
+    U3.8
+    U4.3
+    U5.1
+    U5.2
+    U5.3
+    U5.4
+    U5.5
+    U5.6
+    U5.7
+    U5.8
+    U5.9
+    U6.1
+    U6.2
+    U6.3
+    U6.4
+    U6.5
+    U6.6
+    U6.7
+    U6.8
+    U6.9
+    U7.1
+    U7.2
+    U7.3
+    U7.4
+    U7.5
+    U7.6
+    U7.7
+    U7.8
+    U7.9
+    U8.1
+    U8.2
+    U8.3
+    U8.4
+    U8.5
+    U8.6
+    U8.7
+    U8.8
+    U8.9
+    USBC1.0
+    USBC1.1
+    USBC1.2
+    USBC1.3
+    USBC1.A1
+    USBC1.A12
+    USBC1.B1
+    USBC1.B12
+    X1.2
+  IMU_INT
+    U11.12
+    U2.59
+  IMU_NSS
+    U11.22
+    U2.33
+  IMU_SCLK
+    U11.23
+    U2.34
+  IMU_SDI
+    U11.24
+    U2.36
+  IMU_SDO
+    U11.9
+    U2.35
+  KEY1
+    R23.2
+    U2.10
+  KEY2
+    R24.2
+    U2.11
+  LED1
+    R7.1
+    U2.4
+  LED1_1
+    LED1.1
+    R6.2
+  LED2
+    R8.1
+    U2.3
+  OSCOUT
+    U2.6
+    X1.3
+  OSC_IN
+    U2.5
+    X1.1
+  PGND
+    C12.1
+    C13.1
+    C15.2
+    C16.2
+    C17.2
+    C2.1
+    C20.2
+    D2.2
+    F1.1
+    L1.2
+    R17.1
+    R18.1
+    R2.2
+    R20.2
+    U9.10
+    U9.11
+    U9.12
+    U9.13
+    U9.7
+    U9.9
+  Q1_2
+    Q1.2
+    R14.2
+  Q2_3
+    BUZZER1.2
+    D3.2
+    Q2.3
+  R18_2
+    R16.2
+    R18.2
+    U9.3
+  R19_1
+    R19.1
+    U9.6
+  R20_1
+    R20.1
+    U9.4
+  R21_1
+    Q2.2
+    R21.1
+    R22.2
+  R23_1
+    R23.1
+    SW3.1
+  R7_2
+    LED2.1
+    R7.2
+  R8_2
+    LED3.1
+    R8.2
+  RESET
+    C1.1
+    R3.2
+    SW1.1
+    U2.7
+  RST_OLED
+    U2.22
+  SPI1_CLK_OLED
+    U2.21
+  SPI1_MOSI_OLED
+    U2.23
+  SPI1_NSS_OLED
+    U2.20
+  SW4_1
+    R24.1
+    SW4.1
+  SWCLK
+    CN1.4
+    U2.49
+  SWDIO
+    CN1.3
+    U2.46
+  TIM1_CH1
+    PA8.3
+    U2.41
+  TIM2_CH1
+    PA0.3
+    U2.14
+  TIM2_CH2
+    PA1.3
+    U2.15
+  TIM3_CH1
+    PB4.3
+    U2.56
+  TIM3_CH3
+    PB0.3
+    U2.26
+  TIM3_CH4
+    PB1.3
+    U2.27
+  TIM8_CH3
+    PC8.3
+    U2.39
+  TIM8_CH4
+    PC9.3
+    U2.40
+  U2_28
+    R4.1
+    U2.28
+  U2_31
+    C5.1
+    U2.31
+  U2_47
+    C6.2
+    U2.47
+  U2_60
+    R9.2
+    U2.60
+  U4_6
+    SW2.2
+    U4.6
+  U4_7
+    SW2.1
+    U4.7
+  U4_8
+    C11.2
+    U4.8
+  USART1_RX
+    SW2.3
+    U12.1
+    U2.43
+  USART1_TX
+    SW2.4
+    U12.2
+    U2.42
+  USART3_RX
+    U13.1
+    U2.30
+  USART3_TX
+    U13.2
+    U2.29
+  USART4_RX
+    U15.1
+    U2.52
+  USART4_TX
+    U15.2
+    U2.51
+  USART5_RX
+    U14.1
+    U2.54
+  USART5_TX
+    U14.2
+    U2.53
+  USART6_RX
+    U16.1
+    U2.38
+  USART6_TX
+    U16.2
+    U2.37
+  USBC1_B6
+    R11.2
+    USBC1.B6
+  USBC1_B7
+    R12.2
+    USBC1.B7
+  USBDP_N
+    R12.1
+    U2.44
+  USBDP_P
+    R11.1
+    U2.45
+  USB_VBUS
+    D1.2
+    USBC1.A4
+    USBC1.A9
+    USBC1.B4
+    USBC1.B9
+  VBUS_S
+    C2.2
+    R1.2
+    R2.1
+    U2.24
+$END_NETS

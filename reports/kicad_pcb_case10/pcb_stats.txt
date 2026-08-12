@@ -1,0 +1,13 @@
+project: 星火计划-桌面HiFi功放
+design_index: 6
+board: ZLXF AMP10
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/06_星火计划-桌面HiFi功放/星火计划-桌面HiFi功放.epro2
+source_epcb: ZLXF AMP10.epcb
+components: 200
+nets: 129
+tracks: 830
+vias: 602
+zones: 717
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 974521

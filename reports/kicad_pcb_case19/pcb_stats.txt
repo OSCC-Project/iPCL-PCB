@@ -1,0 +1,13 @@
+project: 四轮独立转向小车
+design_index: 14
+board: Board2
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/14_四轮独立转向小车/四轮独立转向小车.epro2
+source_epcb: PCB1.epcb
+components: 123
+nets: 91
+tracks: 1012
+vias: 546
+zones: 477
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 638518

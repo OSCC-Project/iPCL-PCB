@@ -1,0 +1,10 @@
+../User/gear_motor.c:33:6:Motor_Wheels_Init	1
+../User/gear_motor.c:55:6:Motor_Wheels_SetPWM	10
+../User/gear_motor.c:115:6:Motor_Wheels_SetPWMs	1
+../User/gear_motor.c:129:6:Motor_Encoder_Init	1
+../User/gear_motor.c:149:9:Motor_Encoder_GetSpeed	5
+../User/gear_motor.c:182:6:Motor_PID_Init	1
+../User/gear_motor.c:200:7:Motor_PID_Calculate	5
+../User/gear_motor.c:230:6:Motor_Schedule	2
+../User/gear_motor.c:251:6:Motor_Init	1
+../User/gear_motor.c:268:6:Motor_Update	1

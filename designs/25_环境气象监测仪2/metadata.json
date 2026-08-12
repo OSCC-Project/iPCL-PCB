@@ -1,0 +1,193 @@
+{
+  "index": 25,
+  "name": "环境气象监测仪2",
+  "url": "https://oshwhub.com/yifan0131/huan-jing-qi-xiang-jian-ce-yi-2",
+  "category": "农业电子",
+  "subcategory": "环境监测",
+  "scale": "200元件规模",
+  "note": null,
+  "username": "yifan0131",
+  "path": "huan-jing-qi-xiang-jian-ce-yi-2",
+  "uuid": "40a60959fb744621bb078c690b666ad5",
+  "api_detail": {
+    "uuid": "40a60959fb744621bb078c690b666ad5",
+    "path": "yifan0131/huan-jing-qi-xiang-jian-ce-yi-2",
+    "name": "环境气象监测仪2",
+    "content": "<h1><span style=\"font-size:36px;\">项目说明</span></h1>\n<p><span style=\"color:#000000;font-size:16px;\">不锈钢的铁架子</span><span style=\"color:#000000;font-size:16px;\">，可架设在户外屋顶，水塔。</span></p>\n<p><span style=\"color:#000000;font-size:16px;\">同时支持USB type-C接口和太阳能光伏发电板供电输入。</span></p>\n<p><span style=\"color:#000000;font-size:16px;\">具备常规的风速，风向，空气温度，湿度检测外，还扩展485，比如土壤水分温湿度检测等，但485部分是扩展项，目前只有硬件。</span></p>\n<p><span style=\"color:#000000;font-size:16px;\">4G实时通讯把数据上传到云端服务器。</span></p>\n<p><span style=\"color:#000000;font-size:16px;\">微信小程序与服务器连接，显示气象仪数据。</span></p>\n<p> </p>\n<p><strong><span style=\"color:#000000;font-size:16px;\">本项目设计用到的工具软件覆盖面广，有些是多年积累的皮毛，有些是现学现卖。</span></strong></p>\n<p><span style=\"color:#000000;font-size:16px;\">SketchUp画3D外观效果图，</span></p>\n<p><span style=\"color:#000000;font-size:16px;\">JLCEDA设计原理图、PCB，</span></p>\n<p><span style=\"color:#000000;font-size:16px;\">MicroPython写STM32，</span></p>\n<p><span style=\"color:#000000;font-size:16px;\">QuecPython写4G模块,</span></p>\n<p><span style=\"color:#000000;font-size:16px;\">Python云端服务器程序,</span></p>\n<p><span style=\"color:#000000;font-size:16px;\">微信小程序写手机端，</span></p>\n<p><span style=\"color:#000000;font-size:18px;\">Proe设计不锈钢的铁架子、3D打印的塑料壳子</span></p>\n<p> </p>\n<h1><span style=\"font-size:36px;\">开源协议</span></h1>\n<p><span style=\"color:#000000;font-size:18px;\">GPL3.0</span></p>\n<p> </p>\n<p><strong><span style=\"font-size:36px;\">项目进度</span></strong></p>\n<p><span style=\"font-size:18px;\"><span style=\"color:#000000;\">04月01日，设计产品3D外观模型</span></span><span style=\"font-size:18px;\"><span style=\"color:#000000;\"><img src=\"//image.lceda.cn/pullimage/pwlInhzA1jJ80PtglusIMDxVNY44rhED7AUBRqbb.png\" alt=\"\" width=\"149\" height=\"155\" /></span></span></p>\n<p><span style=\"font-size:18px;\"><span style=\"color:#000000;\">04月09日，完成</span><span style=\"color:#000000;\">PCB并发出打样</span></span></p>\n<p><span style=\"font-size:18px;\"><span style=\"color:#000000;\">04月10日，开始设计微信小程序，简易界面</span></span></p>\n<p><span style=\"font-size:18px;\">04月15日，PCB打样回来，补缺件，调试硬件</span></p>\n<p><span style=\"font-size:18px;\">04月16日，开始调试STM32程序。</span></p>\n<p><span style=\"font-size:18px;\">04月17日，钣金设计铁架子</span></p>\n<p><span style=\"font-size:18px;\">04月18日，简单测试EC800M，4G,GPS模块。</span></p>\n<p><span style=\"font-size:18px;\">04月30日，打样的铁架子收货，组装铁架子。</span></p>\n<p><span style=\"font-size:18px;\">05月07日，完成4G，GPS模块程序。</span></p>\n<p><span style=\"font-size:18px;\">05月22日，完成云端，手机端微信小程序端。</span></p>\n<p><span style=\"font-size:18px;\">05月28日，STM32,4G模块，云端，手机端联调完成。</span></p>\n<h2> </h2>\n<p><strong><span style=\"font-size:36px;\">项目介绍</span></strong></p>\n<h2><span style=\"font-size:24px;\">1.系统框图</span></h2>\n<p><span style=\"font-size:18px;\">        USB type-C和 6V光伏板利用简单的二极管隔离实现双电源输入，向三只并联的18650锂电充电，一路经HT7533稳压输出3.3V供CPU，OLED屏，SD卡等供电，</span></p>\n<p><span style=\"font-size:18px;\">另一路经TC6291升压成5V，向外端口输出，供风向，风速度传感器电源。</span></p>\n<p> </p>\n<p><span style=\"font-size:18px;\">主控CPU用STM32F407, 在这里显得大才小用，但我的目的是想通过这个小项目熟悉单片机的python编程，</span></p>\n<p><span style=\"font-size:18px;\">4G模块采用EC800MCNGA，它内置了GPS，并且也支持python编程，与主控之间用串口通信，</span></p>\n<p><span style=\"font-size:18px;\">云端则是以前双十一特惠租下的阿里云主机，安装WIN2019，python3.9</span></p>\n<p><span style=\"font-size:18px;\">手机端用微信程序，现学现卖，</span></p>\n<p><span style=\"font-size:18px;\">传感器之类无非都是些简单的IIC,ADC外设。</span></p>\n<p> </p>\n<p><span style=\"font-size:18px;\"><strong><img src=\"//image.lceda.cn/pullimage/2mFpEFgU2BLyux2NWRoeKExgn4tAWRjTKohRJ1FD.png\" alt=\"\" width=\"900\" height=\"498\" /></strong></span></p>\n<h2> </h2>\n<h2><span style=\"font-size:24px;\">2.软件说明</span></h2>\n<h3><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\">2.1 STM32F405RG刷micropython固件</span></strong></span></h3>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'黑体';\">  首先到这里</span><span style=\"font-family:Arial;\">https://micropython.org/download/pybv11/    </span></strong><strong><span style=\"font-family:'黑体';\">  下载</span><span style=\"font-family:Arial;\">.dfu</span><span style=\"font-family:'黑体';\">固件</span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'黑体';\">   <img src=\"//image.lceda.cn/pullimage/tYlnX1s84vWNa42zlYutIMwVgkgl9tje2905vzux.png\" alt=\"tYlnX1s84vWNa42zlYutIMwVgkgl9tje2905vzux.png\" /></span></strong></span></h2>\n<h3><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\">单片机下载</span> <span style=\"font-family:'Times New Roman';\">dfu </span><span style=\"font-family:'宋体';\">固件</span></strong></span></h3>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\">  </span><span style=\"font-family:'宋体';\">打开</span> <span style=\"font-family:'宋体';\">DfuSeDemo 软件，点击Choose 按钮，找到下载回来的 .dfu 固件，然后点击 Upgrade 按钮即可。如下图所示：</span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\"> <img src=\"//image.lceda.cn/pullimage/0TqGy1zx9lFARWUeO8Uh4Y85VXVXWTNFlnGzscjV.png\" alt=\"0TqGy1zx9lFARWUeO8Uh4Y85VXVXWTNFlnGzscjV.png\" width=\"477\" height=\"471\" /><img src=\"//image.lceda.cn/pullimage/eWQgWfJlT2C8s97VP5dqHKDmi5LTa80IL6qpwXEF.png\" alt=\"eWQgWfJlT2C8s97VP5dqHKDmi5LTa80IL6qpwXEF.png\" width=\"494\" height=\"460\" /></span></strong></span></h2>\n<h2> </h2>\n<h3><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\">2.2 </span></strong><strong><span style=\"font-family:'Times New Roman';\">移远EC800M CNGA模块刷固件</span></strong></span></h3>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'Times New Roman';\">   </span><span style=\"font-family:'Times New Roman';\">到这  <a href=\"https://python.quectel.com/download\" target=\"_blank\" rel=\"noreferrer noopener\"><span style=\"font-family:Calibri;\">https://python.quectel.com/download</span></a> 下载 python固件、下载</span><span style=\"font-family:Calibri;\">QPYcom </span><span style=\"font-family:'宋体';\">工具 </span><span style=\"font-family:'Times New Roman';\"> </span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong>  <img src=\"//image.lceda.cn/pullimage/0eYMttDT7gSe4pECncqWvUrtyL24Vh5IUR2JDQoe.png\" alt=\"0eYMttDT7gSe4pECncqWvUrtyL24Vh5IUR2JDQoe.png\" /></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong>  <img src=\"//image.lceda.cn/pullimage/sULeMgELkF3RWfj4FlFhejOgiwTF3DPyhojVpakz.png\" alt=\"sULeMgELkF3RWfj4FlFhejOgiwTF3DPyhojVpakz.png\" /><br /></strong></span></h2>\n<h3><span style=\"font-size:18px;\"><strong> <em>EC800M模块下载固件</em></strong></span></h3>\n<p><span style=\"font-size:18px;\"><strong> </strong>选对串口，找到下载回来的固件 .bin，注意核对模块与固件尾缀是否一致。</span></p>\n<h2><span style=\"font-size:18px;\"><strong>  <img src=\"//image.lceda.cn/pullimage/kbmD5Jy5OGksOj2cIAObFi0ArldDMD9tB4hYpUcB.png\" alt=\"kbmD5Jy5OGksOj2cIAObFi0ArldDMD9tB4hYpUcB.png\" /></strong></span></h2>\n<h2> </h2>\n<h2><span style=\"font-size:18px;\"><strong> </strong></span></h2>\n<h3><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\">2.3 </span></strong><strong>MicroPython 调试工具 <span style=\"font-family:'Times New Roman';\">Thonny</span></strong></span></h3>\n<h2><span style=\"font-size:18px;\"><strong>  <span style=\"font-family:Calibri;\">https://thonny.org/ <span style=\"font-family:'宋体';\">下载软件，</span></span><span style=\"font-family:'宋体';\">选择中文安装</span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong>1、<span style=\"font-family:'宋体';\">运行</span><span style=\"font-family:Calibri;\">-&gt;</span><span style=\"font-family:'宋体';\">配置解释器</span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong>2、<span style=\"font-family:'宋体';\">选</span> <span style=\"font-family:Calibri;\">MicroPython(</span><span style=\"font-family:'宋体';\">通用</span><span style=\"font-family:Calibri;\">)</span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong>3、<span style=\"font-family:'宋体';\">选</span> <span style=\"font-family:Calibri;\">pyborad</span><span style=\"font-family:'宋体';\">板或者移远</span><span style=\"font-family:Calibri;\">Quecpython</span><span style=\"font-family:'宋体';\">串口</span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong>4、<span style=\"font-family:'宋体';\">确认</span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong>5、<span style=\"font-family:'宋体';\">选对串口，按</span><span style=\"font-family:Calibri;\">Ctrl+F2  Shell </span><span style=\"font-family:'宋体';\">就会有 REPL调试信息</span><span style=\"font-family:'宋体';\">输出</span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong>6、<span style=\"font-family:'宋体';\">接下来就可以用micropython </span><span style=\"font-family:'宋体';\">对</span><span style=\"font-family:Calibri;\">STM32,EC800</span><span style=\"font-family:'宋体';\">编写程序了</span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\">  <img src=\"//image.lceda.cn/pullimage/RxciK8fZpcICj5bwUht8QgCfpbLpberkvpQpF1XI.png\" alt=\"RxciK8fZpcICj5bwUht8QgCfpbLpberkvpQpF1XI.png\" /></span></strong></span></h2>\n<h2> </h2>\n<h3><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\">2.4 </span></strong><strong>MicroPython 基础语法，基础库，API使用 请移步下面链接</strong></span></h3>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\"><a href=\"http://micropython.com.cn/en/latet/library/index.html\" target=\"_blank\" rel=\"noreferrer noopener\">http://micropython.com.cn/en/latet/library/index.html</a></span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\"><a href=\"https://python.quectel.com/doc/\" target=\"_blank\" rel=\"noreferrer noopener\">https://python.quectel.com/doc/</a></span></strong></span></h2>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\"><a href=\"https://python.quectel.com/doc/API_reference/zh/index.html\" target=\"_blank\" rel=\"noreferrer noopener\">https://python.quectel.com/doc/API_reference/zh/index.html</a></span></strong></span></h2>\n<h2> </h2>\n<h3><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\">2.5  STM32F405RG部分的程序流程图</span></strong></span></h3>\n<p><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\"> </span></strong><span style=\"font-family:'宋体';\">程序先是初始化RTC,ADC,IIC,UART等对象，</span></span></p>\n<p><span style=\"font-family:'宋体';font-size:18px;\"> 搜索SD卡根目录是否存在以今天日期命名的.CSV文件，如果没有则新建文件，</span></p>\n<p><span style=\"font-family:'宋体';font-size:18px;\"> 设置1秒定时中断，在中断里对各功能模块计时器计时。（micropython也有支持多线程序的固件在这没用到）</span></p>\n<p><span style=\"font-family:'宋体';font-size:18px;\"> while()大循环</span></p>\n<p><span style=\"font-family:'宋体';font-size:18px;\">   轮询标记位，分别去采集温湿度，紫外线光照强度，风速风向，上传、保存数据，显示。</span></p>\n<h2><span style=\"font-size:18px;\"><strong><span style=\"font-family:'宋体';\"><img src=\"//image.lceda.cn/pullimage/JIjrSoQZ0ataTEdjlUnlW4kOnXNfOQoyTSHkpAtj.png\" alt=\"JIjrSoQZ0ataTEdjlUnlW4kOnXNfOQoyTSHkpAtj.png\" width=\"766\" height=\"882\" /></span></strong></span></h2>\n<h3><span style=\"font-size:18px;\"><strong><span style=\"font-family:'Times New Roman';\">2.6  EC800M</span><span style=\"font-family:'宋体';\">模块软件</span></strong></span></h3>\n<p><span style=\"font-family:'宋体';font-size:16px;\">  上电先检测网络状态，如果网络正常了就解析域名获取IP,</span></p>\n<p><span style=\"font-family:'宋体';font-size:16px;\">  创建UDP的SOCK,启动多线程序</span></p>\n<p><span style=\"font-family:'宋体';font-size:16px;\">  while()大循环</span></p>\n<p><span style=\"font-family:'宋体';font-size:16px;\">    根据标记位分别向服务器发数据,给单片机STM32F405RG(pyboard)返回GPS坐标。</span></p>\n<p><span style=\"font-family:'宋体';font-size:16px;\">  串口接收线程：接收到单片机STM32F405串口送来的数据，立标记 udp_up = 1</span></p>\n<p><span style=\"font-family:'宋体';font-size:16px;\">  GPS线程：初始化后，5秒为间隔从GNSS数据流中抓取\"$GNRMC\"帧中的GPS坐标，立标记gps_up = 2</span></p>\n<p> </p>\n<p><strong><span style=\"font-family:'宋体';\"><img src=\"//image.lceda.cn/pullimage/BttbEmXqE9oSViNGUvAuoiPDGKThX7bi03VOxR9B.png\" alt=\"BttbEmXqE9oSViNGUvAuoiPDGKThX7bi03VOxR9B.png\" width=\"793\" height=\"861\" /></span></strong></p>\n<p><strong><span style=\"font-family:'宋体';\"><img src=\"//image.lceda.cn/pullimage/2WAoNGEWdCJSkAm0DstAfh5IWTplwOLH8WHz7L2V.png\" alt=\"2WAoNGEWdCJSkAm0DstAfh5IWTplwOLH8WHz7L2V.png\" />  <img src=\"//image.lceda.cn/pullimage/bE8UJp09Ow1Qoaq6U2E5KtpcgPREj6b4MX2Ku8Un.png\" alt=\"bE8UJp09Ow1Qoaq6U2E5KtpcgPREj6b4MX2Ku8Un.png\" /></span></strong></p>\n<h2><strong><span style=\"font-family:'宋体';\">2.7 云端</span></strong></h2>\n<p><code><strong><span style=\"font-family:'宋体';\"> import threading  # 打开三个线程</span></strong></code></p>\n<p><code>    t1 get_weather  # 获取本地气象数据</code><br /><code>    t2 udp_recv    # UDP协议监听port = 2048端口，接收气象仪的数据</code><br /><code>    t3 udp_back    # 返回气象信息给手机</code></p>\n<p>      （程序打包在附件里）</p>\n<p> </p>\n<h2><strong><span style=\"font-family:'宋体';\">2.8 微信小程序</span></strong></h2>\n<p><strong><span style=\"font-family:'宋体';\"> （程序打包在附件里，因为是现学现卖的东西不好在这码字误导大家，请见谅）</span></strong></p>\n<p><span style=\"font-family:'宋体';\"><strong>微信界面，顶部显示GPS坐标，中间显示气象仪数据，和本地天气预报，底部显示通信数据</strong></span></p>\n<p><span style=\"font-family:'宋体';\"><strong><img src=\"//image.lceda.cn/pullimage/E6dJBDDxB4xJPFcBVo0gHaV4irc9fdasjFiOIoJ8.jpeg\" alt=\"\" width=\"500\" height=\"1111\" /></strong></span></p>\n<h2> </h2>\n<p> </p>\n<p><strong><span style=\"font-size:36px;\">实物展示</span></strong></p>\n<p><span class=\"colour\"><span style=\"color:#ced4d9;\"><img src=\"//image.lceda.cn/pullimage/OcJD478wTGUb9TlRHUGsMq76LJCGh2WqVUxv5BmA.jpeg\" alt=\"\" width=\"499\" height=\"887\" /><img src=\"//image.lceda.cn/pullimage/RpgmcWM7NXX6tKYP2WFJvGYIrSEPTTR3IpWwW7He.jpeg\" alt=\"\" width=\"499\" height=\"888\" /></span></span></p>\n<p><span class=\"colour\"><span style=\"color:#ced4d9;\"><img src=\"//image.lceda.cn/pullimage/6sTLtxsU39w3WTXwfs36S5hdjhHQGxn1YQ8EG1KQ.jpeg\" alt=\"\" width=\"498\" height=\"885\" /><img src=\"//image.lceda.cn/pullimage/60B8ObH9FFVXjLVpzAcBZdQtRSW6hEEivYlX0G7Y.jpeg\" alt=\"\" width=\"497\" height=\"883\" /></span></span></p>\n<p><span class=\"colour\"><span style=\"color:#ced4d9;\"><img src=\"//image.lceda.cn/pullimage/sEbIqxeRQceoLrs2xWjxM3pcOcPnxUiJR6967If7.jpeg\" alt=\"\" width=\"890\" height=\"500\" /></span></span></p>\n<p><span class=\"colour\"><span style=\"color:#ced4d9;\"><img src=\"//image.lceda.cn/pullimage/R6oZ072pGVn8m1xSNsTSf4tSmYe2SDysYi2vaBmD.jpeg\" alt=\"\" width=\"889\" height=\"500\" /></span></span></p>\n<h1 style=\"font-size:20px;\">设计注意事项</h1>\n<p><span style=\"font-family:'宋体';\">注意：</span><span style=\"font-family:Calibri;\">EC800</span><span style=\"font-family:'宋体';\">先不要直接保存</span><span style=\"font-family:Calibri;\">main.py</span><span style=\"font-family:'宋体';\">文件到模块，因为</span></p>\n<p><span style=\"font-family:'宋体';\">（</span>1<span style=\"font-family:'宋体';\">）将脚本文件命名为 </span><span style=\"font-family:Calibri;\">main.py </span><span style=\"font-family:'宋体';\">后，模块在上电开机后会自动运行该文件</span></p>\n<p><span style=\"font-family:'宋体';\">（</span>2<span style=\"font-family:'宋体';\">）由于串口(UART)交互等功能均需要模块端配合执行相应的代码，而 </span><span style=\"font-family:Calibri;\">main.py </span><span style=\"font-family:'宋体';\">被自动运行，阻碍了这些代码的执行，导致这些功能受到影响无法正常使用。</span></p>\n<p><span style=\"font-family:'宋体';\">（</span>3<span style=\"font-family:'宋体';\">）强烈建议用户</span><span style=\"font-family:'宋体';\">在</span><span style=\"font-family:'宋体';\">功能开发和调试完成，无需再对代码进行频繁修改，仅需测试其开机自启动功能时，再将文件名改为</span> main.py</p>\n<p>（4）<span style=\"font-family:'宋体';\">请勿在前期开发阶段将文件名修改为</span> main.py<span style=\"font-family:'宋体';\">，否则将严重影响开发效率</span></p>\n<p> </p>\n<p> </p>\n<p> </p>",
+    "introduction": "环境气象监测仪可以检测空气温湿度，风向风速和太阳辐射等气象要素。广泛应用于农业，林业和气象行业，地质勘查等领域，操作简单，便捷小巧。",
+    "grade": 4,
+    "public": true,
+    "license": "GPL 3.0",
+    "text_editor_type": "richText",
+    "creator": {
+      "uuid": "fbd2a36028da43fb921f310ca6979d45",
+      "username": "yifan0131",
+      "nickname": "yifan0131",
+      "avatar": "//image.lceda.cn/avatars/2023/3/z61mhgFjSxnyvCaRHKY3wScZLwLIU4nYvdmTUAbV.png"
+    },
+    "owner": {
+      "uuid": "fbd2a36028da43fb921f310ca6979d45",
+      "username": "yifan0131",
+      "nickname": "yifan0131",
+      "avatar": "//image.lceda.cn/avatars/2023/3/z61mhgFjSxnyvCaRHKY3wScZLwLIU4nYvdmTUAbV.png",
+      "team": false
+    },
+    "origin": "pro",
+    "is_draft": false,
+    "publish": true,
+    "count": {
+      "views": 14037,
+      "star": 149,
+      "fork": 0,
+      "watch": 0,
+      "like": 66
+    },
+    "members": [
+      {
+        "uuid": "fbd2a36028da43fb921f310ca6979d45",
+        "username": "yifan0131",
+        "nickname": "yifan0131",
+        "avatar": "//image.lceda.cn/avatars/2023/3/z61mhgFjSxnyvCaRHKY3wScZLwLIU4nYvdmTUAbV.png",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "id": 1,
+        "uuid": "66ec5be66c524415b7ae601433008c40",
+        "name": "云端服务器程序(实现通信中转).py",
+        "src": "/attachments/2023/6/PQjWRZTSc2fIU7frn1TlncpOzp7ZXZb7b3TFWb2s.py",
+        "mime": "text/x-python",
+        "ext": "py",
+        "size": 7404,
+        "md5": "fac0bd2700fa61b4d73ec949db2c075b",
+        "download_count": 143
+      },
+      {
+        "id": 1,
+        "uuid": "1703e9ea015a4d69b96c2a38243857a1",
+        "name": "紫外线传感器透明外壳.stl",
+        "src": "/attachments/2023/6/zIJ81Ypw44ljOcA18KeoFfaM2f4OEKzR5V7qTjKx.bin",
+        "mime": "application/octet-stream",
+        "ext": "bin",
+        "size": 26684,
+        "md5": "3b31877e9ff28c8d9b0f9ee56cd9ebe3",
+        "download_count": 95
+      },
+      {
+        "id": 1,
+        "uuid": "ad08db414c614e0fa2a4e1294c938bbe",
+        "name": "环境气象仪3D外壳 (1).stl",
+        "src": "/attachments/2023/6/3siDYo24OmS1XmF7DteeLkVsQXzPZlFl2lgkP0cz.bin",
+        "mime": "application/octet-stream",
+        "ext": "bin",
+        "size": 182184,
+        "md5": "aeb57bd17ea604748042a93e9b45999d",
+        "download_count": 110
+      },
+      {
+        "id": 1,
+        "uuid": "65763cf98be14cf7985a03b2b1f885fc",
+        "name": "钣金件.rar",
+        "src": "/attachments/2023/6/xlE1kX4nndAYidU2MsRUQOwkeF9DXYVrZ5hd40hQ.rar",
+        "mime": "application/octet-stream",
+        "ext": "rar",
+        "size": 205561,
+        "md5": "d20b2da5473223a49762c396738dca7c",
+        "download_count": 102
+      },
+      {
+        "id": 1,
+        "uuid": "f9a9b44eee2d483e95078590ec7acff0",
+        "name": "STM32 Python脚本.rar",
+        "src": "/attachments/2023/6/Zv3fSKPxgEblprKd9kVzbJ1yDWGsgUahb5trQC3u.rar",
+        "mime": "application/octet-stream",
+        "ext": "rar",
+        "size": 14110,
+        "md5": "e6aa359efa86f27251f165ee99ff59bf",
+        "download_count": 136
+      },
+      {
+        "id": 1,
+        "uuid": "6c90d8e36bde459c89197cd580f659ae",
+        "name": "WX_MINI程序打包.rar",
+        "src": "/attachments/2023/6/53QAXmOp2xw9K5hdw76V2iMYAtYXUj1qve3GcSTq.rar",
+        "mime": "application/octet-stream",
+        "ext": "rar",
+        "size": 110441,
+        "md5": "ad7b67f01ba120fe9013162bed79e658",
+        "download_count": 133
+      },
+      {
+        "id": 1,
+        "uuid": "ae3415e7ae944d549cb09f8053726eab",
+        "name": "EC800M_py脚本程序.rar",
+        "src": "/attachments/2023/6/5W5kRneu1E3E4xwC80FWpGKLhS7hnJ0aEwxXfILC.rar",
+        "mime": "application/octet-stream",
+        "ext": "rar",
+        "size": 2691,
+        "md5": "e2f0cec9690e5aeb18d31a96b9e40e73",
+        "download_count": 135
+      },
+      {
+        "id": 1,
+        "uuid": "17673120cf0b45d3bf26ef7d953626c9",
+        "name": "环境气象监测仪器演示视频.mp4",
+        "src": "/attachments/2023/6/2nRQEyISEqv17ua2DRNoH7JsS1aMV4S67ra8JYIK.qt",
+        "mime": "video/mp4",
+        "ext": "qt",
+        "size": 26941126,
+        "md5": "2b6eba48f96eb50b13e048afd11566ad",
+        "download_count": 420
+      }
+    ],
+    "no": 0,
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/pullimage/CyrERkCyHeRHosfuS5j4W0s9YZytm8X4daCNWCQh.jpeg",
+    "from": "userCenter",
+    "fp_demand_uuid": "ebc4abf6c87b465084d75192538f2f7e",
+    "updated_at": "2025-06-24T06:45:54.000Z",
+    "created_at": "2023-04-03T05:04:47.000Z",
+    "project_tags": [
+      "3e9823af89424add8e16c8d86dbe6365",
+      "15637284a6f545128f80a11443cdf1a0"
+    ],
+    "oshwhub_publish_at": "2023-06-15T09:10:37.000Z",
+    "high_quality": true,
+    "store": false,
+    "award_uuid": "ea98c2b745614a4ea10beefedf709c1f",
+    "updated_time": "2026-08-10T01:36:14.583Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "e6bb6d3e0c6946288c9abe26d5db1c6a",
+      "name": "星火计划2023",
+      "path": "spark2023",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 16,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0,
+    "award_info": {
+      "name": "星火2023外包鼓励奖",
+      "image": "https://image.lceda.cn/easyedaResource/images/28dcb745ff7646e1aa44ace0670ea13f.png",
+      "links": "https://oshwhub.com/recommend/activities%20II",
+      "uuid": "ea98c2b745614a4ea10beefedf709c1f"
+    }
+  }
+}

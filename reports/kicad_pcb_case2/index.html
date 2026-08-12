@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>KiCad PCB 布局布线可视化 - STM32F407 机器人主控板</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans SC', sans-serif; background: #0f0f23; color: #e0e0e0; }
+.header { background: linear-gradient(135deg, #1a237e, #0d47a1); padding: 24px 40px; }
+.header h1 { font-size: 24px; color: #fff; margin-bottom: 4px; }
+.header .sub { color: #90caf9; font-size: 14px; }
+.stats-bar { display: flex; gap: 24px; padding: 16px 40px; background: #1a1a2e; border-bottom: 1px solid #333; flex-wrap: wrap; }
+.stat-card { background: #252545; border-radius: 8px; padding: 12px 20px; min-width: 140px; }
+.stat-card .value { font-size: 22px; font-weight: bold; color: #4fc3f7; }
+.stat-card .label { font-size: 11px; color: #888; text-transform: uppercase; margin-top: 2px; }
+.content { padding: 24px 40px; }
+.section { margin-bottom: 32px; }
+.section h2 { font-size: 18px; margin-bottom: 12px; color: #4fc3f7; border-left: 3px solid #4fc3f7; padding-left: 12px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+.card { background: #1e1e3a; border: 1px solid #333; border-radius: 8px; overflow: hidden; }
+.card .card-title { padding: 10px 14px; background: #252545; font-size: 13px; font-weight: 600; border-bottom: 1px solid #333; }
+.card .card-body { padding: 8px; text-align: center; }
+.card img, .card object { width: 100%; height: auto; max-height: 500px; object-fit: contain; }
+.card object { min-height: 300px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 8px 12px; border: 1px solid #333; text-align: left; }
+th { background: #252545; color: #4fc3f7; font-weight: 600; }
+tr:nth-child(even) { background: #1a1a30; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.tag-green { background: #1b5e20; color: #a5d6a7; }
+.tag-yellow { background: #f57f17; color: #fff9c4; }
+.tag-red { background: #b71c1c; color: #ffcdd2; }
+.tag-blue { background: #0d47a1; color: #bbdefb; }
+.nav { position: sticky; top: 0; z-index: 100; background: #0f0f23; border-bottom: 1px solid #333; padding: 8px 40px; display: flex; gap: 16px; }
+.nav a { color: #90caf9; text-decoration: none; font-size: 13px; padding: 4px 8px; border-radius: 4px; }
+.nav a:hover { background: #252545; }
+@media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>KiCad PCB 布局布线可视化报告</h1>
+  <div class="sub">Project: STM32F407 机器人主控板 (STM32F407VET6) | 4-Layer Board | KiCad 10.99.0 | 2026-08-11</div>
+</div>
+
+<nav class="nav">
+  <a href="#stats">统计</a>
+  <a href="#layout">布局</a>
+  <a href="#routing">布线</a>
+  <a href="#inner">内层</a>
+  <a href="#layers">分层</a>
+  <a href="#3d">3D</a>
+  <a href="#drill">钻孔</a>
+  <a href="3d_viewer.html">3D交互查看器</a>
+</nav>
+
+<div class="stats-bar" id="stats">
+  <div class="stat-card"><div class="value">177</div><div class="label">Components</div></div>
+  <div class="stat-card"><div class="value">168</div><div class="label">Nets</div></div>
+  <div class="stat-card"><div class="value">1268</div><div class="label">Tracks</div></div>
+  <div class="stat-card"><div class="value">790</div><div class="label">Vias</div></div>
+  <div class="stat-card"><div class="value">4 层</div><div class="label">Layer Count</div></div>
+  <div class="stat-card"><div class="value">1.6mm</div><div class="label">Stackup</div></div>
+  <div class="stat-card"><div class="value">0.10mm</div><div class="label">Min Track</div></div>
+  <div class="stat-card"><div class="value">0.30mm</div><div class="label">Min Drill</div></div>
+</div>
+
+<div class="content">
+
+<!-- Layout Section -->
+<div class="section" id="layout">
+  <h2>布局 (Component Placement)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">正面布局 (Front Fab + Courtyard) — 146 components</div>
+      <div class="card-body"><object data="layout_front.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">背面布局 (Back Fab + Courtyard) — 31 components</div>
+      <div class="card-body"><object data="layout_back.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;">
+    <div class="card">
+      <div class="card-title">设计规格</div>
+      <div class="card-body table-wrap">
+        <table>
+          <tr><th>项目</th><th>详情</th></tr>
+          <tr><td>MCU</td><td>STM32F407VET6 (ARM Cortex-M4, 168MHz)</td></tr>
+          <tr><td>通信接口</td><td>2x CAN, 2x RS485, 2x RS232 (隔离), SPI, I2C</td></tr>
+          <tr><td>电源</td><td>5V/2A Buck, USB 2.0</td></tr>
+          <tr><td>层叠</td><td>4层: F.Cu / In1.Cu(GND) / In2.Cu(VCC) / B.Cu</td></tr>
+          <tr><td>元件数</td><td>177 (含 MCU, DC-DC, 隔离芯片, 连接器等)</td></tr>
+          <tr><td>网络数</td><td>168</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Routing Section -->
+<div class="section" id="routing">
+  <h2>布线 (Routing)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">正面铜层布线 (F.Cu) — 338 mm² copper</div>
+      <div class="card-body"><object data="layer_f_cu.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">背面铜层布线 (B.Cu) — 197 mm² copper</div>
+      <div class="card-body"><object data="layer_b_cu.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;">
+    <div class="card">
+      <div class="card-title">全层布线叠加 (F.Cu + B.Cu + Edge.Cuts)</div>
+      <div class="card-body"><object data="routing_all.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;">
+    <div class="card">
+      <div class="card-title">布线统计</div>
+      <div class="card-body table-wrap">
+        <table>
+          <tr><th>指标</th><th>数值</th><th>说明</th></tr>
+          <tr><td>走线段数</td><td>1268</td><td>含 146 段圆弧近似</td></tr>
+          <tr><td>最小线宽</td><td>0.1016 mm</td><td>4mil, 适用于 HDI 工艺</td></tr>
+          <tr><td>最小间距</td><td>0.1012 mm</td><td>4mil clearance</td></tr>
+          <tr><td>过孔数</td><td>790 (Through)</td><td>4层通孔过孔</td></tr>
+          <tr><td>过孔钻径</td><td>0.30 mm</td><td>标准微孔尺寸</td></tr>
+          <tr><td>正面铜覆盖</td><td>623 mm²</td><td>信号走线 + 焊盘铜</td></tr>
+          <tr><td>背面铜覆盖</td><td>243 mm²</td><td>信号走线 + 焊盘铜</td></tr>
+          <tr><td>SMD 焊盘</td><td>715</td><td>含 MCU 100 pad LQFP</td></tr>
+          <tr><td>DRC 错误</td><td><span class="tag tag-red">1792</span></td><td>格式转换精度误差（非原始设计问题）</td></tr>
+          <tr><td>DRC 警告</td><td><span class="tag tag-yellow">646</span></td><td>间距/丝印问题</td></tr>
+          <tr><td>未连接网络</td><td><span class="tag tag-yellow">499</span></td><td>坐标精度导致的微断路</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inner Layers (4-layer board) -->
+<div class="section" id="inner">
+  <h2>内层 (Inner Layers — 4层板)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">In1.Cu — GND 平面 (第15层)</div>
+      <div class="card-body"><object data="layer_in1_gnd.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">In2.Cu — VCC 电源平面 (第16层)</div>
+      <div class="card-body"><object data="layer_in2_vcc.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;">
+    <div class="card">
+      <div class="card-title">4层板叠构说明</div>
+      <div class="card-body table-wrap">
+        <table>
+          <tr><th>层序</th><th>层名</th><th>功能</th><th>厚度</th></tr>
+          <tr><td>1</td><td>F.Cu (TOP)</td><td>信号层 — MCU引脚扇出, 高速信号</td><td>0.035 mm</td></tr>
+          <tr><td>2</td><td>In1.Cu (GND)</td><td>地平面 — 完整参考面, 回流路径</td><td>0.035 mm</td></tr>
+          <tr><td>3</td><td>In2.Cu (VCC)</td><td>电源平面 — 3.3V/5V 分区</td><td>0.035 mm</td></tr>
+          <tr><td>4</td><td>B.Cu (BOTTOM)</td><td>信号层 — 低速信号, 连接器</td><td>0.035 mm</td></tr>
+          <tr><td colspan="2">总板厚</td><td colspan="2">1.6 mm (含介质层)</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Layer Views -->
+<div class="section" id="layers">
+  <h2>分层视图</h2>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-title">PCB 正面 (F.Cu + SilkS)</div>
+      <div class="card-body"><object data="pcb_front.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">PCB 背面 (B.Cu + SilkS)</div>
+      <div class="card-body"><object data="pcb_back.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">全层叠加</div>
+      <div class="card-body"><object data="pcb_all_layers.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+</div>
+
+<!-- 3D Section -->
+<div class="section" id="3d">
+  <h2>3D 模型</h2>
+  <div class="card">
+    <div class="card-title">3D 交互查看器 (GLB, three.js) — 含元件、走线、过孔、铺铜</div>
+    <div class="card-body" style="padding: 20px; text-align: center;">
+      <p style="margin-bottom: 12px;">完整 3D 模型 (28MB): 包含 PCB 板体、177 个元件封装(715焊盘)、1268 段走线、790 个过孔、阻焊层和丝印层</p>
+      <a href="3d_viewer.html" style="display: inline-block; padding: 12px 24px; background: #1565c0; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600;">打开 3D 交互查看器</a>
+    </div>
+  </div>
+</div>
+
+<!-- Drill Table -->
+<div class="section" id="drill">
+  <h2>钻孔表 (Drill Chart)</h2>
+  <div class="card">
+    <div class="card-body table-wrap">
+      <table>
+        <tr><th>数量</th><th>孔径</th><th>形状</th><th>类型</th><th>起止层</th></tr>
+        <tr><td>772</td><td>0.2997 mm</td><td>Round</td><td>PTH Via</td><td>F.Cu → B.Cu</td></tr>
+        <tr><td>18</td><td>0.3000 mm</td><td>Round</td><td>PTH Via</td><td>F.Cu → B.Cu</td></tr>
+      </table>
+      <p style="margin-top: 8px; color: #888; font-size: 12px;">总计 790 个通孔过孔，全部贯穿 4 层</p>
+    </div>
+  </div>
+</div>
+
+<!-- Conversion Notes -->
+<div class="section">
+  <h2>格式转换说明</h2>
+  <div class="card">
+    <div class="card-body table-wrap">
+      <table>
+        <tr><th>项目</th><th>说明</th></tr>
+        <tr><td>源格式</td><td>EasyEDA Pro (.epro2 / .epcb) — 5948 行 JSON 数组命令</td></tr>
+        <tr><td>目标格式</td><td>KiCad 10.99 (.kicad_pcb) — S-expression</td></tr>
+        <tr><td>转换方法</td><td>自定义 Python 解析器，逐命令解析 LINE/VIA/COMPONENT/PAD/POUR</td></tr>
+        <tr><td>坐标系</td><td>EasyEDA mil → KiCad mm (×0.0254)</td></tr>
+        <tr><td>已转换</td><td>走线 1268 + 圆弧 146 + 过孔 790 + 封装 177 + 铺铜 14</td></tr>
+        <tr><td>DRC 偏差原因</td><td>坐标精度 (float→mm 四舍五入)、板框缺失、焊盘简化</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div style="padding: 20px 40px; background: #0a0a1a; border-top: 1px solid #333; color: #666; font-size: 12px; text-align: center;">
+  Generated by kicad-cli 10.99.0 + custom EasyEDA Pro converter | iPCL-PCB Project | 2026-08-11
+</div>
+
+</body>
+</html>

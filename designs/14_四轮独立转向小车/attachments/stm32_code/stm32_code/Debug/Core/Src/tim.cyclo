@@ -1,0 +1,15 @@
+../Core/Src/tim.c:39:6:MX_TIM1_Init	3
+../Core/Src/tim.c:84:6:MX_TIM2_Init	9
+../Core/Src/tim.c:150:6:MX_TIM3_Init	3
+../Core/Src/tim.c:194:6:MX_TIM4_Init	3
+../Core/Src/tim.c:238:6:MX_TIM5_Init	9
+../Core/Src/tim.c:304:6:MX_TIM6_Init	3
+../Core/Src/tim.c:337:6:MX_TIM8_Init	3
+../Core/Src/tim.c:382:6:MX_TIM9_Init	6
+../Core/Src/tim.c:433:6:MX_TIM12_Init	6
+../Core/Src/tim.c:484:6:MX_TIM14_Init	2
+../Core/Src/tim.c:510:6:HAL_TIM_Encoder_MspInit	5
+../Core/Src/tim.c:615:6:HAL_TIM_Base_MspInit	7
+../Core/Src/tim.c:693:6:HAL_TIM_MspPostInit	5
+../Core/Src/tim.c:799:6:HAL_TIM_Encoder_MspDeInit	5
+../Core/Src/tim.c:885:6:HAL_TIM_Base_MspDeInit	7

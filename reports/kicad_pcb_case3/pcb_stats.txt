@@ -1,0 +1,13 @@
+project: 数字恒流源-星火计划
+design_index: 1
+board: V1.1.0
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/01_数字恒流源-星火计划/数字恒流源-星火计划.epro2
+source_epcb: PCB.epcb
+components: 309
+nets: 202
+tracks: 1490
+vias: 1754
+zones: 31
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 668898

@@ -1,0 +1,13 @@
+project: 100MHz高压差分探头
+design_index: 4
+board: 100MHz高压差分探头-V7
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/04_100MHz高压差分探头/100MHz高压差分探头.epro2
+source_epcb: 高压差分探头_PLUS_V8.1.epcb
+components: 190
+nets: 96
+tracks: 1862
+vias: 151
+zones: 63
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 451507

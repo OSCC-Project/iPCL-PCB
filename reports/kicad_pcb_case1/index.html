@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>KiCad PCB 布局布线可视化 - pic_programmer</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans SC', sans-serif; background: #0f0f23; color: #e0e0e0; }
+.header { background: linear-gradient(135deg, #1a237e, #0d47a1); padding: 24px 40px; }
+.header h1 { font-size: 24px; color: #fff; margin-bottom: 4px; }
+.header .sub { color: #90caf9; font-size: 14px; }
+.stats-bar { display: flex; gap: 24px; padding: 16px 40px; background: #1a1a2e; border-bottom: 1px solid #333; flex-wrap: wrap; }
+.stat-card { background: #252545; border-radius: 8px; padding: 12px 20px; min-width: 140px; }
+.stat-card .value { font-size: 22px; font-weight: bold; color: #4fc3f7; }
+.stat-card .label { font-size: 11px; color: #888; text-transform: uppercase; margin-top: 2px; }
+.content { padding: 24px 40px; }
+.section { margin-bottom: 32px; }
+.section h2 { font-size: 18px; margin-bottom: 12px; color: #4fc3f7; border-left: 3px solid #4fc3f7; padding-left: 12px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+.card { background: #1e1e3a; border: 1px solid #333; border-radius: 8px; overflow: hidden; }
+.card .card-title { padding: 10px 14px; background: #252545; font-size: 13px; font-weight: 600; border-bottom: 1px solid #333; }
+.card .card-body { padding: 8px; text-align: center; }
+.card img, .card object { width: 100%; height: auto; max-height: 500px; object-fit: contain; }
+.card object { min-height: 300px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 8px 12px; border: 1px solid #333; text-align: left; }
+th { background: #252545; color: #4fc3f7; font-weight: 600; }
+tr:nth-child(even) { background: #1a1a30; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.tag-green { background: #1b5e20; color: #a5d6a7; }
+.tag-yellow { background: #f57f17; color: #fff9c4; }
+.tag-blue { background: #0d47a1; color: #bbdefb; }
+.nav { position: sticky; top: 0; z-index: 100; background: #0f0f23; border-bottom: 1px solid #333; padding: 8px 40px; display: flex; gap: 16px; }
+.nav a { color: #90caf9; text-decoration: none; font-size: 13px; padding: 4px 8px; border-radius: 4px; }
+.nav a:hover { background: #252545; }
+@media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>KiCad PCB 布局布线可视化报告</h1>
+  <div class="sub">Project: pic_programmer (JDM-COM84 PIC Programmer) | KiCad 10.99.0 | 2026-08-11</div>
+</div>
+
+<nav class="nav">
+  <a href="#stats">统计</a>
+  <a href="#layout">布局</a>
+  <a href="#routing">布线</a>
+  <a href="#layers">分层</a>
+  <a href="#schematic">原理图</a>
+  <a href="#3d">3D</a>
+  <a href="3d_viewer.html">3D交互查看器</a>
+</nav>
+
+<div class="stats-bar">
+  <div class="stat-card"><div class="value">63</div><div class="label">Components</div></div>
+  <div class="stat-card"><div class="value">111</div><div class="label">Nets</div></div>
+  <div class="stat-card"><div class="value">238</div><div class="label">THT Pads</div></div>
+  <div class="stat-card"><div class="value">6</div><div class="label">Vias</div></div>
+  <div class="stat-card"><div class="value">160×99mm</div><div class="label">Board Size</div></div>
+  <div class="stat-card"><div class="value">1.6mm</div><div class="label">Stackup</div></div>
+  <div class="stat-card"><div class="value">0.35mm</div><div class="label">Min Track</div></div>
+  <div class="stat-card"><div class="value">0.6mm</div><div class="label">Min Drill</div></div>
+</div>
+
+<div class="content">
+
+<!-- Layout Section -->
+<div class="section" id="layout">
+  <h2>布局 (Component Placement)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">正面布局 (Front Fab + Courtyard) — 62 components</div>
+      <div class="card-body"><object data="layout_front.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">背面布局 (Back Fab + Courtyard) — 1 component</div>
+      <div class="card-body"><object data="layout_back.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;">
+    <div class="card">
+      <div class="card-title">布局密度分析</div>
+      <div class="card-body table-wrap">
+        <table>
+          <tr><th>面</th><th>元件数</th><th>占板面积</th><th>利用率</th></tr>
+          <tr><td>正面 (Front)</td><td>62 (THT: 56, Unspec: 6)</td><td>6367 mm²</td><td><span class="tag tag-yellow">40.2%</span></td></tr>
+          <tr><td>背面 (Back)</td><td>1 (Unspec: 1)</td><td>1249 mm²</td><td><span class="tag tag-green">7.9%</span></td></tr>
+          <tr><td>总板面积</td><td colspan="3">15852 mm² (160.0 × 99.1 mm)</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Routing Section -->
+<div class="section" id="routing">
+  <h2>布线 (Routing)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">正面铜层布线 (F.Cu) — 1483 mm² copper</div>
+      <div class="card-body"><object data="layer_f_cu.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">背面铜层布线 (B.Cu) — 12346 mm² copper (ground plane)</div>
+      <div class="card-body"><object data="layer_b_cu.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;">
+    <div class="card">
+      <div class="card-title">双面布线叠加 (F.Cu + B.Cu + Edge.Cuts)</div>
+      <div class="card-body"><object data="routing_all.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;">
+    <div class="card">
+      <div class="card-title">布线统计</div>
+      <div class="card-body table-wrap">
+        <table>
+          <tr><th>指标</th><th>数值</th><th>说明</th></tr>
+          <tr><td>最小线宽</td><td>0.35 mm</td><td>满足常规 PCB 制造要求 (≥0.15mm)</td></tr>
+          <tr><td>最小间距</td><td>0.59 mm</td><td>满足常规 PCB 制造要求 (≥0.15mm)</td></tr>
+          <tr><td>过孔数</td><td>6 (Through)</td><td>双面板，过孔使用较少</td></tr>
+          <tr><td>正面铜覆盖</td><td>1483 mm² (9.4%)</td><td>信号走线为主</td></tr>
+          <tr><td>背面铜覆盖</td><td>12346 mm² (77.9%)</td><td>大面积铺铜（地平面）</td></tr>
+          <tr><td>未连接网络</td><td><span class="tag tag-green">0</span></td><td>所有网络已完成布线</td></tr>
+          <tr><td>DRC 警告</td><td><span class="tag tag-yellow">58 warnings</span></td><td>丝印间距问题，非功能性</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Layer Details -->
+<div class="section" id="layers">
+  <h2>分层视图</h2>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-title">PCB 正面 (F.Cu + SilkS)</div>
+      <div class="card-body"><object data="pcb_front.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">PCB 背面 (B.Cu + SilkS)</div>
+      <div class="card-body"><object data="pcb_back.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">全层叠加</div>
+      <div class="card-body"><object data="pcb_all_layers.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+</div>
+
+<!-- Schematic -->
+<div class="section" id="schematic">
+  <h2>原理图 (Schematic)</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">主页 — 电源 + RS-232 + DC/DC</div>
+      <div class="card-body"><object data="schematic.svg/pic_programmer.svg" type="image/svg+xml"></object></div>
+    </div>
+    <div class="card">
+      <div class="card-title">子页 — PIC Sockets</div>
+      <div class="card-body"><object data="schematic.svg/pic_programmer-pic_sockets.svg" type="image/svg+xml"></object></div>
+    </div>
+  </div>
+</div>
+
+<!-- 3D -->
+<div class="section" id="3d">
+  <h2>3D 模型</h2>
+  <div class="card">
+    <div class="card-title">3D 交互查看器 (GLB format, three.js)</div>
+    <div class="card-body" style="padding: 20px; text-align: center;">
+      <p style="margin-bottom: 12px;">PCB 板体 3D 模型（元件 3D 外形需安装 kicad-packages3D 库）</p>
+      <a href="3d_viewer.html" style="display: inline-block; padding: 12px 24px; background: #1565c0; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600;">打开 3D 交互查看器</a>
+      <span style="margin: 0 12px; color: #666;">|</span>
+      <a href="pcb_3d_view.pdf" style="display: inline-block; padding: 12px 24px; background: #333; color: #fff; border-radius: 6px; text-decoration: none;">下载 3D PDF (239KB)</a>
+    </div>
+  </div>
+</div>
+
+<!-- Drill Table -->
+<div class="section">
+  <h2>钻孔表 (Drill Chart)</h2>
+  <div class="card">
+    <div class="card-body table-wrap">
+      <table>
+        <tr><th>数量</th><th>孔径</th><th>类型</th><th>用途</th></tr>
+        <tr><td>156</td><td>0.80 mm</td><td>PTH</td><td>Pad (标准通孔元件)</td></tr>
+        <tr><td>49</td><td>1.00 mm</td><td>PTH</td><td>Pad</td></tr>
+        <tr><td>9</td><td>0.75 mm</td><td>PTH</td><td>Pad</td></tr>
+        <tr><td>6</td><td>4.30 mm</td><td>NPTH</td><td>Mounting holes</td></tr>
+        <tr><td>6</td><td>0.90 mm</td><td>PTH</td><td>Pad</td></tr>
+        <tr><td>6</td><td>0.60 mm</td><td>PTH</td><td><span class="tag tag-blue">Via</span></td></tr>
+        <tr><td>4</td><td>1.20 mm</td><td>PTH</td><td>Pad (connector)</td></tr>
+        <tr><td>4</td><td>1.30 mm</td><td>PTH</td><td>Pad (connector)</td></tr>
+        <tr><td>3</td><td>1.27 mm</td><td>PTH</td><td>Pad</td></tr>
+        <tr><td>3</td><td>1.10 mm</td><td>PTH</td><td>Pad</td></tr>
+        <tr><td>2</td><td>2.00 mm</td><td>PTH</td><td>Pad (power)</td></tr>
+        <tr><td>2</td><td>3.20 mm</td><td>PTH</td><td>Pad (connector)</td></tr>
+        <tr><td>1</td><td>3.50 mm</td><td>NPTH</td><td>Mounting hole</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div style="padding: 20px 40px; background: #0a0a1a; border-top: 1px solid #333; color: #666; font-size: 12px; text-align: center;">
+  Generated by kicad-cli 10.99.0 | iPCL-PCB Project | 2026-08-11
+</div>
+
+</body>
+</html>

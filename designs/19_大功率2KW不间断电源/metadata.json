@@ -1,0 +1,162 @@
+{
+  "index": 19,
+  "name": "大功率2KW不间断电源",
+  "url": "https://oshwhub.com/leichaolin/da-gong-shuai-2KWbu-jian-duan-di",
+  "category": "电力电子",
+  "subcategory": "电源",
+  "scale": "400元件规模",
+  "note": null,
+  "username": "leichaolin",
+  "path": "da-gong-shuai-2KWbu-jian-duan-di",
+  "uuid": "9281d40288f142b5bd8cf5e6b5a74bdc",
+  "api_detail": {
+    "uuid": "9281d40288f142b5bd8cf5e6b5a74bdc",
+    "path": "leichaolin/da-gong-shuai-2KWbu-jian-duan-di",
+    "name": "大功率2KW不间断电源",
+    "content": "<h1 style=\"font-size:20px;\">项目说明</h1>\n<p><span style=\"font-size:24px;color:#b96ad9;\">本项目由湖南科技大学新能源应用实验室雷超林设计，本工程仅提供给大家学习交流，欢迎复刻，严禁商业用途。</span></p>\n<p><span style=\"font-size:24px;color:#b96ad9;\">欢迎加入QQ交流群458720579，希望大家对本工程多多点赞+收藏，才是我下一个工程的动力！！</span></p>\n<p><span style=\"font-size:24px;color:#b96ad9;\">有不懂的地方可以进QQ交流群咨询!!</span></p>\n<p> </p>\n<h1 style=\"font-size:20px;\">开源协议</h1>\n<p><img src=\"https://image.lceda.cn/pullimage/IsfHhBHNywvjQPgNenEtDzwWQNP01816Rad5snwc.png\" alt=\"CC-BY-NC-SA.png\" /><br /><span style=\"font-size:18px;\">本工程依据 <strong>“CC BY-SA 4.0”</strong> 许可证进行授权， 请勿用于商业，转载请附上原文出处链接及本声明。</span></p>\n<h1 style=\"font-size:20px;\">项目相关功能</h1>\n<ul>\n<li><span style=\"font-size:18px;\">输入：DC48V-72V；</span></li>\n<li><span style=\"font-size:18px;\">最大输出功率：2000W；</span></li>\n<li><span style=\"font-size:18px;\">输出：</span>\n<ul>\n<li><span style=\"font-size:18px;\">AC220V正弦波x2；</span></li>\n<li><span style=\"font-size:18px;\">USBDCx2(最高100w)；</span></li>\n</ul>\n</li>\n<li><span style=\"font-size:18px;\">电量、容量、输出电压显示；</span></li>\n<li><span style=\"font-size:18px;\">每个AC输出口有独立的开关控制关断；</span></li>\n<li><span style=\"font-size:18px;\">保护电路：</span>\n<ul>\n<li><span style=\"font-size:18px;\">短路保护；</span></li>\n<li><span style=\"font-size:18px;\">过载保护；</span></li>\n<li><span style=\"font-size:18px;\">温度保护；</span></li>\n<li><span style=\"font-size:18px;\">电池过充保护；</span></li>\n<li><span style=\"font-size:18px;\">浪涌保护；</span></li>\n<li><span style=\"font-size:18px;\">反接保护；</span></li>\n<li><span style=\"font-size:18px;\">稳压保护；</span></li>\n</ul>\n</li>\n</ul>\n<p><strong><span style=\"font-size:18px;\">项目成本在500元左右</span></strong></p>\n<p> </p>\n<h1 style=\"font-size:20px;\">项目属性</h1>\n<p><span style=\"font-size:18px;\">本项目为首次公开，为本人原创项目。项目未曾在别的比赛中获奖。</span></p>\n<p> </p>\n<h1 style=\"font-size:20px;\">项目进度</h1>\n<p><span style=\"font-size:18px;\">2023年7月项目开始</span></p>\n<p><span style=\"font-size:18px;\">2023年8月设计好主电路</span></p>\n<p><span style=\"font-size:18px;\">2023年9月完成PCB</span></p>\n<p><span style=\"font-size:18px;\">2023年10月调试成功</span></p>\n<p> </p>\n<h1 style=\"font-size:20px;\">设计原理</h1>\n<p><span style=\"font-size:18px;\">首先我们分析项目的需求，发现是一个宽范围输入的逆变器，电压从48V到72V，还需要支持电池供电，当有市电时通过市电供应，市电停电时立即需要逆变器工作。</span></p>\n<p><span style=\"font-size:18px;\">在平时有市电的时候需要给电池充电。这个其实就是一个UPS不间断电源，市面上的都是采用单一范围输入，采用DAB有源谐振进行电流的一个双向流动，让电池既可以供电，也可以给电池充电。</span></p>\n<p><span style=\"font-size:18px;\">但是我们查找芯片数据手册可以知道，当往电池充电的时候PFC升压最高是450V，通过变压器LLC谐振（4:30）到电池端是69V，我们都知道72v电池充满电要到80V，所以EG8026这款芯片不适合我们。</span></p>\n<p><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/ns0506NuMeCSTw25Mc0xLYU9bh5vcj4uRDNa2xzW.png\" alt=\"ns0506NuMeCSTw25Mc0xLYU9bh5vcj4uRDNa2xzW.png\" width=\"853\" height=\"429\" /></span></p>\n<p><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/UtrWWfsPW8a0K4v2DaGVkGPVew5sroyg7Djpsk5c.png\" alt=\"UtrWWfsPW8a0K4v2DaGVkGPVew5sroyg7Djpsk5c.png\" width=\"533\" height=\"599\" /></span></p>\n<p> </p>\n<p><span style=\"font-size:18px;\">这个时候就需要加一级充电电路，单独给电池充电，所以我设计的拓扑结构是BUCK+LLC+SPWM+FLYBUCK</span></p>\n<p><span style=\"font-size:18px;\">下面是我的拓扑图</span></p>\n<p><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/Y4MYzVX0c4Ycs3CckYOKDem0f64kpdRTIWhAD3rF.png\" alt=\"Y4MYzVX0c4Ycs3CckYOKDem0f64kpdRTIWhAD3rF.png\" width=\"880\" height=\"242\" /></span></p>\n<p><span style=\"font-size:18px;\">48V到72V的电池统一经过同步BUCK降压到48V，然后再通过LLC谐振软开关技术，升压到350V直流母线VBUS电压，再通过SPWM进行逆变。</span></p>\n<p><span style=\"font-size:18px;\">这样可以完美解决宽范围输入电压的一个问题，最高支持100V的输入电压。</span></p>\n<p><span style=\"font-size:18px;\">充电部分采用FLYBUCK进行一个恒流充电，功率为200W，输出电压48V-80V。</span></p>\n<p> </p>\n<p><img src=\"//image.lceda.cn/pullimage/SBunFLrrMCg74Mf19zA244TaMiWwDk8vCTwJLwiF.png\" alt=\"SBunFLrrMCg74Mf19zA244TaMiWwDk8vCTwJLwiF.png\" width=\"1169\" height=\"799\" /></p>\n<p> </p>\n<p><span style=\"font-size:18px;\">下面就具体讲解一下所用到的电路：</span></p>\n<p> </p>\n<p><strong><span style=\"font-size:18px;\">1.1初级EG1163S同步降压电路</span></strong></p>\n<p><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/CU4172GSs8YGABbS1PbPQeONF6394tWGPwuPUp2C.png\" alt=\"CU4172GSs8YGABbS1PbPQeONF6394tWGPwuPUp2C.png\" width=\"841\" height=\"448\" /></span></p>\n<p><span style=\"font-size:18px;\">首先输入的四个MOS为防反接电路，进来之后是3个1000uF/100V的黑金刚电容并联，再通过两个MOS并联的上下管进行同步BUCK降压，中间接有限流电阻进行过流保护。由于调试EG1163S时发现有不同步的现象，所以额外增加了U4的肖特基大电流二极管，进行分摊一部分电流，BUCK输出同样是3个1000uf/100V的黑金刚电容。芯片外围电路简单，功能强，如有不稳定的情况，请调试环路补偿的前馈电容，适当增加电容，如100nF，然后再看后级输出是否正常。</span></p>\n<p><img src=\"//image.lceda.cn/pullimage/lbbl4jlUZRDwaR8usHDsFMRWVgipml21v6YbTgbp.png\" alt=\"lbbl4jlUZRDwaR8usHDsFMRWVgipml21v6YbTgbp.png\" /></p>\n<p><strong><span style=\"font-size:18px;\">1.2 LLC谐振电路</span></strong></p>\n<p><span style=\"font-size:18px;\">LLC谐振升压部分采用EG1611芯片，这款芯片可以发出固定频率的PWM信号，同时可以通过R43电阻调节频率，频率需要和LLC后级的谐振腔频率一致，这样就可以实现软开关技术，大大提高效率。</span></p>\n<p><span style=\"font-size:18px;\">后级采用电压开环控制，当输出电压大于450V时，进行反馈保护，EG2132为栅极驱动器。变压器为淘宝购买，在屹晶微的淘宝店铺可以找到48V 2KW那款变压器，漏感为18uH，整流二极管可以使用650V10A二极管。R24和R26为放电电阻，放掉电容里残余的电量。</span></p>\n<p><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/cEfd7wMcJqT3mR6kgmgakGM7sRixplwlWAYsl9Rl.png\" alt=\"cEfd7wMcJqT3mR6kgmgakGM7sRixplwlWAYsl9Rl.png\" /></span></p>\n<p> </p>\n<p><strong><span style=\"font-size:18px;\">1.3 逆变电路</span></strong></p>\n<p><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/hNxHWEIGOcAvo0eVrcHRHqjTpfoab5Z0RLHCyZfb.png\" alt=\"hNxHWEIGOcAvo0eVrcHRHqjTpfoab5Z0RLHCyZfb.png\" width=\"755\" height=\"552\" /></span></p>\n<p><span style=\"font-size:18px;\">逆变电路由EG8010小板和四个IGBT组成，同时也可以使用MOS，需要在20A电流以上的MOS，封装为TO-247</span></p>\n<p><span style=\"font-size:18px;\">U14为辅助电源模块，在淘宝可以买到。</span></p>\n<p><img src=\"//image.lceda.cn/pullimage/Cq6fNhEJ4SVNTxmMKnE8KE4bn3DDdqKnJ8r1g1DK.png\" alt=\"Cq6fNhEJ4SVNTxmMKnE8KE4bn3DDdqKnJ8r1g1DK.png\" /></p>\n<p> </p>\n<p><strong><span style=\"font-size:18px;\">1.4辅助电源电路</span></strong></p>\n<p><span style=\"font-size:18px;\">辅助电源由三个德州仪器高压输入BUCK芯片、EG1163S降压芯片SW3516H快充电路组成，SW3516H芯片将23V电压降低到手机快充电压5-20V，支持100W快充。</span></p>\n<p><span style=\"font-size:18px;\">同时EG1163S为同步降压芯片，MOS为100V20A的外置MOS，封装为DFN5x8</span></p>\n<p><span style=\"font-size:18px;\">德州仪器LM5164的性能非常强，最高支持100V输入，目前没有烧坏一片，质量非常可靠。</span></p>\n<p><img src=\"//image.lceda.cn/pullimage/4HkTc4JXeRi4QNfiMZrL9DSVY8ust63cU8Zh6z5K.png\" alt=\"4HkTc4JXeRi4QNfiMZrL9DSVY8ust63cU8Zh6z5K.png\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/R6rHRF8abBFm3QBRu3jufDtp8JA44BaeRbJPZ4eh.png\" alt=\"R6rHRF8abBFm3QBRu3jufDtp8JA44BaeRbJPZ4eh.png\" /></p>\n<p> </p>\n<p><strong><span style=\"font-size:18px;\">1.5 充电电路</span></strong></p>\n<p><span style=\"font-size:18px;\">充电电路由交流输入浪涌保护以及电容限流保护,主电源管理芯片为OB2269反激芯片，功率开关管为800V10A以上的NMOS，变压器为淘宝购买，大家可以到淘宝上去买，输出采用电压恒压保护以及恒流充电</span></p>\n<p><span style=\"font-size:18px;\">LM358放大电流信号，然后进行电流反馈，充电时，电压变低，电流恒定，当电池充满电的时候，电流开始下降，电压不变。继电器为不间断切换使用。</span></p>\n<p><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/Q9mKlcXcQ4Ys56qIcpEcyvNRnA6gR9DkKz7y4zwd.png\" alt=\"Q9mKlcXcQ4Ys56qIcpEcyvNRnA6gR9DkKz7y4zwd.png\" /></span></p>\n<p> </p>\n<h1 style=\"font-size:20px;\">调试步骤</h1>\n<p> </p>\n<p> </p>\n<p><span style=\"font-size:18px;\">我们焊接得先焊接反激这一块，反激这一块比较难调，也是最危险的，我们焊接好之后将电压的电位器调到我们48V，然后接一个负载，最好40欧姆的负载，将电流的电位器顺时针旋转，看着电流表，让电流恒定，再换20欧姆的负载，看看有没有恒流的效果，再将电流调到2A。\\</span></p>\n<p><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/mRQ9qpRBNyseEu0hIuOiHUwAiB1aps8KTzVipCbw.png\" alt=\"mRQ9qpRBNyseEu0hIuOiHUwAiB1aps8KTzVipCbw.png\" width=\"623\" height=\"415\" /></span></p>\n<p><span style=\"font-size:18px;\">LLC这一块我们可以串一个互感器到整流桥的前级，带上200W负载，调节频率到56Khz，再看我们的波形是否是正弦波，如果是正弦波，那么我们的LLC就是处在谐振状态，如果波形变成椭圆形就是感性，也就是频率太高了。</span></p>\n<p><img src=\"//image.lceda.cn/pullimage/kfWhiti9iABXhZ4yeuuPPyM99mqzxSr8ij1eXYeX.png\" alt=\"kfWhiti9iABXhZ4yeuuPPyM99mqzxSr8ij1eXYeX.png\" width=\"961\" height=\"721\" /></p>\n<p> </p>\n<p><strong><span style=\"font-size:18px;\">主要元器件物料清单</span></strong></p>\n<table style=\"border-collapse:collapse;width:31.7791%;height:273px;\">\n\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">型号</td>\n<td style=\"width:32.5473%;height:21px;\">数量</td>\n<td style=\"width:24.1378%;height:21px;\">购买渠道</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">IRFP4568PBF</td>\n<td style=\"width:32.5473%;height:21px;\">8</td>\n<td style=\"width:24.1378%;height:21px;\">立创商城</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">EG1163S</td>\n<td style=\"width:32.5473%;height:21px;\">2</td>\n<td style=\"width:24.1378%;height:21px;\">立创商城</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">SGT50T65FD1PN</td>\n<td style=\"width:32.5473%;height:21px;\">4</td>\n<td style=\"width:24.1378%;height:21px;\">立创商城</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">LM5164DDAR</td>\n<td style=\"width:32.5473%;height:21px;\">3</td>\n<td style=\"width:24.1378%;height:21px;\"> 立创商城</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">47UH 30A电感</td>\n<td style=\"width:32.5473%;height:21px;\">1</td>\n<td style=\"width:24.1378%;height:21px;\">淘宝</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">调制电感</td>\n<td style=\"width:32.5473%;height:21px;\">1</td>\n<td style=\"width:24.1378%;height:21px;\">淘宝</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">反激变压器</td>\n<td style=\"width:32.5473%;height:21px;\">1</td>\n<td style=\"width:24.1378%;height:21px;\">淘宝</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">EG8010小板</td>\n<td style=\"width:32.5473%;height:21px;\">1</td>\n<td style=\"width:24.1378%;height:21px;\">淘宝</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">SW3516H</td>\n<td style=\"width:32.5473%;height:21px;\">1</td>\n<td style=\"width:24.1378%;height:21px;\">淘宝</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">LLC变压器</td>\n<td style=\"width:32.5473%;height:21px;\">1</td>\n<td style=\"width:24.1378%;height:21px;\">淘宝</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">EG1611</td>\n<td style=\"width:32.5473%;height:21px;\">1</td>\n<td style=\"width:24.1378%;height:21px;\">淘宝</td>\n</tr>\n<tr style=\"height:21px;\">\n<td style=\"width:32.5473%;height:21px;\">外壳</td>\n<td style=\"width:32.5473%;height:21px;\">1</td>\n<td style=\"width:24.1378%;height:21px;\">淘宝</td>\n</tr>\n\n</table>\n<p> </p>\n<p><strong><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/HMOjcutQUHyTlnZBEEik7XJuuqb80BOfDqZpnRX1.png\" alt=\"HMOjcutQUHyTlnZBEEik7XJuuqb80BOfDqZpnRX1.png\" width=\"557\" height=\"823\" /></span></strong></p>\n<p><strong><span style=\"font-size:18px;\"><img src=\"//image.lceda.cn/pullimage/ah5avm9TzsH7Qw9PrG5zXStKNCOrQlI9j6qShKv0.png\" alt=\"ah5avm9TzsH7Qw9PrG5zXStKNCOrQlI9j6qShKv0.png\" width=\"557\" height=\"996\" /></span></strong></p>\n<p><img src=\"//image.lceda.cn/pullimage/qpwQcq9VcamQsAOxAbi4NNyJq7ROTTZI1DrtiHM1.png\" alt=\"qpwQcq9VcamQsAOxAbi4NNyJq7ROTTZI1DrtiHM1.png\" width=\"550\" height=\"689\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/MEbomIw5jUM9OJUD4PXMzwV1l6P6gBuhWLx5gFFS.png\" alt=\"MEbomIw5jUM9OJUD4PXMzwV1l6P6gBuhWLx5gFFS.png\" width=\"547\" height=\"335\" /></p>\n<p> </p>\n<h1 style=\"font-size:20px;\">实物展示</h1>\n<p><img src=\"//image.lceda.cn/pullimage/Y6b43wADfO1J635sKLRSF7EVToM3Ioij6mZWQPEN.jpeg\" alt=\"Y6b43wADfO1J635sKLRSF7EVToM3Ioij6mZWQPEN.jpeg\" /></p>\n<p> </p>\n<p><img src=\"//image.lceda.cn/pullimage/eD5mV14IDrjCkVMog4mxQkTAEnWKV1w0DXxfq39G.jpeg\" alt=\"eD5mV14IDrjCkVMog4mxQkTAEnWKV1w0DXxfq39G.jpeg\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/dC9xse5gY4PV2WdbEmXHR1lDiCuZ2cxGZaBsGS5c.jpeg\" alt=\"dC9xse5gY4PV2WdbEmXHR1lDiCuZ2cxGZaBsGS5c.jpeg\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/N53qrCb3tXvA1mlsy5c5IyqMaH3Pg6ofArQlfkq9.jpeg\" alt=\"N53qrCb3tXvA1mlsy5c5IyqMaH3Pg6ofArQlfkq9.jpeg\" /></p>\n<h1 style=\"font-size:20px;\">设计注意事项</h1>\n<p><span style=\"font-size:18px;\">安装的时候记得做好绝缘措施，尤其是220V输出这里，对人体会有伤害，目前调试比较难的地方就调频率以及充电电压和电流的设置。</span></p>\n<p><span style=\"font-size:18px;\">其他地方还是上电就能工作的，大家接电压和电流表的时候注意正负极，千万不要接反，接反容易烧表。</span></p>\n<p><span style=\"font-size:18px;\">目前测试下来工作很稳定，在散热上大家可以多配一个散热风扇。</span></p>\n<p> </p>\n<h1 style=\"font-size:20px;\">其他</h1>\n<p><span style=\"font-size:18px;\">哔哩哔哩测试视频</span></p>\n<p><a href=\"https://www.bilibili.com/video/BV1Mh4y1i7vF/\" target=\"_blank\" rel=\"noreferrer noopener\">https://www.bilibili.com/video/BV1Mh4y1i7vF/</a></p>\n<p> </p>",
+    "introduction": "48-72V输入的2KW大功率逆变器，支持不间断供电以及充电功能",
+    "grade": 3,
+    "public": true,
+    "license": "CC BY-NC-SA 3.0",
+    "text_editor_type": "richText",
+    "creator": {
+      "uuid": "a481b71acdb44a3f8c8a15fe621c992f",
+      "username": "leichaolin",
+      "nickname": "雷老师讲电子",
+      "avatar": "//image.lceda.cn/avatars/2023/9/V7aSCjFByVCbbbG8pOAFUUywTGdBC5xEYMzM0xbV.png"
+    },
+    "owner": {
+      "uuid": "a481b71acdb44a3f8c8a15fe621c992f",
+      "username": "leichaolin",
+      "nickname": "雷老师讲电子",
+      "avatar": "//image.lceda.cn/avatars/2023/9/V7aSCjFByVCbbbG8pOAFUUywTGdBC5xEYMzM0xbV.png",
+      "team": false
+    },
+    "origin": "pro",
+    "is_draft": false,
+    "publish": true,
+    "count": {
+      "views": 33944,
+      "star": 428,
+      "fork": 0,
+      "watch": 0,
+      "like": 187
+    },
+    "members": [
+      {
+        "uuid": "a481b71acdb44a3f8c8a15fe621c992f",
+        "username": "leichaolin",
+        "nickname": "雷老师讲电子",
+        "avatar": "//image.lceda.cn/avatars/2023/9/V7aSCjFByVCbbbG8pOAFUUywTGdBC5xEYMzM0xbV.png",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "id": 1,
+        "uuid": "54cd0b3241da462dbd6d43b77e7d24d2",
+        "name": "EGS002_manual_V1_1.pdf",
+        "src": "/attachments/2023/10/IiCK1Z3iSHCs37HgRycyHb57NmEGpUuqg15ISQ1Y.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 1998157,
+        "md5": "135eae6811936cdb625b14bc699e53d2",
+        "download_count": 432
+      },
+      {
+        "id": 1,
+        "uuid": "66a60f2b405847c4aa574abd5333a21d",
+        "name": "EG8010数据手册.pdf",
+        "src": "/attachments/2023/10/TUda6CYw0BdSnsOfe8fv80FXWWlf5cE4tC5jorAx.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 1375352,
+        "md5": "069e9fae47ef5bba857a35cedb9e024d",
+        "download_count": 363
+      },
+      {
+        "id": 1,
+        "uuid": "e212ef44b24840838f7e2df0e951e671",
+        "name": "EG1163S.pdf",
+        "src": "/attachments/2023/10/82TsyslPMX6jYf9hUU4dfF2yoYw52MpG6Eq7KbNm.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 1079092,
+        "md5": "e0b099111e8f44878320672fed4546b7",
+        "download_count": 348
+      },
+      {
+        "id": 1,
+        "uuid": "0079a3ad99cc4229b68b55a0dbd8fd06",
+        "name": "EG1611 芯片数据手册V1.0(20180416m).pdf",
+        "src": "/attachments/2023/10/VW5rt7GFsKRVC0JHxqpWmGHKos47KT6rlfKRFPbu.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 1120523,
+        "md5": "0c9b14c1ac896e9e03e672b0a70d675b",
+        "download_count": 369
+      },
+      {
+        "id": 1,
+        "uuid": "87f98afe9ca44c9e9ce4cf2958673e73",
+        "name": "不间断电源演示.mp4",
+        "src": "/attachments/2023/10/VIeI95kwn3m69lkZsK7U7AIcPzDsyZLwLHkjJeU3.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "size": 36327254,
+        "md5": "dc4bf9f09195c611cebc17b13fdf98bf",
+        "download_count": 863
+      }
+    ],
+    "no": 0,
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/pullimage/OqwA6CM6TswDx3QQpowVBoeoDxhwWktArhDFDMKu.jpeg",
+    "from": "userCenter",
+    "fp_demand_uuid": "96248f7dae9040f4acbcf142af45a799",
+    "updated_at": "2026-05-30T03:01:16.000Z",
+    "created_at": "2023-07-28T03:51:49.000Z",
+    "project_tags": [
+      "a08b61928be54154bb1a346f7630e4ba",
+      "c2e7a00699a2440ca5880a96466ee387",
+      "15637284a6f545128f80a11443cdf1a0"
+    ],
+    "allow_reprint": true,
+    "oshwhub_publish_at": "2023-11-06T02:48:36.000Z",
+    "high_quality": true,
+    "store": false,
+    "award_uuid": "b38f751fc5024c5096f6e175984d9a9a",
+    "updated_time": "2026-08-10T08:41:59.267Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "e6bb6d3e0c6946288c9abe26d5db1c6a",
+      "name": "星火计划2023",
+      "path": "spark2023",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 47,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0,
+    "award_info": {
+      "name": "星火2023外包优秀奖",
+      "image": "https://image.lceda.cn/easyedaResource/images/0949dc3e693f4d5f95523562f449a0aa.png",
+      "links": "https://oshwhub.com/recommend/activities%20II",
+      "uuid": "b38f751fc5024c5096f6e175984d9a9a"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>KiCad PCB Case 28 - 基于LoRa的无线通信装置</title>
+<style>
+body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Noto Sans SC",Arial,sans-serif; background:#101218; color:#e8eaf0; }
+header { padding:24px 36px; background:#182033; border-bottom:1px solid #30384f; }
+h1 { margin:0 0 6px; font-size:24px; }
+.sub { color:#aab4cc; font-size:13px; }
+.stats { display:flex; flex-wrap:wrap; gap:12px; padding:18px 36px; background:#151925; }
+.stat { min-width:120px; padding:12px 14px; background:#202638; border:1px solid #343d58; border-radius:6px; }
+.value { font-size:22px; font-weight:700; color:#6fd2ff; }
+.label { margin-top:3px; color:#aab4cc; font-size:11px; text-transform:uppercase; }
+main { padding:24px 36px 40px; }
+h2 { margin:26px 0 12px; font-size:18px; color:#6fd2ff; }
+.grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.card { background:#181d2b; border:1px solid #30384f; border-radius:6px; overflow:hidden; }
+.card h3 { margin:0; padding:10px 12px; font-size:13px; background:#202638; color:#dbe5ff; }
+object { display:block; width:100%; min-height:320px; background:white; }
+a { color:#8edbff; }
+@media (max-width:900px) { .grid { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+<h1>KiCad PCB 布局布线可视化报告</h1>
+<div class="sub">Case 28 | 基于LoRa的无线通信装置 | Board1</div>
+</header>
+<section class="stats">
+<div class="stat"><div class="value">82</div><div class="label">Components</div></div>
+<div class="stat"><div class="value">56</div><div class="label">Nets</div></div>
+<div class="stat"><div class="value">564</div><div class="label">Tracks</div></div>
+<div class="stat"><div class="value">299</div><div class="label">Vias</div></div>
+<div class="stat"><div class="value">250</div><div class="label">Zones</div></div>
+<div class="stat"><div class="value">4</div><div class="label">Copper Layers</div></div>
+</section>
+<main>
+<p>源文件：<code>/home/lxq/AiEDA/iPCL-PCB/designs/22_基于LoRa的无线通信装置/基于LoRa的无线通信装置.epro2</code> / <code>PCB1.epcb</code></p>
+<p><a href="flow_report.md">查看流程报告</a> · <a href="pcb_stats.txt">查看统计文本</a></p>
+<h2>布局</h2>
+<div class="grid">
+<div class="card"><h3>Front Layout</h3><object data="layout_front.svg" type="image/svg+xml"></object></div>
+<div class="card"><h3>Back Layout</h3><object data="layout_back.svg" type="image/svg+xml"></object></div>
+</div>
+<h2>布线</h2>
+<div class="grid">
+<div class="card"><h3>F.Cu</h3><object data="layer_f_cu.svg" type="image/svg+xml"></object></div>
+<div class="card"><h3>B.Cu</h3><object data="layer_b_cu.svg" type="image/svg+xml"></object></div>
+<div class="card"><h3>All Routing</h3><object data="routing_all.svg" type="image/svg+xml"></object></div>
+<div class="card"><h3>All Layers</h3><object data="pcb_all_layers.svg" type="image/svg+xml"></object></div>
+</div>
+<h2>3D</h2>
+<div class="grid">
+<div class="card"><h3>3D Viewer</h3><object data="3d_viewer.html" type="text/html"></object></div>
+<div class="card"><h3>GLB</h3><p style="padding:12px 14px;">生成成功</p></div>
+</div>
+</main>
+</body>
+</html>

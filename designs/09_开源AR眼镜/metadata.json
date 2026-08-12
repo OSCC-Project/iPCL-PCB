@@ -1,0 +1,225 @@
+{
+  "index": 9,
+  "name": "开源AR眼镜",
+  "url": "https://oshwhub.com/wwwwyt/yi-zhong-di-gong-hao-bian-yuan-j",
+  "category": "消费电子",
+  "subcategory": "智能穿戴与健康&虚拟现实",
+  "scale": "200元件规模",
+  "note": "只看主板电路",
+  "username": "wwwwyt",
+  "path": "yi-zhong-di-gong-hao-bian-yuan-j",
+  "uuid": "35a274ac776348b2aacbfc1f09df727a",
+  "api_detail": {
+    "uuid": "35a274ac776348b2aacbfc1f09df727a",
+    "path": "wwwwyt/yi-zhong-di-gong-hao-bian-yuan-j",
+    "name": "开源AR眼镜",
+    "content": "<h2>1.1总体概览</h2>\n<p>第一章对项目整体进行简介，顺水推舟地介绍了光学部分的组装方法。</p>\n<p>第二章详细介绍了AR的电路部分、程序部分。</p>\n<p>第三章向大家介绍目前项目状态。</p>\n<p>整个制作流程是先拼装完光学部分，然后和屏幕对齐，再将硬件电路烧入固件。</p>\n<h2>1.2特征</h2>\n<p>OSAR偏向于探索，搭载了1920x1080的OLED显示器。上半部分是一个可拆卸</p>\n<p>热成像模块，摘掉后，内部还有一个红外摄像头。</p>\n<p><img src=\"//image.lceda.cn/pullimage/WhvTw1s9JHZLfPBa7IudcP5nitQyY94EDxPbnYTI.jpeg\" alt=\"\" width=\"441\" height=\"238\" /></p>\n<p>这是看番剧功能：</p>\n<p><img src=\"//image.lceda.cn/pullimage/TCqRso5GJwsGVMnXJ8DSqo8m36n88BasHCBAHUpI.jpeg\" alt=\"\" width=\"440\" height=\"470\" /></p>\n<p>这是手势识别demo（基于midiapipe)：</p>\n<p><img src=\"//image.lceda.cn/pullimage/kpTCVxJf0o1Nitwc9KOsvsWF1SymULQ04B8xF0Pb.jpeg\" alt=\"\" width=\"440\" height=\"308\" /></p>\n<h2>1.3主板原理</h2>\n<p>要驱动显示器就必须有一个计算平台做支持，最早我试过手机直接驱动</p>\n<p>显示部分（手机HDMI输出）但自己开发的应用无法调用眼镜上的红外摄</p>\n<p>像头，没有红外摄像头，夜视仪和自制的应用就跑不了了。我也试过自己</p>\n<p>画的开发板，嘉立创六层沉金工艺，上面跑的是Linux，驱动光学部分没问</p>\n<p>题，但是没法跑安卓AR应用，也就是看不了星星做不了测量。那么有没有</p>\n<p>兼容性好功能齐全的方案呢？我想到这种广告机上常用的嵌入式安卓模组：</p>\n<p>RK3399。也就是视频中出现的那一款，随着时间的推移，我购买了市面上</p>\n<p>在售的AR眼镜雷鸟Air，经过对市场的调研，我认为：<strong>2024年的AR行业没</strong></p>\n<p><strong>必要野心太大，跑个安卓系统，什么功能都有，顶替手机，而是做好专一</strong></p>\n<p><strong>功能，</strong><strong>以toB的思维，在特定场合成为刚需就行了。原因无它，硬件算力</strong></p>\n<p><strong>和电池续航不行，这么操作合适。</strong><strong>下面请看架构图：</strong></p>\n<p><img src=\"//image.lceda.cn/pullimage/DxLXjKs3ZijKxwWmY2TZjPsYAK2hXIuJ42i8XINW.jpeg\" alt=\"\" width=\"452\" height=\"254\" /></p>\n<p>你会发现ar眼镜其实本质上就是一个显示器外加一个摄像头挂在脸上，所以</p>\n<p>他连手机连电脑连开发板都没什么问题的，包括树莓派。早期测试的时候树</p>\n<p>莓派也用过（我怎么把所有开发板都玩了一遍？？）只是我现在选择修改h6</p>\n<p>16为基础的柚木派，这样操作能够带来最高的效费比，帮你完成以最低成本</p>\n<p>完成看番剧、热成像热融合、夜视仪，这些核心诉求，也就是又实用又帅，</p>\n<p>热成像的教程请看附件doc文档。主板可用镜像：</p>\n<p><a href=\"https://115.com/s/swzzh0c33g7?password=k716&amp;#&lt;br\" target=\"_blank\" rel=\"noopener\"><br />https://115.com/s/swzzh0c33g7?password=k716&amp;#</a><a href=\"https://115.com/s/swzzw6a33g7?password=l2c0&amp;#&lt;br\" target=\"_blank\" rel=\"noopener\"><br />https://115.com/s/swzzw6a33g7?password=l2c0&amp;#<br /></a></p>\n<p> </p>\n<p>主板的详细资料见工程PCB部分，HDMI转接电路是必须的，否则无法工作</p>\n<p><img src=\"//image.lceda.cn/pullimage/XudGbZOtbw0xiEsvX3Y21FsGXSsGYrc4A2GqSnrc.png\" alt=\"\" width=\"457\" height=\"273\" /></p>\n<p>我个人更建议你用嘉立创SMT，毕竟主板上面3个BGA很难一次焊接成功。</p>\n<h2>1.4显示部分</h2>\n<p>如果你想要组装的话，请看1.4.2动画拆解或<strong>附件视频</strong>，其中，底部蓝色的是</p>\n<p>透镜（凸透镜和半透半反组合）</p>\n<div>\n<h3>1.4.1透镜原理</h3>\n</div>\n<div>\n<div>\n<p>屏幕离眼睛这么近到底看不看得清？眼睛中的晶状体都能自动调节对焦距离，</p>\n<p>使我们能看清物体，但是距离过近会超出眼睛的对焦能力，也就是看不清。</p>\n<p>VR的解决方案是在屏幕前加一个透镜，使你的眼睛误以为物体距离很远。AR</p>\n<p>在同样原理的基础上还增加一个半透半反镀层，这样就做到虚拟和现实的叠</p>\n<p>加显示。</p>\n<h3>1.4.2组装</h3>\n<p>关键部分的光学透镜，大家可以上闲鱼去买，很容易找的，买来以后要把上面</p>\n<p>的lcos部分拆掉，上面的lcos没有开源的驱动可以用，拆下来以后替换成我们</p>\n<p>自己的ecx335屏幕。屏幕可以在淘宝买到。价格在850内。</p>\n<p><img src=\"//image.lceda.cn/pullimage/AAHseCZyXsP3w9xSCsiADj2y2pHjh0pGyRr91yMF.jpeg\" alt=\"\" width=\"442\" height=\"982\" /></p>\n</div>\n</div>\n<p>中间是眼镜架和OLED、驱动板，型号为ECX335AF,上面是摄像头和其支架</p>\n<p> </p>\n<p><img src=\"//image.lceda.cn/pullimage/3qIPMUlR4Eh7klQ2bZQnPLH5c1rNApU2kLYreFBL.png\" alt=\"\" width=\"466\" height=\"420\" /></p>\n<p>组装第一步，摄像头和透镜分别安装到各自的支架，型号为OV5647（IR）</p>\n<p><img src=\"//image.lceda.cn/pullimage/LNslBKtOYOkMhJvwRSni4WDspNpFfHqvpf0LkMq6.png\" alt=\"\" width=\"456\" height=\"497\" /></p>\n<p>组装第二步，ECX335装到下部分，和透镜的成像部分严格对齐，</p>\n<p>驱动板装到上半部分，两者的FPC线在图中没有呈现，但是安装时请小心操作</p>\n<p><img src=\"//image.lceda.cn/pullimage/qHebMPSrJZYNy0MeoQyJiRkH1JzIbNmJmmoIn6xA.png\" alt=\"\" width=\"456\" height=\"464\" /></p>\n<p>最后一步，上下部分粘接起来，这边建议用AB胶。粘接完成后连接HDMI线和USB。</p>\n<p><img src=\"//image.lceda.cn/pullimage/V57OVONjVmUl4Krcmeagm6akr8kTVbGcErfXqT2Z.png\" alt=\"\" width=\"455\" height=\"397\" /></p>\n<p>显示效果如图：无紫边、畸变，但是FOV不大，入眼亮度在300nit左右。</p>\n<p><img src=\"//image.lceda.cn/pullimage/mQyi68oBBB2yLBzK5ZYTMEEZfl1knEwjrPjNMSve.png\" alt=\"\" width=\"465\" height=\"262\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/WONlaB6vgwiM4d30neSSNpbNicMf1KrykPxH3m8R.png\" alt=\"\" width=\"465\" height=\"290\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/nqmGAl2j8LsKbLCW5SaZlhWMuPoYfy4gEJetLx69.png\" alt=\"\" width=\"465\" height=\"267\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/IggkORpA02VDrIfzJ26x60s1aye2qpiLhMT5KboX.png\" alt=\"\" width=\"464\" height=\"239\" /></p>\n<p>组装前后，重量67g，还行。</p>\n<p> </p>\n<h2>1.5开源协议</h2>\n<p><span style=\"color:#000000\">本项目为MIT协议，商业开发不需要授权，不能使用原作者的logo和名字。</span></p>\n<p> </p>\n<h2 style=\"font-size:20px\"><span style=\"font-size:24px\">1.6项目属性</span></h2>\n<p><span style=\"color:#000000\">本项目为首次公开，为本人原创项目。项目未曾在别的比赛中获奖。</span></p>\n<p> </p>\n<h2>1.7参考：</h2>\n<p><a href=\"/gloomyghost/yuzukih616\" target=\"_blank\" rel=\"noopener\">Yuzuki Chameleon 基于H616的卡片电脑 - 嘉立创EDA开源硬件平台 (oshwhub.com)</a></p>\n<p>主板基于柚木派修改而来，USB、HDMI、音频、以太网</p>\n<p>改为适合小空间的板载接口，修改晶振料号来匹配立创商城库。</p>\n<p> </p>\n<h2>1.8热成像</h2>\n<p>其实热成像本质上是一种摄像头，消费级常用的是usb里面跑uvc协议，那uvc的话</p>\n<p>就简单了，各种各样的软件都可以解码，甚至不需要自己写程序。我公开的这种办</p>\n<p>法优势是成本比较低，对个人爱好者比较友善，毕竟是搓二手货嘛（乐），由于这</p>\n<p>块内容比较大，我单独做成了doc附件，请大家下载查看。</p>\n<p> </p>\n<div>\n<h2>2.1给OSAR烧写程序</h2>\n<p>需要自备TF卡读卡器和８Ｇ卡一张。</p>\n<p><img src=\"//image.lceda.cn/pullimage/r2XiqTlJWJ3RhytWj8JHjcpEmpE5BI6DSv8Lu9Mn.png\" alt=\"\" width=\"439\" height=\"426\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/k8VpKthDh56u8w5GVNOwqO5UvLoILaln54vukHm7.png\" alt=\"\" width=\"436\" height=\"175\" /></p>\n<p><img src=\"//image.lceda.cn/pullimage/7xb5q3UXK4W3gPXNj8tztOCOWDXgmDCuTaner3yQ.png\" alt=\"\" width=\"439\" height=\"367\" /></p>\n<p>图片来自cv6851453，下面介绍硬件连接方法：</p>\n<p><img src=\"//image.lceda.cn/pullimage/5j0QUMRL0dKjZ3uneJ9SKUWrnG9tqwAf8Yn8Yfst.jpeg\" alt=\"\" width=\"533\" height=\"300\" /></p>\n<p>因为硬件送了人的关系（上文），我在这里用图文讲解具体操作流程。</p>\n<p>外置供电就是可以直接接充电宝，或者充电器。 Usb摄像头不是必须的，</p>\n<p>如果你有的话就接，接了，可以进行一些交互性的开发，</p>\n<p>接法是D- D+ 5V GND从上到下。如果你需要锂电池供电的话，可以试试</p>\n<p>直接把锂电池接到母线上(PS和GND)。TF卡是必须的，否则会从内置的em</p>\n<p>mc启动。右下角这个接oled指的就是ecx335的驱动板，你只要买一根普通</p>\n<p>hdmi转Micro hdmi的线，把驱动板（可在淘宝购买）和主板通过HDMI线</p>\n<p>接起来即可（如下图）记得FPC排线要小心操作。</p>\n<p><img src=\"//image.lceda.cn/pullimage/ZGog5RWKH52yAmNXYJMnXaXZsXM3nIRgP5ucOHXN.jpeg\" alt=\"\" width=\"225\" height=\"300\" /><img src=\"//image.lceda.cn/pullimage/iOYIcNlcuYcSege2WaH7s2vLfzcUMjPJuXXJBtXb.jpeg\" alt=\"\" width=\"225\" height=\"300\" /></p>\n<p>接完以后可以看到系统画面，此时，播放电影，充当显示器是没问题的</p>\n<p><img src=\"//image.lceda.cn/pullimage/7MtsO7vygRBXebbqq7UAXYaVNvyozLwgfd20aBKr.png\" alt=\"\" width=\"451\" height=\"367\" /></p>\n<p>光学部分的组装就可以跳到1.4.2组装了。这里就是电路部分的组装和系统烧录。</p>\n<p> </p>\n<p><strong>如果你觉得这个主板裸在外面比较危险的话，</strong></p>\n<p><strong><img src=\"//image.lceda.cn/pullimage/Q8b9HJ414G1iDi9YADFTimCxMcOQx4Gs5aIfpbyi.png\" alt=\"\" width=\"449\" height=\"537\" /></strong></p>\n<p><strong>你可以像我一样拆一个钢铁侠的胸壳，把电池和主板都装在里面</strong></p>\n<p><strong><img src=\"//image.lceda.cn/pullimage/7bRYn6URNzCTyQoC4JbsEhvUvRDdAyM9mlQamMgZ.png\" alt=\"\" width=\"449\" height=\"241\" /></strong></p>\n<p><strong>然后用磁铁吸在衣服上。</strong></p>\n<p><strong><img src=\"//image.lceda.cn/pullimage/hiNMWp9Ox4ngaiMRVmESZ0L8ttdNCpk1f1aDRHK8.png\" alt=\"\" width=\"449\" height=\"467\" /></strong></p>\n<p><strong>这样就像市面上主流的ar眼镜一样，能看番，满足娱乐需求.</strong></p>\n<p>相信你看到这里，就能理解我说的“AR不神秘，和手机电脑一样，都是接受</p>\n<p>用户的数据输入,然后通过事先编写的程序对数据进行处理,最后将处理结果</p>\n<p>输出给用户的过程，只不过AR的显示系统更厉害而已”</p>\n<h2>3.1未来展望</h2>\n<p><img src=\"//image.lceda.cn/pullimage/MjbKnE70TxmdVnYe7RV7ZtQZzV8VhDYEz801LaOS.jpeg\" alt=\"\" width=\"441\" height=\"252\" /></p>\n<p>告诉大家一个好消息littleAR项目已经拿到投资了，计划于明年年中做出量产机。</p>\n<p>另外我也在研发新一代的基于光波导的ar系统，如上图，欢迎各位能人志士加入。</p>\n</div>",
+    "introduction": "OSAR是一款低难度易复刻、功能实用，成本千元的AR眼镜。欢迎各位能人志士为项目添砖加瓦",
+    "grade": 3,
+    "public": true,
+    "license": "MIT License",
+    "text_editor_type": "richText",
+    "creator": {
+      "uuid": "d8f3a6bd56b64afca3d7ecacdfdad439",
+      "username": "wwwwyt",
+      "nickname": "wwwwyt",
+      "avatar": "/image/avatar-default.png"
+    },
+    "owner": {
+      "uuid": "d8f3a6bd56b64afca3d7ecacdfdad439",
+      "username": "wwwwyt",
+      "nickname": "wwwwyt",
+      "avatar": "/image/avatar-default.png",
+      "team": false
+    },
+    "origin": "pro",
+    "is_draft": false,
+    "publish": true,
+    "count": {
+      "views": 81440,
+      "star": 940,
+      "fork": 0,
+      "watch": 0,
+      "like": 485
+    },
+    "members": [
+      {
+        "uuid": "d8f3a6bd56b64afca3d7ecacdfdad439",
+        "username": "wwwwyt",
+        "nickname": "wwwwyt",
+        "avatar": "/image/avatar-default.png",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "id": 1,
+        "uuid": "3ee8c06af2324ccb9f48826bd67f1577",
+        "name": "三维外壳OSAR.step",
+        "src": "/attachments/2023/4/zq978wUQqTtAuZbo6QsWt5H3IJeAn1yozhAgdLcP.txt",
+        "mime": "application/octet-stream",
+        "ext": "txt",
+        "size": 7394230,
+        "md5": "c636a4d2607244df3b5d0ff29e10b9a1",
+        "download_count": 1562
+      },
+      {
+        "id": 1,
+        "uuid": "bbc85809a2ac4fee968c88461c0786e4",
+        "name": "400元搞定热成像.docx",
+        "src": "/attachments/2023/7/glRLxyXUUvgnKZEemerNkdnEyV1iZs3l3JBjPxrA.docx",
+        "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "ext": "docx",
+        "size": 1263937,
+        "md5": "fc2872a0123a7468f107e0e1d0da27bd",
+        "download_count": 1582
+      },
+      {
+        "id": 1,
+        "uuid": "0dea8ed0bff742c592d6cac936fff1f6",
+        "name": "USB摄像头转接支架.step",
+        "src": "/attachments/2023/12/iUofUBRCzHzY63u5pG2EzZpsL59ZWlMhvEPkJVO4.txt",
+        "mime": "application/octet-stream",
+        "ext": "txt",
+        "size": 41630,
+        "md5": "fadfb4c2372b41fec838043749971e64",
+        "download_count": 456
+      },
+      {
+        "id": 1,
+        "uuid": "9e95932d07fe4c14a00879d53011aef6",
+        "name": "手势识别简易代码参考用.zip",
+        "src": "/attachments/2023/12/aVHqeL3yzGHR91bmUI1Dvemv9B3LLeTV7ojEYGZl.zip",
+        "mime": "application/zip",
+        "ext": "zip",
+        "size": 5187,
+        "md5": "00f134ba2e2d24982b36344b82938f48",
+        "download_count": 504
+      },
+      {
+        "id": 1,
+        "uuid": "5fac4d6bcf0f4458a67fdf2a7a8571f8",
+        "name": "无论是谁都能看得懂的新手教程.mp4",
+        "src": "/attachments/2023/12/lOZYjESZj95OIHde4g4xrjDiXVT6nuCKO2ekqpsC.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "size": 49133865,
+        "md5": "4b41e5d07cac9774a52f242e0b25b77b",
+        "download_count": 2812
+      },
+      {
+        "size": 35753816,
+        "name": "建图（unity）.apk",
+        "mime": "application/vnd.android.package-archive",
+        "ext": "apk",
+        "uuid": "d72dd04646074962a8cb6b6917b82d8c",
+        "md5": "0b9a5d0ec7668fc5af9a3ac6c177adb2",
+        "src": "/oshwhub/project/attachments/e904511e66f04595bcabc0ea285b8669.apk",
+        "download_count": 243
+      },
+      {
+        "size": 51358188,
+        "name": "战斗力检测.apk",
+        "mime": "application/vnd.android.package-archive",
+        "ext": "apk",
+        "uuid": "737f8977b0894b13ae047c4a26fb78a8",
+        "md5": "b45a5ea397ca5bafbcdb48716cb0aaa6",
+        "src": "/oshwhub/project/attachments/019e8d2ddd15432a89e4fe117d651724.apk",
+        "download_count": 227
+      },
+      {
+        "size": 79357804,
+        "name": "建图（SLAM）.apk",
+        "mime": "application/vnd.android.package-archive",
+        "ext": "apk",
+        "uuid": "ebd1fee48bfb49128ec8ba14ebadbee7",
+        "md5": "a708e5718ff6135cc661e2446d8f96e2",
+        "src": "/oshwhub/project/attachments/2a12e1931caa405fb33ba636a90d898f.apk",
+        "download_count": 171
+      },
+      {
+        "size": 35336370,
+        "name": "建图（SLAM）.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "48bee54ece874aa9bd5be97af18e72da",
+        "md5": "9a13457a55df93ef7cef2a67b423ed73",
+        "src": "/oshwhub/project/attachments/93e687853fd740e29da7dff9675b564c.zip",
+        "download_count": 161
+      },
+      {
+        "size": 44040192,
+        "name": "建图（SLAM）.z01",
+        "mime": "application/octet-stream",
+        "ext": "z01",
+        "uuid": "8a1e3960e9fd4cc380a85b9b735f15f4",
+        "md5": "82d9c2ed4b5e95d1aca33533e33c37ad",
+        "src": "/oshwhub/project/attachments/2db278f0a16f4167845ba37232502bb4.z01",
+        "download_count": 117
+      },
+      {
+        "size": 11420125,
+        "name": "巨哥Mag160软件.apk",
+        "mime": "application/vnd.android.package-archive",
+        "ext": "apk",
+        "uuid": "f56419ff69894aee82d51ca602b2759a",
+        "md5": "14d8206b4a9f8f02b4b6164f8dd26b6e",
+        "src": "/oshwhub/project/attachments/efa8c54cd7824a6f932f5b097bf19ff5.apk",
+        "download_count": 128
+      }
+    ],
+    "no": 0,
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/pullimage/bYB6i4o5NTiJo67bg6Bem1rhwOJ0OoBOwQGJON5K.jpeg",
+    "from": "userCenter",
+    "competition_record_uuid": "dcaef4c68b8e4474887a59c577e44715",
+    "updated_at": "2026-05-30T03:01:27.000Z",
+    "created_at": "2023-04-07T02:51:45.000Z",
+    "project_tags": [
+      "6f6eefa0fcb54ab4b75469c64646d9e9",
+      "252438513ded4c87b8bac438d006a0b8",
+      "15637284a6f545128f80a11443cdf1a0"
+    ],
+    "oshwhub_publish_at": "2024-11-04T08:52:11.000Z",
+    "high_quality": true,
+    "tags": [],
+    "allow_reprint": false,
+    "is_hide": false,
+    "reproduction_cost": {},
+    "store": false,
+    "award_uuid": "a9233adb8daf43eab54be806273b1b5e",
+    "updated_time": "2026-08-10T10:37:25.833Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "e6bb6d3e0c6946288c9abe26d5db1c6a",
+      "name": "星火计划2023",
+      "path": "spark2023",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 101,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0,
+    "award_info": {
+      "name": "星火2023自由特等奖",
+      "image": "https://image.lceda.cn/easyedaResource/images/22c85b85bff44269b1fa2ba21d382085.png",
+      "links": "https://oshwhub.com/recommend/activities%20II",
+      "uuid": "a9233adb8daf43eab54be806273b1b5e"
+    }
+  }
+}

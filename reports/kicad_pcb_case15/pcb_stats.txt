@@ -1,0 +1,13 @@
+project: 开源AR眼镜
+design_index: 9
+board: HDMI转接
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/09_开源AR眼镜/开源AR眼镜.epro2
+source_epcb: 主板PCB.epcb
+components: 190
+nets: 206
+tracks: 4461
+vias: 610
+zones: 1488
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 1327965

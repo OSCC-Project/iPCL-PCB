@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#DCF8C6" />  <!-- 绿色背景颜色，类似 WhatsApp 样式 -->
+    <corners android:radius="16dp" />  <!-- 设置圆角 -->
+    <padding
+        android:left="10dp"
+        android:top="6dp"
+        android:right="10dp"
+        android:bottom="6dp" /> <!-- 设置气泡内边距 -->
+</shape>

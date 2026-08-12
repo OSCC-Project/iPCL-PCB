@@ -1,0 +1,1388 @@
+{
+  "name": "1",
+  "type": "ARM",
+  "dependenceList": [
+    {
+      "groupName": "STM32F4xx_DFP",
+      "depList": [
+        {
+          "name": "STM32CubeLL.UTILS",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeFramework.STM32CubeMX",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.Cortex",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.GPIO",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.RCC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.PWR",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.Common",
+          "incList": [
+            ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Inc"
+          ],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeFramework.Classic",
+          "incList": [
+            ".pack/Keil/STM32F4xx_DFP.2.14.0/CMSIS/Driver/Config",
+            ".pack/Keil/STM32F4xx_DFP.2.14.0/MDK/Templates/Inc"
+          ],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.RCC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.PWR",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.Common",
+          "incList": [
+            ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Inc",
+            ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+          ],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.USB",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.USART",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.TIM",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.SPI",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.SDMMC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.RTC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.RNG",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.CAN",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.ADC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.ETH",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.EXTI",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.Flash",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.DMA",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.DCMI",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.DAC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.CRC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.I2C",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.HCD",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.I2S",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.IWDG",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.UART",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.USART",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.WWDG",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.DMA",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.I2C",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.LPTIM",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.DMA2D",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.ADC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.CRC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.DAC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.EXTI",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.FMC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.FSMC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeLL.GPIO",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.RNG",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.RTC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.SD",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.Smartcard",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.SMBUS",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.SPI",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.SRAM",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.TIM",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.IRDA",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.MMC",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.NAND",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.NOR",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.PCCard",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "STM32CubeHAL.PCD",
+          "incList": [],
+          "libList": [],
+          "defineList": []
+        },
+        {
+          "name": "Startup",
+          "incList": [
+            ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+          ],
+          "libList": [],
+          "defineList": []
+        }
+      ]
+    }
+  ],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "Application",
+        "files": [],
+        "folders": [
+          {
+            "name": "MDK-ARM",
+            "files": [
+              {
+                "path": "startup_stm32f407xx.s"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "User",
+            "files": [],
+            "folders": [
+              {
+                "name": "Core",
+                "files": [
+                  {
+                    "path": "../Core/Src/main.c"
+                  },
+                  {
+                    "path": "../Core/Src/stm32f4xx_it.c"
+                  },
+                  {
+                    "path": "../Core/Src/stm32f4xx_hal_msp.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "USB_DEVICE",
+                "files": [],
+                "folders": [
+                  {
+                    "name": "App",
+                    "files": [
+                      {
+                        "path": "../USB_DEVICE/App/usb_device.c"
+                      },
+                      {
+                        "path": "../USB_DEVICE/App/usbd_desc.c"
+                      },
+                      {
+                        "path": "../USB_DEVICE/App/usbd_cdc_if.c"
+                      }
+                    ],
+                    "folders": []
+                  },
+                  {
+                    "name": "Target",
+                    "files": [
+                      {
+                        "path": "../USB_DEVICE/Target/usbd_conf.c"
+                      }
+                    ],
+                    "folders": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drivers",
+        "files": [],
+        "folders": [
+          {
+            "name": "STM32F4xx_HAL_Driver",
+            "files": [
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "CMSIS",
+            "files": [
+              {
+                "path": "../Core/Src/system_stm32f4xx.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Middlewares",
+        "files": [],
+        "folders": [
+          {
+            "name": "USB_Device_Library",
+            "files": [
+              {
+                "path": "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c"
+              },
+              {
+                "path": "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "<deps>",
+        "files": [
+          {
+            "path": "RTE_Components.h"
+          }
+        ],
+        "folders": [
+          {
+            "name": "STM32F4xx_DFP",
+            "files": [],
+            "folders": [
+              {
+                "name": "STM32CubeLL.UTILS",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeFramework.STM32CubeMX",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/MDK/CubeMX/run_STM32CubeMX.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.Cortex",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.GPIO",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.RCC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.PWR",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.Common",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeFramework.Classic",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/CMSIS/Driver/Config/RTE_Device.h"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/MDK/Templates/Inc/stm32f4xx_hal_conf.h"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.RCC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.PWR",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_pwr.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.Common",
+                "files": [],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.USB",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.USART",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.TIM",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.SPI",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.SDMMC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.RTC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rtc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.RNG",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rng.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.CAN",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.ADC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.ETH",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.EXTI",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.Flash",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.DMA",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.DCMI",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.DAC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.CRC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.I2C",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.HCD",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.I2S",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.IWDG",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.UART",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.USART",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.WWDG",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.DMA",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.I2C",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_i2c.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.LPTIM",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_lptim.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.DMA2D",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dma2d.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.ADC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.CRC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_crc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.DAC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_dac.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.EXTI",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.FMC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.FSMC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeLL.GPIO",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.RNG",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.RTC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.SD",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.Smartcard",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.SMBUS",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.SPI",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.SRAM",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.TIM",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.IRDA",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.MMC",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.NAND",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.NOR",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.PCCard",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "STM32CubeHAL.PCD",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "Startup",
+                "files": [
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f407xx.s"
+                  },
+                  {
+                    "path": ".pack/Keil/STM32F4xx_DFP.2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c"
+                  }
+                ],
+                "folders": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "STM32F407VETx",
+  "packDir": ".pack/Keil/STM32F4xx_DFP.2.14.0",
+  "miscInfo": {
+    "uid": "7833e25f1b2a20b94bb018ab8d3b5579"
+  },
+  "targets": {
+    "1": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "",
+                "size": ""
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": true,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "STLink",
+      "uploadConfig": {
+        "bin": "",
+        "proType": "SWD",
+        "resetMode": "SWrst",
+        "runAfterProgram": true,
+        "speed": 4000,
+        "address": "",
+        "elFile": "None",
+        "optionBytes": ".eide/1.st.option.bytes.ini",
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".",
+          "../USB_DEVICE/App",
+          "../USB_DEVICE/Target",
+          "../Core/Inc",
+          "../Drivers/STM32F4xx_HAL_Driver/Inc",
+          "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
+          "../Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+          "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+          "../Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+          "../Drivers/CMSIS/Include",
+          ".cmsis/include",
+          "RTE/_1"
+        ],
+        "libList": [],
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32F407xx"
+        ]
+      },
+      "builderOptions": {
+        "AC5": {
+          "version": 4,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "use-microLIB": false,
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-3",
+            "one-elf-section-per-function": true,
+            "c99-mode": true,
+            "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "warnings": "all-warnings"
+          },
+          "asm-compiler": {},
+          "linker": {
+            "output-format": "elf",
+            "xo-base": "",
+            "ro-base": "",
+            "rw-base": ""
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}

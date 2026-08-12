@@ -1,0 +1,3 @@
+../User/servo.c:29:6:Servo_Init	1
+../User/servo.c:52:6:Servo_SetAngle	5
+../User/servo.c:78:6:Servo_SetAngles	5

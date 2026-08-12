@@ -1,0 +1,13 @@
+project: 心电监护（含12导联功能）
+design_index: 11
+board: Board1
+source_epro2: /home/lxq/AiEDA/iPCL-PCB/designs/11_心电监护（含12导联功能）/心电监护（含12导联功能）.epro2
+source_epcb: PCB1.epcb
+components: 347
+nets: 285
+tracks: 3195
+vias: 476
+zones: 9
+layer_count: 4
+copper_layers: F.Cu, In1.Cu, In2.Cu, B.Cu
+kicad_pcb_bytes: 778135

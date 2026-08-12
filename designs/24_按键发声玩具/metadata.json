@@ -1,0 +1,100 @@
+{
+  "index": 24,
+  "name": "按键发声玩具",
+  "url": "https://oshwhub.com/ketos/key-sound-toy",
+  "category": "创意设计",
+  "subcategory": "网红DIY",
+  "scale": "100元件规模",
+  "note": null,
+  "username": "ketos",
+  "path": "key-sound-toy",
+  "uuid": "5160a40d60f745d493622a8dccc54203",
+  "api_detail": {
+    "uuid": "5160a40d60f745d493622a8dccc54203",
+    "name": "按键发声玩具",
+    "content": "## 视频链接：\n[B站视频--功能演示及介绍](https://www.bilibili.com/video/BV1QWKLePENJ/)\n## 项目简介\n\n本项目是基于CAB国产单片机和语音IC缝合的一款发声玩具，可以直接驱动8Ω 0.5w的扬声器，可以播放随机音频。\n\n## 项目功能\n\n本设计体积较小，可嵌入各种小型玩具中；含有一颗按键，按压后可按顺序或随机播放一段音频。音频支持导入16k码率，可反复导入。\n\n## 注意事项\n\n电感可换成更大的电感，以增强带载能力。",
+    "grade": 1,
+    "origin": "pro",
+    "is_draft": false,
+    "thumb": "https://image.lceda.cn/oshwhub/pullImage/ab08b30fd9e84932a112422b769872f6.png",
+    "public": true,
+    "publish": true,
+    "owner": {
+      "uuid": "3528f4769abe4bb483e317e9d1d5d805",
+      "username": "ketos",
+      "nickname": "ketos",
+      "avatar": "/image/avatar-default.png",
+      "team": false
+    },
+    "creator": {
+      "uuid": "3528f4769abe4bb483e317e9d1d5d805",
+      "username": "ketos",
+      "nickname": "ketos",
+      "avatar": "/image/avatar-default.png"
+    },
+    "members": [
+      {
+        "uuid": "3528f4769abe4bb483e317e9d1d5d805",
+        "nickname": "ketos",
+        "username": "ketos",
+        "avatar": "/image/avatar-default.png",
+        "role": 1
+      }
+    ],
+    "path": "ketos/key-sound-toy",
+    "created_at": "2025-02-11T16:36:31.585Z",
+    "updated_at": "2025-02-13T06:13:38.310Z",
+    "tags": [],
+    "count": {
+      "views": 2794,
+      "star": 28,
+      "fork": 0,
+      "watch": 0,
+      "like": 12
+    },
+    "version": "",
+    "attachments": [
+      {
+        "size": 102798,
+        "name": "random.7z",
+        "mime": "application/x-compressed",
+        "ext": "7z",
+        "uuid": "e7f68a39be204b64b44f816d9a28d8a8",
+        "md5": "f76a8677c315bae15d502579d3f77b62",
+        "src": "/oshwhub/project/attachments/3dddb1e6648e487ebbe9c81e4a0707b1.7z",
+        "download_count": 63
+      }
+    ],
+    "license": "GPL 3.0",
+    "project_tags": [
+      "d3cacd30fc1a4dbea35aba2f00c755e3",
+      "c2e7a00699a2440ca5880a96466ee387",
+      "e5831c441f25423d88a7311a9b276871"
+    ],
+    "introduction": "1.可随机播放一段已导入的音频；\n2.可导入420k音频；\n3.使用两节七号电池供电。",
+    "text_editor_type": "markdown",
+    "allow_comment": true,
+    "allow_reprint": false,
+    "from": "oshwhub",
+    "no": 0,
+    "archive": false,
+    "reproduction_cost": {},
+    "oshwhub_publish_at": "2025-02-13T06:17:18.000Z",
+    "store": false,
+    "updated_time": "2026-08-10T08:58:24.216Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": null,
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 1,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

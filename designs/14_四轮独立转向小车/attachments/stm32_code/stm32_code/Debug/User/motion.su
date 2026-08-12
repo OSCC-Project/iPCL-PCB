@@ -1,0 +1,2 @@
+../User/motion.c:38:6:MOTION_Inverse_Resolve	112	static
+../User/motion.c:144:6:printMotionOutput	24	static

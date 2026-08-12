@@ -1,0 +1,191 @@
+{
+  "index": 23,
+  "name": "[已验证] PN532RFID/NFC调试器",
+  "url": "https://oshwhub.com/yizhidianzi/pn532-rfid-deugger",
+  "category": "创意设计",
+  "subcategory": "NFC卡",
+  "scale": "100元件规模",
+  "note": null,
+  "username": "yizhidianzi",
+  "path": "pn532-rfid-deugger",
+  "uuid": "acdc7f68acca48a78c3b67395390b565",
+  "api_detail": {
+    "uuid": "acdc7f68acca48a78c3b67395390b565",
+    "path": "yizhidianzi/pn532-rfid-deugger",
+    "name": "[已验证] PN532RFID/NFC调试器",
+    "content": "基于NXP的经典NFC芯片-PN532的RFID/NFC调试器，可直接配合上位机使用，破解无加密/低加密小区门禁卡或者带有darkside漏洞的M1卡，也可配合promark/chameleon使用。\n\n具体使用方法，在附件和网上都可找到，在此不再赘述\n\n**注意：在焊接时，R13电阻短接，R3,R4电阻短接；若不需要使用串口芯片，串口部分可以不焊接，可使用预留的调试接口，可使用USB转串口模块配合使用**\n\n附件中有3D文件提供，需要自备M2*3*3的热熔螺母和M2*6的沉头螺丝，组装方法搜索3D打印，热熔螺母即可。\n\n最后附带了收集于互联网的基于PN532的RFID/NFC调试工具，请自觉遵守相关法律使用，若有侵权，请联系删除(另：如有解压密码，其密码为52pojie)。\n\n最后是几张使用和测量图，以及一个简单的视频。\n\n![微信图片_20240615225145.jpg](//image.lceda.cn/oshwhub/499ac7dffa13481b93c0839cfac42e03.jpg)\n（示波器测量的感应线圈端波形）\n\n\n![微信图片_20240615225150.jpg](//image.lceda.cn/oshwhub/994aa6e3b6cc4200958961e12a0978df.jpg)\n（尝试使用darkside漏洞进行读取卡片信息（标签在读卡器下方））",
+    "grade": 1,
+    "public": true,
+    "license": "GPL 3.0",
+    "creator": {
+      "uuid": "841a5bfd09904610a976f5a545ffcd00",
+      "username": "yizhidianzi",
+      "nickname": "博丽灵梦",
+      "avatar": "//image.lceda.cn/avatars/2021/3/cEjhYCJ6n15nvDyWOdTPo4ir80Gj7Fze3YkrHKVA.jpeg"
+    },
+    "text_editor_type": "markdown",
+    "owner": {
+      "uuid": "841a5bfd09904610a976f5a545ffcd00",
+      "username": "yizhidianzi",
+      "nickname": "博丽灵梦",
+      "avatar": "//image.lceda.cn/avatars/2021/3/cEjhYCJ6n15nvDyWOdTPo4ir80Gj7Fze3YkrHKVA.jpeg",
+      "team": false
+    },
+    "count": {
+      "views": 6663,
+      "star": 83,
+      "fork": 0,
+      "watch": 0,
+      "like": 32
+    },
+    "members": [
+      {
+        "uuid": "841a5bfd09904610a976f5a545ffcd00",
+        "username": "yizhidianzi",
+        "nickname": "博丽灵梦",
+        "avatar": "//image.lceda.cn/avatars/2021/3/cEjhYCJ6n15nvDyWOdTPo4ir80Gj7Fze3YkrHKVA.jpeg",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "size": 8510725,
+        "name": "PN532测试软件.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "7d472dc9436b4328bde653cf74ab94c0",
+        "md5": "8ef57c2ef01680d0303453e131b8df87",
+        "src": "/oshwhub/project/attachments/48c4439f2f2947b98f21628cf6a57075.zip",
+        "download_count": 280
+      },
+      {
+        "size": 3818079,
+        "name": "M1T-v1.6.6-ER.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "408c13b9a6f04dec9fa1783e3ed69ea7",
+        "md5": "33f8be86e5425040b14150e14fe9198c",
+        "src": "/oshwhub/project/attachments/f06506b8b0b64327b6656427d6c5c173.zip",
+        "download_count": 156
+      },
+      {
+        "size": 354925,
+        "name": "M1T应用手册-v1.6.5.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "uuid": "b47a78a82bd84a13bad2facc935b27da",
+        "md5": "04f3fe6e814ec646ebf10856741e59ff",
+        "src": "/oshwhub/project/attachments/b832a515502147f2bf2c1ecd05463498.pdf",
+        "download_count": 195
+      },
+      {
+        "size": 918955,
+        "name": "winhex.exe",
+        "mime": "application/x-msdownload",
+        "ext": "exe",
+        "uuid": "b077b35c2870472d8b33236c154de295",
+        "md5": "101bc2ed6f98a1b53094d5b9b21a24bb",
+        "src": "/oshwhub/project/attachments/93f309b0bf204c7eac0bbbe81719423e.exe",
+        "download_count": 109
+      },
+      {
+        "size": 28575583,
+        "name": "一体式PN532软件包2019.03.24.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "093901395cfd45439ced8ce674b7b540",
+        "md5": "9f39e75cf20638628911b2b23ce0425d",
+        "src": "/oshwhub/project/attachments/3fdba7c60e7a4f8a987cf8ac47743418.zip",
+        "download_count": 428
+      },
+      {
+        "size": 3322618,
+        "name": "PN532工具V3.0_crack.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "e211a8b58ccd4c1ca4b885a4de666f19",
+        "md5": "391f27426e1d13b5d215a0d72a06395d",
+        "src": "/oshwhub/project/attachments/54ca6df0a8044402904806e689c2de17.zip",
+        "download_count": 250
+      },
+      {
+        "size": 220022,
+        "name": "上位机使用说明.docx",
+        "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "ext": "docx",
+        "uuid": "c165586fc74b451ab8c8d5af2e089ced",
+        "md5": "ec2542cd2f46dbfa56fc9d8cd52eb996",
+        "src": "/oshwhub/project/attachments/a247de1717d44332a2085172dd854b8e.docx",
+        "download_count": 203
+      },
+      {
+        "size": 7369340,
+        "name": "主程序.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "3882dffe467847f7ac671c219ce0d10e",
+        "md5": "638fc421b95ff48621e0f20a0dcb97cb",
+        "src": "/oshwhub/project/attachments/85ee2d2d06394935ada3aabccc77c367.zip",
+        "download_count": 269
+      },
+      {
+        "size": 64350776,
+        "name": "PN532资料和上位机.rar",
+        "mime": "application/octet-stream",
+        "ext": "rar",
+        "uuid": "46f744c99ae64ed9808b9d6843efabdf",
+        "md5": "301f57bb36590426cc72d87273aa318f",
+        "src": "/oshwhub/project/attachments/86679b4b4b9d45488669a13fca09eaf6.rar",
+        "download_count": 516
+      },
+      {
+        "size": 9110736,
+        "name": "WeChat_20240615225203.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "4bce76c4ffed49c4a7829080a081a0be",
+        "md5": "4c2f600bb10319359231c14510850032",
+        "src": "/oshwhub/project/attachments/6fff55ba8af04aada0ea4798d0babb62.mp4",
+        "download_count": 127
+      }
+    ],
+    "no": 0,
+    "origin": "pro",
+    "archive": false,
+    "allow_comment": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/pullimage/9g8URhd6LMUBWV1jlTjvGr6M3tsaAjr6A3oyKfGq.jpeg",
+    "updated_at": "2026-03-16T03:32:50.000Z",
+    "created_at": "2024-05-18T07:12:19.000Z",
+    "allow_reprint": false,
+    "introduction": "基于NXP的经典NFC芯片-PN532的RFID/NFC调试器，可直接配合上位机使用，破解无加密/低加密小区门禁卡或者带有darkside漏洞的M1卡，也可配合promark/chameleon使用。",
+    "is_draft": false,
+    "project_tags": [
+      "3c31dae7077a4424b395e8ffe4399b18",
+      "90637fd096424071a21927e5cdc436de",
+      "c2e7a00699a2440ca5880a96466ee387"
+    ],
+    "publish": true,
+    "oshwhub_publish_at": "2024-07-10T02:15:24.000Z",
+    "store": false,
+    "updated_time": "2026-08-10T07:34:54.893Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": null,
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 25,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

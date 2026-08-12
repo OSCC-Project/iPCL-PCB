@@ -1,0 +1,54 @@
+PCB statistics report
+=====================
+- Date: 2026年08月11日 星期二 15时01分00秒
+- Project: STM32F407
+- Board name: STM32F407
+
+Board
+-----
+- Dimensions: unknown
+- Area: unknown
+- Front copper area: 622.626 mm²
+- Back copper area: 243.418 mm²
+- Min track clearance: 0.1012 mm
+- Min track width: 0.1016 mm
+- Min drill diameter: 0.2997 mm
+- Board stackup thickness: 1.6000 mm
+
+- Front footprint area: 1843.558 mm²
+- Back footprint area: 302.155 mm²
+- Front component density: unknown
+- Back component density: unknown
+Pads
+----
+- Through hole: 0
+- SMD: 715
+- Connector: 0
+- NPTH: 0
+- Castellated: 0
+- Press-fit: 0
+
+Vias
+----
+- Through vias: 790
+- Blind vias: 0
+- Buried vias: 0
+- Micro vias: 0
+
+Components
+----------
+
+|              | Front Side | Back Side | Total |
+|--------------|------------|-----------|-------|
+|THT:          |          0 |         0 |     0 |
+|SMD:          |          0 |         0 |     0 |
+|Unspecified:  |        146 |        31 |   177 |
+|Total:        |        146 |        31 |   177 |
+
+Drill holes
+-----------
+
+| Count | Shape |    X Size |    Y Size | Plated | Via/Pad | Start Layer | Stop Layer |
+|-------|-------|-----------|-----------|--------|---------|-------------|------------|
+|   772 | Round | 0.2997 mm | 0.2997 mm |    PTH |     Via |        F.Cu |       B.Cu |
+|    18 | Round | 0.3000 mm | 0.3000 mm |    PTH |     Via |        F.Cu |       B.Cu |

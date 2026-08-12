@@ -1,0 +1,312 @@
+{
+  "index": 4,
+  "name": "100MHz高压差分探头",
+  "url": "https://oshwhub.com/adminismk/50mhz-high-voltage-differential-probe",
+  "category": "测量仪表",
+  "subcategory": "精密测量",
+  "scale": "200元件规模",
+  "note": null,
+  "username": "adminismk",
+  "path": "50mhz-high-voltage-differential-probe",
+  "uuid": "992e9dd31f9347c1b82fe7d10dd66105",
+  "api_detail": {
+    "uuid": "992e9dd31f9347c1b82fe7d10dd66105",
+    "path": "adminismk/50mhz-high-voltage-differential-probe",
+    "name": "100MHz高压差分探头",
+    "content": "<p><span style=\"font-size:18px\">数码之家首发：<a href=\"https://www.mydigit.cn/thread-450270-1-1.html\" target=\"_blank\" rel=\"noopener\">https://www.mydigit.cn/thread-450270-1-1.html</a></span></p>\n<p> </p>\n<p><span style=\"font-size:18px\"><strong>简介：</strong></span></p>\n<p><br /><span style=\"font-size:18pt\">你还在为囊中羞涩买不起高压差分探头而烦恼吗？<br /><br />你还在为高压差分探头的可靠性而担忧吗？<br /><br />这都不是问题，纯国产方案差分探头，它来了，它带着极致的性价比来了！</span><br /><br /><span style=\"font-size:18pt\">物料成本超低，仅50人民币不到！！！！！</span></p>\n<p> </p>\n<p><span style=\"font-size:18px\"><strong>项目特点：</strong></span></p>\n<ul>\n<li><span style=\"font-size:16px\">本期将采用全国产器件的来制作一个AC+DC≤900Vpp高耐压输入的差分探头</span></li>\n<li><span style=\"font-size:16px\">该探头实现锂电池供电与type C双电源使用，支持便携式使用。支持电源路径管理</span></li>\n<li><span style=\"font-size:16px\">采用的核心运放来自圣邦微的SGM8061，一颗轨到轨的CMOS工艺的500MHz带宽的高速放大器</span></li>\n<li><span style=\"font-size:16px\">锂电池充电管理芯片使用常见的TP4057，一颗线性充电芯片，设计充电电流为220mA</span></li>\n<li><span style=\"font-size:16px\">隔离变换供电芯片是来自源特科技的VPS8702，采用全桥架构外围精简，能提供1W的输出功率</span></li>\n<li><span style=\"font-size:16px\">高压输入采用2mm的香蕉头连接器，信号输出采用的是SMA内孔连接器，可快速拆卸线缆设计</span></li>\n<li><span style=\"font-size:16px\">体积小巧，性能强大，支持电池供电使用，支持快速拆装线缆，PCB尺寸为35mm*100mm</span></li>\n<li><span style=\"font-size:16px\">由于运放的限制，实际运放的输出摆幅是±2.3Vpp，可以更换为AD8001ART，提高供电电压解决</span></li>\n<li><span style=\"font-size:16px\">解决了负输入的方波振荡与台阶问题，优化运放反馈环路，提升性能</span></li>\n</ul>\n<p> </p>\n<p><span style=\"font-size:small\"><span style=\"font-size:18px\"><strong>设计要求：</strong></span><br /></span></p>\n<ul>\n<li><span style=\"font-size:16px\">所有物料要求是国内的厂商</span></li>\n<li><span style=\"font-size:16px\">支持250X与500X双增益档位切换</span></li>\n<li><span style=\"font-size:16px\">支持锂电池供电，支持边充边用，电源路径管理功能</span></li>\n<li><span style=\"font-size:16px\">共模抑制要求尽可能的高，以应对工频干扰</span></li>\n<li><span style=\"font-size:16px\">所有物料方便好买，物美价廉</span></li>\n</ul>\n<p> </p>\n<p><span style=\"font-size:small\"><span style=\"font-size:18px\"><strong>技术指标：</strong></span><br /></span></p>\n<ul>\n<li><span style=\"font-size:16px\">电源输入：4.8V~5.5V，使用type C接口供电</span></li>\n<li><span style=\"font-size:16px\">电池电压：满电电压4.2V，过放电压由锂电池保护板限制</span></li>\n<li><span style=\"font-size:16px\">250X增益带宽≥30MHz，500X增益带宽≥100MHz</span></li>\n<li><span style=\"font-size:16px\">输入电压要求≥800V且不击穿，过压报警阈值调整为950V</span></li>\n<li><span style=\"font-size:16px\">单端对地阻抗≥4MΩ，单端对地电容≤1pF，差分输入阻抗≥8MΩ，差分输入电容≤0.5pF</span></li>\n</ul>\n<p> </p>\n<p><span style=\"font-size:small\"><span style=\"font-size:18px\"><strong>更新日志：</strong></span></span></p>\n<ul>\n<li><span style=\"font-size:16px\">优化了共模抑制比，相对旧版有较大提升</span></li>\n<li><span style=\"font-size:16px\">优化了外壳文件，空间利用率提高，外观优化</span></li>\n<li><span style=\"font-size:16px\">V6版本优化了负输入的信号回勾问题，更新外壳文件，外壳文件鸣谢 <span style=\"font-size:18pt\"><strong>@</strong><strong>xunmujun</strong></span></span></li>\n<li><span style=\"font-size:16px\">由于发现买到假运放了，重新更新了测试数据，这颗运放的性能还是蛮强的</span></li>\n<li><span style=\"font-size:16px\">更换了测试设备，测试用的示波器由普源MSO220A-S更新为DHO4204</span></li>\n<li><span style=\"font-size:16px\">优化电源供电，降低工作噪声，优化运放反馈环路，消除了负输入的振荡问题</span></li>\n<li><span style=\"font-size:16px\">增加了高压部分的屏蔽板，使得测量小信号时的稳定性增加，抗干扰增强</span></li>\n<li><span style=\"font-size:16px\">深度优化了低频方波输入下的欠补偿问题，优化了250X档位的方波畸变问题</span></li>\n<li><span style=\"font-size:16px\">深度优化250X波形畸变问题，问题得以最大程度上的改善</span></li>\n<li><span style=\"font-size:16px\">调整过压保护阈值电压，感谢来自闲鱼的<span style=\"font-size:18pt\"><strong>@初出茅庐</strong></span>的反馈建议</span></li>\n</ul>\n<p> </p>\n<p><span style=\"font-size:small\"><span style=\"font-size:18px\"><strong>原理图简述：</strong></span><br /><strong><span style=\"font-size:18px\">1. 充电与路径管理与电压指示</span></strong></span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/8221e1df161e4129aa38aabd7c747873.png\" /></p>\n<p><span style=\"font-size:16px\">增加了共模电感，滤除由充电头带来的噪声污染，使得测量结果更加稳定</span></p>\n<p><span style=\"font-size:16px\">使用D2将type C输入电源分割成为两个电源域为路径管理行方便</span></p>\n<p><span style=\"font-size:16px\">加入了PD握手识别电阻，支持PD供电头使用</span></p>\n<p><span style=\"font-size:16px\">右手边的LED灯通过分压电阻进行控制，用于电源指示与电池电量指示</span></p>\n<p><span style=\"font-size:16px\">其最低亮灯电压为3.5V（很暗），该功能聊胜于无吧，能简易指示电池有无电量</span></p>\n<p><span style=\"font-size:16px\"> 如果有高要求的话，可以使用专用的锂电池电量指示芯片，例如HM1160做电量显示</span></p>\n<p> </p>\n<p><strong><span style=\"font-size:18px\">2. 电池充电与简易路径管理</span></strong></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/sJ49dpb64cp4H1ItpczjL5PKLUHK7pjhAzUM3voY.png\" /></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:16px\">采用最便宜的TP4057芯片，厂商任选，成本极低，功能完善</span></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:16px\">而电源路径管理没有找到合适的芯片，又或者是芯片太贵。只能手动切换电源路径控制</span><br /></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:16px\">在使用电池供电，且按键按下的时候，将拉低Q2，Q3的栅极电压使其导通，让其正常工作</span><br /></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:16px\">其二极管D5是为了防止电流倒灌，避免被VPS8702拉低影响该开关电路的工作</span><br /></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:16px\">在使用电源供电时，由VBUS电压经过D5强制拉高Q2，Q3栅极电压，禁止在外接供电时充电</span><br /></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:16px\">避免的5V供电直接对电池进行充电，实现这个操作的前提是D2这个二极管，这个二极管要求是压差低</span><br /></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:16px\"><span style=\"color:#e03e2d\"><strong><span style=\"font-size:14pt\">压差太大的二极管</span></strong></span>会导致实际到达TP4057的电压低，会造成充电电流低等问题</span></span></p>\n<p><span style=\"font-size:small\"><br /></span><span style=\"font-size:small\"><span style=\"font-size:18px\">3. 隔离变换供电与稳压滤波</span><br /></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:16px\">市面上各种隔离电压模块很常见，但是体积很大，不符合我的要求</span></span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/sh6HEQ0JWMGfgZTooJdZL5hguSFO2Fenmg2xf59y.png\" /></span></p>\n<p><span style=\"font-size:16px\">芯片厂商是苏洲的源特科技，主攻微功率的电源变换芯片，项目采用的是VPS8702，SOT23-6封装<br /></span></p>\n<p><span style=\"font-size:16px\">变压器采用的是EPC10，该变压器功率容量最大3W。对于这种场合完全不在话下<br /></span></p>\n<p><span style=\"font-size:16px\">由于应用对象是运放，需要双电源供电，将两个肖特基二极管并联为了降低压差<br /></span></p>\n<p><span style=\"font-size:14pt;color:#e03e2d\">增加RC串联电路以此降低反向恢复尖峰，降低电源纹波，降低EMI干扰<br /></span></p>\n<p><span style=\"font-size:14pt;color:#e03e2d\">U14电容跨接在两个电源的地平面上，为变压器的高频干扰提供一个回流路径</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/4325dd6fc1da42f1a418ff35df8009b3.png\" /></p>\n<p><span style=\"font-size:16px\">经过电容滤波的纹波高达30mVpp，还是不满足要求，需要经过共模电感与磁珠的二次滤波<br /></span></p>\n<p><span style=\"font-size:16px\">磁珠规格采用的是2KΩ@100MHz，电流200mA，其中最重要的是后面的两个稳压电阻。<br /></span></p>\n<p><span style=\"font-size:16px\">后端电路需要消耗一定的电流，使其磁珠产生压差才能让磁珠工作，经过磁珠之后，纹波降低到10mVpp了<br /></span></p>\n<p><span style=\"font-size:16px\">这个纹波完全可以接受，在经过LDO滤波还能降的更低。</span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/7UDe27KvtxYt8gj290VfProDzMJIAjah0pUcpIzf.png\" /></span></p>\n<p><span style=\"font-size:16px\">正电源的LDO采用的是微盟的ME6211C25M5G-N，现在可以用SGM2210-ADJXN5G/TR替换了</span></p>\n<p><span style=\"font-size:16px\">是一颗固定2.5V输出的LDO，其PSRR=70dB@1kHz<br /></span></p>\n<p><span style=\"font-size:16px\">这个物料的纹波与SGM2209ADJ一样，平滑无毛刺</span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/4c2CNKmM0z3Rs6hu7egq93AiuHKpZO6EpTKxwATL.png\" /></span></p>\n<p><span style=\"font-size:16px\">原本选用的是SGM2019ADJ，但是它的纹波与数据手册完全不符，买了三次完全测得的纹波都一个鸟样<br /></span></p>\n<p><span style=\"font-size:16px\">之前怀疑是买到假货了，就去三个不同的店铺去买，还委托供应商拿了些样品回来测试，都一样<br /></span></p>\n<p><span style=\"font-size:16px\">不知道是不是批次问题，还是什么的，无解，只能换微盟的LDO</span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/j30X6gnhlkZyGqp10YMcwemx5NTIFhaFUJjZO1cw.png\" /></span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/LWMgzHWETjT1e2HlNp46Q0QNd4Lwe6vmlGxz6qOj.png\" /></span></p>\n<p><span style=\"font-size:16px\">下图这个是SGM2209ADJ的LDO，圣邦微一款负压LDO，也是国内唯一能找到的高参数的LDO<br /></span></p>\n<p><span style=\"font-size:16px\">其PSRR=75dB@1KHz，国内算得上是很优秀的负压LDO了，我在国内其他厂商里面都没有找到负压的<br /></span></p>\n<p><span style=\"font-size:16px\">真的是一枝独秀啊，虽然价格很昂贵，但好歹买得到。换做TI的物料，价格翻了十几倍不止呢<br /></span></p>\n<p><span style=\"font-size:16px\">纹波表现可比SGM2019ADJ亮眼的太多了，平滑无毛刺</span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/JyfT7fpLc3argyRFJNLGofsVHyoLBM1HkK1OSZof.png\" /></span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/BL4xdWa1JYinz1enXlAKWgXUT802ApCzO60DbLiu.png\" /></span></p>\n<p><span style=\"font-size:16px\">电源处理到此结束了，供给给运放的电源电压是±2.5V，纹波是≤5mVpp的<br /></span></p>\n<p><span style=\"font-size:16px\">受限于示波器底噪，高频变压器的磁干扰，实际上最大的纹波噪声只能做到5mVpp以内</span></p>\n<p><span style=\"font-size:16px\"><img src=\"//image.lceda.cn/oshwhub/72fe8ad02a5c446dacaa374ef2ee55c6.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:16px\"><img src=\"//image.lceda.cn/oshwhub/c986c3e54fd44e7a8438ff27def3b1b6.png\" alt=\"\" width=\"1280\" height=\"800\" /><br /><br /><strong><span style=\"font-size:18px\">4. 电压衰减电路与放大器</span></strong><br /></span></p>\n<p><span style=\"font-size:16px\">一个1206电阻的耐压是200V，使用多个进行串联以提高耐压，并联在电阻上的电容是进行相位补偿的<br /></span></p>\n<p><span style=\"font-size:16px\">衰减网络设计为500:1，可以兼容市面上大多数高压差分探头，方便使用<br /></span></p>\n<p><span style=\"font-size:16px\">由于电阻的精度不能完全满足运放的共模抑制要求，所以需要一个可调电阻进行微调到合适的值<br /></span></p>\n<p><span style=\"font-size:16px\">但由于运放失调电压的存在，共模抑制调整好了，可能运放的输出轨道会偏，所设计了一个轨偏置电路<br /></span></p>\n<p><span style=\"font-size:14pt;color:#e03e2d\">信号处理电路的最后在加上二极管进行钳位控制，避免大电压冲击运放，导致损坏</span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/ivBEP7IdDkCxsYwHvCTzS7Ikvf2XOpurHGat68SX.png\" /></span></p>\n<p><span style=\"font-size:16px\">V7.0增加了250X档位的轨道偏移调整</span></p>\n<p><span style=\"font-size:16px\"><img src=\"//image.lceda.cn/oshwhub/32b933d8e7c94969a1bb5b91de8e8345.png\" /></span></p>\n<p><span style=\"font-size:16px\">运放采用的是SGM8061，为sot23-5封装的单通道500MHz高速运放，采用CMOS工艺，是电压反馈型运放<br /></span></p>\n<p><span style=\"font-size:16px\">该运放的价格低廉，且性能强悍，是目前国内最强的运放了，其次是GS8091，带宽是350MHz<br /></span></p>\n<p><span style=\"font-size:16px\">但是GS8091的压摆率偏低，波形还原的效果不是很好，多次调试均有明显的过冲及振铃</span></p>\n<p><span style=\"font-size:16px\">使用三个高速运放组成仪表放大器，使其具有超高的共模抑制比，高精度输出</span></p>\n<p><span style=\"font-size:16px\">V7版深度优化了反馈环路，稳定性更高，且解决了负输入的振荡问题</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/0de30c743935413f9acb70372c1bc4c6.png\" /></p>\n<p><span style=\"font-size:16px\">但是不可避免的是，该运放的输入失调电压真的是太大了，会导致在250X增益时的轨道偏移<br /></span></p>\n<p><span style=\"font-size:16px\">为了避免这种情况，我选择将50X放大，更换为250X放大，有效缓解这种情况</span></p>\n<p><span style=\"font-size:16px\"><img src=\"//image.lceda.cn/pullimage/VlTr5GF6KnBuCSlhq2H9CnuEMuHtMmFZtHpcwUuP.png\" /></span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/aaa2e2a593b7457ca4d4896f03c96e57.png\" /></p>\n<p><span style=\"font-size:12pt\">为了避免负信号输入的带宽衰减问题，不需要贴C35，这样子可以用正负输入的带宽一致</span></p>\n<p><span style=\"font-size:16px\">最后的一级运放是作为输出级使用的，一个简单的差分转单端输出，输出端接了一个隔离电路<br /></span></p>\n<p><span style=\"font-size:12pt\">为了驱动容性负载，通常加入一个电阻来分割运放与线缆，这样能让运放的环路更加的稳定</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/e8392ad6eb6d4f86a54d5e683c4e28c2.png\" width=\"912\" height=\"385\" /></p>\n<p><span style=\"font-size:16px\">模拟开关是来自上海的贝岭BL1551B，最大导通频率是300MHz，寄生电容约5pF，略大了</span></p>\n<p><span style=\"font-size:16px\">优化了250X档位的波形，使得更贴近方波，振铃是线路阻抗与运放共同造成的</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/6ad6bc7170c94974aea6a646bb49821c.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><span style=\"font-size:16px\"><br /><strong><span style=\"font-size:18px\">5. 过压检测与告警电路</span></strong><br /></span></p>\n<p><span style=\"font-size:16px\">这个功能也是心血来潮加上去的，将TL432当作比较器使用，在100KHz以内响应是没问题的<br /></span></p>\n<p><span style=\"font-size:16px\">但工作频率增加之后，光耦是来不及响应的，会导致在高频信号下，功能属于残废状态<br /></span></p>\n<p><span style=\"font-size:16px\">不过对于一些低频的开关电源来说也是勉强够用的，这属于低成本的过压检测<br /></span></p>\n<p><span style=\"font-size:16px\">高级一点是使用高速比较器+计时器进行检测与告警，不过电路复杂成本高</span></p>\n<p><span style=\"font-size:16px\">V6版本的原理图将Q5的C，E极给修正了，之前B站网友反馈说我接错了</span></p>\n<p><img src=\"//image.lceda.cn/pullimage/BdGHFJafQ1OELjlXoddhY6W4uYzdIla5YvIQIigM.png\" /></p>\n<div align=\"center\"><span style=\"font-size:small\">---------------------------------------------------------------------------------------</span></div>\n<p> </p>\n<p><strong><span style=\"font-size:18px\">成品实物图</span></strong></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/8gOHHcGrYahxPMPBjZVV2BMBFhXOwkVaIXWuNDdT.png\" /></span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/posAKjDBD55LWWjteosuPnTWsbPsqmp0goT94ofw.png\" /></span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/he6MG0JEWh2LFj7FHn2rB9RM6ULds0vbxKyEGPRT.png\" /></span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/e7dc166bd06140dcb2c7df06fd782135.jpg\" alt=\"\" width=\"1391\" height=\"1043\" /></p>\n<div style=\"text-align:left\" align=\"center\"> </div>\n<div style=\"text-align:left\" align=\"center\"><strong><span style=\"font-size:18px\">外壳实物：</span></strong></div>\n<div style=\"text-align:left\" align=\"center\"><span style=\"font-size:16px\">电池采用502030规格的，能满足使用一个半小时的便携式使用，如果觉得电池容量小，可以选用602040规格的</span></div>\n<div style=\"text-align:left\" align=\"center\"><span style=\"font-size:14pt;color:#e03e2d\">V7版本的PCB，由于增加了250X档位微调旋钮，只能使用502030规格的电池，或602030规格</span></div>\n<div style=\"text-align:left\" align=\"center\"><span style=\"font-size:16px\">第二版本的外壳，优化了空间利用率，优化了外观，更美观，更符合产品的定位</span></div>\n<div style=\"text-align:left\" align=\"center\"><img src=\"//image.lceda.cn/pullimage/TrLyAXC6uJfHJT2tuOCLqPEuEHrAa8I6KTFJz241.png\" /></div>\n<div style=\"text-align:left\" align=\"center\"><img src=\"//image.lceda.cn/pullimage/bPEI1kHzEWgJyZjkqesus0ey2XISXIO0jI6AG3sj.jpeg\" alt=\"\" width=\"1482\" height=\"665\" /></div>\n<div style=\"text-align:left\" align=\"center\"><img src=\"//image.lceda.cn/pullimage/cs9vfWdi3Im4k9XKOdJraBN4XkntRs7Cn2vNEFL4.png\" /></div>\n<div style=\"text-align:left\" align=\"center\"><img src=\"//image.lceda.cn/pullimage/HBhGccrESHLT687mZ1CHK86VOYIvUfzZa4Br15A7.jpeg\" alt=\"\" width=\"1706\" height=\"1279\" /></div>\n<div style=\"text-align:left\" align=\"center\"><span style=\"font-size:16px\"><img src=\"//image.lceda.cn/pullimage/02zP5nAO2fbt1LDZGZIffpCNpsihLzx6kwpwtsVI.jpeg\" alt=\"\" width=\"1706\" height=\"1279\" /></span></div>\n<div style=\"text-align:left\" align=\"center\"><span style=\"font-size:16px\">按键是选的成品按键，外径5.9mm，高度10mm，后面改版外壳的说不定会变</span></div>\n<div style=\"text-align:left\" align=\"center\"><span style=\"font-size:16px\"><img src=\"//image.lceda.cn/pullimage/VD8ZbfLiYlxEt756rYE4ZH1No2HcsHskXroSjU0R.png\" /></span></div>\n<div style=\"text-align:left\" align=\"center\"><img src=\"//image.lceda.cn/pullimage/YvgeOAU5KWrTMGb3DlKR9YcQ3yfyAKaDYYd8Ow7J.png\" /></div>\n<div style=\"text-align:left\" align=\"center\">螺丝选用的是M2规格的沉头螺丝，长度为8mm</div>\n<div style=\"text-align:left\" align=\"center\"><img src=\"//image.lceda.cn/pullimage/3aHLVRgBzV8zaocEf1v4JctjUVMsyfTqi0WxECSN.png\" /></div>\n<div align=\"center\"> </div>\n<div align=\"center\"><span style=\"font-size:small\">---------------------------------------------------------------------------------------</span></div>\n<p><span style=\"font-size:small\"><span style=\"font-size:18px\"><strong>调试经验分享：</strong></span><br /></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:16px\">主要调试是在运放部分，其他的电路已经由我调整验证完了</span></span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/DbWXiEJvPuB8AtqkuOVOFJ4qlaW1u05EZQrRQtN6.png\" /></span></p>\n<p><span style=\"font-size:small\"><img src=\"//image.lceda.cn/pullimage/EOXxQWAXWuJL5NXZoyuutPgssyGN4miQ1hXvTeQi.png\" /></span></p>\n<p><span style=\"font-size:16px\">1. 第一步先调试共模抑制旋钮，需要先把正负输入的引脚短接了，<br /></span></p>\n<p><span style=\"font-size:16px\">然后将其共同接到其他设备的外壳上此时会出现一个50HZ的工频信号（其他设备外壳不能接地，否则是没有的）<br /></span></p>\n<p><span style=\"font-size:16px\">有条件的可以用信号源产生，调整示波器到1X衰减，直流耦合状态，调整到50ms时基，2mV的垂直档位<br /></span></p>\n<p><span style=\"font-size:16px\">逐渐的旋转微调旋钮，直到工频信号消失<br /></span></p>\n<p><span style=\"font-size:16px\">这个时候信号轨道还是会偏移的，就需要调整另外一个旋钮了，使其调整到接近0V上<br /></span></p>\n<p><span style=\"font-size:16px\">这个是500X增益时最终的效果，500X与250的基线偏移都能通过旋钮调整了</span></p>\n<p><span style=\"font-size:16px\">下图是旧版的共模抑制实际表现效果</span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:medium\"><img src=\"//image.lceda.cn/pullimage/86pjYy3E298oNiaRFsy9B1q8tjDUpGiwhKEFgjto.png\" /></span></span></p>\n<p><span style=\"font-size:16px\">下图是V6版本的表现，发现其抖动状态消失，状态良好，这个是正品运放的短路输出纹波</span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:medium\"><img src=\"//image.lceda.cn/pullimage/3OTteLiUIiNI5P3tqnZohBS8PrBbZfH2cCMjoZso.png\" alt=\"\" width=\"800\" height=\"480\" /></span></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:medium\"><span style=\"font-size:16px\">2.第二步是波形补偿调整，用信号发生器产生一个100KHz的方波信号，幅值为10Vpp的方波信号</span><br /><span style=\"font-size:16px\">先将信号正接，逐渐调整到最佳补偿，然后去调试负信号的补偿</span><br /><span style=\"font-size:16px\">直到两个信号补偿如下图所示，此时信号补偿调试完成</span></span></span></p>\n<p><span style=\"font-size:small\"><span style=\"font-size:medium\"><img src=\"//image.lceda.cn/pullimage/eS13B4eotr7Qx9x2xthXj7TZ78AxyEArQTrAszJO.png\" /></span></span></p>\n<p><span style=\"font-size:16px\">3. 接下来调试50X增益时的放大倍数<br />用信号发生器产生一个100KHz的正弦波信号，幅值为10Vpp的正弦波信号<br />将示波器衰减调整为250X，将差分探头也调整为250X，逐渐旋转微调电位器，直到Vpp与信号发生器相等<br />信号发生器的幅值最低不要低于5Vpp，要不然经过500X衰减网络之后可能只剩下噪声了<br />建议选择交流耦合，这样子可以避免直流偏置的影响，此时信号衰减补偿都调试完成，可以正常使用了</span></p>\n<div align=\"center\"> </div>\n<div align=\"center\"><span style=\"font-size:small\">----------------------------------------------------------------------------------------</span></div>\n<div align=\"center\"> </div>\n<p><span style=\"font-size:12pt\">接下来的测试中，我使用同轴线进行，由接线夹分别接到个探头里</span><br /><span style=\"font-size:12pt\">这种接法会存在一个谐振点，会导致带宽下降，后面会单独进行测试的</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/cd9309f2c504486dadf93d141f6ca2fe.jpg\" alt=\"\" /></p>\n<p><span style=\"font-size:12pt\">正弦波测试（10MHz-120MHz，幅值5Vpp）<br /></span></p>\n<p><span style=\"font-size:12pt\">黄色是东儿科技的DR103R102，蓝色的是我自制的，紫色的是麦科信MDP1500<br /></span></p>\n<p><span style=\"font-size:12pt\">可以看到老款的东儿科技的差分探头，噪声是比较大的</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/7a5aaff34158462f9d91a8ed4ad5c1fe.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/230e9c40dd8f45c48a9d27f43fb8173a.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/99dbeab65a6d497781fd96b128d25cc5.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/52171a4aa83947d1b9d1f8ae13591c5d.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/af24471c937a4a759cd9f0b5691f3766.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/34819f8a2ee0448195a5848c65d05d45.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/2778f235b4924c7b9ccabcb783b33239.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/edcbafee85e94a1fa383ab7322250ccf.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/e754835148ae41f78fda7fdc5d7feae2.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/b09c01e721e5401185d2bbd35d1dc709.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/61f19f4ee01d44beb20f1de95978f0fa.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/0bcea868a0904725a33c9130c2b80f41.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><span style=\"font-size:12pt\">方波测试（1MHz-20MHz，幅值5Vpp）</span></p>\n<p><span style=\"font-size:12pt\">黄色是东儿科技的DR103R102，蓝色的是我自制的，紫色的是麦科信MDP1500</span></p>\n<p><span style=\"font-size:12pt\">产生振荡的原因是阻抗不匹配造成的反射，单独测试就没有这种情况的出现</span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/31ef0fdb36774e3cbaa0462a252b348b.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p> </p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/0bcf6172191d43de99d6f41dee8febb3.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/21982040638d49b9ab49159c4cc52213.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/a8cd29a5894a4c42a287d0932d3f2963.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/cc121ab07a5a4859b8fbf6d8baee2d65.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/4f75b191fd45428eb69e2f45a362c781.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/529d1f8c3f8445bba077d4e126ccb189.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/ecdc765220af453f83c327b61aed2496.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/df413a5587ed4afda229a2200ee5a165.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/8e8a7eb52f254b9b82cad65f2df46316.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/7fde5cfe629b44ab8a1c3bfe98474537.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/ea128a7e072c4dcd9d4279875bdd86a9.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/008b28d4c1a0445d9b4c85accd898e4f.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/e29779e8d54c4a32907204b86a841760.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/578009a23ca54bb2b1f30c7b3aa4d706.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/62c9350a557241c184a1376ccb9feb26.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/f663189b56a94a09a4ff619ee2ff97ab.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/9d0ca082c7df499ca064dde7567f403d.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/521caac3f032433ab385b108a3359adb.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/f680b9e1003b42ca8563408d79145615.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><span style=\"font-size:12pt\">上升沿测试（1MHz-20MHz，幅值5Vpp）<br /></span></p>\n<p><span style=\"font-size:12pt\">黄色是东儿科技的DR103R102，蓝色的是我自制的，紫色的是麦科信MDP1500</span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/3b27e7b27aa6463fae8e1195b65dcd89.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/8a198c8bb27c4ad598ccc1eec29e8e37.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/3cc254cd9a864d369dff04527527479c.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/8230a9b2ea95402e9fbd6cbdbed5d4d3.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/157a2f72f02c4717b78b71097e074b90.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/cfe6b368900d46c190de5404d63b3957.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/6c7b17ac774e43319b68a5f15bc44b5c.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/ce0cd251b6104ce5a458476c6fa24812.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/9f3bfbaa79e94216a2b5c5e4af15c608.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/a4d24af9c5a54d468a37fd0d85eb497e.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/914fbca16441481ea509364c9a328597.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/d84ebacbe60148cd9b33f56b80b5f660.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/0be2bf7d4556439fa085091623e8cd6d.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/158d38a5ddf04fedb39619041200df5d.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/3f77de85216842f4aa544cb217eec50e.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/4658033fe4864f8e9fa0f4bb36137039.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/cf89a0e10e5440e9ab58672958548e3d.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/313e2f6a2bf34804bab478b9f5551b26.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/2404e4f66b7f465f8f047691791b39b0.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/0746f5b662a04df8b7b2bb1eacee5ad6.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\">扫频测试（100Hz-120MHz，幅值5Vpp）<br /></span></p>\n<p><span style=\"font-size:12pt\">黄色是东儿科技的DR103R102，蓝色的是我自制的，紫色的是麦科信MDP1500<br /></span></p>\n<p><span style=\"font-size:12pt\">正向输入扫频曲线</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/7e0b6c21e84b4772abd291d614db2828.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><span style=\"font-size:12pt\">反向输入扫频曲线</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/6bfd9b86131e4ba685759f8df8250bc7.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><span style=\"font-size:12pt\">下面是自制探头的单独测试</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/dcc2c75fd75f461ebda81c8ab86dd389.jpg\" alt=\"\" /></p>\n<p><span style=\"font-size:12pt\">单独正弦波测试（10MHz-120MHz，幅值5Vpp）</span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/083af6c1ef594ebe8a5a562efff520d2.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/7785d6b837e146fb8e73c5fa5bce06e1.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/458b6ffe59fc4342b87f5197c5da7929.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/3e0c591949d14fda992c512924c6ed90.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/6f574f85ff644858ba8c85d7a3fe74bd.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/0e52d2a2209e411a878559eacb7f605d.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/e85456bca2cc43d0afa36a335dc5cf6b.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/db6022ca689c41c7846bdef167be99e4.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/bdcb9ece04c94c39b01e6645210f5dc9.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/bad79bfa8f9a49c38147eaec2d85f579.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/7aebbb5befc446cfb8d2c242feb0eaa5.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/9d31a90d71304fd09a20927cca1d299d.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\">单独方波测试（1MHz-20MHz，幅值5Vpp）</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/14e204ca2f704bafa7e74bd1b00961bf.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/30e9cdc4914449dda32539005c30cc4f.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/7204edc7a08947ff928cc418a3d91cba.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/c273cb927c1f48e89dfecfc3acdbeb43.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/84a8f52c9307493e91eed0dae8cff357.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/38a548d418d1446ca99e64c2d2fe42a2.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/9fbe5a066566460fbe1d7a328c8f0162.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/4a51e7f18c6c4fca877a2f9316cbb6db.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/8a4f30672b304927870a59bd50b1539c.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/ad8e29fe4b5e4151aa953047bc1a2754.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/47bd1359a79e4b488d2f37f73dfc4f4c.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/2b70d83292a14a67a0deb4b6e13bad45.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/e5cc42484ea54a668882d16fd45bc5ba.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/dd533e420fe84d0a9136d482c87088ef.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/29ebee147d7646998434d08b5cb80637.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/d1766eceb7f4426784a6b21554281fc4.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/ddd6de255a784f7caa5a8a2aea8ce72f.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/89c527c87cfd43a79297dd3a0bc4272e.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/00d6daf5552b43f7a21bb631459cf761.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/8de7baf54bab401a878e99946444c4f5.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><span style=\"font-size:12pt\">单独上升沿测试（1MHz-20MHz，幅值5Vpp）</span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/8c1750da1b574b68abb4cb03b2306429.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/0fcc6591945b4aaebdbd22df494b9d8c.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/e622f85242d5407c96fa4b59f7413f32.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/dad3d4a70e2347f39694f85b33d1d467.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/0a2af3e6c2824cb7af275edfbba85d51.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/a7ccc413dee345b781d1c86526308b7a.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/1606be2ddb3941269afabf191aff1f8d.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/4312b7fba85e43e5845261285016a2e4.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/cfbfee7f70a04043b5fc66f712492d40.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/2fb3b29e5c4f4fc7b96e611b37cce08c.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/041628926471463681a7fc62b9485a5a.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/eaf7a1b9a8f542f9999274ff397322f4.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/5c37e42ffc5141d7ba8c8214cb2a1de5.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/d0661c76d0544d26ac076a6d2197b454.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/380065c9fbce440d876ecff9054f66a6.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/67f5b99245f34548bb87bfbbd30993f9.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/2e636f331ac34878b4c9be4c2d9b3fc5.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/7573e3fd18544222a36f08392e09cc39.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/f3733db8655f43f09c3b8dc601bbdcaf.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/bf3065a482234841beb81e424c2cddf8.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\">单独扫频测试（100Hz-120MHz，幅值5Vpp）<br />正向输入扫频测试</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/494c19663b2145979c3c5d8ea28b4da7.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><span style=\"font-size:12pt\">反向输入扫频测试</span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/3f7adba4568f457f999afc3c66a57e2c.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\">下面的曲线是贴了C35的情况，可以发现，确实是降低了带宽</span></p>\n<p><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/755785ccbc9f40ef9186cda39b43bc61.png\" width=\"1280\" height=\"800\" /></span></p>\n<p><span style=\"font-size:12pt\">曲线很平整，增益误差不大<br />250X档位测试（由于运放压摆率限制，50X性能下降严重）<br />250X档位，最大带宽约80MHz</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/c7cd3bd862ad4929899c9f48690bc65b.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/9ea3b12d9c104a73a61aa48f7d75ef8c.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><span style=\"font-size:12pt\">但是方波有点失真，我调了很久，终于是勉强能用了</span></p>\n<p><span style=\"font-size:12pt\">出现振铃的原因有很多，例如阻抗不匹配导致的信号反射，运放自身的因素导致的</span></p>\n<p><span style=\"font-size:12pt\">也可能是放大了信号本身的振铃，目前V8.1这版是最接近完美的，克服种种困难</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/20a3b90f7ee44dedaeace749c7ab5181.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/86dfed9ef6584fc0a1a181d8a12db7d7.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/3f3655d9fd054103abda86c925baa588.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/40e370a84e51415ba29317a39bcb8325.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/264fc03804e64620aa17a3af0842caa2.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/7b1c3d63912d45e9a0dfbc79260b9d9b.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/26ca7b0945264b9687d775f94a064bfd.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/1a02d6e81eec4b0faf9083d6607ed7e4.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/6eb885480aee424bb4a76ef1cd78d5f0.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/4858c3a0bf5e43ad9890d486b293358b.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/9d1780f86aae41b09631db0c76d41f16.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/6651898c75ad4a0ba560a299dadc505d.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/c04f5bda822743609a5c9d11cfccc886.png\" alt=\"\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/73ef69ce031340ca9b7bd27c90803840.png\" alt=\"\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/631a7cad247d4e2582b0cd5010cddc4e.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/4decbaecc9f449bebf8e48bec36ab05f.png\" alt=\"\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/60788c032aa84b509e9ab8347653687b.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/3f856daa57754395b2b5730881551de8.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/2900327002774ca88dbe2f6a886001ed.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/62821aacff07487fbbd9d88592189681.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/876cf6a65c7d4cdf83af5a9e4364ff42.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/7ad86734d48c4dd08476189242260653.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/a83e51cf352a43ec8382eb3a147244b2.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/617a99469f9f4d7bbef74e7470b72897.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/c8e898cae50949a9bf30f095d454890a.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><span style=\"font-size:12pt\">实际测量电源的上升沿来说，还是很不错的</span></p>\n<p><img src=\"//image.lceda.cn/oshwhub/d7f372508cdb4852ac9990e9303da019.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/f9da885d1856429383383671a7e5ad8b.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p>实际测量Vds引脚的峰峰值会偏低一点，毕竟尖峰已经削了</p>\n<p><img src=\"//image.lceda.cn/oshwhub/e2e927954d324235a4406917ec97ddac.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/f15fc17cabaf4b42a41392c33a60e811.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p><img src=\"//image.lceda.cn/oshwhub/9e640eb67dec4516b45693a775482605.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:center\"><span style=\"font-size:small\">---------------------------------------------------------------------------------------</span></p>\n<p style=\"text-align:center\"><span style=\"font-size:36px\">总结：又不是不能用，要什么自行车</span></p>\n<p style=\"text-align:center\"> </p>\n<p style=\"text-align:left\"><span style=\"font-size:16px\">之前测试过了，使用磁环做变压器的方案不可行啊，，建议大家还是买磁芯自己绕制吧</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:16px\">原理图文件与GERBER文件带V7字样的是新版的，旧版的调试过程都在数码之家了</span></p>\n<p style=\"text-align:center\"><span style=\"font-size:small\">---------------------------------------------------------------------------------------</span></p>\n<p style=\"text-align:left\"> </p>\n<p style=\"text-align:left\"><span style=\"font-size:16px\"><span style=\"font-size:18px\"><strong>后续1：GaN管驱动实际测试</strong></span></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">这个是测试之前我做的茂睿芯的氮化镓电源的栅极驱动情况</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">黄色的麦科信的MDP1500高压差分探头，蓝色的是我自制的高压差分探头</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:18px\"><span style=\"font-size:12pt\">现在是正向输入情况反馈，可以看到，我制作的底噪相对于麦科信的底噪更低。</span></span></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/9261b9e8041448e58e479563b433987d.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/ffd1144979c54aa891f3bb5a643569f6.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/9f785aaa7dec474e8707f07ce8d6dd1b.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/f1dba80fd5ee4c1a928f8e87ea5f226c.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/1af969e902454c7ba8b9494228636432.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\">反向输入对比</p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/bd9e100d9b124fb185072c6299b6836b.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/6d5700e77b08498bab7b22586079b972.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/542bedb8ec514883a444d15d07a6b867.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/bda833060f4f4320943c58a7b4dce348.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/f103d3f6d9714595a6a1365303f2aeaf.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/c0b9793b35d24503b6fac11d0ab4a889.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/5d574ca03bc146e8abbbc8e911b49ed2.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/e202539c1b424c038b745b9e06b1ff4d.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\">反向输入存在振荡，这个不好解决，目前暂为发现原因，所以尽量不要使用反向输入</p>\n<p style=\"text-align:left\">现在测试三款高压差分探头</p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/b610751982024e6b82ecceedf0da05fa.jpg\" alt=\"\" width=\"1374\" height=\"1030\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/89a1d8efc0014b729b9da484074bd95c.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\">蓝色的是麦科信MDP1500，黄线的是东儿科技的DR103R102，紫色的是我自制的，在三种探头里面，我的探头底噪最低。</p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/80cc7cd5462e49adb782e46d100f5e16.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/047e47e0980e45d0b83c22741f5f23ab.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/89816b3401994587958366d7c2c1fd40.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\">可以看到，我的底噪是最低的，使用的是一个手机充电头供电，另外两个探头都是从示波器上取电的</p>\n<p style=\"text-align:left\">但是我这个探头对于共模干扰的抑制还是比较差的，解决办法是增加共模电感与差模电感进行滤波</p>\n<p style=\"text-align:left\">主要原因是充电头太劣质了，共模噪声很大，导致底噪纹波也偏大大。电池供电好很多</p>\n<p style=\"text-align:left\">直接插在示波器上进行取电，就没有共模的毛刺噪声了。</p>\n<p style=\"text-align:left\">蓝色的是麦科信，黄色的是东儿科技，紫色是我制作的，仅供参考</p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/1d48db08453a4bac8135bb2dabd9d1da.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/7e28bd0777f84127b425320283a729ce.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\">紫色是麦科信MDP1500，蓝色是我的，可以明显看到，我的比麦科信还要低，对于小信号测量还原性更好</p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/6b6f202ed9cf42308edcd7544b0711c6.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/aff0eb4d7ac941ea8b66bb6035233c32.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"> </p>\n<p style=\"text-align:left\"><span style=\"font-size:16px\"><span style=\"font-size:18px\"><strong>后续2：关于增强小信号下的抗干扰稳定性</strong></span></span></p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/f4aafe11a69541388848d5a350b6a8fa.png\" alt=\"\" width=\"768\" height=\"297\" /></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">本身我已经不想在继续优化的了，但是这个波形的畸变属实看着难受，还有250X增益的波形过冲问题也是</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">这个畸变在测量小信号下是非常明显的，主要是靠近了开关电源，衰减网络受到了干扰</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">为了解决这个问题，我选择增加了这个屏蔽小板，能有效缓解畸变，毕竟做CNC外壳真的是太贵啦</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">但是效果肯定是不如麦科信的CNC外壳，能提供一个稳定的工作环境，几十块钱，要什么自行车啊</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">用于测试的小板画反了，发布的项目文件里面是改正之后的，放心打样吧，增加屏蔽小板之后，抗干扰好很多了</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">同时因为增加了屏蔽小板，衰减网络的电容也有相对的调整，需要看对应的原理图文件，直接加上去是不行的！！</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:14pt;color:#e03e2d\">还有就是要使用高品质的SMA转BNC线缆，要射频专用的，这种屏蔽，稳定性最好</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:14pt;color:#e03e2d\">或者是80编以上带铝箔的RG174线材，这个线缆质量也会影响方波畸变，不合格线材影响很大</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:14pt;color:#e03e2d\">例如下面这样，干扰噪声直接串进去了，产生了毛刺，影响实际波形，好的屏蔽线材就不会</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:14pt;color:#e03e2d\"><img src=\"//image.lceda.cn/oshwhub/1b4f992fd0d847bb8754d389615b55a0.png\" alt=\"\" width=\"873\" height=\"549\" /></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/9ed8acb2426c488298e892ce72ee23e8.jpg\" alt=\"\" width=\"1391\" height=\"1043\" /></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/118441cf8d094416986f2971615b5916.jpg\" alt=\"\" width=\"1391\" height=\"1043\" /></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">还有就是这个探头在测量200KHz以下的方波时，出现了欠补偿的情况，V8.1版本针对此也进行了深度优化</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/89ddd9c0e23d40458a86edbccee49289.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">优化的同时，也针对振铃进行了一定的优化，使得上升沿更好</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/ea2c149ed99541bfa7128d35162499c4.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/d5c6ff0bedea4711b66c79d9fb9c10fa.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/2c7d94f7bbf344a0a6ba0d7d4a19c67a.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\">20MHz方波正向输入</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/baab658d4e27472784ed2312eeee3e18.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p style=\"text-align:left\">20MHz方波反向输入</p>\n<p style=\"text-align:left\"><img src=\"//image.lceda.cn/oshwhub/1d0ebcf773124532aa74a1a0ba24b1aa.png\" alt=\"\" width=\"1280\" height=\"800\" /></p>\n<p style=\"text-align:left\"><span style=\"font-size:16px\">深度优化之后，波形还原效果很好，震荡也消失不见了</span></p>\n<p style=\"text-align:left\"><span style=\"font-size:16px\"><img src=\"//image.lceda.cn/oshwhub/465c2d19252d4ae1bb0713537be000ad.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:16px\"><img src=\"//image.lceda.cn/oshwhub/c95e529afd8e433d86e6f919d08be5c7.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p style=\"text-align:left\"><span style=\"font-size:12pt\"><img src=\"//image.lceda.cn/oshwhub/bce6121b41b341aea7346393f10924e1.png\" alt=\"\" width=\"1280\" height=\"800\" /></span></p>\n<p style=\"text-align:center\"><span style=\"font-size:24pt\">项目完结了</span></p>",
+    "introduction": "使用纯国产芯片制作的高压差分探头，运放是SGM8061，隔离供电芯片是VPS8702，带宽可达120MHz",
+    "grade": 3,
+    "public": true,
+    "license": "CC BY-NC 4.0",
+    "text_editor_type": "richText",
+    "creator": {
+      "uuid": "d5589352e7e14bf7bc13f87223c14d67",
+      "username": "adminismk",
+      "nickname": "adminismk",
+      "avatar": "//image.lceda.cn/pullimage/M0lhyvTbTXTt41KVd7NI2AXayiZJpD1ePF5wx49q.jpeg"
+    },
+    "owner": {
+      "uuid": "d5589352e7e14bf7bc13f87223c14d67",
+      "username": "adminismk",
+      "nickname": "adminismk",
+      "avatar": "//image.lceda.cn/pullimage/M0lhyvTbTXTt41KVd7NI2AXayiZJpD1ePF5wx49q.jpeg",
+      "team": false
+    },
+    "origin": "pro",
+    "is_draft": false,
+    "publish": true,
+    "count": {
+      "views": 45495,
+      "star": 400,
+      "fork": 0,
+      "watch": 0,
+      "like": 272
+    },
+    "members": [
+      {
+        "uuid": "d5589352e7e14bf7bc13f87223c14d67",
+        "username": "adminismk",
+        "nickname": "adminismk",
+        "avatar": "//image.lceda.cn/pullimage/M0lhyvTbTXTt41KVd7NI2AXayiZJpD1ePF5wx49q.jpeg",
+        "role": 1
+      },
+      {
+        "uuid": "327b1095a18242949b7a1948b5b89a5a",
+        "nickname": "xunmujun",
+        "username": "xunmujun",
+        "avatar": "//image.lceda.cn/avatars/2024/5/yERiYlMNI8rYLtVmCkcQxGcFCEYQTcrwgGpQtNIe.png",
+        "role": 4
+      }
+    ],
+    "attachments": [
+      {
+        "id": 1,
+        "uuid": "c70447d5306043138bc5e3ae49f84387",
+        "name": "345-Levido-Figure_2.jpeg",
+        "src": "/attachments/2024/5/oUZwH3BLTAVmVxPghVFALds2DBGkJ1mb8QrJ1fgs.webp",
+        "mime": "image/jpeg",
+        "ext": "webp",
+        "size": 32126,
+        "md5": "512758ba902628b31aae54fd54726eac",
+        "download_count": 548
+      },
+      {
+        "id": 1,
+        "uuid": "f1c66ffc98f048edac3554777f637224",
+        "name": "EPC10变压器承认书_带水印.pdf",
+        "src": "/attachments/2024/5/uqPdXcOMhZdh97PaHzU9kH3yVKr7z17RNIdUP0U4.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 220299,
+        "md5": "3ef5ff34b5a174367bfd326a49decec3",
+        "download_count": 1055
+      },
+      {
+        "id": 1,
+        "uuid": "58101d85e86b43de862f6eb167f93da8",
+        "name": "MicrOne-ME6211_C30.0.pdf",
+        "src": "/attachments/2024/5/gv6uphF3XRb4b4Tz8UswKRAoOp336ysESayRPUSY.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 895692,
+        "md5": "7c3b84e7a2db78d14cd99008fac3bf1e",
+        "download_count": 438
+      },
+      {
+        "id": 1,
+        "uuid": "614aacd03c454093a5bc5433911b3fc4",
+        "name": "SGMICRO-SGM2209.pdf",
+        "src": "/attachments/2024/5/xyM8zeamJCSsfajx0zzji7QBjUw17VHWsd3vqvkr.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 943660,
+        "md5": "ec440b9340b0ec71a1b2831233ba3724",
+        "download_count": 381
+      },
+      {
+        "id": 1,
+        "uuid": "c8c3ef41a9d3418bbdaf8a347d70589b",
+        "name": "SGMICRO-SGM8061.pdf",
+        "src": "/attachments/2024/5/FS13iSYjSMD6E21feQTVxEVyUExiRaiiEamfH99W.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 1009761,
+        "md5": "94a2af124f01e4f75332068398f0db8d",
+        "download_count": 409
+      },
+      {
+        "id": 1,
+        "uuid": "9ce3cde29b8d4508af7900b50914ab33",
+        "name": "TopPower-TP4057.pdf",
+        "src": "/attachments/2024/5/gkoVNitmQnEch84pf8PQxYTziFpdafIsiYgxHSCm.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 723711,
+        "md5": "989d284e90d3bf2fc06cef045d62185b",
+        "download_count": 377
+      },
+      {
+        "id": 1,
+        "uuid": "8d9a61dd211f48aea8a1392cfea1658c",
+        "name": "VPSC-VPS8702_S.pdf",
+        "src": "/attachments/2024/5/Lzdtib9VyTeeQ3R6y561lHtWxHG8qRqlWsMaWfKt.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 2618513,
+        "md5": "2f344543781f0b679ba4d4fb4e945eab",
+        "download_count": 414
+      },
+      {
+        "id": 1,
+        "uuid": "091c730379614c67ad92d2a6a8f473b5",
+        "name": "运放屏蔽罩.pdf",
+        "src": "/attachments/2024/5/hKtB6O0rQTLkMXuI8pDiPLZFLDgyu8eC9j6VpGrb.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "size": 137925,
+        "md5": "6742fd08132158cd919e475a11477c1b",
+        "download_count": 779
+      },
+      {
+        "id": 1,
+        "uuid": "434e503cd0c445798a0c7f0314b733f4",
+        "name": "上盖-V6.STL",
+        "src": "/attachments/2024/5/toRHHKwhXVpdXICV4IOSNNq0USKiSjDd0LFlG0w7.bin",
+        "mime": "application/octet-stream",
+        "ext": "bin",
+        "size": 11884,
+        "md5": "90e842f8f52459fe5f065721d8dd420f",
+        "download_count": 554
+      },
+      {
+        "id": 1,
+        "uuid": "f34aad5c74e043689f59f173192b4259",
+        "name": "下盖_光固化_V6.STL",
+        "src": "/attachments/2024/5/DYUrh379T74eu7ZLeuYPWTjma7GTKYDtf3tmBCJ1.bin",
+        "mime": "application/octet-stream",
+        "ext": "bin",
+        "size": 125084,
+        "md5": "ea69a3cb70028bcb728ac3769a4839df",
+        "download_count": 413
+      },
+      {
+        "id": 1,
+        "uuid": "fe86f66bfa1f41959aedadc9b86d522d",
+        "name": "下盖-V6.STL",
+        "src": "/attachments/2024/5/TrYjkM5XmwzJ5OOvyQ9YDkpbhydEnMJfkIGQDn4F.bin",
+        "mime": "application/octet-stream",
+        "ext": "bin",
+        "size": 125084,
+        "md5": "d8f1bfb881097a68ea5c6c9d6ce1f6f4",
+        "download_count": 468
+      },
+      {
+        "id": 1,
+        "uuid": "abae4669d7c946c790db0b915f1672ee",
+        "name": "上盖_V6_无柱.STL",
+        "src": "/attachments/2024/5/U7wqeBTFRwEVI1fYrQj5d0kWJkg2aHy2mLEqMmAg.bin",
+        "mime": "application/octet-stream",
+        "ext": "bin",
+        "size": 71584,
+        "md5": "c2a0c05d815418fb0d101688bb4b8d23",
+        "download_count": 463
+      },
+      {
+        "id": 1,
+        "uuid": "e351fa1d699048ffb554418ba6824368",
+        "name": "下盖_光固化_V6_无柱.STL",
+        "src": "/attachments/2024/5/75cfEoYIQ6j4N9VNqf0zJc10Xnq1Pg7WOcn4zWTs.bin",
+        "mime": "application/octet-stream",
+        "ext": "bin",
+        "size": 110584,
+        "md5": "25c2d51659beb3c3769fac9b7c7b9b9c",
+        "download_count": 454
+      },
+      {
+        "size": 39009885,
+        "name": "100MHz高压差分探头.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "35ff11cd48944005aa761ed50c549957",
+        "md5": "e442bd6ec54a185f7d36c6a178aa4e95",
+        "src": "/oshwhub/project/attachments/63be847ea6f140aa9f29a1b30fe1ccef.mp4",
+        "download_count": 601
+      },
+      {
+        "size": 10405021,
+        "name": "TI电路设计指导手册：运算放大器.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "uuid": "ae200cb51e974c529092c76e4e5a97b0",
+        "md5": "0ac194a1e5092e7faf96b652e5b75904",
+        "src": "/oshwhub/project/attachments/6c5b119bd7f147c08d5cfd20c0745aa3.pdf",
+        "download_count": 812
+      },
+      {
+        "size": 463520,
+        "name": "SCH_100MHz高压差分探头-V6_2024-06-24.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "uuid": "b779b7f351db4e849b760355b42d03d4",
+        "md5": "da2daa849653acfc1f7804f6b822d7be",
+        "src": "/oshwhub/project/attachments/09e3cdb7aef04902811c628327af383b.pdf",
+        "download_count": 450
+      },
+      {
+        "size": 1209822,
+        "name": "100MHz高压差分探头V7.0资料.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "cca062272f9f469299a98153897b68b3",
+        "md5": "57a08d47a29de0daec9a85a1f968da26",
+        "src": "/oshwhub/project/attachments/0fc510bd9f23431bb8e5d99c5f4870f5.zip",
+        "download_count": 523
+      },
+      {
+        "size": 4270248,
+        "name": "高压差分探头基础知识.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "uuid": "aea1181dd1144705ae4b5e087badb021",
+        "md5": "522eb76d133bcf9fd9af99ce2b815511",
+        "src": "/oshwhub/project/attachments/92b62705ad9e49be9db3b3194988c71e.pdf",
+        "download_count": 876
+      },
+      {
+        "size": 2079915,
+        "name": "100MHz高压差分探头V8.1_FULL.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "868fc51e7d0f458a9dc2a0fd9297796f",
+        "md5": "ed0758a4d94a7e662ec8554076c01c24",
+        "src": "/oshwhub/project/attachments/01ad9d7f94044cda84664bde1efe8da4.zip",
+        "download_count": 923
+      }
+    ],
+    "no": 0,
+    "archive": true,
+    "allow_comment": true,
+    "allow_reprint": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/pullimage/L61ZHakmdcxftesn2n11q2Iaa1zEFPK4RO6pyCYc.jpeg",
+    "from": "userCenter",
+    "competition_record_uuid": "64d61bb8fcec4386a827dbba11426358",
+    "updated_at": "2026-07-12T01:40:03.000Z",
+    "created_at": "2024-05-07T06:28:02.000Z",
+    "project_tags": [
+      "3c31dae7077a4424b395e8ffe4399b18",
+      "6d863290e5d9486895177ac976d21a51",
+      "5f4e56750b0445a7a024b01cc8fa7122"
+    ],
+    "oshwhub_publish_at": "2024-08-14T03:59:31.000Z",
+    "high_quality": true,
+    "is_hide": false,
+    "reproduction_cost": {},
+    "store": true,
+    "updated_time": "2026-08-10T10:05:05.887Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "848df799086a48d8bf82e78e3af5acbb",
+      "name": "星火计划2024",
+      "path": "spark2024",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 686,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

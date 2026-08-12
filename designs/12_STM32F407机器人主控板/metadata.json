@@ -1,0 +1,111 @@
+{
+  "index": 12,
+  "name": "STM32F407机器人主控板",
+  "url": "https://oshwhub.com/buff_x/the-second-generation-of-epoch20",
+  "category": "教育培训",
+  "subcategory": "机器人",
+  "scale": "200元件规模",
+  "note": null,
+  "username": "buff_x",
+  "path": "the-second-generation-of-epoch20",
+  "uuid": "7a0772160ade498597178cce39341174",
+  "api_detail": {
+    "uuid": "7a0772160ade498597178cce39341174",
+    "name": "STM32F407机器人主控板",
+    "content": "## 项目简介\n使用stm32f407vet6主控，带有两路can，两路rs485，两路rs232隔离通信（隔离耐压2kv，隔离侧均使用车规级隔离器/收发器），两路串口（无tvs保护），两路spi以及两路iic（有tvs保护）。拥有5v2a降压输出能力，引出pe全端口。\n该板对所有经常插拔的输入、输出均有完善的保护措施，足以应对复杂工况\n该板信号完整性已经验证，10M低速通信表现完美\n支持6s电压直接输入，支持usb2.0通信，单片机输入电压几乎没有纹波，可以直接使用adc功能\n\n输入保护包括：电池过压保护，emi滤波器，大电容稳压，24v-5vBUCK降压，5vtvs保护，2a贴片自恢复保险丝（可以换成3a保险丝），ldo（带有过温、过流、短路保护）降压，3.3V钳位。\n\n输出保护包括：通信接口除调试口和1.27mm的串口之外，其他所有接口使用5v输出，所有5v输出均带有tvs保护，spi、iic接口所有pin都带有tvs保护，隔离侧通信的esd防护依赖收发器进行，隔离侧差分信号输出带有共模滤波，232带有差模滤波\n\n\n\n## 项目参数\nMCU：STM32F407VET6\nFLASH：W25Q128JVSIQ\n晶振：25MHz\n数字隔离器：CA-IS3722LS\nCAN收发器：TJA1051T/3\nR485收发器：THVD1420DR\nR232收发器：MAX3232IDRG4\n\n电源：\nLDO：ME6211C33\nDCDC——BUCK：TPS62933DRLR\n隔离电源：B0505S-3WR3-HI-Link\n电源接口：\n主电源：XT30公-卧贴\nType-C：电源、usb串口\n2.54间距排针引出一排5V电源接口\n通信接口：\nCAN：GH1.25*2p，从左到右：L-H\nR485：GH1.25*2p，从左到右：A-B\nR232：GH1.25*4p，从左到右：5V-GND-RX-TX\nIIC：GH1.25*4p，从左到右：5V-GND-SDA-SCL\nSPI：GH1.25*6p，从左到右：5V-GND-MOSI-MISO-SCK-CS\n遥控器：1.27间距排母\n按键调试模块：使用下载/调试接口\n下载/调试：ST-Link V3标准接口\nBOOT切换：2.54间距排针\n\n## 详细资料\n见附件\n示例工程\n24v-5v输出纹波：\n\n![B87144B478C5501048688A9E66489D1E.jpg](//image.lceda.cn/oshwhub/dcc9750a2b484b2bb774404838a8b1ce.jpg)\n\n本项目可以直接打板使用，所有功能均经过验证可以正常使用",
+    "grade": 1,
+    "origin": "pro",
+    "is_draft": false,
+    "thumb": "//image.lceda.cn/oshwhub/5ada2b88a7e6463ebfc628e5a2bb7047.jpg",
+    "public": true,
+    "publish": true,
+    "owner": {
+      "uuid": "50a610b574c44ded8f1fbc17d4d4ab8b",
+      "username": "buff_x",
+      "nickname": "buff_x",
+      "avatar": "/image/avatar-default.png",
+      "team": false
+    },
+    "creator": {
+      "uuid": "50a610b574c44ded8f1fbc17d4d4ab8b",
+      "username": "buff_x",
+      "nickname": "buff_x",
+      "avatar": "/image/avatar-default.png"
+    },
+    "members": [
+      {
+        "uuid": "50a610b574c44ded8f1fbc17d4d4ab8b",
+        "nickname": "buff_x",
+        "username": "buff_x",
+        "avatar": "/image/avatar-default.png",
+        "role": 1
+      }
+    ],
+    "path": "buff_x/the-second-generation-of-epoch20",
+    "created_at": "2024-12-09T14:14:45.519Z",
+    "updated_at": "2025-04-25T07:06:51.607Z",
+    "tags": [],
+    "count": {
+      "views": 2660,
+      "star": 21,
+      "fork": 0,
+      "watch": 0,
+      "like": 9
+    },
+    "version": "",
+    "attachments": [
+      {
+        "size": 1467352,
+        "name": "主控板2025使用手册_技术手册.pdf",
+        "mime": "application/pdf",
+        "ext": "pdf",
+        "uuid": "73a6baa7282b4bb9afe8888e54afb0b3",
+        "md5": "92ce6b03ee73ff9f24857192197d4d5c",
+        "src": "/oshwhub/project/attachments/90844b5f5aca4389aeb513bda5f165da.pdf",
+        "download_count": 51
+      },
+      {
+        "size": 4471757,
+        "name": "EPOCH-MAIN.7z",
+        "mime": "application/x-compressed",
+        "ext": "7z",
+        "uuid": "8c7aa08549b44c789097e44c463b1820",
+        "md5": "627a2cb343c3006157ab7c838e03f8e3",
+        "src": "/oshwhub/project/attachments/5be0e863a79943b38a9a3c867690e29e.7z",
+        "download_count": 37
+      }
+    ],
+    "license": "GPL 3.0",
+    "project_tags": [
+      "4c92885dd69947be93cc68f560459fb3",
+      "5ccaf0d562184dcdb603eb5b2c1f19d1"
+    ],
+    "introduction": "使用stm32f407vet6主控，带有两路can，两路rs485，两路rs232隔离通信，两路串口（无tvs保护），两路spi以及两路iic（有tvs保护）。拥有5v2a降压输出能力，引出pe端口",
+    "text_editor_type": "markdown",
+    "allow_comment": true,
+    "allow_reprint": true,
+    "from": "oshwhub",
+    "no": 0,
+    "archive": false,
+    "reproduction_cost": {
+      "total_cost": 150
+    },
+    "oshwhub_publish_at": "2025-04-25T07:07:16.000Z",
+    "store": false,
+    "updated_time": "2026-08-10T10:25:29.201Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": null,
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 1,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}

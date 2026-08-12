@@ -1,0 +1,76 @@
+* Netlist: 开源AR眼镜
+* Extracted from PCB layout data
+* Generated: 2026-08-11 11:30:11
+* Components: 2, Nets: 21
+*
+
+$COMPONENTS
+  U1  {e6108e6fdddc448aa68f9b3531c656d2}
+  U2
+$END_COMPONENTS
+
+$NETS
+  U1_1
+    U1.1
+    U2.1
+  U1_10
+    U1.10
+    U2.10
+  U1_11
+    U1.11
+    U2.11
+  U1_12
+    U1.12
+    U2.12
+  U1_13
+    U1.13
+    U2.13
+  U1_14
+    U1.14
+    U2.14
+  U1_15
+    U1.15
+    U2.15
+  U1_16
+    U1.16
+    U2.16
+  U1_17
+    U1.17
+    U2.17
+  U1_18
+    U1.18
+    U2.18
+  U1_19
+    U1.19
+    U2.19
+  U1_2
+    U1.2
+    U2.2
+  U1_20
+    U1.20
+    U1.23
+  U1_21
+    U1.21
+    U1.22
+  U1_3
+    U1.3
+    U2.3
+  U1_4
+    U1.4
+    U2.4
+  U1_5
+    U1.5
+    U2.5
+  U1_6
+    U1.6
+    U2.6
+  U1_7
+    U1.7
+    U2.7
+  U1_8
+    U1.8
+    U2.8
+  U1_9
+    U1.9
+    U2.9
+$END_NETS

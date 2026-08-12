@@ -1,0 +1,160 @@
+{
+  "index": 22,
+  "name": "基于LoRa的无线通信装置",
+  "url": "https://oshwhub.com/robba/wireless-communication-device-based-on-lora",
+  "category": "通信电子",
+  "subcategory": "远距离无线通信\n",
+  "scale": "100元件规模",
+  "note": null,
+  "username": "robba",
+  "path": "wireless-communication-device-based-on-lora",
+  "uuid": "9ef6ee4ebd444a9b91a79ab7d532d6a9",
+  "api_detail": {
+    "uuid": "9ef6ee4ebd444a9b91a79ab7d532d6a9",
+    "path": "robba/wireless-communication-device-based-on-lora",
+    "name": "基于LoRa的无线通信装置",
+    "content": "## 项目说明 \n该项目计划利用LoRa技术，可实现数公里范围内的通信，并提供1.76kbps至62.5kbps的速率。使用433MHz无线电频率，最低码率5kbps，以实现远距离通信。为方便使用，采用手机app作为人机交互软件，由esp32控制LoRa模块，通过WiFi与上位机通信。\n\n## 功能介绍\n### 使用场景和实现功能\n本项目实现了完全脱离公共网络的离线较远距离的通信，由于LoRa通信高延迟、低速率的特性，无法实现实时通信，故本项目实现了使用文字的短消息通信模式，可在无蜂窝网信号的山区、野外，实现P2P（点对点）的短消息通信。\n**本项目经实测在城市复杂电磁环境，有高楼遮挡情况下可以至少完成2Km距离的通信（有少量丢包）。**\n### 使用方式：\n1. 先将带有WIFI和LoRa装置的硬件终端开机\n2. 手机连接上ESP32的WIFI\n3. 打开APP即可发送信息\n说明：\n由于是无中间服务器的P2P通信方式，需要两个设备同时开机才能通信，否则信息丢失。在不启动app的情况下，设备可缓存一定条数的消息，一旦连接上app可一次性显示出来。\n\n## 开源协议 \nGPL3.0\n\n## 项目属性\n本项目为首次公开，为本人原创项目。项目未曾在别的比赛中获奖。\n\n## 项目进度\n2024-03-27 项目完成立项工作，明确了项目的目标和初期调研。具体完成了技术、法规、主要使用的芯片的型号、购买渠道、芯片价格的调研。\n2024-03-30 完成原理图设计。初步完成电路原理图设计，完成USB转串口、 UART烧录切换电路、type-C接口电路、供电切换电路、升5Vboost、锂电池保护电路、锂电池充电电路、3.3VLDO、 LoRa模块、 ESP32模块等功能模块的电路设计，下一步进行PCB layout和电子元器件采购，PCB电路打样。\n2024-04-02 完成初步PCB layout，完成type-C 接口、usb转串口、电源、锂电池充放电管理、esp32、loRa模块的布线。\n2024-04-05 完成PCB的部分芯片替换，部分重新布线。主要替换了模拟开关芯片，由于之前所用芯片立创商城缺货，同时芯片性能参数上面没有优势。顺便对电路线路进行优化。\n2024-04-06 完成BOM清单的检查，完成PCB的下单，smt下单，同时申请星火项目支持。检查了原理图和PCB的位号问题，确定了生产所用的原件型号。\n2024-04-12 即将生产时发现PCB设计问题，及时取消修改后重新下单，重新审批。\n2024-4-15 完成审批，进入生产环节。\n2024-4-18 完成esp32的WIFI ap功能、TCP功能测试，修复部分BUG。\n2024-4-20 PCB及SMT贴片完成生产，发货。\n2024-4 ~ 2024-9 由于赶上毕业，无暇顾及，项目暂时搁置。\n2024-9 项目继续开单片机软件，基于IDF模式开发ESP32。\n2024-10 完成ESP32的软件开发，使用ncat 网络工具代替上位机完成ESP32的软件DEBUG。\n2024-11 开发Android APP，由于Android 开发不熟悉，该部分大量使用了生成式人工智能加快进度。\n2024-11-20 完成了Android APP的DEBUG工作，完成系统联调，进行系统测试。\n2024-11-24 发布\n## 设计原理\n### 电路设计概要\n该项目采用单颗18650电池供电，内置锂电池保护电路，能进行锂电池充放电管理。拥有Type C接口进行充电和数据传输，内置程序烧录功能，通过USB转串口进行烧录，Type-C 口在烧录后仅作为充电口使用，后续的通信和控制通过手机连接ESP32进行控制。\n### 电路原理图\n- Type-C接口\n ![图片.png](//image.lceda.cn/pullimage/1cl00ET6rxOmIVWNwQkMY0Xg5tWA4pgoKgR8XrFB.png)\n 项目使用了Type-C 16 Pin 接口，数据只使用了USB2.0的D+和D-，D+、D-是差分信号，D+&gt;2.8V，D-&lt;0.3V，D-&gt;2.8V， D+&lt;0.3V。CC1和CC2用5.1KΩ接地，其作用是在使用C to C 连接线时区分主从设备，只使用普通的A口数据线则可不接。Type-C接口放了一个EDS芯片D6，其作用是当静电等高高压电输入时，其内的TVS二极管反向击穿，泄放电压包含后级电路，如果节约成本可以不加。\n- 供电切换电路及总开关\n ![image.png](//image.lceda.cn/oshwhub/1caa31f7acaf473f854fd5225b65ce28.png)\n 该供电切换电路十分普遍，PMOS利用了体电容阻止USB电流倒灌电池，当VUSB有电，PMOS管截止，即便有体二极管电流流过，但是因为VUSB会比 Vbat 电压高，PMOS的Vgs&gt;0 ,所以PMOS体二极管截止，负载由 VUSB 供电； 当VUSB没电，PMOS导通，负载由 VBat 供电。注意供电一定要大于电池。\n 在锂离子电池充电芯片TP4056X的数据手册里的参考设计中也可看到该电路结构：\n ![图片.png](//image.lceda.cn/pullimage/EFtWYMvbzIC9GgOak3FSBvP2xmZ8PI65WxnjkyWO.png)\n- 升5V电路\n ![图片.png](//image.lceda.cn/pullimage/WfxVExpJSZpxqiR4iGsZPZ6dy5EeyL5kfyUL8U0S.png)\n 锂电池放电最低可至3V左右，电池保护电路到2.5V才关断，为防止3.3的LDO无法工作，为了保证后续电路电压稳定，故采用先升压后降压的方式。另外LoRa模块需要5V供电。\n 该电路可在SX1308数据手册查看详情，输入输出的滤波电容是手册推荐值22uF,供电电路布线尽量短粗。ESP32最高500mA，LoRa模块峰值发射电流610mA，电源设计按5V2A考虑绰绰有余。注意ESP8266是3.3V供电，其峰值功率1.65W，而LoRa峰值3.05W，同时大部分时间两者都在低功耗下运行，只有短暂的信号发送时功率变大，实际平均功率其实不高。SX1308最大支持4A电流，这方面没有瓶颈，如果想提高功率，开关切换的Pmos可能需要更换。\n - 3.3VLDO\n ![图片.png](//image.lceda.cn/pullimage/Qii8RRkkp8DLqeEvCmDexrUkNa0kfzYnMm8WpY15.png)\n 3.3V采用了两个SPX3819并联的方式，因为单个SPX3819最大支持500mA电流，但ESP32峰值就是500mA，为了电源冗余设计，使用两个SPX3819。\n - 锂电池保护电路\n ![图片.png](//image.lceda.cn/pullimage/xYfWlnFMhdEoWZC1ItcjhFFUWY7DvKFhVplSAVl1.png)\n 为防止锂电池过度充放电，使用IP3005A芯片进行电池保护，该模块需要串联在锂电池与负载中间，具体是正极与负载相连（隔了个100Ω的电阻，该电阻与旁边电容起电源滤波器作用），负极通过芯片再与负载相连。芯片内部在负极处有MOS管控制通断，当检测到电池电压低于2.5V时，MOS管关断，防止继续放电。具体电流方向，电池电流从EP进入芯片，经过芯片内部MOS，从VM流出，注意该线路走线短而粗。\n- 锂电池充电电路\n![图片.png](//image.lceda.cn/oshwhub/1441071dc42945af8027c3f65bb455bd.png)\n该电路使用了TP4056X充电管理电路。LED1、LED2为充电指示灯，通过红绿两种不同颜色指示充电状态。R16和R12是温度检测电路，其中R16是热敏电阻，将该电路并入TEMP引脚可以根据温度控制充电电流，如果TEMP 管脚的电压小于输入电压的 45％或者大于输入电压的 80％将导致充电停止，该设计为冗余设计，为保护电池安全设计，若节约成本可以将TEMP直接接地以取消温度检测功能。\n该电池的充电电流由R6控制其控制关系如下式所示：\n\n\n![图片.png](//image.lceda.cn/oshwhub/e27bddbe7837410da7388fbb15dca86f.png)\n \n![图片.png](//image.lceda.cn/oshwhub/b6180fde9b8a4dd7b90ee574b28d250d.png)\nVCC为芯片供电和充电能源来源，该电压与电池的电压不能小于30mA，否则无法充电。BAT引脚是连接电池的充电引脚，其最大输出电压不超过4.35V。\nC10起去耦电容的作用。\n- USB转串口电路\n![图片.png](//image.lceda.cn/oshwhub/55832f6e6ad14f6091d5324376d3c86a.png)\n该电路负责转换USB2.0信号变为TTL信号。该设计使用了CH340C转串口芯片，该芯片相较于CP2102芯片价格便宜，而相对于CH340系列的其他芯片而言外围电路简单，无需外部晶振。\n电源部分C5起去耦电容作用。\n芯片13、14脚是TTL的硬件流控制脚，DTR(Data Terminal Ready,数据终端准备好)，DSR(Data Set Ready 数据准备好)，RTS( Request To Send 请求发送 )，CTS(Clear To Send 清除发送)。本设计中只使用了DTR和RTS，其硬件通过三极管控制ESP32/ESP8266的下载控制引脚IO0和重置引脚EN。当烧录ESP32时，软件会依次控制产生RTS信号和DTR信号，该信号会先设置ESP32芯片进入下载模式，然后对ESP32产生一个复位信号，起到自动下载的作用。\n- ESP32 复位和下载按键电路\n![image.png](//image.lceda.cn/oshwhub/6bfda3e7e5184aed8a43bad97f44fd84.png)\n该电路设置了REST按钮和BOOT按钮控制ESP32的复位和启动状态是否为下载模式。其中R45、R44是上拉电阻。计算得当t= 0.05时输出 0.99倍的输入电压，该延迟时间远远大于50us，可保证系统上电时序要求。\n- ESP32接口电路\n\n![image.png](//image.lceda.cn/oshwhub/73422f9017af456fb55e5da58a9d472d.png)\n其中C18、C19为去耦电容的作用。R46将IO2保持下拉状态可以使ESP32顺利进入下载模式。\n该ESP32模块使用了嵌入式的QSPI PSRAM，其RAM通信需要占用IO16引脚，故IO16要使用R47进行上拉。\n本电路主要将ESP32各引脚引出，不使用的引脚保持悬空处理。\n- LoRa 模块接口电路\n \n![image.png](//image.lceda.cn/oshwhub/2a4d8cbfd5664330910f24521d20d45b.png)\n该部分电路设计比较简单，C32、C33是去耦电容，其模块的M0、M1与STM32相连接，这两根控制线可控制LoRa的模式切换。LoRa模块是使用UART与单片机进行通信的，其RXD和TXD和STM32的UART接口相连。其AUX是LoRa模块状态指示引脚，其电平跳变指示LoRa模块是否在发射状态，是否完成模式切换，缓冲区是否为空等状态。\n附LoRa模块配置表：\n\n![image.png](//image.lceda.cn/oshwhub/d1a82b947ca84dc582f4a46fddfb4d02.png)\n![image.png](//image.lceda.cn/oshwhub/e7b37b97291140c88e1c64a3ac069a7a.png)\n\n## 电路设计注意事项\nType-C 接口的TVS二级管是ESD措施，可以不焊接，若需要焊接应选择好型号，接Vbus的TVS应当在6.5V电压击穿，而数据线D+、D-首先击穿电压应小于3.3V，同时作为高速接口，为了不影响通信，TVS的结电容应当小于2.5pF。\n\n## 软件说明\n软件分为两部分：使用IDF模式开发的ESP32程序、使用Android studio开发的 Android APP。\n### ESP32程序\n- 本设备一端通过WIFI-TCP连接用户APP；另一端通过LoRa连接远端设备。所以程序由两部构成，与LoRa相关部分、与WIFI-TCP相关部分。其中与LoRa相关的代码写在LoRa_parser.c文件内，与WIFI-TCP相关部分写在wifi_TCP.c文件内。\n\n- 如果从数据流动角度，有2个数据流动方向：LoRa接收-&gt;TCP发送、TCP接收-&gt;LoRa发送。故本程序设计了两个队列：LoRa_data_rev_queue、TCP_data_rev_queue。通过两个队列，实现数据的跨任务通信。\n\n- 本程序共设计了3个任务：\n   1. LoRa接收与解析任务，该任务负责接收来自LoRa的数据，并将数据处理后放入LoRa_data_rev_queue；\n   2. LoRa发送任务，该任务负责读取TCP_data_rev_queue的消息，将消息打包后发送到LoRa模块中；\n   3. SOCKET任务：该任务负责通过SOCKET API 建立 TCP 服务器，为简化设计（任务间同步SOCKET较复杂），该部分在同一个任务中使用非阻塞的recv、send API，通过轮询的方式从TCP读取和发送数据。\n\n总统软件架构可由下图所示：\n![image.png](//image.lceda.cn/oshwhub/9b5b9a59689b4c39b4d8a6b13e6c6d77.png)\n软件文件如图所示：\n其中Tool.c 里是程序使用的辅助函数（Debug使用）,conf.h 里包含程序所需要的全局配置文件。\n![image.png](//image.lceda.cn/oshwhub/e4aab1bd358744a684644e5527302491.png)\n配置文件：\n该配置文件可以设置WIFI密码、协议头、缓冲区大小等。还有些非全局的配置放在wifi_TCP.h、LoRa_parser.h里。\n```c\n// 全局配置文件\n\n/* 单元测试（测试完注释） */\n// #define APP_TEST //LoRa定时发送测试\n// #define ECHO_TEST //回传测试程序\n\n/* WIFI 配置 */\n// 默认初始SSID\n\n#define WIFI_SSID \"esp32_iot\"\n\n// 默认初始WIFI密码\n#define WIFI_PASS \"12345678\"\n// 启用IPv4\n#define CONFIG_IPV4\n\n/* 数据协议配置 */\n//  定义定界符，选择两个字节作为LoRa接收的定界符\n#define DATA_START_DELIMITER 0x02 // 数据开始标志\n#define CMD_START_DELIMITER 0x01  // 指令开始标志\n#define END_DELIMITER 0x7F\n// 转义所需字符\n#define ESCAPE_BYTE 0x7E\n#define ESCAPED_7E 0x7D\n#define ESCAPED_7F 0x7E\n\n/* 数据长度、buff长度配置 */\n// LoRa 接收、发送缓存配置\n#define LoRa_RX_BUF_SIZE (2048)\n#define LoRa_TX_BUF_SIZE (2048)\n#define LoRa_EVENT_QUEUE_SIZE (16)\n// 接收数据最大长度\n#define LoRa_DATA_MAX_SIZE (2048)\n\n#define TCP_RX_BUF_SIZE (2048)\n#define TCP_TX_BUF_SIZE (2048)\n```\n\n- 其他通信细节（技术细节）\n   关于帧界定问题：\n   \n   因为ESP32对于UART的Pattern检测系统会在检测到Pattern后（END_DELIMITER设置为Pattern）触发事件，为防止数据出现 END_DELIMITER 而出现的数据接收不完整的情况。为了实现透明传输，本人采用了基于字符的双重转义进行处理。\n   具体方法如下：\n   若数据出现END_DELIMITER，使用 ESCAPE_BYTE(假设为0x7E) 作为转义标识符对END_DELIMITER进行转义，将其转义为新的序列：0x7E 0x7E。此处是第一重转义。\n   数据中如果包含 0x7E 字节，也需要被转义为另一个新的序列：0x7E 0x7D ，从而避免与转义标识符发生冲突。此处是第二重转义。\n   在接收端进行反转义即可恢复原数据，这样既可使用固定的END_DELIMITER作为数据帧的帧结束符，且不用担心数据段冲突的问题。\n   \n   \n   关于通信校验问题：\n   \n   为了确保通信数据正确，在数据后加入了BCC校验（异或校验），编写在LoRa_parser.c文件内的check_crc函数中（函数命名CRC，而实际使用的BCC校验算法），简单来说就是将数据累计求XOR（异或）得到校验值。当LoRa接收与解析任务接收到数据后，先进行反转义，之后就进行BCC校验。目前对于校验失败的数据采取丢弃的方式，现在还未完善差错重传的机制，但已预留好相关的协议（见下文通信帧格式）。\n   \n   关于通信帧格式：\n   \n   通信帧格式如下：\n  ( 【 &lt;`1B DATA_START_DELIMITER(数据报帧头)`&gt;&lt;`2B data length`&gt;&lt;`data段`&gt; 】 &lt;`1B BCC校验和`&gt;)\n  对()内数据数据转义后添加&lt;`1B END_DELIMITER(帧结束符)`&gt;,BCC校验和计算范围为【】内范围\n  &lt;`1B DATA_START_DELIMITER(数据报帧头)`&gt; 为数据头，而若替换为&lt;`1B CMD_START_DELIMITER(指令报帧头)`&gt;则代表传输的指令而非数据，该部分为ACK数据、其他控制数据保留。后续有机会可以完善该通信协议。\n   \n### Android app\nAndroid app 提供了一个用户界面以完成信息的输入和显示。该程序仅包含一个Activity。程序先检测WIFI是否连接，若已连接则建立SOCKET连接。聊天列表是使用RecyclerView完成的，每当SOCKET接收到消息，则更新RecyclerView，添加一条。本程序有聊天记录的功能，每次打开程序会加载历史记录，该记录使用sharedPreferences以String方式保存。为了区分发送方和接收方，在每个消息的第一个字符添加标记，“0”代表接收的消息，并设置显示左对齐、蓝色；“1”代表发送的消息，设置为绿色、右对齐。具体代码不再赘述，详见代码注释。\n\n## 实物展示\n带有ESP32和LoRa模块的硬件设备端：\n![DSC04749_batch.jpg](//image.lceda.cn/oshwhub/04c0a6d9a2d1455f95ced7c303ebbbd5.jpg)\nAndroid APP 界面：\n![image.png](//image.lceda.cn/oshwhub/80a64c392c0b4537a0e13cc7e8d1f317.png)\n    ",
+    "introduction": "该项目目标是使用LoRa调制技术，通过手机和单片机电路的配合，实现小范围的不依赖运营商网络的较远距离通信。",
+    "grade": 3,
+    "public": true,
+    "license": "GPL 3.0",
+    "text_editor_type": "markdown",
+    "creator": {
+      "uuid": "337c0e3357694a0d855fae64bb2fd6e8",
+      "username": "robba",
+      "nickname": "robba",
+      "avatar": "https://u.lceda.cn/images/avatar-default.png?id=f119c61e3d5ce714b4b8"
+    },
+    "owner": {
+      "uuid": "337c0e3357694a0d855fae64bb2fd6e8",
+      "username": "robba",
+      "nickname": "robba",
+      "avatar": "https://u.lceda.cn/images/avatar-default.png?id=f119c61e3d5ce714b4b8",
+      "team": false
+    },
+    "origin": "pro",
+    "is_draft": false,
+    "publish": true,
+    "count": {
+      "views": 6501,
+      "star": 78,
+      "fork": 0,
+      "watch": 0,
+      "like": 32
+    },
+    "members": [
+      {
+        "uuid": "337c0e3357694a0d855fae64bb2fd6e8",
+        "username": "robba",
+        "nickname": "robba",
+        "avatar": "https://u.lceda.cn/images/avatar-default.png?id=f119c61e3d5ce714b4b8",
+        "role": 1
+      }
+    ],
+    "attachments": [
+      {
+        "size": 37767808,
+        "name": "演示视频_batch.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "61793b61deeb47bf9f8e1f12fde16d50",
+        "md5": "99da348b78532965c80f4af95f244a2c",
+        "src": "/oshwhub/project/attachments/038a7c001c884a6c8d704b65d34ea31e.mp4",
+        "download_count": 33
+      },
+      {
+        "size": 31544503,
+        "name": "测速视频_batch.mp4",
+        "mime": "video/mp4",
+        "ext": "mp4",
+        "uuid": "b16ac6820fec41e7a5a9b17a722d1a6e",
+        "md5": "695122ffce793b230f29d67b9e3ce275",
+        "src": "/oshwhub/project/attachments/0f70aea47b874515ad4de259e080bbb6.mp4",
+        "download_count": 24
+      },
+      {
+        "size": 42430,
+        "name": "ESP32-commit.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "ae43ae17c66d4dbd80b6f27568499cae",
+        "md5": "c3642ff23f43fcc57122d8b1e52969ea",
+        "src": "/oshwhub/project/attachments/a9f3f1cf46f64bc58666f021b7f32cf3.zip",
+        "download_count": 105
+      },
+      {
+        "size": 1027763,
+        "name": "APP-COM_System-commit.zip",
+        "mime": "application/x-zip-compressed",
+        "ext": "zip",
+        "uuid": "d545e8c7a2ed4d27b5cd2388e8c569ae",
+        "md5": "e16626dc0079d9cd10b785f323ada4ff",
+        "src": "/oshwhub/project/attachments/4f4f32e9348e41c58d9c37051fb8dd67.zip",
+        "download_count": 82
+      }
+    ],
+    "no": 0,
+    "archive": false,
+    "allow_comment": true,
+    "allow_reprint": true,
+    "cover": {
+      "name": "",
+      "src": ""
+    },
+    "version": "",
+    "thumb": "//image.lceda.cn/oshwhub/50767c2b3de44f09bf5d2fd2228a72e6.jpg",
+    "from": "userCenter",
+    "competition_record_uuid": "2dec740104e84be3ab0a808b83030e04",
+    "updated_at": "2024-11-27T16:01:34.632Z",
+    "created_at": "2024-04-02T09:28:01.000Z",
+    "project_tags": [
+      "6f6eefa0fcb54ab4b75469c64646d9e9",
+      "3c31dae7077a4424b395e8ffe4399b18",
+      "5f4e56750b0445a7a024b01cc8fa7122"
+    ],
+    "reproduction_cost": {
+      "fa": {},
+      "pcb": {
+        "cost": 30,
+        "type": "pcb",
+        "details": []
+      },
+      "component": {
+        "cost": 200,
+        "type": "component",
+        "details": []
+      },
+      "three_d_shell": {},
+      "smt": {},
+      "panel": {},
+      "cnc": {},
+      "total_cost": 230
+    },
+    "high_quality": true,
+    "is_hide": false,
+    "oshwhub_publish_at": "2024-11-28T01:05:47.000Z",
+    "sync_jlc": 1,
+    "store": false,
+    "updated_time": "2026-08-10T10:30:44.545Z",
+    "fork_from": null,
+    "sale_info": null,
+    "competition": {
+      "uuid": "848df799086a48d8bf82e78e3af5acbb",
+      "name": "星火计划2024",
+      "path": "spark2024",
+      "external_page": 0,
+      "competition_origin": "oshwhub.com"
+    },
+    "version_documents": [],
+    "audit_logs": "",
+    "comments_count": 2,
+    "albumCollect": false,
+    "status": {
+      "like": false,
+      "collect": false
+    },
+    "has_vote": false,
+    "allow_vote": false,
+    "vote_count": 0
+  }
+}
